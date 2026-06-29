@@ -9974,17 +9974,6 @@
       "entity_id": "ORG_0255"
     },
     {
-      "standard_name": "广州",
-      "entity_type": "LOC",
-      "description": "中国广东省省会，一线城市，本文中为高端普拉提机构的主要市场所在地。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton",
-        "kb_tj"
-      ],
-      "entity_id": "LOC_0155"
-    },
-    {
       "standard_name": "广州体育学院",
       "entity_type": "LOC",
       "description": "位于广东省广州市的高等体育院校，作为本次赛事的举办地，提供赛事组织和保障工作，是粤港澳地区体育教育和培训的重要机构。",
@@ -11267,16 +11256,6 @@
         "kb_badminton"
       ],
       "entity_id": "LOC_0178"
-    },
-    {
-      "standard_name": "新昌",
-      "entity_type": "LOC",
-      "description": "中国浙江省绍兴市下辖的一个县，以茶叶、自然风光和文化遗产闻名，是林丹杯羽毛球赛事的举办地之一。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "LOC_0179"
     },
     {
       "standard_name": "新昌县",
@@ -13308,7 +13287,9 @@
       "standard_name": "武威市",
       "entity_type": "LOC",
       "description": "位于中国甘肃省的一个地级市，其羽毛球爱好者参加了2026年天祝县“金徽杯”羽毛球邀请赛，与其他选手同台竞技。",
-      "aliases": [],
+      "aliases": [
+        "武威"
+      ],
       "sources": [
         "kb_badminton"
       ],
@@ -13613,16 +13594,6 @@
         "kb_badminton"
       ],
       "entity_id": "PER_0527"
-    },
-    {
-      "standard_name": "沈阳",
-      "entity_type": "LOC",
-      "description": "中国辽宁省省会城市，东北地区重要城市",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "LOC_0214"
     },
     {
       "standard_name": "沈阳市",
@@ -14865,17 +14836,6 @@
         "kb_badminton"
       ],
       "entity_id": "PER_0551"
-    },
-    {
-      "standard_name": "爱知",
-      "entity_type": "LOC",
-      "description": "日本本州岛中部的县，名古屋是其首府，2026年亚运会举办地之一。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton",
-        "kb_swimming"
-      ],
-      "entity_id": "LOC_0253"
     },
     {
       "standard_name": "爱知县-名古屋市",
@@ -16343,17 +16303,6 @@
         "kb_badminton"
       ],
       "entity_id": "PER_0639"
-    },
-    {
-      "standard_name": "纽约",
-      "entity_type": "LOC",
-      "description": "美国最大城市和全球金融、文化中心，位于美国东海岸，是联合国总部所在地，也是2026年美加墨世界杯的举办城市之一，以其标志性建筑和国际化氛围闻名。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton",
-        "kb_tj"
-      ],
-      "entity_id": "LOC_0271"
     },
     {
       "standard_name": "绥德县",
@@ -18639,16 +18588,6 @@
       "entity_id": "PER_0793"
     },
     {
-      "standard_name": "郑州",
-      "entity_type": "LOC",
-      "description": "中国河南省省会，国联民生证券羽毛球赛华中分赛区所在地，作为华中地区的赛点。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "LOC_0303"
-    },
-    {
       "standard_name": "郑思维",
       "entity_type": "PER",
       "description": "中国羽毛球运动员，前国家羽毛球队混双选手，与黄雅琼搭档完成大满贯伟业后于前年底退役。",
@@ -19220,7 +19159,9 @@
       "standard_name": "长春市",
       "entity_type": "LOC",
       "description": "吉林省的省会城市，本次职工运动会的主办地，致力于推动职工体育和城市发展。",
-      "aliases": [],
+      "aliases": [
+        "长春"
+      ],
       "sources": [
         "kb_badminton"
       ],
@@ -19351,16 +19292,6 @@
         "kb_badminton"
       ],
       "entity_id": "LOC_0322"
-    },
-    {
-      "standard_name": "长沙",
-      "entity_type": "LOC",
-      "description": "湖南省省会城市，第八届“财信杯”羽毛球邀请赛的举办地。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "LOC_0323"
     },
     {
       "standard_name": "阜阳理工学院",
@@ -20844,7 +20775,9 @@
       "standard_name": "马鞍山市",
       "entity_type": "LOC",
       "description": "安徽省辖地级市，本次“李宁·农行杯”2026年全国羽毛球单项冠军赛的举办城市。",
-      "aliases": [],
+      "aliases": [
+        "马鞍山"
+      ],
       "sources": [
         "kb_badminton"
       ],
@@ -21932,18 +21865,6 @@
       "entity_id": "PER_0966"
     },
     {
-      "standard_name": "Crucible Theatre",
-      "entity_type": "LOC",
-      "description": "位于英国谢菲尔德的剧院，是世界斯诺克锦标赛的固定举办地，丁俊晖是唯一在此完成百杆破百的亚洲选手。",
-      "aliases": [
-        "克鲁斯堡"
-      ],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "LOC_0354"
-    },
-    {
       "standard_name": "Dan Lawrence",
       "entity_type": "PER",
       "description": "英格兰板球运动员，萨里队球员，在比赛中对格拉摩根队构成威胁。",
@@ -22905,18 +22826,6 @@
       "entity_id": "EVENT_0412"
     },
     {
-      "standard_name": "Women's Tennis Association",
-      "entity_type": "ORG",
-      "description": "女子网球协会，管理女子职业网球巡回赛，组织WTA250诺丁汉站等赛事。",
-      "aliases": [
-        "WTA"
-      ],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "ORG_0435"
-    },
-    {
       "standard_name": "World Snooker Championship",
       "entity_type": "EVENT",
       "description": "斯诺克最负盛名的赛事，每年在克鲁斯堡剧院举行，是三大赛之一，丁俊晖和赵心童均参与其中。",
@@ -23614,16 +23523,6 @@
       "entity_id": "ORG_0467"
     },
     {
-      "standard_name": "东莞",
-      "entity_type": "LOC",
-      "description": "中国广东省城市，2026世界斯诺克台球团体锦标赛的举办城市。",
-      "aliases": [],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "LOC_0383"
-    },
-    {
       "standard_name": "东莞台球协会",
       "entity_type": "ORG",
       "description": "东莞市的台球运动组织，承办2026年世界斯诺克台球团体锦标赛，负责具体赛事执行。",
@@ -23638,7 +23537,8 @@
       "entity_type": "LOC",
       "description": "广东省辖地级市。2026年世界斯诺克台球团体锦标赛举办地。",
       "aliases": [
-        "广东东莞"
+        "广东东莞",
+        "东莞"
       ],
       "sources": [
         "kb_billiards"
@@ -24388,16 +24288,6 @@
       "entity_id": "PER_1039"
     },
     {
-      "standard_name": "克鲁斯堡",
-      "entity_type": "LOC",
-      "description": "英国地名，斯诺克世界锦标赛的举办地，文章提到赵心童曾在此挣扎未能卫冕。",
-      "aliases": [],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "LOC_0387"
-    },
-    {
       "standard_name": "克鲁斯堡世锦赛50周年纪念日",
       "entity_type": "EVENT",
       "description": "世界斯诺克锦标赛在克鲁斯堡举办50周年的纪念活动，将于明年举行，预计会有大量相关工作和庆祝活动。",
@@ -24413,7 +24303,8 @@
       "description": "位于英国谢菲尔德的剧院，自1977年起一直是斯诺克世界锦标赛的固定举办地，是斯诺克运动的圣殿和最高荣誉的象征。",
       "aliases": [
         "克鲁斯堡（世锦赛主场）",
-        "克鲁斯堡"
+        "克鲁斯堡",
+        "Crucible Theatre"
       ],
       "sources": [
         "kb_billiards"
@@ -25168,7 +25059,8 @@
         "WTA",
         "国际女子网球协会",
         "女子网球协会",
-        "女子网球选手协会"
+        "女子网球选手协会",
+        "Women's Tennis Association"
       ],
       "sources": [
         "kb_billiards"
@@ -25668,16 +25560,6 @@
         "kb_billiards"
       ],
       "entity_id": "PER_1108"
-    },
-    {
-      "standard_name": "安徽",
-      "entity_type": "LOC",
-      "description": "中国省份，赤虎牌球杆成为当地专业台球赛事指定用杆。",
-      "aliases": [],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "LOC_0413"
     },
     {
       "standard_name": "宾汉姆",
@@ -30024,16 +29906,6 @@
         "kb_billiards"
       ],
       "entity_id": "ORG_0572"
-    },
-    {
-      "standard_name": "静安",
-      "entity_type": "LOC",
-      "description": "上海市静安区。",
-      "aliases": [],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "LOC_0480"
     },
     {
       "standard_name": "静安野豹队",
@@ -44463,17 +44335,6 @@
       "entity_id": "PER_2005"
     },
     {
-      "standard_name": "哈尔滨",
-      "entity_type": "LOC",
-      "description": "黑龙江省省会，王曼昱全家迁居至此训练，父亲在此摆摊卖肉夹馍。",
-      "aliases": [],
-      "sources": [
-        "kb_ppq",
-        "kb_tj"
-      ],
-      "entity_id": "LOC_0599"
-    },
-    {
       "standard_name": "唐鹏",
       "entity_type": "PER",
       "description": "前中国国家乒乓球队球员，与冷大棚一同被张继科邀请至杭州临安训练基地担任驻训教练。",
@@ -45218,16 +45079,6 @@
         "kb_ppq"
       ],
       "entity_id": "PER_2022"
-    },
-    {
-      "standard_name": "宝山",
-      "entity_type": "LOC",
-      "description": "上海市辖区，宝山队参加上海乒乓球嘉年华，球队状态出色。",
-      "aliases": [],
-      "sources": [
-        "kb_ppq"
-      ],
-      "entity_id": "LOC_0616"
     },
     {
       "standard_name": "宝山区",
@@ -47051,16 +46902,6 @@
       "entity_id": "ORG_0970"
     },
     {
-      "standard_name": "海南",
-      "entity_type": "LOC",
-      "description": "中国的一个省份，正在筹建海南训练基地。",
-      "aliases": [],
-      "sources": [
-        "kb_ppq"
-      ],
-      "entity_id": "LOC_0642"
-    },
-    {
       "standard_name": "海口亚洲杯",
       "entity_type": "EVENT",
       "description": "亚洲乒乓球杯赛，在中国海口举办，梁靖崑因伤退赛。",
@@ -48636,16 +48477,6 @@
       "entity_id": "PER_2176"
     },
     {
-      "standard_name": "长春",
-      "entity_type": "LOC",
-      "description": "吉林省省会，王皓的籍贯地",
-      "aliases": [],
-      "sources": [
-        "kb_ppq"
-      ],
-      "entity_id": "LOC_0668"
-    },
-    {
       "standard_name": "闫安",
       "entity_type": "PER",
       "description": "前中国乒乓球队男队队员，2006年入选国家二队，2008年晋升一队，2021年退出国家队。曾获瑞典公开赛男单冠军、亚锦赛男团男双冠军，队内直通赛多次击败马琳、许昕、张继科等主力。退役后频繁参加商业赛、签约日本T联赛和乒超联赛，因发言引发争议。",
@@ -49074,16 +48905,6 @@
         "kb_ppq"
       ],
       "entity_id": "PER_2199"
-    },
-    {
-      "standard_name": "黄浦",
-      "entity_type": "LOC",
-      "description": "上海市辖区，黄浦队代表的区域",
-      "aliases": [],
-      "sources": [
-        "kb_ppq"
-      ],
-      "entity_id": "LOC_0675"
     },
     {
       "standard_name": "黄浦区工人体育馆",
@@ -52122,16 +51943,6 @@
       "entity_id": "ORG_1077"
     },
     {
-      "standard_name": "山西",
-      "entity_type": "LOC",
-      "description": "中国省份，杨畅的所属地",
-      "aliases": [],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "LOC_0700"
-    },
-    {
       "standard_name": "山西游泳队",
       "entity_type": "ORG",
       "description": "杨畅所属的地方游泳队伍",
@@ -55125,17 +54936,6 @@
       "entity_id": "ORG_1137"
     },
     {
-      "standard_name": "贵州",
-      "entity_type": "LOC",
-      "description": "中国西南部省份，在2026全国游泳冠军赛上有14岁小将吴韵涵参赛",
-      "aliases": [],
-      "sources": [
-        "kb_swimming",
-        "kb_tj"
-      ],
-      "entity_id": "LOC_0738"
-    },
-    {
       "standard_name": "贵州省残疾人联合会",
       "entity_type": "ORG",
       "description": "贵州省负责残疾人事务的官方机构，负责组织贵州省残疾人运动员参加全国性比赛，推动残疾人体育事业发展。",
@@ -56045,7 +55845,9 @@
       "standard_name": "黄浦区",
       "entity_type": "LOC",
       "description": "中国上海市的一个市辖区，位于上海市中心。文章中提到黄浦区举办了2026年'黄浦·我来赛'游泳救生实战演练赛。",
-      "aliases": [],
+      "aliases": [
+        "黄浦"
+      ],
       "sources": [
         "kb_swimming",
         "kb_tj"
@@ -56071,16 +55873,6 @@
         "kb_swimming"
       ],
       "entity_id": "PER_2514"
-    },
-    {
-      "standard_name": "黑龙江",
-      "entity_type": "LOC",
-      "description": "中国东北部省份，寒冷地区",
-      "aliases": [],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "LOC_0748"
     },
     {
       "standard_name": "黑龙江省游泳协会",
@@ -58856,16 +58648,6 @@
       "entity_id": "LOC_0770"
     },
     {
-      "standard_name": "东营",
-      "entity_type": "LOC",
-      "description": "中国山东省下辖地级市，黄河口（东营）马拉松的举办地。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "LOC_0771"
-    },
-    {
       "standard_name": "东营区",
       "entity_type": "LOC",
       "description": "东营市下辖区，马拉松接驳点之一。",
@@ -61475,16 +61257,6 @@
       "entity_id": "ORG_1284"
     },
     {
-      "standard_name": "厦门",
-      "entity_type": "LOC",
-      "description": "福建省城市，举办钻石联赛。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "LOC_0830"
-    },
-    {
       "standard_name": "古特·古特",
       "entity_type": "PER",
       "description": "18岁短跑新星，在俄斯特拉发金钉鞋赛150米比赛中被诺阿·莱尔斯击败。",
@@ -61635,16 +61407,6 @@
         "kb_tj"
       ],
       "entity_id": "PER_2644"
-    },
-    {
-      "standard_name": "吉林",
-      "entity_type": "LOC",
-      "description": "中国省份，陈兴华的籍贯。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "LOC_0833"
     },
     {
       "standard_name": "吉林农业大学",
@@ -65410,18 +65172,6 @@
       "entity_id": "LOC_0926"
     },
     {
-      "standard_name": "日照",
-      "entity_type": "LOC",
-      "description": "山东省地级市，2026年全国田径冠军赛举办地。",
-      "aliases": [
-        "山东日照"
-      ],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "LOC_0927"
-    },
-    {
       "standard_name": "日照全国田径冠军赛",
       "entity_type": "EVENT",
       "description": "中国国内田径赛事，作为名古屋亚运会田径选拔的终极考试",
@@ -65438,7 +65188,8 @@
       "entity_type": "LOC",
       "description": "山东省城市，全国田径冠军赛举办地。",
       "aliases": [
-        "日照"
+        "日照",
+        "山东日照"
       ],
       "sources": [
         "kb_tj"
@@ -66586,16 +66337,6 @@
         "kb_tj"
       ],
       "entity_id": "LOC_0948"
-    },
-    {
-      "standard_name": "武威",
-      "entity_type": "LOC",
-      "description": "甘肃省下辖地级市，古称凉州，是河西走廊重要城市。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "LOC_0949"
     },
     {
       "standard_name": "武川县",
@@ -69643,16 +69384,6 @@
       "entity_id": "PER_2959"
     },
     {
-      "standard_name": "苏州",
-      "entity_type": "LOC",
-      "description": "中国江苏省的一个城市，王浩田曾参加苏州市残疾人运动会。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "LOC_1036"
-    },
-    {
       "standard_name": "苏州市残疾人运动会",
       "entity_type": "EVENT",
       "description": "在苏州举办的残疾人体育赛事，王浩田在此赛事中被专业教练发掘，开启短跑训练生涯。",
@@ -70637,16 +70368,6 @@
         "kb_tj"
       ],
       "entity_id": "LOC_1055"
-    },
-    {
-      "standard_name": "贵阳",
-      "entity_type": "LOC",
-      "description": "中国贵州省省会，以“爽爽贵阳”著称，拥有标志性赛道“英雄十八坡”，是2026贵阳马拉松举办地。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "LOC_1056"
     },
     {
       "standard_name": "贵阳半程马拉松",
@@ -72533,16 +72254,6 @@
       "entity_id": "EVENT_1298"
     },
     {
-      "standard_name": "香格里拉",
-      "entity_type": "LOC",
-      "description": "云南省迪庆藏族自治州下辖的县级市，以高原风光和藏地文化闻名，是2026香格里拉越野赛举办地。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "LOC_1095"
-    },
-    {
       "standard_name": "香格里拉越野赛",
       "entity_type": "EVENT",
       "description": "在云南香格里拉举办的越野赛，诞生于2025年，国内口碑赛事新秀。",
@@ -72556,7 +72267,9 @@
       "standard_name": "香格里拉镇",
       "entity_type": "LOC",
       "description": "四川省甘孜藏族自治州稻城县下辖镇，稻城亚丁景区入口所在地，越野赛起点。",
-      "aliases": [],
+      "aliases": [
+        "香格里拉"
+      ],
       "sources": [
         "kb_tj"
       ],
@@ -72737,16 +72450,6 @@
         "kb_tj"
       ],
       "entity_id": "LOC_1099"
-    },
-    {
-      "standard_name": "马鞍山",
-      "entity_type": "LOC",
-      "description": "安徽省地级市，马鞍山市第二十二中学所在地，刘筱析代表该市参赛。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "LOC_1100"
     },
     {
       "standard_name": "马鞍山市第二十二中学",
@@ -73571,18 +73274,6 @@
         "kb_ppq",
         "kb_swimming",
         "kb_tj"
-      ]
-    },
-    {
-      "entity_id": "LOC_0744",
-      "standard_name": "青岛",
-      "entity_type": "LOC",
-      "aliases": [
-        "青岛"
-      ],
-      "description": "中国城市，在全民健身大赛山东游泳选拔赛中表现突出，奖牌数位列全省首位",
-      "sources": [
-        "kb_swimming"
       ]
     },
     {

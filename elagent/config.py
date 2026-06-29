@@ -46,7 +46,7 @@ class Config:
         if self.knowledge_base_path is None:
             self.knowledge_base_path = self.raw_data_dir / "knowledge_base_merged.json"
         if self.aliases_path is None:
-            self.aliases_path = self.raw_data_dir / "aliases_merged.json"
+            self.aliases_path = self.raw_data_dir / "aliases_from_kb.json.json"
         if self.llm_extracted_path is None:
             self.llm_extracted_path = self.raw_data_dir / "llm_extracted_merged.json"
 

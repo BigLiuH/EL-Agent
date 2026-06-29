@@ -132,7 +132,7 @@ class Disambiguator:
             self.prior_weight * prior_score +
             self.name_match_weight * name_score +
             self.name_completeness_weight * completeness_score +
-            0.0 * popularity_score  # 暂时不使用，后续可以调整权重
+            0.010 * popularity_score  # 实体流行度权重
         )
 
         return total_score

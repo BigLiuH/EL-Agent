@@ -308,12 +308,12 @@ def _enhanced_link(mention: Mention, trace=None) -> LinkResult:
     # 搜索名称包含mention的实体
     fuzzy_candidates = []
     for entity in knowledge_base.entities.values():
-        # 只匹配名称包含关系，且长度差异不超过4个字符
+        # 匹配名称包含关系，长度差异不超过8个字符
         if mention.text in entity.standard_name:
-            if len(entity.standard_name) - len(mention.text) <= 4:
+            if len(entity.standard_name) - len(mention.text) <= 8:
                 fuzzy_candidates.append(entity)
         elif entity.standard_name in mention.text:
-            if len(mention.text) - len(entity.standard_name) <= 4:
+            if len(mention.text) - len(entity.standard_name) <= 8:
                 fuzzy_candidates.append(entity)
 
     # 如果有模糊匹配，使用消歧器选择最佳

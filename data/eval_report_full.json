@@ -1,15 +1,15 @@
 {
   "metrics": {
-    "link_accuracy": 0.9472,
-    "disambiguation_accuracy": 0.835,
-    "alias_recall": 0.9475,
+    "link_accuracy": 0.9509,
+    "disambiguation_accuracy": 0.8442,
+    "alias_recall": 0.8961,
     "single_candidate_accuracy": 0.9994,
     "total_mentions": 40942,
-    "correct_links": 38780,
-    "multi_candidate_total": 12931,
-    "multi_candidate_correct": 10798,
-    "alias_mentions": 40930,
-    "alias_correct": 38780
+    "correct_links": 38932,
+    "multi_candidate_total": 12705,
+    "multi_candidate_correct": 10726,
+    "alias_mentions": 19216,
+    "alias_correct": 17219
   },
   "targets": {
     "link_accuracy": 0.85,
@@ -91,15 +91,15 @@
       "entity_type": "EVENT"
     },
     {
+      "mention": "北京",
+      "expected_name": "中国邮政储蓄银行北京市分行",
+      "predicted_name": "北京首钢篮球俱乐部",
+      "entity_type": "ORG"
+    },
+    {
       "mention": "北京国家奥林匹克体育中心体育馆",
       "expected_name": "国家奥林匹克体育中心体育馆",
       "predicted_name": "北京国家奥林匹克体育中心体育馆",
-      "entity_type": "LOC"
-    },
-    {
-      "mention": "青岛",
-      "expected_name": "青岛市",
-      "predicted_name": "青岛",
       "entity_type": "LOC"
     },
     {
@@ -143,12 +143,6 @@
       "expected_name": "世界羽毛球锦标赛",
       "predicted_name": "斯诺克世界锦标赛",
       "entity_type": "EVENT"
-    },
-    {
-      "mention": "黑龙江",
-      "expected_name": "黑龙江省",
-      "predicted_name": "黑龙江",
-      "entity_type": "LOC"
     },
     {
       "mention": "北京国家奥林匹克体育中心体育馆",
@@ -227,12 +221,6 @@
       "expected_name": "澳大利亚羽毛球公开赛",
       "predicted_name": "澳大利亚公开赛",
       "entity_type": "EVENT"
-    },
-    {
-      "mention": "青岛",
-      "expected_name": "青岛市",
-      "predicted_name": "青岛",
-      "entity_type": "LOC"
     },
     {
       "mention": "北京国家奥林匹克体育中心体育馆",
@@ -493,30 +481,6 @@
       "entity_type": "EVENT"
     },
     {
-      "mention": "安徽",
-      "expected_name": "安徽省",
-      "predicted_name": "安徽",
-      "entity_type": "LOC"
-    },
-    {
-      "mention": "安徽",
-      "expected_name": "安徽省",
-      "predicted_name": "安徽",
-      "entity_type": "LOC"
-    },
-    {
-      "mention": "安徽",
-      "expected_name": "安徽省",
-      "predicted_name": "安徽",
-      "entity_type": "LOC"
-    },
-    {
-      "mention": "安徽",
-      "expected_name": "安徽省",
-      "predicted_name": "安徽",
-      "entity_type": "LOC"
-    },
-    {
       "mention": "中国台北",
       "expected_name": "中国台湾地区",
       "predicted_name": "中国台北",
@@ -601,12 +565,6 @@
       "entity_type": "EVENT"
     },
     {
-      "mention": "印尼大师赛",
-      "expected_name": "印度尼西亚大师赛",
-      "predicted_name": "印度尼西亚羽毛球大师赛",
-      "entity_type": "EVENT"
-    },
-    {
       "mention": "辛杜",
       "expected_name": "普萨拉·文卡塔·辛杜",
       "predicted_name": "辛杜",
@@ -617,6 +575,48 @@
       "expected_name": "亚洲羽毛球锦标赛",
       "predicted_name": "亚锦赛",
       "entity_type": "EVENT"
+    },
+    {
+      "mention": "印尼组合",
+      "expected_name": "印度尼西亚国家羽毛球队",
+      "predicted_name": "印度尼西亚羽毛球队",
+      "entity_type": "ORG"
+    },
+    {
+      "mention": "印尼组合",
+      "expected_name": "印度尼西亚国家羽毛球队",
+      "predicted_name": "印度尼西亚羽毛球队",
+      "entity_type": "ORG"
+    },
+    {
+      "mention": "印尼组合",
+      "expected_name": "印度尼西亚国家羽毛球队",
+      "predicted_name": "印度尼西亚羽毛球队",
+      "entity_type": "ORG"
+    },
+    {
+      "mention": "印尼组合",
+      "expected_name": "印度尼西亚国家羽毛球队",
+      "predicted_name": "印度尼西亚羽毛球队",
+      "entity_type": "ORG"
+    },
+    {
+      "mention": "女双决赛",
+      "expected_name": "女子双打决赛",
+      "predicted_name": "2026年马来西亚羽毛球大师赛女子双打决赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "亚锦赛",
+      "expected_name": "亚洲羽毛球锦标赛",
+      "predicted_name": "亚锦赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "天祝县",
+      "expected_name": "天祝藏族自治县",
+      "predicted_name": "天祝县",
+      "entity_type": "LOC"
     }
   ]
 }
