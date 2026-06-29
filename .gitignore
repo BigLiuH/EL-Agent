@@ -1,7 +1,6 @@
 # Python
 __pycache__/
 *.py[cod]
-*.so
 *.egg-info/
 dist/
 build/
@@ -9,32 +8,32 @@ build/
 # IDE
 .idea/
 .vscode/
-*.swp
-*.swo
 
-# Data
-Dataset/*.json.backup*
-Dataset/*.json.bak*
-data/backup_*/
-data/trace_logs/
-data/*.json.bak
+# 备份文件
+Dataset/backup_*/
+Dataset/*.backup*
+Dataset/*.bak*
+*.bak
 
-# Node
+# 临时文件
 node_modules/
-docs/create_docx*.js
-docs/create_dev_plan*.js
-docs/create_daily1*.js
-
-# Environment
-.env
-.venv
-
-# OS
-Thumbs.db
-.DS_Store
-
-# Large files
+package-lock.json
+package.json
+~$*.docx
 *.pdf
-*.doc
 *.zip
 *.npy
+*.doc
+
+# 生成脚本
+docs/create_daily1*.js
+docs/create_dev_plan*.js
+docs/create_docx*.js
+
+# 副本目录
+Dataset - 副本/
+
+# 数据缓存
+data/trace_logs/
+data/backup_*/
+data/*.bak
