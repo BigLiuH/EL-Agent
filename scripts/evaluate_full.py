@@ -115,7 +115,7 @@ def evaluate(articles_path: str = "Dataset/llm_extracted_merged.json",
             expected_name = mention_data.get("standard_name", "")
 
             # 执行链接
-            result = _enhanced_link(mention)
+            result = _enhanced_link(mention, full_text=text)
 
             # 判断是否正确
             is_correct = False

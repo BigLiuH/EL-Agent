@@ -113,7 +113,7 @@ def evaluate_mention(mention_data: dict, text: str, kb: KnowledgeBase) -> Dict:
 
     # 运行链接
     start_time = time.time()
-    result = _enhanced_link(mention)
+    result = _enhanced_link(mention, full_text=text)
     elapsed_ms = (time.time() - start_time) * 1000
 
     # 判断是否正确

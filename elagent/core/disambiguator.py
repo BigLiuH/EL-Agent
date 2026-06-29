@@ -32,17 +32,16 @@ class Disambiguator:
 
     def __init__(self):
         """初始化消歧器"""
-        # 优化后的权重分配
-        # 类型一致性权重
-        self.type_weight = 0.15
-        # 关键词重叠权重
-        self.keyword_weight = 0.05
-        # 先验概率权重（提高，利用标注数据）
-        self.prior_weight = 0.30
-        # 名称匹配权重（提高，精确匹配优先）
-        self.name_match_weight = 0.35
-        # 名称完整性权重（降低，避免过度选择全称）
-        self.name_completeness_weight = 0.15
+        # 权重分配：
+        #   - 名称匹配是最高优先级信号
+        #   - 先验概率基于标注数据统计
+        #   - keyword_weight 现在承载上下文得分（区分词文档命中+局部重叠）
+        self.name_match_weight = 0.35         # 名称匹配度
+        self.prior_weight = 0.30              # 先验概率
+        self.name_completeness_weight = 0.15  # 名称完整度
+        self.type_weight = 0.15               # 类型一致性
+        self.keyword_weight = 0.05            # 关键词重叠
+        self.popularity_weight = 0.00         # 实体流行度（关闭）
 
         # 加载先验概率
         self.prior_probs = self._load_prior_probs()
@@ -58,7 +57,8 @@ class Disambiguator:
     def disambiguate(self,
                      mention: Mention,
                      candidates: List[Candidate],
-                     top_k: int = 1) -> List[Candidate]:
+                     top_k: int = 1,
+                     full_text: str = "") -> List[Candidate]:
         """
         消歧，从候选中选择最佳实体
 
@@ -85,7 +85,7 @@ class Disambiguator:
         # 计算每个候选的综合得分
         scored_candidates = []
         for candidate in candidates:
-            score = self._compute_score(mention, candidate)
+            score = self._compute_score(mention, candidate, full_text)
             candidate.score = score
             scored_candidates.append(candidate)
 
@@ -94,7 +94,7 @@ class Disambiguator:
 
         return scored_candidates[:top_k]
 
-    def _compute_score(self, mention: Mention, candidate: Candidate) -> float:
+    def _compute_score(self, mention: Mention, candidate: Candidate, full_text: str = "") -> float:
         """
         计算候选实体的综合得分
 
@@ -132,7 +132,7 @@ class Disambiguator:
             self.prior_weight * prior_score +
             self.name_match_weight * name_score +
             self.name_completeness_weight * completeness_score +
-            0.010 * popularity_score  # 实体流行度权重
+            self.popularity_weight * popularity_score
         )
 
         return total_score
@@ -223,6 +223,7 @@ class Disambiguator:
         计算名称匹配得分
 
         精确匹配得分最高，确保精确匹配的实体优先被选中。
+        对于简称/缩写匹配全称的场景，添加惩罚因子避免短名称过度胜出。
 
         Args:
             mention: 实体指称
@@ -235,8 +236,28 @@ class Disambiguator:
         standard_name = entity.standard_name.lower()
         aliases = [a.lower() for a in entity.aliases]
 
+        # 计算基础得分
+        base_score = self._compute_raw_name_score(mention_text, standard_name, aliases)
+
+        # 短名称惩罚：当实体标准名比mention短时，降低得分
+        # 例如：mention="银川高铁站"，entity="银川站" → 惩罚
+        if len(standard_name) < len(mention_text):
+            short_penalty = max(len(standard_name) / len(mention_text), 0.5)
+            base_score *= short_penalty
+
+        return base_score
+
+    def _compute_raw_name_score(self, mention_text: str, standard_name: str, aliases: list) -> float:
+        """计算原始名称匹配得分（不含长度惩罚）"""
         # 精确匹配（最高优先级）
         if mention_text == standard_name:
+            # 短名称精确匹配惩罚：越短越可能是简称/缩写
+            if len(standard_name) <= 2:
+                return 0.80  # 1-2字：很可能是简称（如"国羽"）
+            elif len(standard_name) == 3:
+                return 0.85  # 3字：可能是简称（如"浙江队"）
+            elif len(standard_name) == 4:
+                return 0.90  # 4字：轻微惩罚
             return 1.0
 
         # 别名精确匹配
@@ -302,16 +323,20 @@ class Disambiguator:
         mention_text = mention.text
         standard_name = entity.standard_name
 
-        # 如果标准名称比mention长很多，说明是全称，给高分
+        # 实体名比mention长超过50% → 是全称，给高分
         # 例如：mention="国羽"，entity="中国国家羽毛球队"
         if len(standard_name) > len(mention_text) * 1.5:
             return 0.9
 
-        # 如果标准名称和mention长度相近，给中等分
+        # 实体名比mention长超过20% → 较完整
+        if len(standard_name) > len(mention_text) * 1.2:
+            return 0.8
+
+        # 长度相近 → 可能是简称匹配简称，中等分
         if len(standard_name) >= len(mention_text):
             return 0.7
 
-        # 如果标准名称比mention短，给低分
+        # 实体名比mention短 → 实体是简称，低分
         # 例如：mention="中国国家羽毛球队"，entity="国羽"
         return 0.3
 

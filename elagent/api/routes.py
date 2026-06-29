@@ -74,12 +74,19 @@ async def link_entity(request: LinkRequest):
 
     try:
         # 构建Mention对象
+        # 窗口上下文（±200字符）用于局部关键词匹配
+        # 全文单独传入用于文档级区分词命中统计
+        text = request.text
+        win_start = max(0, request.mention.start_pos - 200)
+        win_end = min(len(text), request.mention.end_pos + 200)
+        window_context = text[win_start:win_end]
+
         mention = Mention(
             text=request.mention.text,
             start_pos=request.mention.start_pos,
             end_pos=request.mention.end_pos,
             entity_type=request.mention.entity_type,
-            context=request.text,
+            context=window_context,
         )
 
         # 创建追溯日志
@@ -89,8 +96,8 @@ async def link_entity(request: LinkRequest):
             entity_type=mention.entity_type or "UNKNOWN"
         )
 
-        # Phase 2: 增强链接（BM25 + 消歧）
-        result = _enhanced_link(mention, trace)
+        # Phase 2: 增强链接（BM25 + 消歧 + 上下文）
+        result = _enhanced_link(mention, trace, full_text=text)
 
         # 计算处理时间
         processing_time = (time.time() - start_time) * 1000
@@ -237,7 +244,7 @@ def _simple_link(mention: Mention) -> LinkResult:
     return result
 
 
-def _enhanced_link(mention: Mention, trace=None) -> LinkResult:
+def _enhanced_link(mention: Mention, trace=None, full_text: str = "") -> LinkResult:
     """
     增强的实体链接（Phase 2实现）
 
@@ -288,7 +295,7 @@ def _enhanced_link(mention: Mention, trace=None) -> LinkResult:
 
         # 如果有多个候选，使用消歧器选择最佳
         candidates = [Candidate(entity=e, score=0.95, match_source="alias") for e in alias_entities]
-        ranked = disambiguator.disambiguate(mention, candidates, top_k=1)
+        ranked = disambiguator.disambiguate(mention, candidates, top_k=1, full_text=full_text)
         if ranked:
             best = ranked[0]
             result.linked_entity = best.entity
@@ -339,21 +346,24 @@ def _enhanced_link(mention: Mention, trace=None) -> LinkResult:
                 )
             return result
 
-        # 多个候选，优先选择名称最短的（更通用的实体）
-        # 例如："浙江省" 优先于 "浙江省羽毛球队"
-        fuzzy_candidates.sort(key=lambda e: len(e.standard_name))
-        result.linked_entity = fuzzy_candidates[0]
-        result.is_nil = False
-        result.confidence = 0.75
-        result.nil_reason = ""
-        if trace:
-            trace.add_step(
-                step_name="模糊匹配消歧",
-                original_value=mention.text,
-                new_value=f"{fuzzy_candidates[0].standard_name} ({fuzzy_candidates[0].id})",
-                reason=f"从{len(fuzzy_candidates)}个候选中选择名称最短的"
-            )
-        return result
+        # 多个候选，使用消歧器进行5信号加权评分选择最佳
+        candidates = [Candidate(entity=e, score=0.75, match_source="fuzzy")
+                      for e in fuzzy_candidates]
+        ranked = disambiguator.disambiguate(mention, candidates, top_k=1, full_text=full_text)
+        if ranked:
+            best = ranked[0]
+            result.linked_entity = best.entity
+            result.is_nil = False
+            result.confidence = best.score
+            result.nil_reason = ""
+            if trace:
+                trace.add_step(
+                    step_name="模糊匹配消歧",
+                    original_value=mention.text,
+                    new_value=f"{best.entity.standard_name} ({best.entity.id})",
+                    reason=f"从{len(fuzzy_candidates)}个候选中消歧选择，得分={best.score:.2f}"
+                )
+            return result
 
     # 4. BM25检索（仅在前面都没有匹配时使用）
     if bm25_index.built:
@@ -371,6 +381,15 @@ def _enhanced_link(mention: Mention, trace=None) -> LinkResult:
                             'standard_name': entity.standard_name,
                             'description': entity.description,
                         })
+
+                # 实体类型过滤：BERT排序前先按mention类型筛选候选
+                if mention.entity_type and bert_candidates:
+                    type_filtered = [
+                        c for c in bert_candidates
+                        if knowledge_base.get_entity(c['entity_id']).entity_type == mention.entity_type
+                    ]
+                    if type_filtered:
+                        bert_candidates = type_filtered
 
                 # 使用BERT消歧
                 bert_results = bert_disambiguator.disambiguate(
@@ -397,35 +416,92 @@ def _enhanced_link(mention: Mention, trace=None) -> LinkResult:
                             )
                         return result
 
-            # 如果只有一个候选或BERT不可用，直接使用BM25结果
-            best_entity_id, best_score = bm25_results[0]
-            entity = knowledge_base.get_entity(best_entity_id)
-            if entity:
-                normalized_score = min(best_score / 10.0, 0.7)
-                result.linked_entity = entity
-                result.is_nil = False
-                result.confidence = normalized_score
-                result.nil_reason = ""
-                if trace:
-                    trace.add_step(
-                        step_name="BM25检索",
-                        original_value=mention.text,
-                        new_value=f"{entity.standard_name} ({entity.id})",
-                        reason=f"BM25相似度={best_score:.2f}"
-                    )
-                return result
+            # 如果只有一个候选或BERT不可用，对多候选使用消歧器
+            if len(bm25_results) == 1:
+                # 唯一候选直接使用
+                best_entity_id, best_score = bm25_results[0]
+                entity = knowledge_base.get_entity(best_entity_id)
+                if entity:
+                    normalized_score = min(best_score / 10.0, 0.7)
+                    result.linked_entity = entity
+                    result.is_nil = False
+                    result.confidence = normalized_score
+                    result.nil_reason = ""
+                    if trace:
+                        trace.add_step(
+                            step_name="BM25检索",
+                            original_value=mention.text,
+                            new_value=f"{entity.standard_name} ({entity.id})",
+                            reason=f"BM25唯一候选，相似度={best_score:.2f}"
+                        )
+                    return result
+            else:
+                # 多候选但BERT不可用，使用规则消歧器
+                bm25_entities = []
+                for entity_id, score in bm25_results:
+                    entity = knowledge_base.get_entity(entity_id)
+                    if entity:
+                        bm25_entities.append(entity)
 
-    # NIL: 知识库中无对应实体
+                if bm25_entities:
+                    # 先按实体类型过滤
+                    if mention.entity_type:
+                        type_matched = [e for e in bm25_entities if e.entity_type == mention.entity_type]
+                        if type_matched:
+                            bm25_entities = type_matched
+
+                    if len(bm25_entities) == 1:
+                        result.linked_entity = bm25_entities[0]
+                        result.is_nil = False
+                        result.confidence = 0.65
+                        result.nil_reason = ""
+                        if trace:
+                            trace.add_step(
+                                step_name="BM25+类型过滤",
+                                original_value=mention.text,
+                                new_value=f"{bm25_entities[0].standard_name} ({bm25_entities[0].id})",
+                                reason="BM25多候选经类型过滤后唯一"
+                            )
+                        return result
+
+                    # 多候选使用消歧器
+                    candidates = [Candidate(entity=e, score=0.5, match_source="bm25")
+                                  for e in bm25_entities]
+                    ranked = disambiguator.disambiguate(mention, candidates, top_k=1, full_text=full_text)
+                    if ranked:
+                        best = ranked[0]
+                        result.linked_entity = best.entity
+                        result.is_nil = False
+                        result.confidence = best.score
+                        result.nil_reason = ""
+                        if trace:
+                            trace.add_step(
+                                step_name="BM25+消歧",
+                                original_value=mention.text,
+                                new_value=f"{best.entity.standard_name} ({best.entity.id})",
+                                reason=f"BM25召回{len(bm25_entities)}个候选，消歧得分={best.score:.2f}"
+                            )
+                        return result
+
+    # NIL: 知识库中无对应实体，或使用NIL检测器验证低置信度结果
+    # 如果之前各阶段均未找到匹配，使用NIL检测器做最终判定
+    nil_check = nil_detector.detect(
+        mention_text=mention.text,
+        mention_type=mention.entity_type or "",
+        candidates=[],
+        best_candidate=None
+    )
+
     result.linked_entity = None
     result.is_nil = True
-    result.confidence = 0.0
-    result.nil_reason = f"知识库中未找到与'{mention.text}'匹配的实体"
+    result.confidence = nil_check.confidence if nil_check.is_nil else 0.0
+    result.nil_reason = nil_check.reason if nil_check.is_nil else f"知识库中未找到与'{mention.text}'匹配的实体"
     if trace:
         trace.add_step(
             step_name="NIL判定",
             original_value=mention.text,
             new_value="NIL",
-            reason="所有检索方式均未找到匹配实体"
+            reason=result.nil_reason
         )
 
     return result

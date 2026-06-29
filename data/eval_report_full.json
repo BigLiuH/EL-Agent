@@ -1,15 +1,15 @@
 {
   "metrics": {
-    "link_accuracy": 0.9509,
-    "disambiguation_accuracy": 0.8442,
-    "alias_recall": 0.8961,
+    "link_accuracy": 0.9506,
+    "disambiguation_accuracy": 0.8434,
+    "alias_recall": 0.9509,
     "single_candidate_accuracy": 0.9994,
     "total_mentions": 40942,
-    "correct_links": 38932,
+    "correct_links": 38921,
     "multi_candidate_total": 12705,
-    "multi_candidate_correct": 10726,
-    "alias_mentions": 19216,
-    "alias_correct": 17219
+    "multi_candidate_correct": 10715,
+    "alias_mentions": 40927,
+    "alias_correct": 38919
   },
   "targets": {
     "link_accuracy": 0.85,
@@ -89,12 +89,6 @@
       "expected_name": "2020年东京奥运会",
       "predicted_name": "2020年东京奥运会羽毛球比赛",
       "entity_type": "EVENT"
-    },
-    {
-      "mention": "北京",
-      "expected_name": "中国邮政储蓄银行北京市分行",
-      "predicted_name": "北京首钢篮球俱乐部",
-      "entity_type": "ORG"
     },
     {
       "mention": "北京国家奥林匹克体育中心体育馆",
@@ -562,6 +556,12 @@
       "mention": "2026澳大利亚羽毛球公开赛",
       "expected_name": "2026 Australian Badminton Open",
       "predicted_name": "2026澳大利亚羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "印尼大师赛",
+      "expected_name": "印度尼西亚大师赛",
+      "predicted_name": "印度尼西亚羽毛球大师赛",
       "entity_type": "EVENT"
     },
     {
