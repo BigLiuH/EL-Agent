@@ -240,6 +240,20 @@ def evaluate(articles_path: str = "Dataset/llm_extracted_merged.json",
 
     print(f"\n报告已保存到: {output_path}")
 
+    # 保存全部错误到 all_errors.json（去重）
+    seen = set()
+    unique_errors = []
+    for e in errors:
+        key = (e["mention"], e["expected_name"], e["predicted_name"])
+        if key not in seen:
+            seen.add(key)
+            unique_errors.append(e)
+
+    all_errors_path = "data/all_errors.json"
+    with open(all_errors_path, 'w', encoding='utf-8') as f:
+        json.dump(unique_errors, f, ensure_ascii=False, indent=2)
+    print(f"去重错误已保存到: {all_errors_path} (全部{len(errors)}条, 去重后{len(unique_errors)}条)")
+
     return report
 
 

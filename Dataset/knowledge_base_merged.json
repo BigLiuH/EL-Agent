@@ -28,6 +28,8 @@
       "description": "原定于2020年在日本东京举办，后因疫情推迟至2021年举办的第32届夏季奥林匹克运动会。叶诗文曾冲击此届奥运会，但以0.01秒之差未能获得参赛资格。",
       "aliases": [
         "2020东京奥运会",
+        "2020年东京夏季奥运会",
+        "2020年夏季奥林匹克运动会",
         "东京奥运",
         "东京奥运会"
       ],
@@ -50,18 +52,6 @@
         "kb_badminton"
       ],
       "entity_id": "EVENT_0004"
-    },
-    {
-      "standard_name": "2020年夏季奥林匹克运动会",
-      "entity_type": "EVENT",
-      "description": "2020年在日本东京举办的夏季奥林匹克运动会，羽毛球项目中陈雨菲获得女单金牌。",
-      "aliases": [
-        "东京奥运会"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0005"
     },
     {
       "standard_name": "2024年世界羽毛球锦标赛",
@@ -182,7 +172,8 @@
       "entity_type": "EVENT",
       "description": "网球四大满贯赛事之一，在英国伦敦举行，采用草地球场。文中多位选手（费尔南德斯、姆博科）的目标赛事。",
       "aliases": [
-        "温网"
+        "温网",
+        "温布尔登网球锦标赛"
       ],
       "sources": [
         "kb_badminton"
@@ -193,7 +184,10 @@
       "standard_name": "2025年中国大满贯",
       "entity_type": "EVENT",
       "description": "2025年WTT赛季的大满贯赛事，王曼昱和蒯曼在此赛事中夺得女双冠军。",
-      "aliases": [],
+      "aliases": [
+        "WTT中国大满贯2025",
+        "2025年中国大满贯"
+      ],
       "sources": [
         "kb_badminton"
       ],
@@ -266,18 +260,6 @@
         "kb_badminton"
       ],
       "entity_id": "EVENT_0025"
-    },
-    {
-      "standard_name": "2026 Australian Badminton Open",
-      "entity_type": "EVENT",
-      "description": "2026年在澳大利亚举办的羽毛球公开赛，国际羽毛球赛事之一，中国男单选手董天尧获得亚军。",
-      "aliases": [
-        "2026澳大利亚羽毛球公开赛"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0026"
     },
     {
       "standard_name": "2026 Australian Open",
@@ -685,7 +667,13 @@
       "description": "在日本名古屋举办的亚洲综合性运动会，2026年全国游泳冠军赛是其游泳项目的选拔赛。",
       "aliases": [
         "2026年亚运会",
-        "名古屋亚运会"
+        "名古屋亚运会",
+        "名古屋亚运",
+        "2026年爱知·名古屋亚运会",
+        "2026年名古屋亚洲运动会",
+        "2026年爱知-名古屋亚洲运动会",
+        "2026年爱知-名古屋亚运会",
+        "爱知-名古屋亚运会"
       ],
       "sources": [
         "kb_badminton",
@@ -860,16 +848,6 @@
       "entity_id": "EVENT_0085"
     },
     {
-      "standard_name": "2026年澳大利亚公开赛",
-      "entity_type": "EVENT",
-      "description": "2026年举办的羽毛球超级500赛事，全称2026年澳大利亚公开赛，在澳大利亚举行，是世界羽联世界巡回赛的一部分。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0086"
-    },
-    {
       "standard_name": "2026年澳大利亚羽毛球公开赛",
       "entity_type": "EVENT",
       "description": "羽毛球赛事，于2026年6月在澳大利亚举行，国羽在此赛事中获得3金2银。",
@@ -877,7 +855,10 @@
         "2026年澳大利亚公开赛",
         "2026世界羽联超级500澳大利亚公开赛",
         "澳大利亚羽毛球公开赛",
-        "2026澳大利亚羽毛球公开赛"
+        "2026澳大利亚羽毛球公开赛",
+        "超级500澳大利亚公开赛",
+        "澳大利亚公开赛",
+        "2026 Australian Badminton Open"
       ],
       "sources": [
         "kb_badminton"
@@ -893,31 +874,6 @@
         "kb_badminton"
       ],
       "entity_id": "EVENT_0088"
-    },
-    {
-      "standard_name": "2026年澳门羽毛球公开赛",
-      "entity_type": "EVENT",
-      "description": "世界羽联超级300系列赛事，于2026年6月在澳门举行，吸引来自4个国家的选手争夺5枚金牌，国羽选手参与多项决赛。",
-      "aliases": [
-        "澳门羽毛球公开赛"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0089"
-    },
-    {
-      "standard_name": "2026年爱知·名古屋亚运会",
-      "entity_type": "EVENT",
-      "description": "第20届亚洲运动会，计划于2026年在日本爱知·名古屋举行。中国羽毛球协会已公示参赛名单，蒋振邦/魏雅欣首次入选。",
-      "aliases": [
-        "名古屋亚运会"
-      ],
-      "sources": [
-        "kb_badminton",
-        "kb_swimming"
-      ],
-      "entity_id": "EVENT_0090"
     },
     {
       "standard_name": "2026年第三届“澄穆杯”羽毛球邀请赛",
@@ -1006,21 +962,13 @@
       "entity_id": "ORG_0002"
     },
     {
-      "standard_name": "2026澳大利亚羽毛球公开赛",
-      "entity_type": "EVENT",
-      "description": "2026年在澳大利亚举行的羽毛球公开赛，属于Super500级别赛事。国羽在比赛中表现出色，取得5胜1负战绩，4个单项闯进决赛，混双提前包揽冠亚军。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0102"
-    },
-    {
       "standard_name": "2026澳门羽毛球公开赛",
       "entity_type": "EVENT",
       "description": "世界羽联世界巡回赛超级300赛级别的年度羽毛球赛事，于2026年6月16日至21日在澳门东亚运动会体育馆举行。",
       "aliases": [
-        "澳门羽毛球公开赛"
+        "澳门羽毛球公开赛",
+        "2026年澳门羽毛球公开赛",
+        "澳门公开赛"
       ],
       "sources": [
         "kb_badminton"
@@ -1194,7 +1142,9 @@
       "entity_type": "EVENT",
       "description": "世界羽联世界巡回赛中的一级赛事，级别为超级500，代表较高水平的国际羽毛球比赛。",
       "aliases": [
-        "超级500赛"
+        "超级500赛",
+        "世界羽联巡回赛超级500赛事",
+        "世界羽联超级500赛"
       ],
       "sources": [
         "kb_badminton"
@@ -2049,18 +1999,6 @@
       "entity_id": "EVENT_0132"
     },
     {
-      "standard_name": "WTT中国大满贯2025",
-      "entity_type": "EVENT",
-      "description": "世界乒乓球职业大联盟（WTT）于2025年在中国举办的顶级大满贯赛事。文中提及陈俊菘在此赛事的男单首轮上演惊天逆转，击败张本智和，一战成名。",
-      "aliases": [
-        "2025年中国大满贯"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0133"
-    },
-    {
       "standard_name": "WTT卢布尔雅那球星赛",
       "entity_type": "EVENT",
       "description": "世界乒乓球职业大联盟（WTT）举办的球星级别赛事，于斯洛文尼亚卢布尔雅那举行。中国乒乓球队派出22名年轻选手参赛，仅获得一枚男双银牌，五个单项冠军全部被外协会选手夺得。",
@@ -2216,18 +2154,6 @@
         "kb_badminton"
       ],
       "entity_id": "PER_0054"
-    },
-    {
-      "standard_name": "World Table Tennis",
-      "entity_type": "ORG",
-      "description": "国际乒乓球联合会（ITTF）下属的职业乒乓球赛事组织，负责管理和推广全球乒乓球赛事，如WTT系列挑战赛。",
-      "aliases": [
-        "WTT"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "ORG_0014"
     },
     {
       "standard_name": "Wu Shifei",
@@ -2839,7 +2765,8 @@
         "世界乒联",
         "WTT",
         "WTT世界乒联",
-        "World Table Tennis（世界乒乓球职业大联盟）"
+        "World Table Tennis（世界乒乓球职业大联盟）",
+        "World Table Tennis"
       ],
       "sources": [
         "kb_badminton",
@@ -2999,18 +2926,6 @@
       "entity_id": "EVENT_0165"
     },
     {
-      "standard_name": "世界羽联巡回赛超级500赛事",
-      "entity_type": "EVENT",
-      "description": "世界羽毛球联合会（BWF）巡回赛体系中的一个赛事级别，属于中高级别赛事。文中提及陈雨菲连续两站此类赛事均闯入决赛但最终失利。",
-      "aliases": [
-        "超级500赛"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0166"
-    },
-    {
       "standard_name": "世界羽联巡回赛超级500马来西亚大师赛",
       "entity_type": "EVENT",
       "description": "世界羽联巡回赛超级500级别的羽毛球赛事，于5月24日结束，国羽在混双项目中夺冠。",
@@ -3068,18 +2983,6 @@
         "kb_badminton"
       ],
       "entity_id": "EVENT_0170"
-    },
-    {
-      "standard_name": "世界羽联超级500赛",
-      "entity_type": "EVENT",
-      "description": "世界羽毛球联合会的一个赛事级别，2026年马来西亚羽毛球大师赛属于超级500赛。",
-      "aliases": [
-        "超级500赛"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0171"
     },
     {
       "standard_name": "世界青年羽毛球锦标赛",
@@ -3400,18 +3303,6 @@
       "entity_id": "ORG_0061"
     },
     {
-      "standard_name": "中国台北地区",
-      "entity_type": "LOC",
-      "description": "中国的一个地区，文章中提到一些羽毛球组合如许尹鏸/林芝昀来自中国台北。",
-      "aliases": [
-        "中国台北"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "LOC_0025"
-    },
-    {
       "standard_name": "中国台北羽毛球代表队",
       "entity_type": "ORG",
       "description": "代表中国台北地区参加国际羽毛球赛事的运动队。",
@@ -3435,18 +3326,6 @@
         "kb_badminton"
       ],
       "entity_id": "ORG_0063"
-    },
-    {
-      "standard_name": "中国台湾省",
-      "entity_type": "LOC",
-      "description": "地区名，中国的一部分，羽毛球选手在国际比赛中代表该地区参赛。",
-      "aliases": [
-        "中国台北"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "LOC_0028"
     },
     {
       "standard_name": "中国国家乒乓球队",
@@ -3500,7 +3379,8 @@
         "国羽",
         "国家羽毛球队",
         "中国队",
-        "国家队"
+        "国家队",
+        "中国羽毛球协会（中国羽毛球队）"
       ],
       "sources": [
         "kb_badminton"
@@ -3588,17 +3468,6 @@
       "entity_id": "ORG_0072"
     },
     {
-      "standard_name": "中国残奥委员会",
-      "entity_type": "ORG",
-      "description": "负责中国残疾人奥林匹克事务的机构，是2026年全国残疾人游泳锦标赛的主办方之一。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton",
-        "kb_swimming"
-      ],
-      "entity_id": "ORG_0073"
-    },
-    {
       "standard_name": "中国残疾人奥林匹克委员会",
       "entity_type": "ORG",
       "description": "负责中国残疾人奥林匹克运动的组织和管理机构，选拔和培训残疾人运动员参加残奥会等国际赛事，是本次赛事主办方之一。",
@@ -3642,18 +3511,6 @@
         "kb_badminton"
       ],
       "entity_id": "EVENT_0183"
-    },
-    {
-      "standard_name": "中国澳门羽毛球公开赛",
-      "entity_type": "EVENT",
-      "description": "一项超级300级别的羽毛球世界巡回赛事，在中国澳门举行。",
-      "aliases": [
-        "中国澳门公开赛"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0184"
     },
     {
       "standard_name": "中国烟草总公司云南省公司",
@@ -5288,18 +5145,6 @@
       "entity_id": "EVENT_0206"
     },
     {
-      "standard_name": "全国冠军赛",
-      "entity_type": "EVENT",
-      "description": "中国游泳全国性赛事，2025年比赛中余依婷在女子200米混合泳游出2分06秒92，创造亚洲历史最佳。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton",
-        "kb_swimming",
-        "kb_tj"
-      ],
-      "entity_id": "EVENT_0207"
-    },
-    {
       "standard_name": "全国击剑比赛",
       "entity_type": "EVENT",
       "description": "全国性击剑赛事。运动员贾槐宇曾在此赛事中获得男子重剑团体冠军。",
@@ -5346,7 +5191,8 @@
       "entity_type": "EVENT",
       "description": "中国全国运动会，是中国国内规模最大、水平最高的综合性运动会，每四年举办一次",
       "aliases": [
-        "全运会"
+        "全运会",
+        "中华人民共和国全国运动会"
       ],
       "sources": [
         "kb_badminton",
@@ -6242,16 +6088,6 @@
       "entity_id": "ORG_0163"
     },
     {
-      "standard_name": "北京国家奥林匹克体育中心体育馆",
-      "entity_type": "LOC",
-      "description": "位于北京市的体育场馆，是2026年全国东西南北中羽毛球大赛青少年赛北京分站的比赛场地，曾举办过多项国际赛事，依托双奥之城的优质硬件资源。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "LOC_0065"
-    },
-    {
       "standard_name": "北京外国语大学附属海南外国语学校",
       "entity_type": "ORG",
       "description": "教育机构，与丹辉体育合作开展羽毛球教育项目，总投资7亿元，提供优秀体育教育。",
@@ -7037,18 +6873,6 @@
       "entity_id": "PER_0183"
     },
     {
-      "standard_name": "台湾省",
-      "entity_type": "LOC",
-      "description": "中国省份，赛事允许港澳台及境外身份参赛，鼓励海峡两岸及国际羽毛球爱好者参与。",
-      "aliases": [
-        "台湾"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "LOC_0087"
-    },
-    {
       "standard_name": "史方静",
       "entity_type": "PER",
       "description": "中国首夺羽毛球混双世界冠军，上海羽毛球队前女队主教练。",
@@ -7485,17 +7309,6 @@
         "kb_badminton"
       ],
       "entity_id": "PER_0209"
-    },
-    {
-      "standard_name": "周天成",
-      "entity_type": "PER",
-      "description": "中国台北羽毛球运动员，男单选手，现年36岁，以扎实多拍拉扯和稳定后场进攻著称，大赛经验丰富，擅长在拉锯战中抓对手失误。作为头号种子，是2026年美国羽毛球公开赛男单夺冠热门。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton",
-        "kb_part2"
-      ],
-      "entity_id": "PER_0210"
     },
     {
       "standard_name": "周昊东",
@@ -9374,16 +9187,6 @@
       "entity_id": "PER_0280"
     },
     {
-      "standard_name": "小波波夫",
-      "entity_type": "PER",
-      "description": "羽毛球男单运动员，世界排名第五（84682分），是世界顶尖男单选手之一。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "PER_0281"
-    },
-    {
       "standard_name": "尚哓",
       "entity_type": "PER",
       "description": "昆明市总工会代表队选手，与马璐组合在女双比赛中收获季军，为团队贡献成绩。",
@@ -10709,18 +10512,6 @@
       "entity_id": "LOC_0166"
     },
     {
-      "standard_name": "意大利",
-      "entity_type": "LOC",
-      "description": "欧洲国家，中国足球小将曾在此征战国际青少年赛事并夺冠。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton",
-        "kb_part2",
-        "kb_tj"
-      ],
-      "entity_id": "LOC_0167"
-    },
-    {
       "standard_name": "意大利共和国",
       "entity_type": "LOC",
       "description": "位于南欧的国家，首都罗马。以其丰富的历史遗迹（如罗马斗兽场）、文艺复兴艺术和时尚产业闻名，是欧盟创始成员国之一。",
@@ -11171,18 +10962,6 @@
         "kb_swimming"
       ],
       "entity_id": "LOC_0177"
-    },
-    {
-      "standard_name": "新加坡大满贯",
-      "entity_type": "EVENT",
-      "description": "在新加坡举办的大满贯赛事，陈俊菘在男单首轮2比3惜败张本智和。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton",
-        "kb_ppq",
-        "kb_tj"
-      ],
-      "entity_id": "EVENT_0261"
     },
     {
       "standard_name": "新加坡羽毛球公开赛",
@@ -12044,18 +11823,6 @@
       "entity_id": "PER_0429"
     },
     {
-      "standard_name": "李宁体育用品有限公司",
-      "entity_type": "ORG",
-      "description": "中国著名的体育用品品牌公司，赞助多项体育赛事，如提供赛事服装和冠名支持，核心推动全民羽毛球竞赛发展。",
-      "aliases": [
-        "李宁"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "ORG_0287"
-    },
-    {
       "standard_name": "李宁品牌",
       "entity_type": "ORG",
       "description": "中国知名运动品牌，专注于专业运动产品的研发与创新，核心品类包括跑步、篮球、综训、羽毛球、乒乓球及运动生活，此次签约成为中国香港羽毛球队官方赞助商。",
@@ -12082,7 +11849,8 @@
       "aliases": [
         "李宁",
         "李宁先生",
-        "李宁公司"
+        "李宁公司",
+        "李宁体育用品有限公司"
       ],
       "sources": [
         "kb_badminton",
@@ -12621,19 +12389,6 @@
         "kb_badminton"
       ],
       "entity_id": "PER_0480"
-    },
-    {
-      "standard_name": "杭州亚运会",
-      "entity_type": "EVENT",
-      "description": "三年前在杭州举办的亚洲运动会，余依婷曾在该赛事上夺冠，但未能打破亚洲纪录，这份遗憾在她心里埋了三年，直到2026年全国游泳冠军赛才得以弥补。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton",
-        "kb_ppq",
-        "kb_swimming",
-        "kb_tj"
-      ],
-      "entity_id": "EVENT_0267"
     },
     {
       "standard_name": "杭州富阳博卡体育用品有限公司",
@@ -14509,20 +14264,6 @@
       "entity_id": "PER_0546"
     },
     {
-      "standard_name": "温布尔登网球锦标赛",
-      "entity_type": "EVENT",
-      "description": "网球四大满贯赛事之一，在英国伦敦温布尔登举行，是历史最悠久、最具声望的网球赛事，以草地场地和传统著称。",
-      "aliases": [
-        "温网"
-      ],
-      "sources": [
-        "kb_badminton",
-        "kb_billiards",
-        "kb_part2"
-      ],
-      "entity_id": "EVENT_0293"
-    },
-    {
       "standard_name": "温瑞博",
       "entity_type": "PER",
       "description": "乒乓球运动员。在本场卢布尔雅那赛事的男单八分之一决赛中，与向鹏交手，最终以1-3落败。",
@@ -14714,19 +14455,6 @@
       "entity_id": "EVENT_0295"
     },
     {
-      "standard_name": "澳大利亚羽毛球公开赛",
-      "entity_type": "EVENT",
-      "description": "世界羽联世界巡回赛超级500级别的年度羽毛球赛事。2024年赛事中，中国队由名将领衔收获三枚金牌。",
-      "aliases": [
-        "超级500澳大利亚公开赛",
-        "澳大利亚公开赛"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0296"
-    },
-    {
       "standard_name": "澳大利亚羽毛球协会",
       "entity_type": "ORG",
       "description": "澳大利亚的国家羽毛球管理组织，负责羽毛球在澳大利亚的发展、赛事组织、运动员培养和国际事务代表，支持各级别羽毛球活动和社区参与。",
@@ -14771,19 +14499,6 @@
         "kb_badminton"
       ],
       "entity_id": "LOC_0251"
-    },
-    {
-      "standard_name": "澳门羽毛球公开赛",
-      "entity_type": "EVENT",
-      "description": "世界羽毛球联合会举办的国际羽毛球系列赛事之一，属于超级300级别。",
-      "aliases": [
-        "2026年澳门羽毛球公开赛",
-        "澳门公开赛"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0298"
     },
     {
       "standard_name": "澳门羽毛球公开赛官方账号",
@@ -16594,7 +16309,8 @@
       "entity_type": "EVENT",
       "description": "羽毛球世界巡回赛的一个级别赛事，2026年中国澳门羽毛球公开赛属于超级300赛，冠军含金量引发讨论。",
       "aliases": [
-        "超级300赛"
+        "超级300赛",
+        "羽毛球超级300赛"
       ],
       "sources": [
         "kb_badminton"
@@ -16624,18 +16340,6 @@
         "kb_badminton"
       ],
       "entity_id": "ORG_0364"
-    },
-    {
-      "standard_name": "羽毛球超级300赛",
-      "entity_type": "EVENT",
-      "description": "羽毛球世界巡回赛的一个级别，2026年澳门羽毛球公开赛属于此级别。",
-      "aliases": [
-        "超级300赛"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0324"
     },
     {
       "standard_name": "翁泓阳",
@@ -18259,16 +17963,6 @@
         "kb_badminton"
       ],
       "entity_id": "EVENT_0328"
-    },
-    {
-      "standard_name": "超级500赛",
-      "entity_type": "EVENT",
-      "description": "羽毛球世界巡回赛的一个级别，马来西亚大师赛属于超级500赛，是国际羽毛球赛事中的重要组成部分。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0329"
     },
     {
       "standard_name": "越南",
@@ -20477,16 +20171,6 @@
         "kb_badminton"
       ],
       "entity_id": "LOC_0339"
-    },
-    {
-      "standard_name": "首钢花滑馆",
-      "entity_type": "LOC",
-      "description": "位于北京的体育场馆，将举办2026年全国东西南北中羽毛球大赛精英赛北京站，是北京赛事资源的重要组成部分。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "LOC_0340"
     },
     {
       "standard_name": "香港体育学院",
@@ -29433,7 +29117,10 @@
       "standard_name": "路易斯安那州立大学",
       "entity_type": "ORG",
       "description": "A public research university in Louisiana, United States, with a strong athletic program, particularly in track and field.",
-      "aliases": [],
+      "aliases": [
+        "Louisiana State University",
+        "路易斯安那州立大学"
+      ],
       "sources": [
         "kb_billiards"
       ],
@@ -41677,7 +41364,9 @@
       "description": "第31届夏季奥林匹克运动会，2016年在巴西里约热内卢举办。张继科与奥恰洛夫在该赛事周期内多次交手，也是两人共同经历的奥运周期之一。",
       "aliases": [
         "里约奥运",
-        "里约奥运会"
+        "里约奥运会",
+        "2016年里约热内卢奥运会",
+        "2016年里约热内卢夏季奥运会"
       ],
       "sources": [
         "kb_ppq",
@@ -41719,19 +41408,6 @@
         "kb_ppq"
       ],
       "entity_id": "EVENT_0642"
-    },
-    {
-      "standard_name": "2020年东京夏季奥运会",
-      "entity_type": "EVENT",
-      "description": "第32届夏季奥林匹克运动会，原定于2020年在日本东京举办，因疫情延期至2021年，麦金托什15岁时参加并获得女子400米自由泳第四名",
-      "aliases": [
-        "东京奥运会"
-      ],
-      "sources": [
-        "kb_ppq",
-        "kb_swimming"
-      ],
-      "entity_id": "EVENT_0643"
     },
     {
       "standard_name": "2021年休斯敦世界乒乓球锦标赛",
@@ -43723,7 +43399,10 @@
       "standard_name": "佛罗里达大学",
       "entity_type": "ORG",
       "description": "美国公立研究型大学，位于佛罗里达州，其高尔夫校队在全美排名靠前，向刘宇婕发出入学邀请。",
-      "aliases": [],
+      "aliases": [
+        "University of Florida",
+        "佛罗里达大学"
+      ],
       "sources": [
         "kb_ppq"
       ],
@@ -49068,36 +48747,13 @@
       "entity_id": "EVENT_0816"
     },
     {
-      "standard_name": "2012年伦敦夏季奥林匹克运动会",
-      "entity_type": "EVENT",
-      "description": "2012年在英国伦敦举办的第30届夏季奥林匹克运动会，孙杨在该赛事上创造了男子400米自由泳亚洲纪录和全国纪录",
-      "aliases": [
-        "伦敦奥运会"
-      ],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "EVENT_0817"
-    },
-    {
-      "standard_name": "2012年伦敦夏季奥运会",
-      "entity_type": "EVENT",
-      "description": "第30届夏季奥林匹克运动会，2012年在英国伦敦举办，叶诗文在该赛事上16岁时夺得200米混合泳和400米混合泳两项冠军",
-      "aliases": [
-        "伦敦奥运会"
-      ],
-      "sources": [
-        "kb_swimming",
-        "kb_tj"
-      ],
-      "entity_id": "EVENT_0818"
-    },
-    {
       "standard_name": "2012年伦敦奥运会",
       "entity_type": "EVENT",
       "description": "第30届夏季奥林匹克运动会，于2012年在英国伦敦举行。在这届奥运会上，中国选手叶诗文创造了女子400米个人混合泳的亚洲纪录和全国纪录。",
       "aliases": [
-        "伦敦奥运会"
+        "伦敦奥运会",
+        "2012年伦敦夏季奥运会",
+        "2012年伦敦夏季奥林匹克运动会"
       ],
       "sources": [
         "kb_swimming",
@@ -49116,30 +48772,6 @@
         "kb_swimming"
       ],
       "entity_id": "EVENT_0820"
-    },
-    {
-      "standard_name": "2016年里约热内卢夏季奥运会",
-      "entity_type": "EVENT",
-      "description": "2016年在巴西里约热内卢举行的第31届夏季奥林匹克运动会。文章中提到科迪·米勒在里约奥运会获得4x100米游泳混合接力金牌。",
-      "aliases": [
-        "里约奥运会"
-      ],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "EVENT_0821"
-    },
-    {
-      "standard_name": "2016年里约热内卢奥运会",
-      "entity_type": "EVENT",
-      "description": "第31届夏季奥林匹克运动会，于2016年在巴西里约热内卢举行。在这届奥运会上，新加坡选手斯库林获得了男子100米蝶泳冠军。",
-      "aliases": [
-        "里约奥运会"
-      ],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "EVENT_0822"
     },
     {
       "standard_name": "2019年光州世界游泳锦标赛",
@@ -49170,7 +48802,9 @@
       "entity_type": "EVENT",
       "description": "原定于2022年在中国杭州举办，后因疫情推迟至2023年举办的第19届亚洲运动会。叶诗文在此届亚运会上获得女子200米蛙泳金牌。",
       "aliases": [
-        "杭州亚运会"
+        "杭州亚运会",
+        "2023年杭州亚运会",
+        "杭州亚洲运动会"
       ],
       "sources": [
         "kb_swimming",
@@ -49213,18 +48847,6 @@
         "kb_swimming"
       ],
       "entity_id": "EVENT_0828"
-    },
-    {
-      "standard_name": "2023年杭州亚运会",
-      "entity_type": "EVENT",
-      "description": "2023年在杭州举办的第19届亚洲运动会，中国队在此创造了男子4×100米接力亚洲纪录和全国纪录。",
-      "aliases": [
-        "杭州亚运会"
-      ],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "EVENT_0829"
     },
     {
       "standard_name": "2024年世界游泳锦标赛",
@@ -49369,30 +48991,6 @@
       "entity_id": "EVENT_0842"
     },
     {
-      "standard_name": "2026年全国游泳冠军赛",
-      "entity_type": "EVENT",
-      "description": "中国国内重要的游泳赛事，2026年举办的全国游泳冠军赛上，徐嘉余在男子50米仰泳决赛中打破亚洲纪录。",
-      "aliases": [
-        "2026全国游泳冠军赛"
-      ],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "EVENT_0843"
-    },
-    {
-      "standard_name": "2026年名古屋亚洲运动会",
-      "entity_type": "EVENT",
-      "description": "2026年在日本名古屋举办的亚洲运动会，中国游泳选手通过中国游泳公开赛和全国冠军赛的成绩获得参赛资格。",
-      "aliases": [
-        "名古屋亚运会"
-      ],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "EVENT_0844"
-    },
-    {
       "standard_name": "2026年沙洋县第一届'北联杯'中小学生游泳比赛",
       "entity_type": "EVENT",
       "description": "沙洋县举办的首场面向中小学生的水上专项赛事，设有小学乙组、小学甲组和初中组三个组别，共10大类竞赛项目",
@@ -49411,30 +49009,6 @@
         "kb_swimming"
       ],
       "entity_id": "EVENT_0846"
-    },
-    {
-      "standard_name": "2026年爱知-名古屋亚洲运动会",
-      "entity_type": "EVENT",
-      "description": "2026年将在日本爱知县和名古屋市举办的第20届亚洲运动会",
-      "aliases": [
-        "2026年爱知-名古屋亚运会"
-      ],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "EVENT_0847"
-    },
-    {
-      "standard_name": "2026年爱知-名古屋亚运会",
-      "entity_type": "EVENT",
-      "description": "2026年将在日本爱知-名古屋举办的亚洲运动会，是亚洲规模最大的综合性体育赛事",
-      "aliases": [
-        "爱知-名古屋亚运会"
-      ],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "EVENT_0848"
     },
     {
       "standard_name": "2026年通羊城区第二届小学生游泳比赛",
@@ -49915,18 +49489,6 @@
       "entity_id": "EVENT_0859"
     },
     {
-      "standard_name": "世界游泳联合会",
-      "entity_type": "ORG",
-      "description": "国际游泳管理机构，负责管理国际游泳比赛和记录官方成绩，是游泳运动的全球最高管理机构",
-      "aliases": [
-        "世界泳联"
-      ],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "ORG_1030"
-    },
-    {
       "standard_name": "世界游泳锦标赛",
       "entity_type": "EVENT",
       "description": "国际泳联主办的世界顶级游泳赛事，余依婷13岁时参加并在个人项目中多次惜败奖牌",
@@ -50332,17 +49894,6 @@
       "entity_id": "PER_2233"
     },
     {
-      "standard_name": "伦敦奥运会",
-      "entity_type": "EVENT",
-      "description": "2012年在英国伦敦举办的第30届夏季奥林匹克运动会。中国游泳运动员叶诗文在该届奥运会上创造了女子200米个人混合泳亚洲纪录（2分07秒57），这一纪录保持了多年。",
-      "aliases": [],
-      "sources": [
-        "kb_swimming",
-        "kb_tj"
-      ],
-      "entity_id": "EVENT_0870"
-    },
-    {
       "standard_name": "体育总局游泳中心",
       "entity_type": "ORG",
       "description": "中国体育总局下属的游泳管理机构，负责公示游泳赛事信息",
@@ -50538,7 +50089,8 @@
         "去年的全国冠军赛",
         "2026年全国游泳冠军赛",
         "游泳冠军赛",
-        "冠军赛"
+        "冠军赛",
+        "2026全国游泳冠军赛"
       ],
       "sources": [
         "kb_swimming",
@@ -51031,19 +50583,6 @@
       "entity_id": "EVENT_0884"
     },
     {
-      "standard_name": "名古屋亚运会",
-      "entity_type": "EVENT",
-      "description": "2026年亚运会，将在日本名古屋举行，女子100米栏项目是选拔目标。",
-      "aliases": [
-        "名古屋亚运"
-      ],
-      "sources": [
-        "kb_swimming",
-        "kb_tj"
-      ],
-      "entity_id": "EVENT_0885"
-    },
-    {
       "standard_name": "名古屋市",
       "entity_type": "LOC",
       "description": "日本爱知县首府，2026年亚运会的举办地之一，与爱知共同举办该届亚运会。",
@@ -51311,7 +50850,8 @@
       "aliases": [
         "国际泳联",
         "FINA",
-        "世界泳联"
+        "世界泳联",
+        "世界游泳联合会"
       ],
       "sources": [
         "kb_swimming"
@@ -53057,18 +52597,6 @@
         "kb_swimming"
       ],
       "entity_id": "PER_2371"
-    },
-    {
-      "standard_name": "杭州亚洲运动会",
-      "entity_type": "EVENT",
-      "description": "在中国杭州举办的亚洲运动会，上届杭州亚运会上，韩国队历史性地获得了男子4X200米自由泳冠军。",
-      "aliases": [
-        "杭州亚运会"
-      ],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "EVENT_0921"
     },
     {
       "standard_name": "杭州奥体中心游泳馆",
@@ -56890,18 +56418,6 @@
       "entity_id": "PER_2517"
     },
     {
-      "standard_name": "Adaejah Hodge",
-      "entity_type": "PER",
-      "description": "美国大学女子田径运动员，在2026年NCAA一级室外田径锦标赛女子100米跑出10秒63，刷新NCAA纪录。",
-      "aliases": [
-        "阿达贾·霍奇"
-      ],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "PER_2518"
-    },
-    {
       "standard_name": "Ainara Alcuaz Rodraguez",
       "entity_type": "PER",
       "description": "西班牙选手，2026稻城亚丁天空跑越野赛天空跑30公里女子组季军，成绩4小时51分57秒。",
@@ -57332,18 +56848,6 @@
       "entity_id": "PER_2527"
     },
     {
-      "standard_name": "Ja'Kobe Tharp",
-      "entity_type": "PER",
-      "description": "美国奥本大学20岁跨栏新星，在2026年NCAA一级室外田径锦标赛上跑出12秒75，打破男子110米栏世界纪录，并在决赛中以12秒90夺冠。",
-      "aliases": [
-        "贾科比·萨普"
-      ],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "PER_2528"
-    },
-    {
       "standard_name": "Jayden Reid",
       "entity_type": "PER",
       "description": "来自开曼群岛的美国大学田径运动员，在2026年NCAA一级室外田径锦标赛男子200米跑出19秒63，刷新NCAA纪录并夺冠。",
@@ -57476,18 +56980,6 @@
         "kb_tj"
       ],
       "entity_id": "PER_2534"
-    },
-    {
-      "standard_name": "Louisiana State University",
-      "entity_type": "ORG",
-      "description": "美国大学，位于路易斯安那州巴吞鲁日市，NCAA Division I成员，女子团体冠军数最多（14次），培养出阿曼德·杜普兰蒂斯。",
-      "aliases": [
-        "路易斯安那州立大学"
-      ],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "ORG_1185"
     },
     {
       "standard_name": "Lululemon",
@@ -58028,16 +57520,6 @@
       "entity_id": "EVENT_1079"
     },
     {
-      "standard_name": "UTMB",
-      "entity_type": "EVENT",
-      "description": "世界级越野巡回赛，HOKA为官方合作伙伴，泰国清迈站吸引大量中国参赛者。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "EVENT_1080"
-    },
-    {
       "standard_name": "UTMB宁海越野挑战赛",
       "entity_type": "EVENT",
       "description": "在中国浙江省宁海县举办的UTMB系列赛，四郎多吉在2023年105公里组夺冠并创造赛道纪录。",
@@ -58056,18 +57538,6 @@
         "kb_tj"
       ],
       "entity_id": "EVENT_1082"
-    },
-    {
-      "standard_name": "University of Florida",
-      "entity_type": "ORG",
-      "description": "美国大学，位于佛罗里达州盖恩斯维尔市，NCAA Division I成员，培养出格兰特·霍洛威等奥运冠军。",
-      "aliases": [
-        "佛罗里达大学"
-      ],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "ORG_1207"
     },
     {
       "standard_name": "University of Oregon",
@@ -59173,16 +58643,6 @@
         "kb_tj"
       ],
       "entity_id": "LOC_0784"
-    },
-    {
-      "standard_name": "乐刻",
-      "entity_type": "ORG",
-      "description": "中国连锁健身品牌，旗下LOVEFITT推出HYROX课程包。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "ORG_1247"
     },
     {
       "standard_name": "乐刻运动",
@@ -60413,16 +59873,6 @@
       "entity_id": "PER_2599"
     },
     {
-      "standard_name": "凯特-道格拉斯",
-      "entity_type": "PER",
-      "description": "美国女子游泳运动员，女子200米混合泳顶尖选手，巴黎奥运前四名之一，与余依婷、麦金托什、凯丽-麦基翁并称四大天后。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "PER_2600"
-    },
-    {
       "standard_name": "凯米-阿德科亚",
       "entity_type": "PER",
       "description": "巴林女子400米栏运动员，33岁老将，莫家蝶的主要竞争对手。",
@@ -61111,16 +60561,6 @@
         "kb_tj"
       ],
       "entity_id": "LOC_0825"
-    },
-    {
-      "standard_name": "博捷体育",
-      "entity_type": "ORG",
-      "description": "赛事运营公司，负责2026年昆明半程马拉松的运营。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "ORG_1280"
     },
     {
       "standard_name": "博茨瓦纳",
@@ -62602,16 +62042,6 @@
       "entity_id": "LOC_0865"
     },
     {
-      "standard_name": "天祝县",
-      "entity_type": "LOC",
-      "description": "中国甘肃省的一个县，拥有优质高原生态与长城文旅资源，是2026乌鞘岭越岭之王越野赛的主办地之一。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "LOC_0866"
-    },
-    {
       "standard_name": "天祝县文体广电和旅游局",
       "entity_type": "ORG",
       "description": "天祝县政府机构，主办2026乌鞘岭越岭之王越野赛，并负责监管职责。",
@@ -63984,16 +63414,6 @@
       "entity_id": "ORG_1356"
     },
     {
-      "standard_name": "广西",
-      "entity_type": "LOC",
-      "description": "中国自治区，曾克理的籍贯。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "LOC_0898"
-    },
-    {
       "standard_name": "广西壮族自治区",
       "entity_type": "LOC",
       "description": "中国省级行政区，参赛单位来自广西。",
@@ -64654,16 +64074,6 @@
         "kb_tj"
       ],
       "entity_id": "ORG_1364"
-    },
-    {
-      "standard_name": "成都大运会",
-      "entity_type": "EVENT",
-      "description": "2021年（实际举办于2023年）在成都举办的世界大学生夏季运动会，简阳曾参与承办，积累赛事经验。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "EVENT_1193"
     },
     {
       "standard_name": "成都天府国际机场",
@@ -66871,16 +66281,6 @@
       "entity_id": "LOC_0966"
     },
     {
-      "standard_name": "浙江绍兴",
-      "entity_type": "LOC",
-      "description": "中国浙江省下辖地级市，2026年亚洲接力锦标赛的举办地。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "LOC_0967"
-    },
-    {
       "standard_name": "浦戈文",
       "entity_type": "PER",
       "description": "弓长岭越野赛的赛道总监，专业赛事团队负责人，曾执行过多场国内越野跑赛事。",
@@ -68737,16 +68137,6 @@
       "entity_id": "PER_2926"
     },
     {
-      "standard_name": "绍兴上虞",
-      "entity_type": "LOC",
-      "description": "中国浙江省绍兴市下辖区，2026亚洲田径接力锦标赛和全国田径接力锦标赛的举办地。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "LOC_1025"
-    },
-    {
       "standard_name": "绍兴市",
       "entity_type": "LOC",
       "description": "中国浙江省城市，2026年第二届亚洲接力锦标赛举办地。",
@@ -68960,16 +68350,6 @@
         "kb_tj"
       ],
       "entity_id": "EVENT_1249"
-    },
-    {
-      "standard_name": "罗马钻石联赛",
-      "entity_type": "EVENT",
-      "description": "世界田径钻石联赛的一站，诺阿·莱尔斯在此跑出9.88秒，费迪南德·奥曼亚拉在此降至第八。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "EVENT_1250"
     },
     {
       "standard_name": "美兰湖",
@@ -69720,16 +69100,6 @@
         "kb_tj"
       ],
       "entity_id": "PER_2975"
-    },
-    {
-      "standard_name": "萨格勒布常规赛",
-      "entity_type": "EVENT",
-      "description": "在克罗地亚萨格勒布举办的WTT常规赛，林诗栋止步16强。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "EVENT_1264"
     },
     {
       "standard_name": "萨维",
@@ -70519,7 +69889,10 @@
       "standard_name": "贾科比·萨普",
       "entity_type": "PER",
       "description": "美国20岁大学生，NCAA田径运动员，2026年6月10日在NCAA室外锦标赛半决赛跑出12秒75，打破男子110米栏世界纪录（待认证），此前曾获2024年世界U20锦标赛冠军、2025年NCAA室内室外双冠及全美锦标赛冠军。",
-      "aliases": [],
+      "aliases": [
+        "Ja'Kobe Tharp",
+        "贾科比·萨普"
+      ],
       "sources": [
         "kb_tj"
       ],
@@ -71088,16 +70461,6 @@
       "entity_id": "PER_3057"
     },
     {
-      "standard_name": "里约奥运会",
-      "entity_type": "EVENT",
-      "description": "2016年在巴西里约热内卢举办的夏季奥运会，布里安娜·罗林斯-麦克尼尔在此获得100米栏金牌。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "EVENT_1281"
-    },
-    {
       "standard_name": "重庆峡谷城文旅集团",
       "entity_type": "ORG",
       "description": "参与第八届小南海跑客季启动仪式的企业。",
@@ -71320,16 +70683,6 @@
         "kb_tj"
       ],
       "entity_id": "LOC_1073"
-    },
-    {
-      "standard_name": "长三角",
-      "entity_type": "LOC",
-      "description": "中国东部地区，举办国际田径钻石赛。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "LOC_1074"
     },
     {
       "standard_name": "长三角国际田径钻石赛",
@@ -71671,7 +71024,10 @@
       "standard_name": "阿达贾·霍奇",
       "entity_type": "PER",
       "description": "20岁美国短跑新星，佐治亚大学学生，未转为职业选手。在2026年NCAA D-1户外锦标赛上200米决赛以21秒68夺冠并创NCAA历史新纪录，100米决赛跑出10秒93获第二，预赛10秒63打破理查德森保持的大学生纪录，位列女子100米历史第五。曾获2024年利马U20世锦赛100米银牌、200米金牌，后因兴奋剂检测阳性被禁赛17个月，2026年1月解禁。",
-      "aliases": [],
+      "aliases": [
+        "Adaejah Hodge",
+        "阿达贾·霍奇"
+      ],
       "sources": [
         "kb_tj"
       ],
@@ -72274,16 +71630,6 @@
         "kb_tj"
       ],
       "entity_id": "LOC_1096"
-    },
-    {
-      "standard_name": "香港100",
-      "entity_type": "EVENT",
-      "description": "世界级越野巡回赛全球首站，内地赛事创办者多受其影响，推动国内越野赛发展。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "EVENT_1300"
     },
     {
       "standard_name": "香港100越野赛",
@@ -72935,20 +72281,6 @@
       ]
     },
     {
-      "entity_id": "EVENT_0881",
-      "standard_name": "全运会",
-      "entity_type": "EVENT",
-      "aliases": [
-        "全运会",
-        "中华人民共和国全国运动会"
-      ],
-      "description": "中华人民共和国全国运动会，张国伟目标参加4年后的全运会并拿冠军。",
-      "sources": [
-        "kb_swimming",
-        "kb_tj"
-      ]
-    },
-    {
       "entity_id": "LOC_0034",
       "standard_name": "中国香港特别行政区",
       "entity_type": "LOC",
@@ -72960,21 +72292,6 @@
       "description": "中国香港特别行政区，是文章中提到的签约地点和队伍代表地区。",
       "sources": [
         "kb_badminton"
-      ]
-    },
-    {
-      "entity_id": "LOC_0086",
-      "standard_name": "中国台北",
-      "entity_type": "LOC",
-      "aliases": [
-        "中国台北",
-        "台湾"
-      ],
-      "description": "文中指代中国台北羽毛球队或代表中国台北参赛的运动员群体。许尹鏸和林芝昀为中国台北羽毛球运动员。",
-      "sources": [
-        "kb_badminton",
-        "kb_part2",
-        "kb_ppq"
       ]
     },
     {
@@ -73022,35 +72339,17 @@
       ]
     },
     {
-      "entity_id": "ORG_0084",
-      "standard_name": "中国羽毛球协会（中国羽毛球队）",
-      "entity_type": "ORG",
-      "aliases": [
-        "国羽"
-      ],
-      "description": "中国国家羽毛球队，隶属于中国羽毛球协会，在国际比赛中代表中国。",
-      "sources": [
-        "kb_badminton"
-      ]
-    },
-    {
-      "entity_id": "ORG_0015",
-      "standard_name": "World Table Tennis（世界乒乓球职业大联盟）",
-      "entity_type": "ORG",
-      "aliases": [
-        "WTT"
-      ],
-      "description": "国际乒乓球管理组织，负责举办和管理全球职业乒乓球赛事，推动乒乓球运动的职业化、商业化和全球化发展。",
-      "sources": [
-        "kb_badminton"
-      ]
-    },
-    {
       "entity_id": "LOC_0027",
       "standard_name": "中国台湾地区",
       "entity_type": "LOC",
       "aliases": [
-        "中国台北"
+        "中国台北",
+        "台湾",
+        "中国台北地区",
+        "中国台湾省",
+        "中国台湾（中国台北）",
+        "台湾省",
+        "中国台湾"
       ],
       "description": "中国的一部分，以‘中国台北’名义参加国际体育赛事，其代表队参加了2026年中国澳门羽毛球公开赛。",
       "sources": [
@@ -73085,20 +72384,6 @@
       ]
     },
     {
-      "entity_id": "LOC_0026",
-      "standard_name": "中国台湾",
-      "entity_type": "LOC",
-      "aliases": [
-        "中国台北",
-        "中国台湾"
-      ],
-      "description": "中国的一个地区，乒乓球小将郭冠宏的所属地。",
-      "sources": [
-        "kb_badminton",
-        "kb_ppq"
-      ]
-    },
-    {
       "entity_id": "EVENT_0018",
       "standard_name": "2025年世界羽毛球锦标赛",
       "entity_type": "EVENT",
@@ -73107,18 +72392,6 @@
         "世锦赛"
       ],
       "description": "羽毛球世界顶级赛事，于2025年在丹麦哥本哈根举行，李诗沣夺得男单冠军，中国羽毛球队表现出色。",
-      "sources": [
-        "kb_badminton"
-      ]
-    },
-    {
-      "entity_id": "LOC_0029",
-      "standard_name": "中国台湾（中国台北）",
-      "entity_type": "LOC",
-      "aliases": [
-        "中国台北"
-      ],
-      "description": "中国台湾地区，选手林俊易的所属地，也是中国领土不可分割的一部分。",
       "sources": [
         "kb_badminton"
       ]
@@ -73208,20 +72481,6 @@
       ]
     },
     {
-      "entity_id": "LOC_0024",
-      "standard_name": "中国台北",
-      "entity_type": "LOC",
-      "aliases": [
-        "中国台北"
-      ],
-      "description": "文中指代中国台北羽毛球队或代表中国台北参赛的运动员群体。许尹鏸和林芝昀为中国台北羽毛球运动员。",
-      "sources": [
-        "kb_badminton",
-        "kb_part2",
-        "kb_ppq"
-      ]
-    },
-    {
       "entity_id": "EVENT_0604",
       "standard_name": "国际篮联篮球世界杯",
       "entity_type": "EVENT",
@@ -73258,21 +72517,6 @@
       "description": "日本乒乓球国家队，在2026年WTT球星挑战赛卢布尔雅那站共获得4金1银，包括男单、女单、女双、男双冠军，展现了深厚整体实力。",
       "sources": [
         "kb_ppq",
-        "kb_tj"
-      ]
-    },
-    {
-      "entity_id": "LOC_0016",
-      "standard_name": "东京",
-      "entity_type": "LOC",
-      "aliases": [
-        "东京"
-      ],
-      "description": "日本的首都和最大城市，曾举办2020年夏季残奥会（实际在2021年举行），文章中提及残奥会冠军选手来自此地。",
-      "sources": [
-        "kb_badminton",
-        "kb_ppq",
-        "kb_swimming",
         "kb_tj"
       ]
     },

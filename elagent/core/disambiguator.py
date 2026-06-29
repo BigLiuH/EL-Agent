@@ -113,7 +113,10 @@ class Disambiguator:
         # 2. 关键词重叠得分
         keyword_score = self._keyword_overlap_score(mention, entity)
 
-        # 3. 先验概率得分
+        # 3. 上下文boost（乘性，直接缩放最终得分）
+        context_boost = self._context_boost(mention, entity, full_text)
+
+        # 4. 先验概率得分
         prior_score = self._prior_probability_score(entity)
 
         # 4. 名称匹配得分（最重要）
@@ -134,6 +137,9 @@ class Disambiguator:
             self.name_completeness_weight * completeness_score +
             self.popularity_weight * popularity_score
         )
+
+        # 上下文乘性boost：区分2-gram在文章中命中越多，boost越强
+        total_score *= context_boost
 
         return total_score
 
@@ -183,40 +189,73 @@ class Disambiguator:
         return 0.0
 
     def _keyword_overlap_score(self, mention: Mention, entity: Entity) -> float:
-        """
-        计算关键词重叠得分
+        """关键词重叠得分：mention上下文与实体描述的分词重叠率"""
+        context = mention.context or ""
+        if not context:
+            return 0.5
+        mention_tokens = set(jieba.cut(context))
+        entity_tokens = set(jieba.cut(entity.standard_name + " " + entity.description[:200]))
+        stop_words = {"的", "了", "在", "是", "我", "有", "和", "就", "不", "人", "都", "一", "一个", "上", "也", "很", "到", "说", "要", "去", "你", "会", "着", "没有", "看", "好", "自己", "这"}
+        mention_tokens -= stop_words
+        entity_tokens -= stop_words
+        if not mention_tokens or not entity_tokens:
+            return 0.5
+        overlap = mention_tokens & entity_tokens
+        overlap_ratio = len(overlap) / min(len(mention_tokens), len(entity_tokens))
+        return min(overlap_ratio * 2, 1.0)
 
-        基于mention上下文与entity描述的关键词重叠度。
+    def _context_boost(self, mention: Mention, entity: Entity, full_text: str = "") -> float:
+        """
+        上下文乘性boost（仅用实体名称 + 文章全文）
+
+        从实体名提取区分2-gram（不在mention中的），统计在全文中的出现密度。
+        密度高 → boost > 1.0（领域匹配）；密度极低 → penalty < 1.0（领域可能不匹配）。
 
         Args:
             mention: 实体指称
             entity: 候选实体
+            full_text: 文章全文
 
         Returns:
-            关键词重叠得分 (0-1)
+            boost系数 (0.75~1.25)，1.0为中性
         """
-        # 获取mention上下文
-        context = mention.context or ""
-        if not context:
-            return 0.5
+        full_text = (full_text or mention.context or "").lower()
+        if len(full_text) < 10:
+            return 1.0
 
-        # 分词
-        mention_tokens = set(jieba.cut(context))
-        entity_tokens = set(jieba.cut(entity.standard_name + " " + entity.description[:200]))
+        mention_text = mention.text.lower()
 
-        # 移除停用词
-        stop_words = {"的", "了", "在", "是", "我", "有", "和", "就", "不", "人", "都", "一", "一个", "上", "也", "很", "到", "说", "要", "去", "你", "会", "着", "没有", "看", "好", "自己", "这"}
-        mention_tokens -= stop_words
-        entity_tokens -= stop_words
+        # 收集实体所有名称的字符2-gram
+        all_names = [entity.standard_name] + list(entity.aliases)
+        entity_bigrams = set()
+        for name in all_names:
+            name_lower = name.lower()
+            for i in range(len(name_lower) - 1):
+                entity_bigrams.add(name_lower[i:i+2])
 
-        if not mention_tokens or not entity_tokens:
-            return 0.5
+        # 收集mention的2-gram（排除共有部分）
+        mention_bigrams = set()
+        for i in range(len(mention_text) - 1):
+            mention_bigrams.add(mention_text[i:i+2])
 
-        # 计算重叠率
-        overlap = mention_tokens & entity_tokens
-        overlap_ratio = len(overlap) / min(len(mention_tokens), len(entity_tokens))
+        # 区分2-gram
+        diff_bigrams = entity_bigrams - mention_bigrams
 
-        return min(overlap_ratio * 2, 1.0)  # 放大重叠信号
+        if not diff_bigrams:
+            return 1.0  # 实体名=mention，无区分信号，中性
+
+        # 统计命中密度
+        total_hits = sum(full_text.count(bg) for bg in diff_bigrams)
+        text_len = max(len(full_text), 1)
+        density = total_hits / (text_len / 100.0)
+
+        # density < 1 → neutral 1.0（无足够信号不惩罚）
+        # density 1~3 → mild boost 1.03~1.10
+        # density 3+ → strong boost 1.10~1.20
+        if density < 1.0:
+            return 1.0
+        else:
+            return min(1.0 + density * 0.03, 1.20)
 
     def _name_match_score(self, mention: Mention, entity: Entity) -> float:
         """
