@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Data
+Dataset/*.json.backup*
+Dataset/*.json.bak*
+data/backup_*/
+data/trace_logs/
+data/*.json.bak
+
+# Node
+node_modules/
+docs/create_docx*.js
+docs/create_dev_plan*.js
+docs/create_daily1*.js
+
+# Environment
+.env
+.venv
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Large files
+*.pdf
+*.doc
+*.zip
+*.npy

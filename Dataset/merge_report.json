@@ -1,0 +1,29 @@
+{
+  "summary": {
+    "total_entities": 7049,
+    "total_articles": 1239,
+    "total_aliases": 8461,
+    "id_consistency": {
+      "kb_ids": 7049,
+      "article_ids": 6670,
+      "intersection": 6670,
+      "article_not_in_kb": 0,
+      "kb_not_in_article": 379
+    }
+  },
+  "entity_types": {
+    "EVENT": 1306,
+    "ORG": 1495,
+    "PER": 3133,
+    "LOC": 1115
+  },
+  "sources": {
+    "kb_badminton": 2068,
+    "kb_part2": 1010,
+    "kb_ppq": 928,
+    "kb_swimming": 798,
+    "kb_tj": 1868,
+    "kb_part1": 222,
+    "kb_billiards": 942
+  }
+}
