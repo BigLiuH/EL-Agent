@@ -818,7 +818,8 @@
       "description": "世界羽联世界巡回赛超级500级别的赛事。在2026年的女双决赛中，中国组合曹梓涵/鲍骊婧战胜日本组合岩永铃/中西贵映夺冠。",
       "aliases": [
         "泰国公开赛",
-        "泰国羽毛球公开赛"
+        "泰国羽毛球公开赛",
+        "泰国"
       ],
       "sources": [
         "kb_badminton"
@@ -13555,19 +13556,6 @@
       "entity_id": "EVENT_0281"
     },
     {
-      "standard_name": "泰国羽毛球公开赛",
-      "entity_type": "EVENT",
-      "description": "一项羽毛球世界巡回赛事，文中提及作为鲍骊婧/曹梓涵组合此前夺冠的赛事。",
-      "aliases": [
-        "泰国公开赛",
-        "泰国"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0282"
-    },
-    {
       "standard_name": "泰国羽毛球协会",
       "entity_type": "ORG",
       "description": "泰国国家羽毛球运动管理机构，其旗下运动员代表泰国参加国际比赛。",
@@ -18784,22 +18772,13 @@
       "entity_id": "LOC_0313"
     },
     {
-      "standard_name": "银川站",
-      "entity_type": "LOC",
-      "description": "位于宁夏银川市的主要铁路客运站，本次赛事组委会在此设立专属接站点。",
-      "aliases": [
-        "银川高铁站"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "LOC_0314"
-    },
-    {
       "standard_name": "银川高铁站",
       "entity_type": "LOC",
       "description": "位于银川市的高速铁路车站，赛事组委会在此设立专属接站点位，提供无障碍交通服务。",
-      "aliases": [],
+      "aliases": [
+        "银川站",
+        "银川高铁站"
+      ],
       "sources": [
         "kb_badminton"
       ],
@@ -21627,16 +21606,6 @@
         "kb_billiards"
       ],
       "entity_id": "PER_0970"
-    },
-    {
-      "standard_name": "Fubo",
-      "entity_type": "ORG",
-      "description": "流媒体服务平台，提供cinch锦标赛的赛事直播服务。",
-      "aliases": [],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "ORG_0424"
     },
     {
       "standard_name": "Glamorgan",
@@ -41607,16 +41576,6 @@
         "kb_ppq"
       ],
       "entity_id": "EVENT_0662"
-    },
-    {
-      "standard_name": "2026中国澳门羽毛球公开赛",
-      "entity_type": "EVENT",
-      "description": "世界羽联超级300赛，于2026年在中国澳门举行，曹梓涵/鲍骊婧获得女双冠军。",
-      "aliases": [],
-      "sources": [
-        "kb_ppq"
-      ],
-      "entity_id": "EVENT_0663"
     },
     {
       "standard_name": "2026年WTT斯洛文尼亚卢布尔雅那球星挑战赛",

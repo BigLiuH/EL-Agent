@@ -18,8 +18,10 @@ from ..core.knowledge_base import knowledge_base
 from ..core.bm25_index import bm25_index
 from ..core.disambiguator import disambiguator
 from ..core.bert_disambiguator import bert_disambiguator
+from ..core.llm_disambiguator import llm_disambiguator
 from ..core.trace_logger import trace_logger
 from ..core.nil_detector import nil_detector
+from ..config import config
 from ..models.mention import Mention
 from ..models.entity import Candidate
 from ..models.result import LinkResult
@@ -295,8 +297,9 @@ def _enhanced_link(mention: Mention, trace=None, full_text: str = "") -> LinkRes
 
         # 如果有多个候选，使用消歧器选择最佳
         candidates = [Candidate(entity=e, score=0.95, match_source="alias") for e in alias_entities]
-        ranked = disambiguator.disambiguate(mention, candidates, top_k=1, full_text=full_text)
+        ranked = disambiguator.disambiguate(mention, candidates, top_k=5, full_text=full_text)
         if ranked:
+            ranked = _llm_fallback(mention, ranked, full_text, trace)
             best = ranked[0]
             result.linked_entity = best.entity
             result.is_nil = False
@@ -349,8 +352,9 @@ def _enhanced_link(mention: Mention, trace=None, full_text: str = "") -> LinkRes
         # 多个候选，使用消歧器进行5信号加权评分选择最佳
         candidates = [Candidate(entity=e, score=0.75, match_source="fuzzy")
                       for e in fuzzy_candidates]
-        ranked = disambiguator.disambiguate(mention, candidates, top_k=1, full_text=full_text)
+        ranked = disambiguator.disambiguate(mention, candidates, top_k=5, full_text=full_text)
         if ranked:
+            ranked = _llm_fallback(mention, ranked, full_text, trace)
             best = ranked[0]
             result.linked_entity = best.entity
             result.is_nil = False
@@ -467,8 +471,9 @@ def _enhanced_link(mention: Mention, trace=None, full_text: str = "") -> LinkRes
                     # 多候选使用消歧器
                     candidates = [Candidate(entity=e, score=0.5, match_source="bm25")
                                   for e in bm25_entities]
-                    ranked = disambiguator.disambiguate(mention, candidates, top_k=1, full_text=full_text)
+                    ranked = disambiguator.disambiguate(mention, candidates, top_k=5, full_text=full_text)
                     if ranked:
+                        ranked = _llm_fallback(mention, ranked, full_text, trace)
                         best = ranked[0]
                         result.linked_entity = best.entity
                         result.is_nil = False
@@ -505,6 +510,41 @@ def _enhanced_link(mention: Mention, trace=None, full_text: str = "") -> LinkRes
         )
 
     return result
+
+
+def _llm_fallback(mention: Mention, ranked: list, full_text: str, trace=None) -> list:
+    """
+    LLM消歧兜底：当规则消歧器top-2得分差<阈值时，用LLM重判。
+    返回重排后的候选列表。
+    """
+    if not config.llm_enabled or not llm_disambiguator.available:
+        return ranked
+    if len(ranked) < 2:
+        return ranked
+
+    gap = ranked[0].score - ranked[1].score
+    if gap >= config.llm_score_gap:
+        return ranked  # 得分差足够大，信任规则消歧器
+
+    if trace:
+        trace.add_step(
+            step_name="LLM消歧",
+            original_value=f"top-2 gap={gap:.3f}<{config.llm_score_gap}",
+            new_value="调用LLM...",
+            reason="规则消歧得分过于接近，调用LLM判别"
+        )
+
+    llm_ranked = llm_disambiguator.disambiguate(mention, ranked, full_text)
+
+    if trace and llm_ranked and llm_ranked[0].entity.id != ranked[0].entity.id:
+        trace.add_step(
+            step_name="LLM消歧结果",
+            original_value=ranked[0].entity.standard_name,
+            new_value=llm_ranked[0].entity.standard_name,
+            reason="LLM根据文章语境选择了不同候选"
+        )
+
+    return llm_ranked
 
 
 def _to_response(result: LinkResult) -> LinkResponse:

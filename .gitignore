@@ -33,6 +33,9 @@ docs/create_docx*.js
 # 副本目录
 Dataset - 副本/
 
+# 环境变量
+.env
+
 # 数据缓存
 data/trace_logs/
 data/backup_*/

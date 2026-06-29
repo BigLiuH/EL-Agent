@@ -316,8 +316,8 @@
     "standard_name": "2026年中国澳门羽毛球公开赛"
   },
   "2026中国澳门羽毛球公开赛": {
-    "entity_id": "EVENT_0663",
-    "standard_name": "2026中国澳门羽毛球公开赛"
+    "entity_id": "EVENT_0053",
+    "standard_name": "2026年中国澳门羽毛球公开赛"
   },
   "中国澳门羽毛球公开赛": {
     "entity_id": "EVENT_0298",
@@ -540,8 +540,8 @@
     "standard_name": "2026年泰国公开赛"
   },
   "泰国羽毛球公开赛": {
-    "entity_id": "EVENT_0282",
-    "standard_name": "泰国羽毛球公开赛"
+    "entity_id": "EVENT_0083",
+    "standard_name": "2026年泰国羽毛球公开赛"
   },
   "2026年洛宁县“翎美杯”第一届中小学生羽毛球锦标赛": {
     "entity_id": "EVENT_0084",
@@ -856,8 +856,8 @@
     "standard_name": "Fubo TV"
   },
   "Fubo": {
-    "entity_id": "ORG_0424",
-    "standard_name": "Fubo"
+    "entity_id": "ORG_0006",
+    "standard_name": "Fubo TV"
   },
   "GT健身羽毛球中心": {
     "entity_id": "LOC_0003",
@@ -9084,8 +9084,8 @@
     "standard_name": "银川河东国际机场"
   },
   "银川站": {
-    "entity_id": "LOC_0314",
-    "standard_name": "银川站"
+    "entity_id": "LOC_0315",
+    "standard_name": "银川高铁站"
   },
   "银川高铁站": {
     "entity_id": "LOC_0315",

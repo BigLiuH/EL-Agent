@@ -10,6 +10,23 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 
+def _load_dotenv():
+    """加载 .env 文件到环境变量"""
+    env_path = Path(__file__).parent.parent / ".env"
+    if env_path.exists():
+        with open(env_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    key, value = line.split("=", 1)
+                    key, value = key.strip(), value.strip()
+                    if key not in os.environ:
+                        os.environ[key] = value
+
+
+_load_dotenv()
+
+
 @dataclass
 class Config:
     """系统配置"""
@@ -34,6 +51,14 @@ class Config:
 
     # 日志配置
     log_level: str = "INFO"
+
+    # LLM消歧配置
+    llm_enabled: bool = False          # 是否启用LLM消歧
+    llm_model: str = "nvidia/nemotron-3-ultra-550b-a55b:free"  # 模型
+    llm_base_url: str = "https://openrouter.ai/api/v1"  # API地址
+    llm_api_key: Optional[str] = None  # API Key（默认从OPENROUTER_API_KEY环境变量读取）
+    llm_score_gap: float = 0.03        # top-2得分差小于此值时触发LLM
+    llm_max_candidates: int = 5        # 送入LLM的最多候选数
 
     def __post_init__(self):
         """初始化后处理，设置默认路径"""

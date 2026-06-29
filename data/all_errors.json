@@ -1,11 +1,5 @@
 [
   {
-    "mention": "银川高铁站",
-    "expected_name": "银川站",
-    "predicted_name": "银川高铁站",
-    "entity_type": "LOC"
-  },
-  {
     "mention": "省运会",
     "expected_name": "浙江省运动会",
     "predicted_name": "省运会",
@@ -36,18 +30,6 @@
     "entity_type": "ORG"
   },
   {
-    "mention": "泰国羽毛球公开赛",
-    "expected_name": "2026年泰国羽毛球公开赛",
-    "predicted_name": "泰国羽毛球公开赛",
-    "entity_type": "EVENT"
-  },
-  {
-    "mention": "亚青赛",
-    "expected_name": "亚洲青年羽毛球锦标赛",
-    "predicted_name": "亚足联U20亚洲杯",
-    "entity_type": "EVENT"
-  },
-  {
     "mention": "圣坛组合",
     "expected_name": "刘圣书/谭宁",
     "predicted_name": "圣坛组合",
@@ -66,6 +48,12 @@
     "entity_type": "EVENT"
   },
   {
+    "mention": "印尼公开赛",
+    "expected_name": "印度尼西亚羽毛球公开赛",
+    "predicted_name": "印尼羽毛球公开赛",
+    "entity_type": "EVENT"
+  },
+  {
     "mention": "亚锦赛",
     "expected_name": "亚洲羽毛球锦标赛",
     "predicted_name": "亚锦赛",
@@ -78,21 +66,15 @@
     "entity_type": "PER"
   },
   {
-    "mention": "Fubo",
-    "expected_name": "Fubo TV",
-    "predicted_name": "Fubo",
-    "entity_type": "ORG"
-  },
-  {
-    "mention": "2026中国澳门羽毛球公开赛",
-    "expected_name": "2026年中国澳门羽毛球公开赛",
-    "predicted_name": "2026中国澳门羽毛球公开赛",
-    "entity_type": "EVENT"
-  },
-  {
     "mention": "德国公开赛",
     "expected_name": "德国羽毛球公开赛",
     "predicted_name": "德国公开赛",
+    "entity_type": "EVENT"
+  },
+  {
+    "mention": "WTT卢布尔雅那球星挑战赛",
+    "expected_name": "WTT球星挑战赛卢布尔雅那站",
+    "predicted_name": "2026年WTT卢布尔雅那球星挑战赛",
     "entity_type": "EVENT"
   },
   {
@@ -116,13 +98,7 @@
   {
     "mention": "泰国公开赛",
     "expected_name": "2026年泰国公开赛",
-    "predicted_name": "泰国羽毛球公开赛",
-    "entity_type": "EVENT"
-  },
-  {
-    "mention": "中国公开赛",
-    "expected_name": "中国羽毛球公开赛",
-    "predicted_name": "斯诺克中国公开赛",
+    "predicted_name": "2026年泰国羽毛球公开赛",
     "entity_type": "EVENT"
   },
   {
@@ -138,15 +114,15 @@
     "entity_type": "PER"
   },
   {
+    "mention": "尤伯杯",
+    "expected_name": "尤伯杯世界女子羽毛球团体锦标赛",
+    "predicted_name": "Uber Cup",
+    "entity_type": "EVENT"
+  },
+  {
     "mention": "日本队",
     "expected_name": "日本羽毛球队",
     "predicted_name": "日本队",
-    "entity_type": "ORG"
-  },
-  {
-    "mention": "泰国队",
-    "expected_name": "泰国羽毛球队",
-    "predicted_name": "泰国国家羽毛球队",
     "entity_type": "ORG"
   },
   {
@@ -252,12 +228,6 @@
     "entity_type": "ORG"
   },
   {
-    "mention": "泰国公开赛",
-    "expected_name": "2026年泰国羽毛球公开赛",
-    "predicted_name": "泰国羽毛球公开赛",
-    "entity_type": "EVENT"
-  },
-  {
     "mention": "印尼羽毛球公开赛",
     "expected_name": "印度尼西亚羽毛球公开赛",
     "predicted_name": "印尼羽毛球公开赛",
@@ -276,6 +246,12 @@
     "entity_type": "EVENT"
   },
   {
+    "mention": "新加坡公开赛",
+    "expected_name": "新加坡羽毛球公开赛",
+    "predicted_name": "2024年新加坡羽毛球公开赛",
+    "entity_type": "EVENT"
+  },
+  {
     "mention": "2026年澳大利亚公开赛",
     "expected_name": "2026 Australian Open",
     "predicted_name": "2026年澳大利亚羽毛球公开赛",
@@ -290,13 +266,13 @@
   {
     "mention": "泰国公开赛",
     "expected_name": "Thailand Open",
-    "predicted_name": "泰国羽毛球公开赛",
+    "predicted_name": "2026年泰国羽毛球公开赛",
     "entity_type": "EVENT"
   },
   {
     "mention": "印尼公开赛",
     "expected_name": "Indonesia Open",
-    "predicted_name": "印度尼西亚羽毛球公开赛",
+    "predicted_name": "印尼羽毛球公开赛",
     "entity_type": "EVENT"
   },
   {
@@ -360,27 +336,9 @@
     "entity_type": "LOC"
   },
   {
-    "mention": "印尼公开赛",
-    "expected_name": "2024年印度尼西亚羽毛球公开赛",
-    "predicted_name": "印度尼西亚羽毛球公开赛",
-    "entity_type": "EVENT"
-  },
-  {
-    "mention": "新加坡公开赛",
-    "expected_name": "2024年新加坡羽毛球公开赛",
-    "predicted_name": "新加坡羽毛球公开赛",
-    "entity_type": "EVENT"
-  },
-  {
     "mention": "世锦赛",
     "expected_name": "2024年世界羽毛球锦标赛",
     "predicted_name": "斯诺克世界锦标赛",
-    "entity_type": "EVENT"
-  },
-  {
-    "mention": "亚运会",
-    "expected_name": "2024年亚洲运动会羽毛球比赛",
-    "predicted_name": "亚洲运动会",
     "entity_type": "EVENT"
   },
   {
@@ -408,12 +366,6 @@
     "entity_type": "EVENT"
   },
   {
-    "mention": "印尼公开赛",
-    "expected_name": "印度尼西亚羽毛球公开赛",
-    "predicted_name": "印尼羽毛球公开赛",
-    "entity_type": "EVENT"
-  },
-  {
     "mention": "2026印尼羽毛球公开赛",
     "expected_name": "印尼羽毛球公开赛",
     "predicted_name": "2026年印尼羽毛球公开赛",
@@ -432,6 +384,12 @@
     "entity_type": "EVENT"
   },
   {
+    "mention": "奥运会",
+    "expected_name": "奥林匹克运动会",
+    "predicted_name": "奥林匹克运动会乒乓球项目",
+    "entity_type": "EVENT"
+  },
+  {
     "mention": "2026年印尼羽毛球公开赛",
     "expected_name": "印度尼西亚羽毛球公开赛",
     "predicted_name": "2026年印尼羽毛球公开赛",
@@ -441,6 +399,12 @@
     "mention": "罗马站",
     "expected_name": "罗马大师赛",
     "predicted_name": "罗马公开赛",
+    "entity_type": "EVENT"
+  },
+  {
+    "mention": "世青赛",
+    "expected_name": "世界青年羽毛球锦标赛",
+    "predicted_name": "世界青年游泳锦标赛",
     "entity_type": "EVENT"
   },
   {
@@ -510,12 +474,6 @@
     "entity_type": "ORG"
   },
   {
-    "mention": "国家队",
-    "expected_name": "中国国家羽毛球队",
-    "predicted_name": "中国国家乒乓球队",
-    "entity_type": "ORG"
-  },
-  {
     "mention": "省队",
     "expected_name": "各省市自治区羽毛球队",
     "predicted_name": "省队",
@@ -525,12 +483,6 @@
     "mention": "市总工会",
     "expected_name": "呼和浩特市总工会",
     "predicted_name": "市总工会",
-    "entity_type": "ORG"
-  },
-  {
-    "mention": "国家一队",
-    "expected_name": "中国羽毛球国家队一队",
-    "predicted_name": "中国国家乒乓球队一队",
     "entity_type": "ORG"
   },
   {
@@ -594,6 +546,12 @@
     "entity_type": "EVENT"
   },
   {
+    "mention": "成都大运会",
+    "expected_name": "第31届世界大学生夏季运动会",
+    "predicted_name": "2021年成都世界大学生夏季运动会",
+    "entity_type": "EVENT"
+  },
+  {
     "mention": "汤尤杯",
     "expected_name": "汤姆斯杯和尤伯杯世界羽毛球团体锦标赛",
     "predicted_name": "汤尤杯",
@@ -626,7 +584,7 @@
   {
     "mention": "世锦赛",
     "expected_name": "2025年世界羽毛球锦标赛",
-    "predicted_name": "斯诺克世界锦标赛",
+    "predicted_name": "2024年世界羽毛球锦标赛",
     "entity_type": "EVENT"
   },
   {
@@ -912,9 +870,21 @@
     "entity_type": "PER"
   },
   {
+    "mention": "泰国赛",
+    "expected_name": "Thailand Open",
+    "predicted_name": "泰国羽毛球赛",
+    "entity_type": "EVENT"
+  },
+  {
     "mention": "全英赛",
     "expected_name": "All England Open",
     "predicted_name": "全英羽毛球公开赛",
+    "entity_type": "EVENT"
+  },
+  {
+    "mention": "尤伯杯",
+    "expected_name": "Uber Cup",
+    "predicted_name": "尤伯杯世界女子羽毛球团体锦标赛",
     "entity_type": "EVENT"
   },
   {
@@ -966,6 +936,12 @@
     "entity_type": "PER"
   },
   {
+    "mention": "印尼大师赛",
+    "expected_name": "印度尼西亚羽毛球大师赛",
+    "predicted_name": "印度尼西亚大师赛",
+    "entity_type": "EVENT"
+  },
+  {
     "mention": "尤伯杯女子团体锦标赛",
     "expected_name": "尤伯杯世界女子羽毛球团体锦标赛",
     "predicted_name": "尤伯杯女子团体锦标赛",
@@ -996,9 +972,9 @@
     "entity_type": "ORG"
   },
   {
-    "mention": "尤伯杯",
-    "expected_name": "尤伯杯世界女子羽毛球团体锦标赛",
-    "predicted_name": "Uber Cup",
+    "mention": "泰国公开赛",
+    "expected_name": "2026年泰国羽毛球公开赛",
+    "predicted_name": "Thailand Open",
     "entity_type": "EVENT"
   },
   {
@@ -1058,7 +1034,7 @@
   {
     "mention": "泰国队",
     "expected_name": "泰国国家羽毛球队",
-    "predicted_name": "泰国国家田径队",
+    "predicted_name": "泰国羽毛球队",
     "entity_type": "ORG"
   },
   {
@@ -1446,10 +1422,10 @@
     "entity_type": "EVENT"
   },
   {
-    "mention": "上海大师赛",
-    "expected_name": "Shanghai Masters",
-    "predicted_name": "斯诺克上海大师赛",
-    "entity_type": "EVENT"
+    "mention": "霍尔特",
+    "expected_name": "迈克尔·霍尔特",
+    "predicted_name": "阿里斯特·卡特",
+    "entity_type": "PER"
   },
   {
     "mention": "冠中冠",
@@ -1485,12 +1461,6 @@
     "mention": "海顿·平海",
     "expected_name": "海登·平尼",
     "predicted_name": "海顿·平海",
-    "entity_type": "PER"
-  },
-  {
-    "mention": "霍尔特",
-    "expected_name": "阿里斯特·卡特",
-    "predicted_name": "迈克尔·霍尔特",
     "entity_type": "PER"
   },
   {
@@ -1620,6 +1590,12 @@
     "entity_type": "ORG"
   },
   {
+    "mention": "中国赛资格赛",
+    "expected_name": "斯诺克中国赛资格赛",
+    "predicted_name": "斯诺克中国锦标赛资格赛",
+    "entity_type": "EVENT"
+  },
+  {
     "mention": "外滩茂悦",
     "expected_name": "外滩茂悦大酒店",
     "predicted_name": "外滩茂悦",
@@ -1704,12 +1680,6 @@
     "entity_type": "ORG"
   },
   {
-    "mention": "国家队",
-    "expected_name": "中国国家乒乓球队",
-    "predicted_name": "中国国家羽毛球队",
-    "entity_type": "ORG"
-  },
-  {
     "mention": "多哈冠军赛",
     "expected_name": "WTT多哈冠军赛",
     "predicted_name": "多哈冠军赛",
@@ -1743,12 +1713,6 @@
     "mention": "伦敦世乒赛团体赛",
     "expected_name": "世界乒乓球锦标赛团体赛",
     "predicted_name": "伦敦世乒赛团体赛",
-    "entity_type": "EVENT"
-  },
-  {
-    "mention": "名古屋亚运会",
-    "expected_name": "2026年亚洲运动会",
-    "predicted_name": "2026年名古屋亚运会",
     "entity_type": "EVENT"
   },
   {
@@ -1812,6 +1776,12 @@
     "entity_type": "EVENT"
   },
   {
+    "mention": "丹尼维尔斯",
+    "expected_name": "丹尼尔·维尔斯",
+    "predicted_name": "丹尼尔·威尔斯",
+    "entity_type": "PER"
+  },
+  {
     "mention": "北爱赛",
     "expected_name": "北爱尔兰斯诺克公开赛",
     "predicted_name": "斯诺克北爱尔兰公开赛",
@@ -1862,7 +1832,7 @@
   {
     "mention": "霍尔特",
     "expected_name": "Michael Holt",
-    "predicted_name": "迈克尔·霍尔特",
+    "predicted_name": "阿里斯特·卡特",
     "entity_type": "PER"
   },
   {
@@ -1902,9 +1872,15 @@
     "entity_type": "LOC"
   },
   {
+    "mention": "巴特洪堡站",
+    "expected_name": "巴特洪堡站网球赛事",
+    "predicted_name": "WTA500巴特洪堡站",
+    "entity_type": "EVENT"
+  },
+  {
     "mention": "中国公开赛",
     "expected_name": "2026斯诺克中国公开赛",
-    "predicted_name": "斯诺克中国公开赛",
+    "predicted_name": "中国斯诺克公开赛",
     "entity_type": "EVENT"
   },
   {
@@ -2144,7 +2120,7 @@
   {
     "mention": "中国队",
     "expected_name": "中国国家男子足球队",
-    "predicted_name": "中国国家羽毛球队",
+    "predicted_name": "中国国家乒乓球队",
     "entity_type": "ORG"
   },
   {
@@ -2152,12 +2128,6 @@
     "expected_name": "2026年国际足联世界杯",
     "predicted_name": "美加墨世界杯",
     "entity_type": "EVENT"
-  },
-  {
-    "mention": "蒙牛",
-    "expected_name": "内蒙古蒙牛乳业（集团）股份有限公司",
-    "predicted_name": "蒙牛集团",
-    "entity_type": "ORG"
   },
   {
     "mention": "日本队",
@@ -2202,22 +2172,10 @@
     "entity_type": "ORG"
   },
   {
-    "mention": "日本",
-    "expected_name": "日本国家男子篮球队",
-    "predicted_name": "日本国家羽毛球队",
-    "entity_type": "ORG"
-  },
-  {
     "mention": "杭州站",
     "expected_name": "杭州市",
     "predicted_name": "杭州奥体中心体育场",
     "entity_type": "LOC"
-  },
-  {
-    "mention": "北京男篮",
-    "expected_name": "北京首钢篮球俱乐部",
-    "predicted_name": "北京首钢男篮",
-    "entity_type": "ORG"
   },
   {
     "mention": "山东男篮",
@@ -2238,6 +2196,12 @@
     "entity_type": "EVENT"
   },
   {
+    "mention": "亚运会",
+    "expected_name": "亚洲运动会",
+    "predicted_name": "2024年亚洲运动会羽毛球比赛",
+    "entity_type": "EVENT"
+  },
+  {
     "mention": "北京首钢男篮",
     "expected_name": "北京首钢篮球俱乐部男子篮球队",
     "predicted_name": "北京首钢男篮",
@@ -2254,12 +2218,6 @@
     "expected_name": "广东宏远篮球俱乐部",
     "predicted_name": "广东队",
     "entity_type": "ORG"
-  },
-  {
-    "mention": "世预赛",
-    "expected_name": "国际篮联世界杯预选赛",
-    "predicted_name": "世界杯预选赛",
-    "entity_type": "EVENT"
   },
   {
     "mention": "宁波",
@@ -2496,12 +2454,6 @@
     "entity_type": "EVENT"
   },
   {
-    "mention": "WTT卢布尔雅那球星挑战赛",
-    "expected_name": "WTT球星挑战赛卢布尔雅那站",
-    "predicted_name": "2026年WTT卢布尔雅那球星挑战赛",
-    "entity_type": "EVENT"
-  },
-  {
     "mention": "伦敦世乒赛",
     "expected_name": "伦敦世界乒乓球锦标赛",
     "predicted_name": "2026年世界乒乓球锦标赛",
@@ -2610,6 +2562,18 @@
     "entity_type": "EVENT"
   },
   {
+    "mention": "伦敦世乒赛",
+    "expected_name": "伦敦世界乒乓球锦标赛",
+    "predicted_name": "2026年伦敦世界乒乓球团体锦标赛",
+    "entity_type": "EVENT"
+  },
+  {
+    "mention": "洛杉矶奥运会",
+    "expected_name": "2028年洛杉矶奥运会",
+    "predicted_name": "2028年洛杉矶夏季奥运会",
+    "entity_type": "EVENT"
+  },
+  {
     "mention": "齐达内",
     "expected_name": "齐内丁·齐达内",
     "predicted_name": "齐达内",
@@ -2646,6 +2610,18 @@
     "entity_type": "ORG"
   },
   {
+    "mention": "伦敦世乒赛",
+    "expected_name": "伦敦世界乒乓球锦标赛团体赛",
+    "predicted_name": "2026年伦敦世界乒乓球团体锦标赛",
+    "entity_type": "EVENT"
+  },
+  {
+    "mention": "伦敦世乒赛",
+    "expected_name": "伦敦世界乒乓球锦标赛团体赛",
+    "predicted_name": "2013年伦敦世界乒乓球锦标赛",
+    "entity_type": "EVENT"
+  },
+  {
     "mention": "世界乒联",
     "expected_name": "世界乒乓球联合会（WTT）",
     "predicted_name": "世界乒乓球职业大联盟",
@@ -2661,18 +2637,6 @@
     "mention": "澳门冠军赛",
     "expected_name": "WTT澳门冠军赛",
     "predicted_name": "澳门冠军赛",
-    "entity_type": "EVENT"
-  },
-  {
-    "mention": "奥运会",
-    "expected_name": "夏季奥林匹克运动会",
-    "predicted_name": "奥林匹克运动会",
-    "entity_type": "EVENT"
-  },
-  {
-    "mention": "伦敦世乒赛",
-    "expected_name": "伦敦世界乒乓球锦标赛",
-    "predicted_name": "2013年伦敦世界乒乓球锦标赛",
     "entity_type": "EVENT"
   },
   {
@@ -2700,12 +2664,6 @@
     "entity_type": "ORG"
   },
   {
-    "mention": "韩国队",
-    "expected_name": "韩国国家乒乓球队",
-    "predicted_name": "韩国国家羽毛球队",
-    "entity_type": "ORG"
-  },
-  {
     "mention": "里约",
     "expected_name": "里约热内卢",
     "predicted_name": "里约",
@@ -2728,12 +2686,6 @@
     "expected_name": "伦敦世乒赛（团体赛）",
     "predicted_name": "伦敦世界乒乓球锦标赛团体赛",
     "entity_type": "EVENT"
-  },
-  {
-    "mention": "中国队",
-    "expected_name": "中国国家乒乓球队",
-    "predicted_name": "中国国家羽毛球队",
-    "entity_type": "ORG"
   },
   {
     "mention": "伦敦世乒赛",
@@ -2784,12 +2736,6 @@
     "entity_type": "EVENT"
   },
   {
-    "mention": "伦敦世乒赛",
-    "expected_name": "伦敦世界乒乓球锦标赛团体赛",
-    "predicted_name": "2026年伦敦世界乒乓球团体锦标赛",
-    "entity_type": "EVENT"
-  },
-  {
     "mention": "东瀛",
     "expected_name": "日本国",
     "predicted_name": "NIL",
@@ -2800,12 +2746,6 @@
     "expected_name": "河北省乒乓球队",
     "predicted_name": "河北队",
     "entity_type": "ORG"
-  },
-  {
-    "mention": "无锡亚锦赛",
-    "expected_name": "2017年亚洲乒乓球锦标赛",
-    "predicted_name": "亚洲乒乓球锦标赛（无锡）",
-    "entity_type": "EVENT"
   },
   {
     "mention": "伦敦团体世乒赛",
@@ -2826,12 +2766,6 @@
     "entity_type": "EVENT"
   },
   {
-    "mention": "伦敦世乒赛",
-    "expected_name": "2026年伦敦世界乒乓球团体锦标赛",
-    "predicted_name": "伦敦世界乒乓球锦标赛团体赛",
-    "entity_type": "EVENT"
-  },
-  {
     "mention": "2028洛杉矶奥运会",
     "expected_name": "2028年洛杉矶夏季奥运会",
     "predicted_name": "2028年夏季奥林匹克运动会",
@@ -2844,22 +2778,16 @@
     "entity_type": "EVENT"
   },
   {
-    "mention": "洛杉矶奥运会",
-    "expected_name": "2028年洛杉矶奥运会",
-    "predicted_name": "2028年洛杉矶夏季奥运会",
-    "entity_type": "EVENT"
-  },
-  {
     "mention": "天津队",
     "expected_name": "天津乒乓球队",
     "predicted_name": "天津队",
     "entity_type": "ORG"
   },
   {
-    "mention": "伦敦世乒赛",
-    "expected_name": "伦敦世界乒乓球锦标赛",
-    "predicted_name": "2026年伦敦世界乒乓球团体锦标赛",
-    "entity_type": "EVENT"
+    "mention": "日乒",
+    "expected_name": "日本乒乓球协会",
+    "predicted_name": "日本国家乒乓球队",
+    "entity_type": "ORG"
   },
   {
     "mention": "T联赛",
@@ -2906,7 +2834,13 @@
   {
     "mention": "伦敦世乒赛",
     "expected_name": "世界乒乓球锦标赛（伦敦站）",
-    "predicted_name": "2023年伦敦世乒赛",
+    "predicted_name": "2026年伦敦世界乒乓球团体锦标赛",
+    "entity_type": "EVENT"
+  },
+  {
+    "mention": "无锡亚锦赛",
+    "expected_name": "亚洲乒乓球锦标赛（无锡）",
+    "predicted_name": "2017年亚洲乒乓球锦标赛",
     "entity_type": "EVENT"
   },
   {
@@ -2922,9 +2856,9 @@
     "entity_type": "EVENT"
   },
   {
-    "mention": "杭州亚运会",
-    "expected_name": "2022年杭州亚运会",
-    "predicted_name": "亚洲运动会(杭州)",
+    "mention": "洛杉矶奥运周期",
+    "expected_name": "2024-2028奥运周期",
+    "predicted_name": "2028年洛杉矶夏季奥林匹克运动会周期",
     "entity_type": "EVENT"
   },
   {
@@ -2978,7 +2912,7 @@
   {
     "mention": "伦敦世乒赛",
     "expected_name": "世界乒乓球锦标赛伦敦站",
-    "predicted_name": "世界乒乓球锦标赛（伦敦站）",
+    "predicted_name": "2026年伦敦世界乒乓球团体锦标赛",
     "entity_type": "EVENT"
   },
   {
@@ -3012,16 +2946,16 @@
     "entity_type": "ORG"
   },
   {
+    "mention": "韩国队",
+    "expected_name": "韩国国家乒乓球队",
+    "predicted_name": "韩国国家羽毛球队",
+    "entity_type": "ORG"
+  },
+  {
     "mention": "伦敦世乒赛",
     "expected_name": "世界乒乓球锦标赛（伦敦）",
     "predicted_name": "伦敦世界乒乓球锦标赛团体赛",
     "entity_type": "EVENT"
-  },
-  {
-    "mention": "日乒",
-    "expected_name": "日本乒乓球协会",
-    "predicted_name": "日本国家乒乓球队",
-    "entity_type": "ORG"
   },
   {
     "mention": "威斯特法伦",
@@ -3048,18 +2982,6 @@
     "entity_type": "ORG"
   },
   {
-    "mention": "奥运会",
-    "expected_name": "奥林匹克运动会乒乓球项目",
-    "predicted_name": "奥林匹克运动会",
-    "entity_type": "EVENT"
-  },
-  {
-    "mention": "WTT卢布尔雅那球星挑战赛",
-    "expected_name": "2026年WTT卢布尔雅那球星挑战赛",
-    "predicted_name": "WTT球星挑战赛卢布尔雅那站",
-    "entity_type": "EVENT"
-  },
-  {
     "mention": "萨格勒布常规挑战赛",
     "expected_name": "WTT常规挑战赛萨格勒布站",
     "predicted_name": "萨格勒布常规挑战赛",
@@ -3068,7 +2990,7 @@
   {
     "mention": "伦敦世乒赛",
     "expected_name": "2013年伦敦世界乒乓球锦标赛",
-    "predicted_name": "伦敦世界乒乓球锦标赛团体赛",
+    "predicted_name": "2026年伦敦世界乒乓球团体锦标赛",
     "entity_type": "EVENT"
   },
   {
@@ -3081,12 +3003,6 @@
     "mention": "雅典奥运会",
     "expected_name": "2004年夏季奥运会",
     "predicted_name": "2004年雅典奥运会",
-    "entity_type": "EVENT"
-  },
-  {
-    "mention": "北京奥运会",
-    "expected_name": "2008年夏季奥运会",
-    "predicted_name": "2008年北京奥运会",
     "entity_type": "EVENT"
   },
   {
@@ -3124,12 +3040,6 @@
     "expected_name": "中国游泳队",
     "predicted_name": "中国国家羽毛球队",
     "entity_type": "ORG"
-  },
-  {
-    "mention": "世锦赛",
-    "expected_name": "世界游泳锦标赛",
-    "predicted_name": "斯诺克世界锦标赛",
-    "entity_type": "EVENT"
   },
   {
     "mention": "2026全国游泳冠军赛",
@@ -3216,6 +3126,12 @@
     "entity_type": "ORG"
   },
   {
+    "mention": "世锦赛",
+    "expected_name": "世界游泳锦标赛",
+    "predicted_name": "斯诺克世界锦标赛",
+    "entity_type": "EVENT"
+  },
+  {
     "mention": "NetEase Hao",
     "expected_name": "网易公司",
     "predicted_name": "网易号",
@@ -3246,9 +3162,21 @@
     "entity_type": "ORG"
   },
   {
+    "mention": "世锦赛",
+    "expected_name": "世界游泳锦标赛",
+    "predicted_name": "2024年世界羽毛球锦标赛",
+    "entity_type": "EVENT"
+  },
+  {
     "mention": "洛杉矶奥运会",
     "expected_name": "2028年洛杉矶夏季奥运会",
     "predicted_name": "2028年洛杉矶奥运会",
+    "entity_type": "EVENT"
+  },
+  {
+    "mention": "世锦赛",
+    "expected_name": "世界羽毛球锦标赛",
+    "predicted_name": "2025年世界羽毛球锦标赛",
     "entity_type": "EVENT"
   },
   {
@@ -3300,12 +3228,6 @@
     "entity_type": "EVENT"
   },
   {
-    "mention": "中国公开赛",
-    "expected_name": "中国游泳公开赛",
-    "predicted_name": "斯诺克中国公开赛",
-    "entity_type": "EVENT"
-  },
-  {
     "mention": "国家队",
     "expected_name": "中国国家游泳队",
     "predicted_name": "中国国家乒乓球队",
@@ -3334,6 +3256,12 @@
     "expected_name": "中央电视台新闻频道",
     "predicted_name": "中国中央电视台新闻",
     "entity_type": "ORG"
+  },
+  {
+    "mention": "世锦赛",
+    "expected_name": "世界游泳锦标赛",
+    "predicted_name": "2025年世界羽毛球锦标赛",
+    "entity_type": "EVENT"
   },
   {
     "mention": "俄罗斯",
@@ -3392,7 +3320,7 @@
   {
     "mention": "中国队",
     "expected_name": "中国国家游泳队",
-    "predicted_name": "中国国家羽毛球队",
+    "predicted_name": "中国国家乒乓球队",
     "entity_type": "ORG"
   },
   {
@@ -3516,6 +3444,12 @@
     "entity_type": "EVENT"
   },
   {
+    "mention": "美国",
+    "expected_name": "美利坚合众国",
+    "predicted_name": "United States",
+    "entity_type": "LOC"
+  },
+  {
     "mention": "伯明翰亚历山大体育场",
     "expected_name": "亚历山大体育场",
     "predicted_name": "伯明翰亚历山大体育场",
@@ -3574,11 +3508,5 @@
     "expected_name": "全国田径冠军赛",
     "predicted_name": "全国游泳冠军赛",
     "entity_type": "EVENT"
-  },
-  {
-    "mention": "NCAA",
-    "expected_name": "美国大学体育协会",
-    "predicted_name": "National Collegiate Athletic Association",
-    "entity_type": "ORG"
   }
 ]

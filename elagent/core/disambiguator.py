@@ -37,8 +37,8 @@ class Disambiguator:
         #   - 先验概率基于标注数据统计
         #   - keyword_weight 现在承载上下文得分（区分词文档命中+局部重叠）
         self.name_match_weight = 0.35         # 名称匹配度
-        self.prior_weight = 0.30              # 先验概率
-        self.name_completeness_weight = 0.15  # 名称完整度
+        self.prior_weight = 0.20              # 先验概率（降低，减轻KB碎片化影响）
+        self.name_completeness_weight = 0.25  # 名称完整度（提高，增强全称偏好）
         self.type_weight = 0.15               # 类型一致性
         self.keyword_weight = 0.05            # 关键词重叠
         self.popularity_weight = 0.00         # 实体流行度（关闭）
@@ -208,16 +208,17 @@ class Disambiguator:
         """
         上下文乘性boost（仅用实体名称 + 文章全文）
 
-        从实体名提取区分2-gram（不在mention中的），统计在全文中的出现密度。
-        密度高 → boost > 1.0（领域匹配）；密度极低 → penalty < 1.0（领域可能不匹配）。
+        从实体名提取该实体独有的区分2-gram（不出现在其他候选名中的），
+        统计在全文中的命中密度。只计算特有词，避免"球队""锦标赛"等通用词干扰。
 
         Args:
             mention: 实体指称
             entity: 候选实体
             full_text: 文章全文
+            all_candidates: 所有候选实体列表（用于计算独有bigram）
 
         Returns:
-            boost系数 (0.75~1.25)，1.0为中性
+            boost系数，1.0为中性
         """
         full_text = (full_text or mention.context or "").lower()
         if len(full_text) < 10:
@@ -225,7 +226,7 @@ class Disambiguator:
 
         mention_text = mention.text.lower()
 
-        # 收集实体所有名称的字符2-gram
+        # 收集该实体所有名称的2-gram
         all_names = [entity.standard_name] + list(entity.aliases)
         entity_bigrams = set()
         for name in all_names:
@@ -233,29 +234,24 @@ class Disambiguator:
             for i in range(len(name_lower) - 1):
                 entity_bigrams.add(name_lower[i:i+2])
 
-        # 收集mention的2-gram（排除共有部分）
+        # 收集mention的2-gram（排除）
         mention_bigrams = set()
         for i in range(len(mention_text) - 1):
             mention_bigrams.add(mention_text[i:i+2])
 
-        # 区分2-gram
+        # 区分2-gram = 实体有 - mention有
         diff_bigrams = entity_bigrams - mention_bigrams
-
         if not diff_bigrams:
-            return 1.0  # 实体名=mention，无区分信号，中性
+            return 1.0
 
         # 统计命中密度
         total_hits = sum(full_text.count(bg) for bg in diff_bigrams)
         text_len = max(len(full_text), 1)
         density = total_hits / (text_len / 100.0)
 
-        # density < 1 → neutral 1.0（无足够信号不惩罚）
-        # density 1~3 → mild boost 1.03~1.10
-        # density 3+ → strong boost 1.10~1.20
-        if density < 1.0:
+        if density < 0.15:
             return 1.0
-        else:
-            return min(1.0 + density * 0.03, 1.20)
+        return min(1.0 + density * 0.05, 1.20)
 
     def _name_match_score(self, mention: Mention, entity: Entity) -> float:
         """
@@ -290,13 +286,16 @@ class Disambiguator:
         """计算原始名称匹配得分（不含长度惩罚）"""
         # 精确匹配（最高优先级）
         if mention_text == standard_name:
-            # 短名称精确匹配惩罚：越短越可能是简称/缩写
+            # 短名称惩罚：当mention精确命中实体名时，
+            # 该实体可能就是简称本身（如KB中同时有"浙江队"和"浙江省羽毛球队"）
             if len(standard_name) <= 2:
-                return 0.80  # 1-2字：很可能是简称（如"国羽"）
+                return 0.75  # 1-2字：几乎肯定是简称
             elif len(standard_name) == 3:
-                return 0.85  # 3字：可能是简称（如"浙江队"）
+                return 0.80  # 3字：如"浙江队""日本队"
             elif len(standard_name) == 4:
-                return 0.90  # 4字：轻微惩罚
+                return 0.85  # 4字：轻微惩罚
+            elif len(standard_name) <= 5:
+                return 0.90
             return 1.0
 
         # 别名精确匹配
