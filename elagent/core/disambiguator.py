@@ -59,37 +59,21 @@ class Disambiguator:
                      candidates: List[Candidate],
                      top_k: int = 1,
                      full_text: str = "") -> List[Candidate]:
-        """
-        消歧，从候选中选择最佳实体
-
-        Args:
-            mention: 实体指称
-            candidates: 候选实体列表
-            top_k: 返回前K个结果
-
-        Returns:
-            排序后的候选列表
-        """
         if not candidates:
             return []
-
         if len(candidates) == 1:
             return candidates
 
-        # 类型强过滤：当mention有明确类型时，优先选择类型一致的候选
         if mention.entity_type:
             type_matched = [c for c in candidates if c.entity.entity_type == mention.entity_type]
             if type_matched:
                 candidates = type_matched
 
-        # 计算每个候选的综合得分
         scored_candidates = []
         for candidate in candidates:
             score = self._compute_score(mention, candidate, full_text)
             candidate.score = score
             scored_candidates.append(candidate)
-
-        # 按得分降序排序
         scored_candidates.sort(key=lambda x: x.score, reverse=True)
 
         return scored_candidates[:top_k]
@@ -362,7 +346,6 @@ class Disambiguator:
         standard_name = entity.standard_name
 
         # 实体名比mention长超过50% → 是全称，给高分
-        # 例如：mention="国羽"，entity="中国国家羽毛球队"
         if len(standard_name) > len(mention_text) * 1.5:
             return 0.9
 
@@ -370,12 +353,15 @@ class Disambiguator:
         if len(standard_name) > len(mention_text) * 1.2:
             return 0.8
 
-        # 长度相近 → 可能是简称匹配简称，中等分
+        # 长度相近 → 中等分
         if len(standard_name) >= len(mention_text):
             return 0.7
 
-        # 实体名比mention短 → 实体是简称，低分
-        # 例如：mention="中国国家羽毛球队"，entity="国羽"
+        # 实体名比mention短 → 两种情况
+        # A. mention是过度指定（如"银川高铁站"→"银川站"）：实体字符是mention子集 → 高分
+        if set(standard_name).issubset(set(mention_text)):
+            return 0.85
+        # B. mention是全称实体是简称（如"中国羽毛球队"→"国羽"）：低分
         return 0.3
 
 

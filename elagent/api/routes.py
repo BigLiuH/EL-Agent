@@ -277,25 +277,19 @@ def _enhanced_link(mention: Mention, trace=None, full_text: str = "") -> LinkRes
         return result
 
     # 2. 别名精确匹配
-    # 如果找到别名匹配，使用消歧器选择最佳候选
     alias_entities = knowledge_base.search_by_alias(mention.text)
     if alias_entities:
-        # 如果只有一个候选，直接返回
         if len(alias_entities) == 1:
             result.linked_entity = alias_entities[0]
             result.is_nil = False
             result.confidence = 0.95
             result.nil_reason = ""
             if trace:
-                trace.add_step(
-                    step_name="别名精确匹配",
-                    original_value=mention.text,
+                trace.add_step(step_name="别名精确匹配", original_value=mention.text,
                     new_value=f"{alias_entities[0].standard_name} ({alias_entities[0].id})",
-                    reason=f"别名匹配成功"
-                )
+                    reason="别名匹配成功")
             return result
 
-        # 如果有多个候选，使用消歧器选择最佳
         candidates = [Candidate(entity=e, score=0.95, match_source="alias") for e in alias_entities]
         ranked = disambiguator.disambiguate(mention, candidates, top_k=5, full_text=full_text)
         if ranked:
@@ -306,19 +300,14 @@ def _enhanced_link(mention: Mention, trace=None, full_text: str = "") -> LinkRes
             result.confidence = best.score
             result.nil_reason = ""
             if trace:
-                trace.add_step(
-                    step_name="别名匹配+消歧",
-                    original_value=mention.text,
+                trace.add_step(step_name="别名匹配+消歧", original_value=mention.text,
                     new_value=f"{best.entity.standard_name} ({best.entity.id})",
-                    reason=f"从{len(alias_entities)}个候选中选择，得分={best.score:.2f}"
-                )
+                    reason=f"从{len(alias_entities)}个候选中选择，得分={best.score:.2f}")
             return result
 
     # 3. 模糊匹配（名称包含关系）
-    # 搜索名称包含mention的实体
     fuzzy_candidates = []
     for entity in knowledge_base.entities.values():
-        # 匹配名称包含关系，长度差异不超过8个字符
         if mention.text in entity.standard_name:
             if len(entity.standard_name) - len(mention.text) <= 8:
                 fuzzy_candidates.append(entity)
@@ -326,32 +315,24 @@ def _enhanced_link(mention: Mention, trace=None, full_text: str = "") -> LinkRes
             if len(mention.text) - len(entity.standard_name) <= 8:
                 fuzzy_candidates.append(entity)
 
-    # 如果有模糊匹配，使用消歧器选择最佳
     if fuzzy_candidates:
-        # 强制类型过滤：优先选择类型一致的
         if mention.entity_type:
             type_matched = [e for e in fuzzy_candidates if e.entity_type == mention.entity_type]
             if type_matched:
                 fuzzy_candidates = type_matched
 
-        # 如果只有一个，直接返回
         if len(fuzzy_candidates) == 1:
             result.linked_entity = fuzzy_candidates[0]
             result.is_nil = False
             result.confidence = 0.8
             result.nil_reason = ""
             if trace:
-                trace.add_step(
-                    step_name="模糊匹配",
-                    original_value=mention.text,
+                trace.add_step(step_name="模糊匹配", original_value=mention.text,
                     new_value=f"{fuzzy_candidates[0].standard_name} ({fuzzy_candidates[0].id})",
-                    reason=f"名称包含关系匹配"
-                )
+                    reason="名称包含关系匹配")
             return result
 
-        # 多个候选，使用消歧器进行5信号加权评分选择最佳
-        candidates = [Candidate(entity=e, score=0.75, match_source="fuzzy")
-                      for e in fuzzy_candidates]
+        candidates = [Candidate(entity=e, score=0.75, match_source="fuzzy") for e in fuzzy_candidates]
         ranked = disambiguator.disambiguate(mention, candidates, top_k=5, full_text=full_text)
         if ranked:
             ranked = _llm_fallback(mention, ranked, full_text, trace)
@@ -361,12 +342,9 @@ def _enhanced_link(mention: Mention, trace=None, full_text: str = "") -> LinkRes
             result.confidence = best.score
             result.nil_reason = ""
             if trace:
-                trace.add_step(
-                    step_name="模糊匹配消歧",
-                    original_value=mention.text,
+                trace.add_step(step_name="模糊匹配消歧", original_value=mention.text,
                     new_value=f"{best.entity.standard_name} ({best.entity.id})",
-                    reason=f"从{len(fuzzy_candidates)}个候选中消歧选择，得分={best.score:.2f}"
-                )
+                    reason=f"从{len(fuzzy_candidates)}个候选中消歧选择，得分={best.score:.2f}")
             return result
 
     # 4. BM25检索（仅在前面都没有匹配时使用）
