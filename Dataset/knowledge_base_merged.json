@@ -1463,7 +1463,10 @@
       "standard_name": "WTT卢布尔雅那球星赛",
       "entity_type": "EVENT",
       "description": "世界乒乓球职业大联盟（WTT）举办的球星级别赛事，于斯洛文尼亚卢布尔雅那举行。中国乒乓球队派出22名年轻选手参赛，仅获得一枚男双银牌，五个单项冠军全部被外协会选手夺得。",
-      "aliases": [],
+      "aliases": [
+        "WTT球星挑战赛（卢布尔雅那）",
+        "WTT卢布尔雅那球星赛"
+      ],
       "sources": [
         "kb_badminton",
         "kb_billiards",
@@ -1508,24 +1511,6 @@
         "kb_ppq"
       ],
       "entity_id": "EVENT_0138"
-    },
-    {
-      "standard_name": "WTT球星挑战赛卢布尔雅那站",
-      "entity_type": "EVENT",
-      "description": "世界乒乓球职业大联盟（WTT）旗下赛事，于2026年6月21日在斯洛文尼亚卢布尔雅那收官，日本队获得4金1银。",
-      "aliases": [
-        "卢布尔雅那球星挑战赛",
-        "球星挑战赛卢布尔雅那站",
-        "WTT卢布尔雅那球星挑战赛",
-        "2026年WTT卢布尔雅那球星挑战赛",
-        "2026WTT卢布尔雅那球星挑战赛"
-      ],
-      "sources": [
-        "kb_badminton",
-        "kb_billiards",
-        "kb_ppq"
-      ],
-      "entity_id": "EVENT_0139"
     },
     {
       "standard_name": "WTT美国大满贯赛",
@@ -11600,23 +11585,14 @@
       "standard_name": "杨霈霖",
       "entity_type": "PER",
       "description": "中国香港羽毛球女子双打运动员，与杨雅婷搭档。在本届新加坡公开赛首轮负于中国的贾一凡/张殊贤组合。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "PER_0479"
-    },
-    {
-      "standard_name": "杨霈霖（Yeung Pui Lam）",
-      "entity_type": "PER",
-      "description": "中国香港女子羽毛球运动员，主攻双打，与杨雅婷搭档。",
       "aliases": [
+        "杨霈霖（Yeung Pui Lam）",
         "杨霈霖"
       ],
       "sources": [
         "kb_badminton"
       ],
-      "entity_id": "PER_0480"
+      "entity_id": "PER_0479"
     },
     {
       "standard_name": "杭州富阳博卡体育用品有限公司",
@@ -32137,24 +32113,14 @@
       "entity_type": "ORG",
       "description": "中国男子篮球职业联赛（CBA）的传统强队，多次获得CBA总冠军，位于北京市，拥有赵睿、周琦等本土球星。",
       "aliases": [
-        "北京男篮"
-      ],
-      "sources": [
-        "kb_part2"
-      ],
-      "entity_id": "ORG_0665"
-    },
-    {
-      "standard_name": "北京首钢篮球俱乐部男子篮球队",
-      "entity_type": "ORG",
-      "description": "中国男子篮球职业联赛（CBA）球队，曾多次获得总冠军。",
-      "aliases": [
+        "北京男篮",
+        "北京首钢篮球俱乐部男子篮球队",
         "北京首钢男篮"
       ],
       "sources": [
         "kb_part2"
       ],
-      "entity_id": "ORG_0666"
+      "entity_id": "ORG_0665"
     },
     {
       "standard_name": "北原麻纪",
@@ -39826,18 +39792,6 @@
       "entity_id": "EVENT_0703"
     },
     {
-      "standard_name": "WTT球星挑战赛（卢布尔雅那）",
-      "entity_type": "EVENT",
-      "description": "2026年在卢布尔雅那举办的WTT球星赛，国乒0冠收官，最好成绩男双亚军。",
-      "aliases": [
-        "WTT卢布尔雅那球星赛"
-      ],
-      "sources": [
-        "kb_ppq"
-      ],
-      "entity_id": "EVENT_0704"
-    },
-    {
       "standard_name": "WTT球星赛卢布尔雅那站",
       "entity_type": "EVENT",
       "description": "WTT系列赛事中的球星赛，在斯洛文尼亚卢布尔雅那举行，国乒此前曾派出半主力阵容参赛。",
@@ -41552,7 +41506,14 @@
       "standard_name": "卢布尔雅那球星挑战赛",
       "entity_type": "EVENT",
       "description": "WTT系列赛事之一，在斯洛文尼亚卢布尔雅那举行，国乒全军覆没未进四强",
-      "aliases": [],
+      "aliases": [
+        "WTT球星挑战赛卢布尔雅那站",
+        "卢布尔雅那球星挑战赛",
+        "球星挑战赛卢布尔雅那站",
+        "WTT卢布尔雅那球星挑战赛",
+        "2026年WTT卢布尔雅那球星挑战赛",
+        "2026WTT卢布尔雅那球星挑战赛"
+      ],
       "sources": [
         "kb_ppq"
       ],

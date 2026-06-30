@@ -204,8 +204,8 @@
     "standard_name": "2026年澳大利亚羽毛球公开赛"
   },
   "2026WTT卢布尔雅那球星挑战赛": {
-    "entity_id": "EVENT_0139",
-    "standard_name": "WTT球星挑战赛卢布尔雅那站"
+    "entity_id": "EVENT_0754",
+    "standard_name": "卢布尔雅那球星挑战赛"
   },
   "2026WTT萨格勒布常规挑战赛": {
     "entity_id": "EVENT_0029",
@@ -964,8 +964,12 @@
     "standard_name": "WTT中国大满贯赛"
   },
   "WTT卢布尔雅那球星赛": {
-    "entity_id": "EVENT_0704",
-    "standard_name": "WTT球星挑战赛（卢布尔雅那）"
+    "entity_id": "EVENT_0135",
+    "standard_name": "WTT卢布尔雅那球星赛"
+  },
+  "WTT球星挑战赛（卢布尔雅那）": {
+    "entity_id": "EVENT_0135",
+    "standard_name": "WTT卢布尔雅那球星赛"
   },
   "WTT常规挑战赛斯科普里站": {
     "entity_id": "EVENT_0136",
@@ -990,26 +994,6 @@
   "新加坡大满贯": {
     "entity_id": "EVENT_0138",
     "standard_name": "WTT新加坡大满贯"
-  },
-  "WTT球星挑战赛卢布尔雅那站": {
-    "entity_id": "EVENT_0139",
-    "standard_name": "WTT球星挑战赛卢布尔雅那站"
-  },
-  "卢布尔雅那球星挑战赛": {
-    "entity_id": "EVENT_0139",
-    "standard_name": "WTT球星挑战赛卢布尔雅那站"
-  },
-  "球星挑战赛卢布尔雅那站": {
-    "entity_id": "EVENT_0139",
-    "standard_name": "WTT球星挑战赛卢布尔雅那站"
-  },
-  "WTT卢布尔雅那球星挑战赛": {
-    "entity_id": "EVENT_0139",
-    "standard_name": "WTT球星挑战赛卢布尔雅那站"
-  },
-  "2026年WTT卢布尔雅那球星挑战赛": {
-    "entity_id": "EVENT_0139",
-    "standard_name": "WTT球星挑战赛卢布尔雅那站"
   },
   "WTT美国大满贯赛": {
     "entity_id": "EVENT_0140",
@@ -6080,12 +6064,12 @@
     "standard_name": "杨霈霈"
   },
   "杨霈霖": {
-    "entity_id": "PER_0480",
-    "standard_name": "杨霈霖（Yeung Pui Lam）"
+    "entity_id": "PER_0479",
+    "standard_name": "杨霈霖"
   },
   "杨霈霖（Yeung Pui Lam）": {
-    "entity_id": "PER_0480",
-    "standard_name": "杨霈霖（Yeung Pui Lam）"
+    "entity_id": "PER_0479",
+    "standard_name": "杨霈霖"
   },
   "杭州富阳博卡体育用品有限公司": {
     "entity_id": "ORG_0292",
@@ -16472,12 +16456,12 @@
     "standard_name": "北京工人体育场"
   },
   "北京首钢男篮": {
-    "entity_id": "ORG_0666",
-    "standard_name": "北京首钢篮球俱乐部男子篮球队"
+    "entity_id": "ORG_0665",
+    "standard_name": "北京首钢男篮"
   },
   "北京首钢篮球俱乐部男子篮球队": {
-    "entity_id": "ORG_0666",
-    "standard_name": "北京首钢篮球俱乐部男子篮球队"
+    "entity_id": "ORG_0665",
+    "standard_name": "北京首钢男篮"
   },
   "北原麻纪": {
     "entity_id": "PER_1536",
@@ -20415,10 +20399,6 @@
     "entity_id": "EVENT_0703",
     "standard_name": "WTT球星挑战赛"
   },
-  "WTT球星挑战赛（卢布尔雅那）": {
-    "entity_id": "EVENT_0704",
-    "standard_name": "WTT球星挑战赛（卢布尔雅那）"
-  },
   "WTT球星赛卢布尔雅那站": {
     "entity_id": "EVENT_0705",
     "standard_name": "WTT球星赛卢布尔雅那站"
@@ -21234,6 +21214,26 @@
   "卢布尔雅那WTT挑战赛": {
     "entity_id": "EVENT_0753",
     "standard_name": "卢布尔雅那WTT挑战赛"
+  },
+  "卢布尔雅那球星挑战赛": {
+    "entity_id": "EVENT_0754",
+    "standard_name": "卢布尔雅那球星挑战赛"
+  },
+  "WTT球星挑战赛卢布尔雅那站": {
+    "entity_id": "EVENT_0754",
+    "standard_name": "卢布尔雅那球星挑战赛"
+  },
+  "球星挑战赛卢布尔雅那站": {
+    "entity_id": "EVENT_0754",
+    "standard_name": "卢布尔雅那球星挑战赛"
+  },
+  "WTT卢布尔雅那球星挑战赛": {
+    "entity_id": "EVENT_0754",
+    "standard_name": "卢布尔雅那球星挑战赛"
+  },
+  "2026年WTT卢布尔雅那球星挑战赛": {
+    "entity_id": "EVENT_0754",
+    "standard_name": "卢布尔雅那球星挑战赛"
   },
   "吉文野": {
     "entity_id": "PER_1997",

@@ -38,10 +38,11 @@ class Disambiguator:
         #   - keyword_weight 现在承载上下文得分（区分词文档命中+局部重叠）
         self.name_match_weight = 0.15         # 名称匹配度
         self.prior_weight = 0.17              # 先验概率
-        self.name_completeness_weight = 0.25  # 名称完整度
+        self.name_completeness_weight = 0.15  # 名称完整度
         self.type_weight = 0.15               # 类型一致性
         self.keyword_weight = 0.00            # 关键词重叠
         self.popularity_weight = 0.00         # 实体流行度
+        self.domain_weight = 0.15             # 领域匹配（加性）
 
         # 加载先验概率
         self.prior_probs = self._load_prior_probs()
@@ -99,8 +100,8 @@ class Disambiguator:
         # 2. 关键词重叠得分（全文）
         keyword_score = self._keyword_overlap_score(mention, entity, full_text)
 
-        # 3. 上下文boost（乘性）
-        context_boost = self._context_boost(mention, entity, full_text, all_entities)
+        # 3. 领域匹配得分（加性）
+        domain_score = self._domain_score(mention, entity, full_text, all_entities)
 
         # 4. 先验概率得分
         prior_score = self._prior_probability_score(entity)
@@ -121,11 +122,9 @@ class Disambiguator:
             self.prior_weight * prior_score +
             self.name_match_weight * name_score +
             self.name_completeness_weight * completeness_score +
-            self.popularity_weight * popularity_score
+            self.popularity_weight * popularity_score +
+            self.domain_weight * domain_score
         )
-
-        # 上下文乘性boost：区分2-gram在文章中命中越多，boost越强
-        total_score *= context_boost
 
         return total_score
 
@@ -193,15 +192,12 @@ class Disambiguator:
         overlap = text_tokens & name_tokens
         return len(overlap) / max(len(name_tokens), 1)
 
-    def _context_boost(self, mention: Mention, entity: Entity, full_text: str = "",
-                        all_entities: list = None) -> float:
-        """
-        上下文乘性boost：实体名中不在mention里的区分2-gram，
-        统计在全文中的命中密度。
-        """
+    def _domain_score(self, mention: Mention, entity: Entity, full_text: str = "",
+                       all_entities: list = None) -> float:
+        """领域匹配得分（加性）：实体名区分2-gram在全文中的命中密度"""
         full_text = (full_text or mention.context or "").lower()
         if len(full_text) < 10:
-            return 1.0
+            return 0.0
 
         all_names = [entity.standard_name] + list(entity.aliases)
         entity_bigrams = set()
@@ -217,15 +213,13 @@ class Disambiguator:
 
         diff_bigrams = entity_bigrams - mention_bigrams
         if not diff_bigrams:
-            return 1.0
+            return 0.0
 
         total_hits = sum(full_text.count(bg) for bg in diff_bigrams)
         text_len = max(len(full_text), 1)
         density = total_hits / (text_len / 100.0)
 
-        if density < 0.15:
-            return 1.0
-        return min(1.0 + density * 0.05, 1.20)
+        return min(density / 5.0, 1.0)
 
     def _name_match_score(self, mention: Mention, entity: Entity) -> float:
         """

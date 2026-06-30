@@ -1,15 +1,15 @@
 {
   "metrics": {
-    "link_accuracy": 0.9808,
-    "disambiguation_accuracy": 0.8527,
-    "alias_recall": 0.9814,
+    "link_accuracy": 0.9809,
+    "disambiguation_accuracy": 0.8533,
+    "alias_recall": 0.9816,
     "single_candidate_accuracy": 0.9994,
     "total_mentions": 40942,
-    "correct_links": 40154,
-    "multi_candidate_total": 4995,
-    "multi_candidate_correct": 4259,
+    "correct_links": 40162,
+    "multi_candidate_total": 4964,
+    "multi_candidate_correct": 4236,
     "alias_mentions": 40911,
-    "alias_correct": 40152
+    "alias_correct": 40160
   },
   "targets": {
     "link_accuracy": 0.85,
@@ -304,6 +304,18 @@
       "mention": "世锦赛",
       "expected_name": "世界羽毛球锦标赛",
       "predicted_name": "世界游泳锦标赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "洛杉矶奥运周期",
+      "expected_name": "2028年洛杉矶夏季奥林匹克运动会周期",
+      "predicted_name": "2024-2028奥运周期",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "洛杉矶奥运周期",
+      "expected_name": "2028年洛杉矶夏季奥林匹克运动会周期",
+      "predicted_name": "2024-2028奥运周期",
       "entity_type": "EVENT"
     },
     {
@@ -604,18 +616,6 @@
       "mention": "印度公开赛",
       "expected_name": "印度羽毛球公开赛",
       "predicted_name": "印度公开赛",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "全英公开赛",
-      "expected_name": "全英羽毛球公开赛",
-      "predicted_name": "全英公开赛",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "德国公开赛",
-      "expected_name": "德国羽毛球公开赛",
-      "predicted_name": "德国公开赛",
       "entity_type": "EVENT"
     }
   ]
