@@ -20,7 +20,6 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from elagent.core.knowledge_base import knowledge_base
 from elagent.core.bm25_index import bm25_index
-from elagent.core.bert_disambiguator import bert_disambiguator
 from elagent.core.llm_disambiguator import llm_disambiguator
 from elagent.models.mention import Mention
 from elagent.api.routes import _enhanced_link
@@ -42,7 +41,7 @@ def evaluate(articles_path: str = "Dataset/llm_extracted_merged.json",
     print("=" * 70)
 
     # 加载知识库
-    print("\n[1/5] 加载知识库...")
+    print("\n[1/4] 加载知识库...")
     knowledge_base.load()
     print(f"  知识库加载完成: {knowledge_base.entity_count}个实体")
 
@@ -54,27 +53,18 @@ def evaluate(articles_path: str = "Dataset/llm_extracted_merged.json",
         print(f"  LLM消歧: 未启用")
 
     # 构建BM25索引
-    print("\n[2/6] 构建BM25索引...")
+    print("\n[2/4] 构建BM25索引...")
     bm25_index.build(knowledge_base.entities)
     print(f"  BM25索引构建完成")
 
-    # 加载BERT消歧模型
-    print("\n[3/6] 加载BERT消歧模型...")
-    bert_disambiguator.load_model()
-    if bert_disambiguator.loaded:
-        bert_disambiguator.build_index(knowledge_base.entities)
-        print(f"  BERT消歧模型加载完成")
-    else:
-        print(f"  BERT消歧模型加载失败，将使用规则消歧")
-
     # 加载文章
-    print("\n[4/6] 加载文章数据...")
+    print("\n[3/5] 加载文章数据...")
     articles = load_articles(articles_path)
     articles = articles[:max_articles]
     print(f"  加载了 {len(articles)} 篇文章")
 
     # 运行评测
-    print("\n[5/6] 运行评测...")
+    print("\n[4/5] 运行评测...")
 
     # 初始化统计
     total_mentions = 0

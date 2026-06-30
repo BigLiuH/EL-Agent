@@ -1,15 +1,15 @@
 {
   "metrics": {
-    "link_accuracy": 0.9565,
-    "disambiguation_accuracy": 0.8486,
-    "alias_recall": 0.9569,
-    "single_candidate_accuracy": 0.999,
+    "link_accuracy": 0.9808,
+    "disambiguation_accuracy": 0.8527,
+    "alias_recall": 0.9814,
+    "single_candidate_accuracy": 0.9994,
     "total_mentions": 40942,
-    "correct_links": 39163,
-    "multi_candidate_total": 11467,
-    "multi_candidate_correct": 9731,
-    "alias_mentions": 40925,
-    "alias_correct": 39161
+    "correct_links": 40154,
+    "multi_candidate_total": 4995,
+    "multi_candidate_correct": 4259,
+    "alias_mentions": 40911,
+    "alias_correct": 40152
   },
   "targets": {
     "link_accuracy": 0.85,
@@ -75,7 +75,7 @@
     {
       "mention": "世锦赛",
       "expected_name": "世界羽毛球锦标赛",
-      "predicted_name": "斯诺克世界锦标赛",
+      "predicted_name": "世界游泳锦标赛",
       "entity_type": "EVENT"
     },
     {
@@ -85,18 +85,6 @@
       "entity_type": "EVENT"
     },
     {
-      "mention": "印尼公开赛",
-      "expected_name": "印度尼西亚羽毛球公开赛",
-      "predicted_name": "印尼羽毛球公开赛",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "印尼公开赛",
-      "expected_name": "印度尼西亚羽毛球公开赛",
-      "predicted_name": "印尼羽毛球公开赛",
-      "entity_type": "EVENT"
-    },
-    {
       "mention": "中国澳门羽毛球公开赛",
       "expected_name": "澳门羽毛球公开赛",
       "predicted_name": "2026年中国澳门羽毛球公开赛",
@@ -113,24 +101,6 @@
       "expected_name": "澳门羽毛球公开赛",
       "predicted_name": "2026年中国澳门羽毛球公开赛",
       "entity_type": "EVENT"
-    },
-    {
-      "mention": "亚锦赛",
-      "expected_name": "亚洲羽毛球锦标赛",
-      "predicted_name": "亚锦赛",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "蒂亚福",
-      "expected_name": "弗朗西斯·蒂亚福",
-      "predicted_name": "蒂亚福",
-      "entity_type": "PER"
-    },
-    {
-      "mention": "蒂亚福",
-      "expected_name": "弗朗西斯·蒂亚福",
-      "predicted_name": "蒂亚福",
-      "entity_type": "PER"
     },
     {
       "mention": "德国公开赛",
@@ -142,12 +112,6 @@
       "mention": "澳大利亚公开赛",
       "expected_name": "2026年澳大利亚羽毛球公开赛",
       "predicted_name": "澳大利亚公开赛",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "WTT卢布尔雅那球星挑战赛",
-      "expected_name": "WTT球星挑战赛卢布尔雅那站",
-      "predicted_name": "2026年WTT卢布尔雅那球星挑战赛",
       "entity_type": "EVENT"
     },
     {
@@ -295,22 +259,16 @@
       "entity_type": "EVENT"
     },
     {
+      "mention": "中国公开赛",
+      "expected_name": "中国羽毛球公开赛",
+      "predicted_name": "中国斯诺克公开赛",
+      "entity_type": "EVENT"
+    },
+    {
       "mention": "胡林",
       "expected_name": "胡珂源/林祥毅",
       "predicted_name": "胡林",
       "entity_type": "PER"
-    },
-    {
-      "mention": "德差波",
-      "expected_name": "德差波·帕克卡波",
-      "predicted_name": "德差波",
-      "entity_type": "PER"
-    },
-    {
-      "mention": "尤伯杯",
-      "expected_name": "尤伯杯世界女子羽毛球团体锦标赛",
-      "predicted_name": "Uber Cup",
-      "entity_type": "EVENT"
     },
     {
       "mention": "澳大利亚公开赛",
@@ -321,14 +279,8 @@
     {
       "mention": "日本队",
       "expected_name": "日本羽毛球队",
-      "predicted_name": "日本队",
+      "predicted_name": "日本国家男子篮球队",
       "entity_type": "ORG"
-    },
-    {
-      "mention": "印尼公开赛",
-      "expected_name": "印度尼西亚羽毛球公开赛",
-      "predicted_name": "印尼羽毛球公开赛",
-      "entity_type": "EVENT"
     },
     {
       "mention": "中国澳门公开赛",
@@ -339,49 +291,19 @@
     {
       "mention": "世锦赛",
       "expected_name": "世界羽毛球锦标赛",
-      "predicted_name": "斯诺克世界锦标赛",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "超级1000印尼公开赛",
-      "expected_name": "印度尼西亚羽毛球公开赛",
-      "predicted_name": "印尼羽毛球公开赛",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "印尼站",
-      "expected_name": "印度尼西亚羽毛球公开赛",
-      "predicted_name": "印尼羽毛球公开赛",
+      "predicted_name": "世界游泳锦标赛",
       "entity_type": "EVENT"
     },
     {
       "mention": "世锦赛",
       "expected_name": "世界羽毛球锦标赛",
-      "predicted_name": "斯诺克世界锦标赛",
+      "predicted_name": "世界游泳锦标赛",
       "entity_type": "EVENT"
     },
     {
       "mention": "世锦赛",
       "expected_name": "世界羽毛球锦标赛",
-      "predicted_name": "斯诺克世界锦标赛",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "汤尤杯",
-      "expected_name": "汤姆斯杯和尤伯杯",
-      "predicted_name": "汤尤杯",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "印尼公开赛",
-      "expected_name": "印度尼西亚羽毛球公开赛",
-      "predicted_name": "印尼羽毛球公开赛",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "印尼公开赛",
-      "expected_name": "印度尼西亚羽毛球公开赛",
-      "predicted_name": "印尼羽毛球公开赛",
+      "predicted_name": "世界游泳锦标赛",
       "entity_type": "EVENT"
     },
     {
@@ -403,57 +325,9 @@
       "entity_type": "EVENT"
     },
     {
-      "mention": "印尼公开赛",
-      "expected_name": "印度尼西亚羽毛球公开赛",
-      "predicted_name": "印尼羽毛球公开赛",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "辛杜",
-      "expected_name": "普萨拉·文卡塔·辛杜",
-      "predicted_name": "辛杜",
-      "entity_type": "PER"
-    },
-    {
-      "mention": "亚锦赛",
-      "expected_name": "亚洲羽毛球锦标赛",
-      "predicted_name": "亚锦赛",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "印尼组合",
-      "expected_name": "印度尼西亚国家羽毛球队",
-      "predicted_name": "印度尼西亚羽毛球队",
-      "entity_type": "ORG"
-    },
-    {
-      "mention": "印尼组合",
-      "expected_name": "印度尼西亚国家羽毛球队",
-      "predicted_name": "印度尼西亚羽毛球队",
-      "entity_type": "ORG"
-    },
-    {
-      "mention": "印尼组合",
-      "expected_name": "印度尼西亚国家羽毛球队",
-      "predicted_name": "印度尼西亚羽毛球队",
-      "entity_type": "ORG"
-    },
-    {
-      "mention": "印尼组合",
-      "expected_name": "印度尼西亚国家羽毛球队",
-      "predicted_name": "印度尼西亚羽毛球队",
-      "entity_type": "ORG"
-    },
-    {
       "mention": "女双决赛",
       "expected_name": "女子双打决赛",
       "predicted_name": "2026年马来西亚羽毛球大师赛女子双打决赛",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "亚锦赛",
-      "expected_name": "亚洲羽毛球锦标赛",
-      "predicted_name": "亚锦赛",
       "entity_type": "EVENT"
     },
     {
@@ -471,13 +345,7 @@
     {
       "mention": "日本队",
       "expected_name": "日本国家羽毛球队",
-      "predicted_name": "日本队",
-      "entity_type": "ORG"
-    },
-    {
-      "mention": "印尼队",
-      "expected_name": "印度尼西亚国家羽毛球队",
-      "predicted_name": "印度尼西亚羽毛球队",
+      "predicted_name": "日本国家男子篮球队",
       "entity_type": "ORG"
     },
     {
@@ -487,46 +355,10 @@
       "entity_type": "ORG"
     },
     {
-      "mention": "辛杜",
-      "expected_name": "普萨拉·文卡塔·辛杜",
-      "predicted_name": "辛杜",
-      "entity_type": "PER"
-    },
-    {
       "mention": "瑞士公开赛",
       "expected_name": "瑞士羽毛球公开赛",
       "predicted_name": "瑞士公开赛",
       "entity_type": "EVENT"
-    },
-    {
-      "mention": "昆拉武特",
-      "expected_name": "昆拉武特·威提讪",
-      "predicted_name": "昆拉武特",
-      "entity_type": "PER"
-    },
-    {
-      "mention": "昆拉武特",
-      "expected_name": "昆拉武特·威提讪",
-      "predicted_name": "昆拉武特",
-      "entity_type": "PER"
-    },
-    {
-      "mention": "亚锦赛",
-      "expected_name": "亚洲羽毛球锦标赛",
-      "predicted_name": "亚锦赛",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "印尼公开赛",
-      "expected_name": "印度尼西亚羽毛球公开赛",
-      "predicted_name": "印尼羽毛球公开赛",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "昆拉武特",
-      "expected_name": "昆拉武特·威提讪",
-      "predicted_name": "昆拉武特",
-      "entity_type": "PER"
     },
     {
       "mention": "BWF",
@@ -553,45 +385,9 @@
       "entity_type": "EVENT"
     },
     {
-      "mention": "金廷",
-      "expected_name": "安东尼·西尼苏卡·金廷",
-      "predicted_name": "金廷",
-      "entity_type": "PER"
-    },
-    {
-      "mention": "韩国组合",
-      "expected_name": "韩国羽毛球队",
-      "predicted_name": "韩国国家羽毛球队",
-      "entity_type": "ORG"
-    },
-    {
-      "mention": "金廷",
-      "expected_name": "安东尼·西尼苏卡·金廷",
-      "predicted_name": "金廷",
-      "entity_type": "PER"
-    },
-    {
-      "mention": "昆拉武特",
-      "expected_name": "昆拉武特·威提讪",
-      "predicted_name": "昆拉武特",
-      "entity_type": "PER"
-    },
-    {
       "mention": "泰国大师赛",
       "expected_name": "泰国羽毛球大师赛",
       "predicted_name": "泰国大师赛",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "印尼羽毛球公开赛",
-      "expected_name": "印度尼西亚羽毛球公开赛",
-      "predicted_name": "印尼羽毛球公开赛",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "印尼羽毛球公开赛",
-      "expected_name": "印度尼西亚羽毛球公开赛",
-      "predicted_name": "印尼羽毛球公开赛",
       "entity_type": "EVENT"
     },
     {
@@ -616,6 +412,210 @@
       "mention": "全英公开赛",
       "expected_name": "全英羽毛球公开赛",
       "predicted_name": "全英公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "新加坡公开赛",
+      "expected_name": "新加坡羽毛球公开赛",
+      "predicted_name": "2024年新加坡羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "2026年澳大利亚公开赛",
+      "expected_name": "2026 Australian Open",
+      "predicted_name": "2026年澳大利亚羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "泰国公开赛",
+      "expected_name": "Thailand Open",
+      "predicted_name": "2026年泰国羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "印尼公开赛",
+      "expected_name": "Indonesia Open",
+      "predicted_name": "印度尼西亚羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "辛杜",
+      "expected_name": "辛杜",
+      "predicted_name": "普萨拉·文卡塔·辛杜",
+      "entity_type": "PER"
+    },
+    {
+      "mention": "辛杜",
+      "expected_name": "辛杜",
+      "predicted_name": "普萨拉·文卡塔·辛杜",
+      "entity_type": "PER"
+    },
+    {
+      "mention": "印尼公开赛",
+      "expected_name": "2024年印度尼西亚羽毛球公开赛",
+      "predicted_name": "印度尼西亚羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "新加坡公开赛",
+      "expected_name": "2024年新加坡羽毛球公开赛",
+      "predicted_name": "新加坡羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "世锦赛",
+      "expected_name": "2024年世界羽毛球锦标赛",
+      "predicted_name": "世界游泳锦标赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "世锦赛",
+      "expected_name": "2024年世界羽毛球锦标赛",
+      "predicted_name": "世界游泳锦标赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "亚运会",
+      "expected_name": "2024年亚洲运动会羽毛球比赛",
+      "predicted_name": "亚洲运动会",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "亚运会",
+      "expected_name": "2024年亚洲运动会羽毛球比赛",
+      "predicted_name": "亚洲运动会",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "亚运会",
+      "expected_name": "2024年亚洲运动会羽毛球比赛",
+      "predicted_name": "亚洲运动会",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "亚运会",
+      "expected_name": "2024年亚洲运动会羽毛球比赛",
+      "predicted_name": "亚洲运动会",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "世界巡回赛",
+      "expected_name": "世界羽毛球巡回赛",
+      "predicted_name": "世界羽联世界巡回赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "世界巡回赛",
+      "expected_name": "世界羽毛球巡回赛",
+      "predicted_name": "世界羽联世界巡回赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "印尼大师赛",
+      "expected_name": "印度尼西亚大师赛",
+      "predicted_name": "印度尼西亚羽毛球大师赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "2026年印尼公开赛",
+      "expected_name": "印度尼西亚羽毛球公开赛",
+      "predicted_name": "2026年印度尼西亚羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "世锦赛",
+      "expected_name": "世界羽毛球锦标赛",
+      "predicted_name": "世界游泳锦标赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "2026印尼羽毛球公开赛",
+      "expected_name": "印度尼西亚羽毛球公开赛",
+      "predicted_name": "2026年印度尼西亚羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "世锦赛",
+      "expected_name": "世界羽毛球锦标赛",
+      "predicted_name": "世界游泳锦标赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "世锦赛",
+      "expected_name": "世界羽毛球锦标赛",
+      "predicted_name": "世界游泳锦标赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "2026年印尼羽毛球公开赛",
+      "expected_name": "印度尼西亚羽毛球公开赛",
+      "predicted_name": "2026年印度尼西亚羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "印度公开赛",
+      "expected_name": "印度羽毛球公开赛",
+      "predicted_name": "印度公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "印度公开赛",
+      "expected_name": "印度羽毛球公开赛",
+      "predicted_name": "印度公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "马来西亚公开赛",
+      "expected_name": "马来西亚羽毛球公开赛",
+      "predicted_name": "马来西亚公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "全英公开赛",
+      "expected_name": "全英羽毛球公开赛",
+      "predicted_name": "全英公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "印度公开赛",
+      "expected_name": "印度羽毛球公开赛",
+      "predicted_name": "印度公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "罗马站",
+      "expected_name": "罗马大师赛",
+      "predicted_name": "WTA1000罗马公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "世锦赛",
+      "expected_name": "世界羽毛球锦标赛",
+      "predicted_name": "世界游泳锦标赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "马来西亚公开赛",
+      "expected_name": "马来西亚羽毛球公开赛",
+      "predicted_name": "马来西亚公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "印度公开赛",
+      "expected_name": "印度羽毛球公开赛",
+      "predicted_name": "印度公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "全英公开赛",
+      "expected_name": "全英羽毛球公开赛",
+      "predicted_name": "全英公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "德国公开赛",
+      "expected_name": "德国羽毛球公开赛",
+      "predicted_name": "德国公开赛",
       "entity_type": "EVENT"
     }
   ]

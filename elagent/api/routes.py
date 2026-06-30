@@ -17,7 +17,6 @@ from .schemas import (
 from ..core.knowledge_base import knowledge_base
 from ..core.bm25_index import bm25_index
 from ..core.disambiguator import disambiguator
-from ..core.bert_disambiguator import bert_disambiguator
 from ..core.llm_disambiguator import llm_disambiguator
 from ..core.trace_logger import trace_logger
 from ..core.nil_detector import nil_detector
@@ -351,54 +350,6 @@ def _enhanced_link(mention: Mention, trace=None, full_text: str = "") -> LinkRes
     if bm25_index.built:
         bm25_results = bm25_index.search(mention.text, top_k=10)
         if bm25_results:
-            # 如果有多个候选且BERT消歧器可用，使用BERT消歧
-            if len(bm25_results) > 1 and bert_disambiguator.loaded:
-                # 构建候选列表
-                bert_candidates = []
-                for entity_id, score in bm25_results:
-                    entity = knowledge_base.get_entity(entity_id)
-                    if entity:
-                        bert_candidates.append({
-                            'entity_id': entity_id,
-                            'standard_name': entity.standard_name,
-                            'description': entity.description,
-                        })
-
-                # 实体类型过滤：BERT排序前先按mention类型筛选候选
-                if mention.entity_type and bert_candidates:
-                    type_filtered = [
-                        c for c in bert_candidates
-                        if knowledge_base.get_entity(c['entity_id']).entity_type == mention.entity_type
-                    ]
-                    if type_filtered:
-                        bert_candidates = type_filtered
-
-                # 使用BERT消歧
-                bert_results = bert_disambiguator.disambiguate(
-                    mention.text,
-                    mention.context or mention.text,
-                    bert_candidates,
-                    top_k=1
-                )
-
-                if bert_results:
-                    best_entity_id, bert_score = bert_results[0]
-                    entity = knowledge_base.get_entity(best_entity_id)
-                    if entity:
-                        result.linked_entity = entity
-                        result.is_nil = False
-                        result.confidence = min(bert_score, 0.8)  # BERT分数上限0.8
-                        result.nil_reason = ""
-                        if trace:
-                            trace.add_step(
-                                step_name="BM25+BERT消歧",
-                                original_value=mention.text,
-                                new_value=f"{entity.standard_name} ({entity.id})",
-                                reason=f"BM25召回{len(bm25_results)}个候选，BERT相似度={bert_score:.4f}"
-                            )
-                        return result
-
-            # 如果只有一个候选或BERT不可用，对多候选使用消歧器
             if len(bm25_results) == 1:
                 # 唯一候选直接使用
                 best_entity_id, best_score = bm25_results[0]

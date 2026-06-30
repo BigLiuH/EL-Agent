@@ -36,12 +36,12 @@ class Disambiguator:
         #   - 名称匹配是最高优先级信号
         #   - 先验概率基于标注数据统计
         #   - keyword_weight 现在承载上下文得分（区分词文档命中+局部重叠）
-        self.name_match_weight = 0.35         # 名称匹配度
-        self.prior_weight = 0.20              # 先验概率（降低，减轻KB碎片化影响）
-        self.name_completeness_weight = 0.25  # 名称完整度（提高，增强全称偏好）
+        self.name_match_weight = 0.15         # 名称匹配度
+        self.prior_weight = 0.17              # 先验概率
+        self.name_completeness_weight = 0.25  # 名称完整度
         self.type_weight = 0.15               # 类型一致性
-        self.keyword_weight = 0.05            # 关键词重叠
-        self.popularity_weight = 0.00         # 实体流行度（关闭）
+        self.keyword_weight = 0.00            # 关键词重叠
+        self.popularity_weight = 0.00         # 实体流行度
 
         # 加载先验概率
         self.prior_probs = self._load_prior_probs()
@@ -69,16 +69,18 @@ class Disambiguator:
             if type_matched:
                 candidates = type_matched
 
+        all_entities = [c.entity for c in candidates]
         scored_candidates = []
         for candidate in candidates:
-            score = self._compute_score(mention, candidate, full_text)
+            score = self._compute_score(mention, candidate, full_text, all_entities)
             candidate.score = score
             scored_candidates.append(candidate)
         scored_candidates.sort(key=lambda x: x.score, reverse=True)
 
         return scored_candidates[:top_k]
 
-    def _compute_score(self, mention: Mention, candidate: Candidate, full_text: str = "") -> float:
+    def _compute_score(self, mention: Mention, candidate: Candidate, full_text: str = "",
+                        all_entities: list = None) -> float:
         """
         计算候选实体的综合得分
 
@@ -94,22 +96,22 @@ class Disambiguator:
         # 1. 类型一致性得分
         type_score = self._type_match_score(mention, entity)
 
-        # 2. 关键词重叠得分
-        keyword_score = self._keyword_overlap_score(mention, entity)
+        # 2. 关键词重叠得分（全文）
+        keyword_score = self._keyword_overlap_score(mention, entity, full_text)
 
-        # 3. 上下文boost（乘性，直接缩放最终得分）
-        context_boost = self._context_boost(mention, entity, full_text)
+        # 3. 上下文boost（乘性）
+        context_boost = self._context_boost(mention, entity, full_text, all_entities)
 
         # 4. 先验概率得分
         prior_score = self._prior_probability_score(entity)
 
-        # 4. 名称匹配得分（最重要）
+        # 5. 名称匹配得分
         name_score = self._name_match_score(mention, entity)
 
-        # 5. 名称完整性得分（全称优先）
+        # 6. 名称完整性得分
         completeness_score = self._name_completeness_score(mention, entity)
 
-        # 6. 实体流行度得分
+        # 7. 实体流行度得分
         popularity_score = self._popularity_score(entity)
 
         # 加权融合
@@ -172,45 +174,35 @@ class Disambiguator:
 
         return 0.0
 
-    def _keyword_overlap_score(self, mention: Mention, entity: Entity) -> float:
-        """关键词重叠得分：mention上下文与实体描述的分词重叠率"""
-        context = mention.context or ""
-        if not context:
+    def _keyword_overlap_score(self, mention: Mention, entity: Entity,
+                                full_text: str = "") -> float:
+        """关键词重叠：全文与实体名的分词重叠率"""
+        text = full_text or mention.context or ""
+        if not text:
             return 0.5
-        mention_tokens = set(jieba.cut(context))
-        entity_tokens = set(jieba.cut(entity.standard_name + " " + entity.description[:200]))
-        stop_words = {"的", "了", "在", "是", "我", "有", "和", "就", "不", "人", "都", "一", "一个", "上", "也", "很", "到", "说", "要", "去", "你", "会", "着", "没有", "看", "好", "自己", "这"}
-        mention_tokens -= stop_words
-        entity_tokens -= stop_words
-        if not mention_tokens or not entity_tokens:
+        text_tokens = set(jieba.cut(text))
+        all_names = [entity.standard_name] + list(entity.aliases)
+        name_tokens = set()
+        for name in all_names:
+            name_tokens.update(jieba.cut(name))
+        stop_words = {"的", "了", "在", "是", "和", "就", "不", "一", "个"}
+        text_tokens -= stop_words
+        name_tokens -= stop_words
+        if not text_tokens or not name_tokens:
             return 0.5
-        overlap = mention_tokens & entity_tokens
-        overlap_ratio = len(overlap) / min(len(mention_tokens), len(entity_tokens))
-        return min(overlap_ratio * 2, 1.0)
+        overlap = text_tokens & name_tokens
+        return len(overlap) / max(len(name_tokens), 1)
 
-    def _context_boost(self, mention: Mention, entity: Entity, full_text: str = "") -> float:
+    def _context_boost(self, mention: Mention, entity: Entity, full_text: str = "",
+                        all_entities: list = None) -> float:
         """
-        上下文乘性boost（仅用实体名称 + 文章全文）
-
-        从实体名提取该实体独有的区分2-gram（不出现在其他候选名中的），
-        统计在全文中的命中密度。只计算特有词，避免"球队""锦标赛"等通用词干扰。
-
-        Args:
-            mention: 实体指称
-            entity: 候选实体
-            full_text: 文章全文
-            all_candidates: 所有候选实体列表（用于计算独有bigram）
-
-        Returns:
-            boost系数，1.0为中性
+        上下文乘性boost：实体名中不在mention里的区分2-gram，
+        统计在全文中的命中密度。
         """
         full_text = (full_text or mention.context or "").lower()
         if len(full_text) < 10:
             return 1.0
 
-        mention_text = mention.text.lower()
-
-        # 收集该实体所有名称的2-gram
         all_names = [entity.standard_name] + list(entity.aliases)
         entity_bigrams = set()
         for name in all_names:
@@ -218,17 +210,15 @@ class Disambiguator:
             for i in range(len(name_lower) - 1):
                 entity_bigrams.add(name_lower[i:i+2])
 
-        # 收集mention的2-gram（排除）
         mention_bigrams = set()
-        for i in range(len(mention_text) - 1):
-            mention_bigrams.add(mention_text[i:i+2])
+        mt = mention.text.lower()
+        for i in range(len(mt) - 1):
+            mention_bigrams.add(mt[i:i+2])
 
-        # 区分2-gram = 实体有 - mention有
         diff_bigrams = entity_bigrams - mention_bigrams
         if not diff_bigrams:
             return 1.0
 
-        # 统计命中密度
         total_hits = sum(full_text.count(bg) for bg in diff_bigrams)
         text_len = max(len(full_text), 1)
         density = total_hits / (text_len / 100.0)

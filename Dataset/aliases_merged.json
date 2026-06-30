@@ -19,21 +19,25 @@
     "entity_id": "EVENT_0003",
     "standard_name": "2020年东京奥运会"
   },
+  "2020年东京夏季奥运会": {
+    "entity_id": "EVENT_0003",
+    "standard_name": "2020年东京奥运会"
+  },
+  "2020年夏季奥林匹克运动会": {
+    "entity_id": "EVENT_0003",
+    "standard_name": "2020年东京奥运会"
+  },
   "东京奥运": {
     "entity_id": "EVENT_0003",
     "standard_name": "2020年东京奥运会"
   },
   "东京奥运会": {
-    "entity_id": "EVENT_0003",
-    "standard_name": "2020年东京奥运会"
+    "entity_id": "EVENT_0175",
+    "standard_name": "东京奥林匹克运动会"
   },
   "2020年东京奥运会羽毛球比赛": {
     "entity_id": "EVENT_0004",
     "standard_name": "2020年东京奥运会羽毛球比赛"
-  },
-  "2020年夏季奥林匹克运动会": {
-    "entity_id": "EVENT_0003",
-    "standard_name": "2020年东京奥运会"
   },
   "2024年世界羽毛球锦标赛": {
     "entity_id": "EVENT_0006",
@@ -139,7 +143,15 @@
     "entity_id": "LOC_0447",
     "standard_name": "温布尔登"
   },
+  "温布尔登网球锦标赛": {
+    "entity_id": "EVENT_0017",
+    "standard_name": "2024年温布尔登网球锦标赛"
+  },
   "2025年中国大满贯": {
+    "entity_id": "EVENT_0019",
+    "standard_name": "2025年中国大满贯"
+  },
+  "WTT中国大满贯2025": {
     "entity_id": "EVENT_0019",
     "standard_name": "2025年中国大满贯"
   },
@@ -152,8 +164,8 @@
     "standard_name": "2025年新昌林丹杯"
   },
   "新昌林丹杯": {
-    "entity_id": "EVENT_0264",
-    "standard_name": "新昌林丹杯"
+    "entity_id": "EVENT_0021",
+    "standard_name": "2025年新昌林丹杯"
   },
   "2025年法国公开赛": {
     "entity_id": "EVENT_0022",
@@ -183,14 +195,6 @@
     "entity_id": "EVENT_0025",
     "standard_name": "2025年荷兰青年国际羽毛球赛"
   },
-  "2026 Australian Badminton Open": {
-    "entity_id": "EVENT_0087",
-    "standard_name": "2026年澳大利亚羽毛球公开赛"
-  },
-  "2026澳大利亚羽毛球公开赛": {
-    "entity_id": "EVENT_0087",
-    "standard_name": "2026年澳大利亚羽毛球公开赛"
-  },
   "2026 Australian Open": {
     "entity_id": "EVENT_0027",
     "standard_name": "2026 Australian Open"
@@ -200,8 +204,8 @@
     "standard_name": "2026年澳大利亚羽毛球公开赛"
   },
   "2026WTT卢布尔雅那球星挑战赛": {
-    "entity_id": "EVENT_0364",
-    "standard_name": "2026年WTT卢布尔雅那球星挑战赛"
+    "entity_id": "EVENT_0139",
+    "standard_name": "WTT球星挑战赛卢布尔雅那站"
   },
   "2026WTT萨格勒布常规挑战赛": {
     "entity_id": "EVENT_0029",
@@ -252,8 +256,8 @@
     "standard_name": "2026年VICTOR赛点杯安徽省第三届青少年羽毛球冠军赛组委会"
   },
   "赛事组委会": {
-    "entity_id": "ORG_1139",
-    "standard_name": "赛事组委会"
+    "entity_id": "ORG_0147",
+    "standard_name": "全国中学生羽毛球精英赛组委会"
   },
   "2026年WTT球星挑战赛卢布尔雅那站": {
     "entity_id": "EVENT_0041",
@@ -320,16 +324,16 @@
     "standard_name": "2026年中国澳门羽毛球公开赛"
   },
   "中国澳门羽毛球公开赛": {
-    "entity_id": "EVENT_0298",
-    "standard_name": "澳门羽毛球公开赛"
+    "entity_id": "EVENT_0053",
+    "standard_name": "2026年中国澳门羽毛球公开赛"
   },
   "2026年中国瑞昌羽毛球大师赛": {
     "entity_id": "EVENT_0054",
     "standard_name": "2026年中国瑞昌羽毛球大师赛"
   },
   "瑞昌羽毛球大师赛": {
-    "entity_id": "EVENT_0303",
-    "standard_name": "瑞昌羽毛球大师赛"
+    "entity_id": "EVENT_0054",
+    "standard_name": "2026年中国瑞昌羽毛球大师赛"
   },
   "2026年亚洲羽毛球中老年锦标赛": {
     "entity_id": "EVENT_0055",
@@ -383,18 +387,6 @@
     "entity_id": "EVENT_0063",
     "standard_name": "2026年全国羽毛球单项冠军赛"
   },
-  "2026年印尼羽毛球公开赛": {
-    "entity_id": "EVENT_0223",
-    "standard_name": "印尼羽毛球公开赛"
-  },
-  "2026印尼羽毛球公开赛": {
-    "entity_id": "EVENT_0064",
-    "standard_name": "2026年印尼羽毛球公开赛"
-  },
-  "2026年印尼公开赛": {
-    "entity_id": "EVENT_0064",
-    "standard_name": "2026年印尼羽毛球公开赛"
-  },
   "2026年印尼羽毛球超级1000赛": {
     "entity_id": "EVENT_0065",
     "standard_name": "2026年印尼羽毛球超级1000赛"
@@ -415,6 +407,18 @@
     "entity_id": "EVENT_0228",
     "standard_name": "印度尼西亚羽毛球公开赛"
   },
+  "2026年印尼羽毛球公开赛": {
+    "entity_id": "EVENT_0228",
+    "standard_name": "印度尼西亚羽毛球公开赛"
+  },
+  "2026印尼羽毛球公开赛": {
+    "entity_id": "EVENT_0067",
+    "standard_name": "2026年印度尼西亚羽毛球公开赛"
+  },
+  "2026年印尼公开赛": {
+    "entity_id": "EVENT_0067",
+    "standard_name": "2026年印度尼西亚羽毛球公开赛"
+  },
   "2026年合肥经济技术开发区第十四届运动会暨中小学生“阳光体育运动”羽毛球比赛": {
     "entity_id": "EVENT_0068",
     "standard_name": "2026年合肥经济技术开发区第十四届运动会暨中小学生“阳光体育运动”羽毛球比赛"
@@ -428,6 +432,30 @@
     "standard_name": "2026年名古屋亚运会"
   },
   "名古屋亚运会": {
+    "entity_id": "EVENT_0367",
+    "standard_name": "2026年亚洲运动会"
+  },
+  "名古屋亚运": {
+    "entity_id": "EVENT_0069",
+    "standard_name": "2026年名古屋亚运会"
+  },
+  "2026年爱知·名古屋亚运会": {
+    "entity_id": "EVENT_0069",
+    "standard_name": "2026年名古屋亚运会"
+  },
+  "2026年名古屋亚洲运动会": {
+    "entity_id": "EVENT_0069",
+    "standard_name": "2026年名古屋亚运会"
+  },
+  "2026年爱知-名古屋亚洲运动会": {
+    "entity_id": "EVENT_0069",
+    "standard_name": "2026年名古屋亚运会"
+  },
+  "2026年爱知-名古屋亚运会": {
+    "entity_id": "EVENT_0367",
+    "standard_name": "2026年亚洲运动会"
+  },
+  "爱知-名古屋亚运会": {
     "entity_id": "EVENT_0069",
     "standard_name": "2026年名古屋亚运会"
   },
@@ -464,8 +492,8 @@
     "standard_name": "2026年新加坡羽毛球公开赛"
   },
   "新加坡羽毛球公开赛": {
-    "entity_id": "EVENT_0262",
-    "standard_name": "新加坡羽毛球公开赛"
+    "entity_id": "EVENT_0077",
+    "standard_name": "2026年新加坡羽毛球公开赛"
   },
   "世界羽联超级750新加坡公开赛": {
     "entity_id": "EVENT_0077",
@@ -543,6 +571,10 @@
     "entity_id": "EVENT_0083",
     "standard_name": "2026年泰国羽毛球公开赛"
   },
+  "泰国": {
+    "entity_id": "LOC_0223",
+    "standard_name": "泰王国"
+  },
   "2026年洛宁县“翎美杯”第一届中小学生羽毛球锦标赛": {
     "entity_id": "EVENT_0084",
     "standard_name": "2026年洛宁县“翎美杯”第一届中小学生羽毛球锦标赛"
@@ -567,21 +599,25 @@
     "entity_id": "EVENT_0087",
     "standard_name": "2026年澳大利亚羽毛球公开赛"
   },
+  "2026澳大利亚羽毛球公开赛": {
+    "entity_id": "EVENT_0087",
+    "standard_name": "2026年澳大利亚羽毛球公开赛"
+  },
+  "超级500澳大利亚公开赛": {
+    "entity_id": "EVENT_0087",
+    "standard_name": "2026年澳大利亚羽毛球公开赛"
+  },
+  "澳大利亚公开赛": {
+    "entity_id": "EVENT_0087",
+    "standard_name": "2026年澳大利亚羽毛球公开赛"
+  },
+  "2026 Australian Badminton Open": {
+    "entity_id": "EVENT_0087",
+    "standard_name": "2026年澳大利亚羽毛球公开赛"
+  },
   "2026年澳洲羽毛球公开赛": {
     "entity_id": "EVENT_0088",
     "standard_name": "2026年澳洲羽毛球公开赛"
-  },
-  "2026年澳门羽毛球公开赛": {
-    "entity_id": "EVENT_0103",
-    "standard_name": "2026澳门羽毛球公开赛"
-  },
-  "澳门羽毛球公开赛": {
-    "entity_id": "EVENT_0103",
-    "standard_name": "2026澳门羽毛球公开赛"
-  },
-  "2026年爱知·名古屋亚运会": {
-    "entity_id": "EVENT_0069",
-    "standard_name": "2026年名古屋亚运会"
   },
   "2026年第三届“澄穆杯”羽毛球邀请赛": {
     "entity_id": "EVENT_0091",
@@ -624,6 +660,18 @@
     "standard_name": "2026济南林丹杯羽毛球公开赛组委会"
   },
   "2026澳门羽毛球公开赛": {
+    "entity_id": "EVENT_0103",
+    "standard_name": "2026澳门羽毛球公开赛"
+  },
+  "澳门羽毛球公开赛": {
+    "entity_id": "EVENT_0103",
+    "standard_name": "2026澳门羽毛球公开赛"
+  },
+  "2026年澳门羽毛球公开赛": {
+    "entity_id": "EVENT_0103",
+    "standard_name": "2026澳门羽毛球公开赛"
+  },
+  "澳门公开赛": {
     "entity_id": "EVENT_0103",
     "standard_name": "2026澳门羽毛球公开赛"
   },
@@ -695,30 +743,6 @@
     "entity_id": "EVENT_0114",
     "standard_name": "618购物狂欢"
   },
-  "Alfian": {
-    "entity_id": "PER_0001",
-    "standard_name": "Alfian"
-  },
-  "阿尔菲安": {
-    "entity_id": "PER_0835",
-    "standard_name": "阿尔菲安"
-  },
-  "All England Open": {
-    "entity_id": "EVENT_0115",
-    "standard_name": "All England Open"
-  },
-  "全英赛": {
-    "entity_id": "EVENT_0214",
-    "standard_name": "全英羽毛球公开赛"
-  },
-  "Ayush Shetty": {
-    "entity_id": "PER_0002",
-    "standard_name": "Ayush Shetty"
-  },
-  "阿尤什": {
-    "entity_id": "PER_0836",
-    "standard_name": "阿尤什"
-  },
   "BWF世界巡回赛总决赛": {
     "entity_id": "EVENT_0116",
     "standard_name": "BWF世界巡回赛总决赛"
@@ -735,61 +759,21 @@
     "entity_id": "EVENT_0117",
     "standard_name": "BWF世界巡回赛超级500"
   },
-  "Badminton World Federation": {
-    "entity_id": "ORG_0003",
-    "standard_name": "Badminton World Federation"
+  "世界羽联巡回赛超级500赛事": {
+    "entity_id": "EVENT_0117",
+    "standard_name": "BWF世界巡回赛超级500"
   },
-  "世界羽联": {
-    "entity_id": "ORG_0210",
-    "standard_name": "国际羽毛球联合会"
-  },
-  "Bao Lijing": {
-    "entity_id": "PER_0003",
-    "standard_name": "Bao Lijing"
-  },
-  "鲍骊婧": {
-    "entity_id": "PER_0936",
-    "standard_name": "鲍骊婧"
-  },
-  "Bohr": {
-    "entity_id": "PER_0004",
-    "standard_name": "Bohr"
-  },
-  "博尔": {
-    "entity_id": "PER_0166",
-    "standard_name": "博尔"
+  "世界羽联超级500赛": {
+    "entity_id": "EVENT_0117",
+    "standard_name": "BWF世界巡回赛超级500"
   },
   "CBA总决赛": {
     "entity_id": "EVENT_0119",
     "standard_name": "CBA总决赛"
   },
   "总决赛": {
-    "entity_id": "EVENT_0775",
-    "standard_name": "总决赛"
-  },
-  "Cao Zihuan": {
-    "entity_id": "PER_0005",
-    "standard_name": "Cao Zihuan"
-  },
-  "曹梓涵": {
-    "entity_id": "PER_0406",
-    "standard_name": "曹梓涵"
-  },
-  "Chen Fantián": {
-    "entity_id": "PER_0006",
-    "standard_name": "Chen Fantián"
-  },
-  "陈樊淑湉": {
-    "entity_id": "PER_0871",
-    "standard_name": "陈樊淑湉"
-  },
-  "Chen Yufei": {
-    "entity_id": "PER_0007",
-    "standard_name": "Chen Yufei"
-  },
-  "陈雨菲": {
-    "entity_id": "PER_0882",
-    "standard_name": "陈雨菲"
+    "entity_id": "EVENT_0570",
+    "standard_name": "NBA总决赛"
   },
   "Chinese Taipei": {
     "entity_id": "LOC_0001",
@@ -807,22 +791,6 @@
     "entity_id": "PER_0008",
     "standard_name": "Chou Tien-chen"
   },
-  "Christiansen": {
-    "entity_id": "PER_0009",
-    "standard_name": "Christiansen"
-  },
-  "克里斯蒂安森": {
-    "entity_id": "PER_0919",
-    "standard_name": "马蒂亚斯·克里斯蒂安森"
-  },
-  "Christo Popov": {
-    "entity_id": "PER_0010",
-    "standard_name": "Christo Popov"
-  },
-  "克里斯托·波波夫": {
-    "entity_id": "PER_0109",
-    "standard_name": "克里斯托·波波夫"
-  },
   "EVA 初号机地标": {
     "entity_id": "LOC_0002",
     "standard_name": "EVA 初号机地标"
@@ -830,22 +798,6 @@
   "EVA 初号机": {
     "entity_id": "LOC_0002",
     "standard_name": "EVA 初号机地标"
-  },
-  "Farhan": {
-    "entity_id": "PER_0011",
-    "standard_name": "Farhan"
-  },
-  "法汉": {
-    "entity_id": "PER_0530",
-    "standard_name": "法汉"
-  },
-  "Fikri": {
-    "entity_id": "PER_0012",
-    "standard_name": "Fikri"
-  },
-  "菲克里": {
-    "entity_id": "PER_0686",
-    "standard_name": "菲克里"
   },
   "Footyheadlines": {
     "entity_id": "ORG_0005",
@@ -867,46 +819,6 @@
     "entity_id": "LOC_0003",
     "standard_name": "GT健身羽毛球中心"
   },
-  "Gao Fangjie": {
-    "entity_id": "PER_0013",
-    "standard_name": "Gao Fangjie"
-  },
-  "高昉洁": {
-    "entity_id": "PER_0923",
-    "standard_name": "高昉洁"
-  },
-  "Gao Jiaxuan": {
-    "entity_id": "PER_0014",
-    "standard_name": "Gao Jiaxuan"
-  },
-  "高家炫": {
-    "entity_id": "PER_0921",
-    "standard_name": "高家炫"
-  },
-  "Han Yue": {
-    "entity_id": "PER_0015",
-    "standard_name": "Han Yue"
-  },
-  "韩悦": {
-    "entity_id": "PER_0896",
-    "standard_name": "韩悦"
-  },
-  "Hu Keyuan": {
-    "entity_id": "PER_0016",
-    "standard_name": "Hu Keyuan"
-  },
-  "胡珂源": {
-    "entity_id": "PER_0666",
-    "standard_name": "胡珂源"
-  },
-  "Hu Zhe'an": {
-    "entity_id": "PER_0017",
-    "standard_name": "Hu Zhe'an"
-  },
-  "胡哲安": {
-    "entity_id": "PER_0662",
-    "standard_name": "胡哲安"
-  },
   "Huang Ching-ping": {
     "entity_id": "PER_0018",
     "standard_name": "Huang Ching-ping"
@@ -914,14 +826,6 @@
   "黄瀞平": {
     "entity_id": "PER_0018",
     "standard_name": "Huang Ching-ping"
-  },
-  "Hwa Jin": {
-    "entity_id": "PER_0019",
-    "standard_name": "Hwa Jin"
-  },
-  "华金": {
-    "entity_id": "PER_0164",
-    "standard_name": "华金"
   },
   "Indonesia Open": {
     "entity_id": "EVENT_0120",
@@ -931,54 +835,6 @@
     "entity_id": "EVENT_0228",
     "standard_name": "印度尼西亚羽毛球公开赛"
   },
-  "Indra": {
-    "entity_id": "PER_0020",
-    "standard_name": "Indra"
-  },
-  "因陀罗": {
-    "entity_id": "PER_0225",
-    "standard_name": "因陀罗"
-  },
-  "Izzuddin": {
-    "entity_id": "PER_0021",
-    "standard_name": "Izzuddin"
-  },
-  "伊祖丁": {
-    "entity_id": "PER_0087",
-    "standard_name": "伊祖丁·阿兹林"
-  },
-  "Jiang Zhenbang": {
-    "entity_id": "PER_0022",
-    "standard_name": "Jiang Zhenbang"
-  },
-  "蒋振邦": {
-    "entity_id": "PER_0697",
-    "standard_name": "蒋振邦"
-  },
-  "Jonatan": {
-    "entity_id": "PER_0023",
-    "standard_name": "Jonatan"
-  },
-  "乔纳坦": {
-    "entity_id": "PER_0069",
-    "standard_name": "乔纳坦·克里斯蒂"
-  },
-  "Kardinando": {
-    "entity_id": "PER_0024",
-    "standard_name": "Kardinando"
-  },
-  "卡尔南多": {
-    "entity_id": "PER_0170",
-    "standard_name": "卡尔南多"
-  },
-  "Kenta Nishimoto": {
-    "entity_id": "PER_0025",
-    "standard_name": "Kenta Nishimoto"
-  },
-  "西本拳太": {
-    "entity_id": "PER_0716",
-    "standard_name": "西本拳太"
-  },
   "Kim Astrup": {
     "entity_id": "PER_0026",
     "standard_name": "Kim Astrup"
@@ -987,38 +843,6 @@
     "entity_id": "PER_0026",
     "standard_name": "Kim Astrup"
   },
-  "Kuala Lumpur": {
-    "entity_id": "LOC_0005",
-    "standard_name": "Kuala Lumpur"
-  },
-  "吉隆坡": {
-    "entity_id": "LOC_0094",
-    "standard_name": "吉隆坡"
-  },
-  "Lanier": {
-    "entity_id": "PER_0028",
-    "standard_name": "Lanier"
-  },
-  "拉尼尔": {
-    "entity_id": "PER_0377",
-    "standard_name": "拉尼尔"
-  },
-  "Li Shifeng": {
-    "entity_id": "PER_0029",
-    "standard_name": "Li Shifeng"
-  },
-  "李诗沣": {
-    "entity_id": "PER_0455",
-    "standard_name": "李诗沣"
-  },
-  "Li Yijing": {
-    "entity_id": "PER_0030",
-    "standard_name": "Li Yijing"
-  },
-  "李怡婧": {
-    "entity_id": "PER_0436",
-    "standard_name": "李怡婧"
-  },
   "Liang Junhao": {
     "entity_id": "PER_0031",
     "standard_name": "Liang Junhao"
@@ -1026,62 +850,6 @@
   "梁竣豪": {
     "entity_id": "PER_0031",
     "standard_name": "Liang Junhao"
-  },
-  "Lin Chun-yi": {
-    "entity_id": "PER_0032",
-    "standard_name": "Lin Chun-yi"
-  },
-  "林俊易": {
-    "entity_id": "PER_0485",
-    "standard_name": "林俊易"
-  },
-  "Lin Xiangyi": {
-    "entity_id": "PER_0033",
-    "standard_name": "Lin Xiangyi"
-  },
-  "林祥毅": {
-    "entity_id": "PER_0490",
-    "standard_name": "林祥毅"
-  },
-  "Loh Kean Yew": {
-    "entity_id": "PER_0035",
-    "standard_name": "Loh Kean Yew"
-  },
-  "骆建佑": {
-    "entity_id": "PER_0920",
-    "standard_name": "骆建佑"
-  },
-  "Lu Guangzu": {
-    "entity_id": "PER_0036",
-    "standard_name": "Lu Guangzu"
-  },
-  "陆光祖": {
-    "entity_id": "PER_0846",
-    "standard_name": "陆光祖"
-  },
-  "Luo Xumin": {
-    "entity_id": "PER_0037",
-    "standard_name": "Luo Xumin"
-  },
-  "罗徐敏": {
-    "entity_id": "PER_0648",
-    "standard_name": "罗徐敏"
-  },
-  "Mads": {
-    "entity_id": "PER_0038",
-    "standard_name": "Mads"
-  },
-  "麦斯": {
-    "entity_id": "PER_0940",
-    "standard_name": "麦斯"
-  },
-  "Martin": {
-    "entity_id": "PER_0039",
-    "standard_name": "Martin"
-  },
-  "马丁": {
-    "entity_id": "PER_0905",
-    "standard_name": "马丁"
   },
   "ONE冠军赛": {
     "entity_id": "ORG_0007",
@@ -1098,14 +866,6 @@
   "OWL竞技场": {
     "entity_id": "LOC_0006",
     "standard_name": "OWL竞技场"
-  },
-  "P.V. Sindhu": {
-    "entity_id": "PER_0040",
-    "standard_name": "P.V. Sindhu"
-  },
-  "辛杜": {
-    "entity_id": "PER_0777",
-    "standard_name": "辛杜"
   },
   "Pak Kapho": {
     "entity_id": "PER_0041",
@@ -1131,53 +891,13 @@
     "entity_id": "PER_0044",
     "standard_name": "RIAN"
   },
-  "Ragnil": {
-    "entity_id": "PER_0045",
-    "standard_name": "Ragnil"
-  },
-  "Ratchanok Intanon": {
-    "entity_id": "PER_0046",
-    "standard_name": "Ratchanok Intanon"
-  },
-  "拉差诺": {
-    "entity_id": "PER_0046",
-    "standard_name": "Ratchanok Intanon"
-  },
-  "李美妙": {
-    "entity_id": "PER_0451",
-    "standard_name": "李美妙"
-  },
-  "Sapsiree Taerattanachai": {
-    "entity_id": "PER_0047",
-    "standard_name": "Sapsiree Taerattanachai"
-  },
-  "沙西丽": {
-    "entity_id": "PER_0529",
-    "standard_name": "沙西丽·德拉达那猜"
-  },
-  "Sayaka Hirota": {
-    "entity_id": "PER_0048",
-    "standard_name": "Sayaka Hirota"
-  },
-  "广田彩花": {
-    "entity_id": "PER_0308",
-    "standard_name": "广田彩花"
-  },
-  "Shi Yuqi": {
-    "entity_id": "PER_0049",
-    "standard_name": "Shi Yuqi"
-  },
-  "石宇奇": {
-    "entity_id": "PER_0610",
-    "standard_name": "石宇奇"
-  },
   "Southeast Asia": {
     "entity_id": "LOC_0007",
     "standard_name": "Southeast Asia"
   },
   "东南亚": {
-    "entity_id": "LOC_0018",
-    "standard_name": "东南亚"
+    "entity_id": "LOC_0007",
+    "standard_name": "Southeast Asia"
   },
   "StubHub": {
     "entity_id": "ORG_0008",
@@ -1219,14 +939,6 @@
     "entity_id": "ORG_0009",
     "standard_name": "The Athletic"
   },
-  "Toma Popov": {
-    "entity_id": "PER_0051",
-    "standard_name": "Toma Popov"
-  },
-  "托马·波波夫": {
-    "entity_id": "PER_0370",
-    "standard_name": "托马·波波夫"
-  },
   "UFC": {
     "entity_id": "ORG_0010",
     "standard_name": "UFC"
@@ -1234,14 +946,6 @@
   "UFC自由250赛事": {
     "entity_id": "EVENT_0130",
     "standard_name": "UFC自由250赛事"
-  },
-  "Uber Cup": {
-    "entity_id": "EVENT_0131",
-    "standard_name": "Uber Cup"
-  },
-  "尤伯杯": {
-    "entity_id": "EVENT_0254",
-    "standard_name": "尤伯杯世界女子羽毛球团体锦标赛"
   },
   "VICTOR（威克多）": {
     "entity_id": "ORG_0012",
@@ -1258,10 +962,6 @@
   "中国大满贯": {
     "entity_id": "EVENT_0685",
     "standard_name": "WTT中国大满贯赛"
-  },
-  "WTT中国大满贯2025": {
-    "entity_id": "EVENT_0019",
-    "standard_name": "2025年中国大满贯"
   },
   "WTT卢布尔雅那球星赛": {
     "entity_id": "EVENT_0704",
@@ -1280,8 +980,8 @@
     "standard_name": "WTT常规挑战赛萨格勒布站"
   },
   "萨格勒布常规挑战赛": {
-    "entity_id": "EVENT_0807",
-    "standard_name": "萨格勒布常规挑战赛"
+    "entity_id": "EVENT_0411",
+    "standard_name": "WTT萨格勒布常规挑战赛"
   },
   "WTT新加坡大满贯": {
     "entity_id": "EVENT_0138",
@@ -1296,16 +996,20 @@
     "standard_name": "WTT球星挑战赛卢布尔雅那站"
   },
   "卢布尔雅那球星挑战赛": {
-    "entity_id": "EVENT_0754",
-    "standard_name": "卢布尔雅那球星挑战赛"
+    "entity_id": "EVENT_0139",
+    "standard_name": "WTT球星挑战赛卢布尔雅那站"
   },
   "球星挑战赛卢布尔雅那站": {
     "entity_id": "EVENT_0139",
     "standard_name": "WTT球星挑战赛卢布尔雅那站"
   },
   "WTT卢布尔雅那球星挑战赛": {
-    "entity_id": "EVENT_0364",
-    "standard_name": "2026年WTT卢布尔雅那球星挑战赛"
+    "entity_id": "EVENT_0139",
+    "standard_name": "WTT球星挑战赛卢布尔雅那站"
+  },
+  "2026年WTT卢布尔雅那球星挑战赛": {
+    "entity_id": "EVENT_0139",
+    "standard_name": "WTT球星挑战赛卢布尔雅那站"
   },
   "WTT美国大满贯赛": {
     "entity_id": "EVENT_0140",
@@ -1324,8 +1028,8 @@
     "standard_name": "WTT美国大满贯赛"
   },
   "美国大满贯赛事": {
-    "entity_id": "EVENT_0804",
-    "standard_name": "美国大满贯赛事"
+    "entity_id": "EVENT_0140",
+    "standard_name": "WTT美国大满贯赛"
   },
   "WTT萨格勒布常规赛": {
     "entity_id": "EVENT_0691",
@@ -1351,65 +1055,9 @@
     "entity_id": "EVENT_0143",
     "standard_name": "WTT萨格勒布挑战赛男子双打四分之一决赛"
   },
-  "Wang Zhiyi": {
-    "entity_id": "PER_0052",
-    "standard_name": "Wang Zhiyi"
-  },
-  "王祉怡": {
-    "entity_id": "PER_0582",
-    "standard_name": "王祉怡"
-  },
-  "Wei Yaxin": {
-    "entity_id": "PER_0053",
-    "standard_name": "Wei Yaxin"
-  },
-  "魏雅欣": {
-    "entity_id": "PER_0929",
-    "standard_name": "魏雅欣"
-  },
-  "Weng Hongyang": {
-    "entity_id": "PER_0054",
-    "standard_name": "Weng Hongyang"
-  },
-  "翁泓阳": {
-    "entity_id": "PER_0655",
-    "standard_name": "翁泓阳"
-  },
-  "World Table Tennis": {
-    "entity_id": "ORG_0043",
-    "standard_name": "世界乒乓球职业大联盟"
-  },
-  "WTT": {
-    "entity_id": "ORG_0043",
-    "standard_name": "世界乒乓球职业大联盟"
-  },
-  "Wu Shifei": {
-    "entity_id": "PER_0055",
-    "standard_name": "Wu Shifei"
-  },
-  "吴世飞": {
-    "entity_id": "PER_0198",
-    "standard_name": "吴世飞"
-  },
   "Xports News": {
     "entity_id": "ORG_0016",
     "standard_name": "Xports News"
-  },
-  "Yamaguchi Akane": {
-    "entity_id": "PER_0056",
-    "standard_name": "Yamaguchi Akane"
-  },
-  "山口茜": {
-    "entity_id": "PER_0292",
-    "standard_name": "山口茜"
-  },
-  "Yuka Miyazaki": {
-    "entity_id": "PER_0057",
-    "standard_name": "Yuka Miyazaki"
-  },
-  "宫崎友花": {
-    "entity_id": "PER_0277",
-    "standard_name": "宫崎友花"
   },
   "Yuno Sakuramoto": {
     "entity_id": "PER_0058",
@@ -1516,8 +1164,8 @@
     "standard_name": "上海久事大鲨鱼俱乐部"
   },
   "上海": {
-    "entity_id": "LOC_0366",
-    "standard_name": "Shanghai"
+    "entity_id": "LOC_0011",
+    "standard_name": "上海市"
   },
   "上海体育大学": {
     "entity_id": "ORG_0021",
@@ -1548,6 +1196,10 @@
     "standard_name": "上海市"
   },
   "沪上": {
+    "entity_id": "LOC_0011",
+    "standard_name": "上海市"
+  },
+  "Shanghai": {
     "entity_id": "LOC_0011",
     "standard_name": "上海市"
   },
@@ -1604,8 +1256,12 @@
     "standard_name": "上海市宝山区"
   },
   "宝山区": {
-    "entity_id": "LOC_0617",
-    "standard_name": "宝山区"
+    "entity_id": "LOC_0012",
+    "standard_name": "上海市宝山区"
+  },
+  "宝山": {
+    "entity_id": "LOC_0012",
+    "standard_name": "上海市宝山区"
   },
   "上海市徐汇区上汇实验学校": {
     "entity_id": "ORG_0030",
@@ -1616,8 +1272,8 @@
     "standard_name": "上海市总工会"
   },
   "市总工会": {
-    "entity_id": "ORG_0245",
-    "standard_name": "市总工会"
+    "entity_id": "ORG_0196",
+    "standard_name": "呼和浩特市总工会"
   },
   "上海市总工会宣传教育工作部": {
     "entity_id": "ORG_0032",
@@ -1676,8 +1332,8 @@
     "standard_name": "上海红双喜股份有限公司"
   },
   "红双喜": {
-    "entity_id": "ORG_0358",
-    "standard_name": "红双喜"
+    "entity_id": "ORG_0039",
+    "standard_name": "上海红双喜股份有限公司"
   },
   "上海羽毛球一队": {
     "entity_id": "ORG_0040",
@@ -1686,10 +1342,6 @@
   "上海羽毛球队": {
     "entity_id": "ORG_0041",
     "standard_name": "上海羽毛球队"
-  },
-  "上观新闻": {
-    "entity_id": "ORG_0456",
-    "standard_name": "上观新闻客户端"
   },
   "不打Young市集": {
     "entity_id": "EVENT_0154",
@@ -1704,18 +1356,30 @@
     "standard_name": "世界乒乓球职业大联盟"
   },
   "世界乒乓球职业大联盟（WTT）": {
-    "entity_id": "ORG_0853",
-    "standard_name": "世界乒乓球职业大联盟（WTT）"
+    "entity_id": "ORG_0043",
+    "standard_name": "世界乒乓球职业大联盟"
   },
   "世界乒联": {
     "entity_id": "ORG_0854",
     "standard_name": "世界乒乓球联合会（WTT）"
   },
+  "WTT": {
+    "entity_id": "ORG_0043",
+    "standard_name": "世界乒乓球职业大联盟"
+  },
   "WTT世界乒联": {
-    "entity_id": "ORG_0836",
-    "standard_name": "WTT世界乒联"
+    "entity_id": "ORG_0043",
+    "standard_name": "世界乒乓球职业大联盟"
   },
   "World Table Tennis（世界乒乓球职业大联盟）": {
+    "entity_id": "ORG_0043",
+    "standard_name": "世界乒乓球职业大联盟"
+  },
+  "World Table Tennis": {
+    "entity_id": "ORG_0043",
+    "standard_name": "世界乒乓球职业大联盟"
+  },
+  "世界乒乓球职业大联盟 (WTT)": {
     "entity_id": "ORG_0043",
     "standard_name": "世界乒乓球职业大联盟"
   },
@@ -1743,18 +1407,6 @@
     "entity_id": "EVENT_0161",
     "standard_name": "世界羽联世界巡回赛"
   },
-  "世界羽毛球联合会": {
-    "entity_id": "ORG_0044",
-    "standard_name": "世界羽毛球联合会"
-  },
-  "BWF世界羽联": {
-    "entity_id": "ORG_0044",
-    "standard_name": "世界羽毛球联合会"
-  },
-  "国际羽联": {
-    "entity_id": "ORG_0044",
-    "standard_name": "世界羽毛球联合会"
-  },
   "世界羽毛球联合会东南亚赛季": {
     "entity_id": "EVENT_0158",
     "standard_name": "世界羽毛球联合会东南亚赛季"
@@ -1768,8 +1420,8 @@
     "standard_name": "世界羽毛球联合会巡回赛"
   },
   "世界羽联巡回赛": {
-    "entity_id": "EVENT_0165",
-    "standard_name": "世界羽联巡回赛"
+    "entity_id": "EVENT_0159",
+    "standard_name": "世界羽毛球联合会巡回赛"
   },
   "世界羽毛球锦标赛": {
     "entity_id": "EVENT_0160",
@@ -1810,10 +1462,6 @@
   "超级750": {
     "entity_id": "EVENT_0164",
     "standard_name": "世界羽联世界巡回赛超级750赛"
-  },
-  "世界羽联巡回赛超级500赛事": {
-    "entity_id": "EVENT_0117",
-    "standard_name": "BWF世界巡回赛超级500"
   },
   "世界羽联巡回赛超级500马来西亚大师赛": {
     "entity_id": "EVENT_0167",
@@ -1860,8 +1508,8 @@
     "standard_name": "世界羽联巡回赛超级500马来西亚大师赛"
   },
   "大马大师赛": {
-    "entity_id": "EVENT_0239",
-    "standard_name": "大马大师赛"
+    "entity_id": "EVENT_0167",
+    "standard_name": "世界羽联巡回赛超级500马来西亚大师赛"
   },
   "Malaysia Masters": {
     "entity_id": "EVENT_0167",
@@ -1872,8 +1520,12 @@
     "standard_name": "世界羽联超级1000赛"
   },
   "超级1000赛": {
-    "entity_id": "EVENT_0328",
-    "standard_name": "超级1000赛事"
+    "entity_id": "EVENT_0168",
+    "standard_name": "世界羽联超级1000赛"
+  },
+  "超级1000赛事": {
+    "entity_id": "EVENT_0168",
+    "standard_name": "世界羽联超级1000赛"
   },
   "世界羽联超级100赛": {
     "entity_id": "EVENT_0169",
@@ -1890,10 +1542,6 @@
   "超级300赛事": {
     "entity_id": "EVENT_0170",
     "standard_name": "世界羽联超级300赛"
-  },
-  "世界羽联超级500赛": {
-    "entity_id": "EVENT_0117",
-    "standard_name": "BWF世界巡回赛超级500"
   },
   "世界青年羽毛球锦标赛": {
     "entity_id": "EVENT_0174",
@@ -2051,14 +1699,6 @@
     "entity_id": "ORG_0061",
     "standard_name": "中国农业银行股份有限公司马鞍山分行"
   },
-  "中国台北地区": {
-    "entity_id": "LOC_0027",
-    "standard_name": "中国台湾地区"
-  },
-  "中国台北": {
-    "entity_id": "LOC_0027",
-    "standard_name": "中国台湾地区"
-  },
   "中国台北羽毛球代表队": {
     "entity_id": "ORG_0062",
     "standard_name": "中国台北羽毛球代表队"
@@ -2075,7 +1715,7 @@
     "entity_id": "ORG_0063",
     "standard_name": "中国台北羽毛球协会"
   },
-  "中国台湾省": {
+  "中国台北": {
     "entity_id": "LOC_0027",
     "standard_name": "中国台湾地区"
   },
@@ -2116,22 +1756,30 @@
     "standard_name": "中国国家残疾人羽毛球队"
   },
   "国家残疾人羽毛球队": {
-    "entity_id": "ORG_0206",
-    "standard_name": "国家残疾人羽毛球队"
+    "entity_id": "ORG_0066",
+    "standard_name": "中国国家残疾人羽毛球队"
   },
   "中国国家羽毛球队": {
     "entity_id": "ORG_0067",
     "standard_name": "中国国家羽毛球队"
   },
   "中国羽毛球队": {
-    "entity_id": "ORG_0004",
-    "standard_name": "China national badminton team"
+    "entity_id": "ORG_0067",
+    "standard_name": "中国国家羽毛球队"
   },
   "国羽": {
     "entity_id": "ORG_0067",
     "standard_name": "中国国家羽毛球队"
   },
   "国家羽毛球队": {
+    "entity_id": "ORG_0067",
+    "standard_name": "中国国家羽毛球队"
+  },
+  "中国羽毛球协会（中国羽毛球队）": {
+    "entity_id": "ORG_0067",
+    "standard_name": "中国国家羽毛球队"
+  },
+  "China national badminton team": {
     "entity_id": "ORG_0067",
     "standard_name": "中国国家羽毛球队"
   },
@@ -2179,11 +1827,11 @@
     "entity_id": "ORG_0072",
     "standard_name": "中国新闻社"
   },
-  "中国残奥委员会": {
+  "中国残疾人奥林匹克委员会": {
     "entity_id": "ORG_0074",
     "standard_name": "中国残疾人奥林匹克委员会"
   },
-  "中国残疾人奥林匹克委员会": {
+  "中国残奥委员会": {
     "entity_id": "ORG_0074",
     "standard_name": "中国残疾人奥林匹克委员会"
   },
@@ -2200,8 +1848,8 @@
     "standard_name": "中国水利水电第十四工程局有限公司"
   },
   "中国澳门公开赛": {
-    "entity_id": "EVENT_0298",
-    "standard_name": "澳门羽毛球公开赛"
+    "entity_id": "EVENT_0183",
+    "standard_name": "中国澳门公开赛"
   },
   "中国烟草总公司云南省公司": {
     "entity_id": "ORG_0077",
@@ -2276,8 +1924,8 @@
     "standard_name": "中国羽毛球国家青年队"
   },
   "国家青年队": {
-    "entity_id": "ORG_0899",
-    "standard_name": "国家青年乒乓球队"
+    "entity_id": "ORG_0871",
+    "standard_name": "中国国家青年乒乓球队"
   },
   "中国羽毛球大师赛": {
     "entity_id": "EVENT_0187",
@@ -2487,10 +2135,6 @@
     "entity_id": "ORG_0113",
     "standard_name": "丹麦羽毛球协会"
   },
-  "久事体育": {
-    "entity_id": "ORG_0442",
-    "standard_name": "上海久事体育赛事运营管理有限公司"
-  },
   "乌克兰": {
     "entity_id": "LOC_0040",
     "standard_name": "乌克兰"
@@ -2500,6 +2144,14 @@
     "standard_name": "乌拜迪拉"
   },
   "乔纳坦·克里斯蒂": {
+    "entity_id": "PER_0069",
+    "standard_name": "乔纳坦·克里斯蒂"
+  },
+  "乔纳坦": {
+    "entity_id": "PER_0069",
+    "standard_name": "乔纳坦·克里斯蒂"
+  },
+  "Jonatan": {
     "entity_id": "PER_0069",
     "standard_name": "乔纳坦·克里斯蒂"
   },
@@ -2679,9 +2331,17 @@
     "entity_id": "PER_0077",
     "standard_name": "亚历山德拉·博尔"
   },
+  "博尔": {
+    "entity_id": "PER_0077",
+    "standard_name": "亚历山德拉·博尔"
+  },
   "亚洲": {
-    "entity_id": "LOC_0349",
-    "standard_name": "Asia"
+    "entity_id": "LOC_0045",
+    "standard_name": "亚洲"
+  },
+  "Asia": {
+    "entity_id": "LOC_0045",
+    "standard_name": "亚洲"
   },
   "亚洲羽毛球团体锦标赛": {
     "entity_id": "EVENT_0195",
@@ -2712,8 +2372,8 @@
     "standard_name": "亚洲羽毛球锦标赛"
   },
   "亚锦赛": {
-    "entity_id": "EVENT_0740",
-    "standard_name": "亚锦赛"
+    "entity_id": "EVENT_0737",
+    "standard_name": "亚洲乒乓球锦标赛"
   },
   "亚洲运动会": {
     "entity_id": "EVENT_0197",
@@ -2787,6 +2447,14 @@
     "entity_id": "PER_0087",
     "standard_name": "伊祖丁·阿兹林"
   },
+  "伊祖丁": {
+    "entity_id": "PER_0087",
+    "standard_name": "伊祖丁·阿兹林"
+  },
+  "Izzuddin": {
+    "entity_id": "PER_0087",
+    "standard_name": "伊祖丁·阿兹林"
+  },
   "伊莎拉尼": {
     "entity_id": "PER_0088",
     "standard_name": "伊莎拉尼"
@@ -2800,8 +2468,8 @@
     "standard_name": "休斯顿"
   },
   "休斯敦": {
-    "entity_id": "LOC_0588",
-    "standard_name": "休斯敦"
+    "entity_id": "LOC_0047",
+    "standard_name": "休斯顿"
   },
   "休斯顿公开赛": {
     "entity_id": "EVENT_0201",
@@ -2818,14 +2486,6 @@
   "众安": {
     "entity_id": "ORG_0143",
     "standard_name": "众安在线财产保险股份有限公司"
-  },
-  "伦加德": {
-    "entity_id": "PER_0918",
-    "standard_name": "马蒂亚斯·伦加德"
-  },
-  "Linggaard": {
-    "entity_id": "PER_0090",
-    "standard_name": "伦加德"
   },
   "伦加德/维斯特加德": {
     "entity_id": "PER_0091",
@@ -2959,6 +2619,14 @@
     "entity_id": "LOC_0054",
     "standard_name": "光州"
   },
+  "克里斯托·波波夫": {
+    "entity_id": "PER_0109",
+    "standard_name": "克里斯托·波波夫"
+  },
+  "Christo Popov": {
+    "entity_id": "PER_0109",
+    "standard_name": "克里斯托·波波夫"
+  },
   "克雷尔": {
     "entity_id": "PER_0111",
     "standard_name": "克雷尔"
@@ -2978,10 +2646,6 @@
   "全国全民健身大赛": {
     "entity_id": "EVENT_0206",
     "standard_name": "全国全民健身大赛"
-  },
-  "全国冠军赛": {
-    "entity_id": "EVENT_1134",
-    "standard_name": "全国田径冠军赛"
   },
   "全国击剑比赛": {
     "entity_id": "EVENT_0208",
@@ -3011,6 +2675,10 @@
     "entity_id": "EVENT_0212",
     "standard_name": "全国运动会"
   },
+  "中华人民共和国全国运动会": {
+    "entity_id": "EVENT_0212",
+    "standard_name": "全国运动会"
+  },
   "全奕镇": {
     "entity_id": "PER_0112",
     "standard_name": "全奕镇"
@@ -3031,7 +2699,15 @@
     "entity_id": "EVENT_0214",
     "standard_name": "全英羽毛球公开赛"
   },
+  "全英赛": {
+    "entity_id": "EVENT_0214",
+    "standard_name": "全英羽毛球公开赛"
+  },
   "全英冠军": {
+    "entity_id": "EVENT_0214",
+    "standard_name": "全英羽毛球公开赛"
+  },
+  "All England Open": {
     "entity_id": "EVENT_0214",
     "standard_name": "全英羽毛球公开赛"
   },
@@ -3152,8 +2828,8 @@
     "standard_name": "冯彦哲/黄东萍"
   },
   "凤凰组合": {
-    "entity_id": "PER_0126",
-    "standard_name": "凤凰组合"
+    "entity_id": "PER_0119",
+    "standard_name": "冯彦哲/黄东萍"
   },
   "冯波": {
     "entity_id": "PER_0120",
@@ -3392,12 +3068,12 @@
     "standard_name": "勒勒"
   },
   "勒莎娜": {
-    "entity_id": "PER_0163",
-    "standard_name": "勒莎娜（Lalrina Ralte 或类似拼写，文中未明确）"
+    "entity_id": "PER_0162",
+    "standard_name": "勒莎娜"
   },
   "勒莎娜（Lalrina Ralte 或类似拼写，文中未明确）": {
-    "entity_id": "PER_0163",
-    "standard_name": "勒莎娜（Lalrina Ralte 或类似拼写，文中未明确）"
+    "entity_id": "PER_0162",
+    "standard_name": "勒莎娜"
   },
   "包头市": {
     "entity_id": "LOC_0063",
@@ -3418,10 +3094,6 @@
   "北京体育大学": {
     "entity_id": "ORG_0163",
     "standard_name": "北京体育大学"
-  },
-  "北京国家奥林匹克体育中心体育馆": {
-    "entity_id": "LOC_0106",
-    "standard_name": "国家奥林匹克体育中心体育馆"
   },
   "北京外国语大学附属海南外国语学校": {
     "entity_id": "ORG_0164",
@@ -3456,8 +3128,8 @@
     "standard_name": "北京羽毛球队"
   },
   "北京队": {
-    "entity_id": "ORG_1051",
-    "standard_name": "北京队"
+    "entity_id": "ORG_1049",
+    "standard_name": "北京市游泳队"
   },
   "北京首钢园": {
     "entity_id": "LOC_0067",
@@ -3510,6 +3182,14 @@
   "华润文化体育发展有限公司": {
     "entity_id": "ORG_0173",
     "standard_name": "华润文化体育发展有限公司"
+  },
+  "华金": {
+    "entity_id": "PER_0164",
+    "standard_name": "华金"
+  },
+  "Hwa Jin": {
+    "entity_id": "PER_0164",
+    "standard_name": "华金"
   },
   "卓羽体育青少年羽毛球培训基地": {
     "entity_id": "ORG_0174",
@@ -3611,6 +3291,14 @@
     "entity_id": "PER_0169",
     "standard_name": "卡南多"
   },
+  "卡尔南多": {
+    "entity_id": "PER_0170",
+    "standard_name": "卡尔南多"
+  },
+  "Kardinando": {
+    "entity_id": "PER_0170",
+    "standard_name": "卡尔南多"
+  },
   "卡洛亚娜": {
     "entity_id": "PER_0171",
     "standard_name": "卡洛亚娜"
@@ -3627,12 +3315,8 @@
     "entity_id": "PER_0174",
     "standard_name": "卢善恩"
   },
-  "卢布列夫": {
-    "entity_id": "PER_1614",
-    "standard_name": "安德烈·卢布列夫"
-  },
   "卢布尔雅那": {
-    "entity_id": "LOC_0080",
+    "entity_id": "LOC_0079",
     "standard_name": "卢布尔雅那"
   },
   "卢布尔雅那（Ljubljana）": {
@@ -3652,24 +3336,8 @@
     "standard_name": "印尼女双组合"
   },
   "印尼组合": {
-    "entity_id": "ORG_0185",
-    "standard_name": "印度尼西亚羽毛球队"
-  },
-  "超级1000印尼公开赛": {
-    "entity_id": "EVENT_0223",
-    "standard_name": "印尼羽毛球公开赛"
-  },
-  "2026世界羽联巡回赛超级1000印尼公开赛": {
-    "entity_id": "EVENT_0223",
-    "standard_name": "印尼羽毛球公开赛"
-  },
-  "印尼站": {
-    "entity_id": "EVENT_0223",
-    "standard_name": "印尼羽毛球公开赛"
-  },
-  "BWF世界巡回超级1000系列印尼公开赛": {
-    "entity_id": "EVENT_0223",
-    "standard_name": "印尼羽毛球公开赛"
+    "entity_id": "ORG_0184",
+    "standard_name": "印度尼西亚羽毛球组合"
   },
   "印度公开赛": {
     "entity_id": "EVENT_0231",
@@ -3680,8 +3348,12 @@
     "standard_name": "印度共和国"
   },
   "印度": {
-    "entity_id": "LOC_0358",
-    "standard_name": "India"
+    "entity_id": "LOC_0083",
+    "standard_name": "印度共和国"
+  },
+  "India": {
+    "entity_id": "LOC_0083",
+    "standard_name": "印度共和国"
   },
   "印度国家羽毛球队": {
     "entity_id": "ORG_0180",
@@ -3712,10 +3384,14 @@
     "standard_name": "印度尼西亚国家羽毛球队"
   },
   "印尼队": {
-    "entity_id": "ORG_0185",
-    "standard_name": "印度尼西亚羽毛球队"
+    "entity_id": "ORG_0181",
+    "standard_name": "印度尼西亚国家羽毛球队"
   },
   "印尼国家队": {
+    "entity_id": "ORG_0181",
+    "standard_name": "印度尼西亚国家羽毛球队"
+  },
+  "印度尼西亚羽毛球队": {
     "entity_id": "ORG_0181",
     "standard_name": "印度尼西亚国家羽毛球队"
   },
@@ -3732,6 +3408,22 @@
     "standard_name": "印度尼西亚大师赛"
   },
   "印度尼西亚羽毛球公开赛": {
+    "entity_id": "EVENT_0228",
+    "standard_name": "印度尼西亚羽毛球公开赛"
+  },
+  "超级1000印尼公开赛": {
+    "entity_id": "EVENT_0228",
+    "standard_name": "印度尼西亚羽毛球公开赛"
+  },
+  "2026世界羽联巡回赛超级1000印尼公开赛": {
+    "entity_id": "EVENT_0228",
+    "standard_name": "印度尼西亚羽毛球公开赛"
+  },
+  "印尼站": {
+    "entity_id": "EVENT_0228",
+    "standard_name": "印度尼西亚羽毛球公开赛"
+  },
+  "BWF世界巡回超级1000系列印尼公开赛": {
     "entity_id": "EVENT_0228",
     "standard_name": "印度尼西亚羽毛球公开赛"
   },
@@ -3766,10 +3458,6 @@
   "印尼超级1000赛": {
     "entity_id": "EVENT_0230",
     "standard_name": "印度尼西亚羽毛球超级1000赛"
-  },
-  "印度尼西亚羽毛球队": {
-    "entity_id": "ORG_0185",
-    "standard_name": "印度尼西亚羽毛球队"
   },
   "印度羽毛球公开赛": {
     "entity_id": "EVENT_0231",
@@ -3823,14 +3511,6 @@
     "entity_id": "PER_0183",
     "standard_name": "古贺辉"
   },
-  "台湾省": {
-    "entity_id": "LOC_0027",
-    "standard_name": "中国台湾地区"
-  },
-  "台湾": {
-    "entity_id": "LOC_0027",
-    "standard_name": "中国台湾地区"
-  },
   "史方静": {
     "entity_id": "PER_0184",
     "standard_name": "史方静"
@@ -3864,8 +3544,8 @@
     "standard_name": "各省市自治区羽毛球队"
   },
   "省队": {
-    "entity_id": "ORG_0979",
-    "standard_name": "省队"
+    "entity_id": "ORG_0188",
+    "standard_name": "各省市自治区羽毛球队"
   },
   "合肥一六八玫瑰园学校南校": {
     "entity_id": "ORG_0189",
@@ -3920,8 +3600,16 @@
     "standard_name": "吉林省"
   },
   "吉林": {
-    "entity_id": "LOC_0093",
-    "standard_name": "吉林省"
+    "entity_id": "ORG_0676",
+    "standard_name": "吉林九台农商银行东北虎篮球俱乐部"
+  },
+  "吉隆坡": {
+    "entity_id": "LOC_0094",
+    "standard_name": "吉隆坡"
+  },
+  "Kuala Lumpur": {
+    "entity_id": "LOC_0094",
+    "standard_name": "吉隆坡"
   },
   "同仁医院": {
     "entity_id": "ORG_0192",
@@ -3950,6 +3638,14 @@
   "吕秉坤": {
     "entity_id": "PER_0197",
     "standard_name": "吕秉坤"
+  },
+  "吴世飞": {
+    "entity_id": "PER_0198",
+    "standard_name": "吴世飞"
+  },
+  "Wu Shifei": {
+    "entity_id": "PER_0198",
+    "standard_name": "吴世飞"
   },
   "吴伟荣": {
     "entity_id": "PER_0199",
@@ -4183,6 +3879,14 @@
     "entity_id": "PER_0222",
     "standard_name": "因德拉"
   },
+  "因陀罗": {
+    "entity_id": "PER_0225",
+    "standard_name": "因陀罗"
+  },
+  "Indra": {
+    "entity_id": "PER_0225",
+    "standard_name": "因陀罗"
+  },
   "国家体育总局": {
     "entity_id": "ORG_0203",
     "standard_name": "国家体育总局"
@@ -4207,6 +3911,10 @@
     "entity_id": "LOC_0106",
     "standard_name": "国家奥林匹克体育中心体育馆"
   },
+  "北京国家奥林匹克体育中心体育馆": {
+    "entity_id": "LOC_0106",
+    "standard_name": "国家奥林匹克体育中心体育馆"
+  },
   "国家羽毛球学院": {
     "entity_id": "ORG_0207",
     "standard_name": "国家羽毛球学院"
@@ -4216,6 +3924,26 @@
     "standard_name": "国联民生证券"
   },
   "国际羽毛球联合会": {
+    "entity_id": "ORG_0210",
+    "standard_name": "国际羽毛球联合会"
+  },
+  "世界羽联": {
+    "entity_id": "ORG_0210",
+    "standard_name": "国际羽毛球联合会"
+  },
+  "世界羽毛球联合会": {
+    "entity_id": "ORG_0210",
+    "standard_name": "国际羽毛球联合会"
+  },
+  "BWF世界羽联": {
+    "entity_id": "ORG_0210",
+    "standard_name": "国际羽毛球联合会"
+  },
+  "国际羽联": {
+    "entity_id": "ORG_0210",
+    "standard_name": "国际羽毛球联合会"
+  },
+  "Badminton World Federation": {
     "entity_id": "ORG_0210",
     "standard_name": "国际羽毛球联合会"
   },
@@ -4268,20 +3996,20 @@
     "standard_name": "塞尔维亚"
   },
   "塞蒂亚布迪": {
-    "entity_id": "PER_0232",
-    "standard_name": "塞蒂亚布迪（Setiadi 或类似拼写，文中未明确）"
+    "entity_id": "PER_0231",
+    "standard_name": "塞蒂亚布迪"
   },
   "塞蒂亚布迪（Setiadi 或类似拼写，文中未明确）": {
-    "entity_id": "PER_0232",
-    "standard_name": "塞蒂亚布迪（Setiadi 或类似拼写，文中未明确）"
+    "entity_id": "PER_0231",
+    "standard_name": "塞蒂亚布迪"
   },
   "墨西哥合众国": {
     "entity_id": "LOC_0110",
     "standard_name": "墨西哥合众国"
   },
   "墨西哥": {
-    "entity_id": "LOC_0500",
-    "standard_name": "墨西哥"
+    "entity_id": "LOC_0110",
+    "standard_name": "墨西哥合众国"
   },
   "墨西哥国家足球队": {
     "entity_id": "ORG_0214",
@@ -4684,8 +4412,8 @@
     "standard_name": "安东尼·西尼苏卡·金廷"
   },
   "金廷": {
-    "entity_id": "PER_0817",
-    "standard_name": "金廷"
+    "entity_id": "PER_0264",
+    "standard_name": "安东尼·西尼苏卡·金廷"
   },
   "安东森": {
     "entity_id": "PER_0265",
@@ -4718,6 +4446,10 @@
   "安德斯·斯考劳普·拉斯姆森": {
     "entity_id": "PER_0268",
     "standard_name": "安德斯·斯考劳普·拉斯姆森"
+  },
+  "麦斯": {
+    "entity_id": "PER_0640",
+    "standard_name": "维克多·麦斯"
   },
   "安徽巢湖经济技术开发区": {
     "entity_id": "LOC_0135",
@@ -4835,6 +4567,14 @@
     "entity_id": "LOC_0140",
     "standard_name": "宝鸡"
   },
+  "宫崎友花": {
+    "entity_id": "PER_0277",
+    "standard_name": "宫崎友花"
+  },
+  "Yuka Miyazaki": {
+    "entity_id": "PER_0277",
+    "standard_name": "宫崎友花"
+  },
   "宿迁市": {
     "entity_id": "LOC_0141",
     "standard_name": "宿迁市"
@@ -4879,10 +4619,6 @@
     "entity_id": "PER_0280",
     "standard_name": "小林优吾/保木卓朗"
   },
-  "小波波夫": {
-    "entity_id": "PER_0532",
-    "standard_name": "波波夫"
-  },
   "尚哓": {
     "entity_id": "PER_0282",
     "standard_name": "尚哓"
@@ -4891,15 +4627,23 @@
     "entity_id": "EVENT_0254",
     "standard_name": "尤伯杯世界女子羽毛球团体锦标赛"
   },
-  "尤伯杯女子团体锦标赛": {
-    "entity_id": "EVENT_0255",
-    "standard_name": "尤伯杯女子团体锦标赛"
+  "尤伯杯": {
+    "entity_id": "EVENT_0254",
+    "standard_name": "尤伯杯世界女子羽毛球团体锦标赛"
   },
-  "尤尼克斯": {
+  "尤伯杯女子团体锦标赛": {
+    "entity_id": "EVENT_0254",
+    "standard_name": "尤伯杯世界女子羽毛球团体锦标赛"
+  },
+  "Uber Cup": {
+    "entity_id": "EVENT_0254",
+    "standard_name": "尤伯杯世界女子羽毛球团体锦标赛"
+  },
+  "尤尼克斯体育用品公司": {
     "entity_id": "ORG_0239",
     "standard_name": "尤尼克斯体育用品公司"
   },
-  "尤尼克斯体育用品公司": {
+  "尤尼克斯": {
     "entity_id": "ORG_0239",
     "standard_name": "尤尼克斯体育用品公司"
   },
@@ -4967,6 +4711,14 @@
     "entity_id": "PER_0291",
     "standard_name": "山北奈绪"
   },
+  "山口茜": {
+    "entity_id": "PER_0292",
+    "standard_name": "山口茜"
+  },
+  "Yamaguchi Akane": {
+    "entity_id": "PER_0292",
+    "standard_name": "山口茜"
+  },
   "岩永玲": {
     "entity_id": "PER_0293",
     "standard_name": "岩永玲"
@@ -5018,10 +4770,6 @@
   "巴特纳加尔": {
     "entity_id": "PER_0298",
     "standard_name": "巴特纳加尔"
-  },
-  "巴西": {
-    "entity_id": "LOC_0503",
-    "standard_name": "巴西联邦共和国"
   },
   "巴鲁亚": {
     "entity_id": "PER_0299",
@@ -5127,10 +4875,6 @@
     "entity_id": "ORG_1352",
     "standard_name": "广东省田径队"
   },
-  "广州": {
-    "entity_id": "LOC_0157",
-    "standard_name": "广州市"
-  },
   "广州体育学院": {
     "entity_id": "LOC_0156",
     "standard_name": "广州体育学院"
@@ -5139,17 +4883,29 @@
     "entity_id": "LOC_0157",
     "standard_name": "广州市"
   },
+  "广州": {
+    "entity_id": "LOC_0157",
+    "standard_name": "广州市"
+  },
   "广州羽毛球队": {
     "entity_id": "ORG_0256",
     "standard_name": "广州羽毛球队"
   },
   "广州队": {
-    "entity_id": "ORG_0728",
-    "standard_name": "广州队"
+    "entity_id": "ORG_0256",
+    "standard_name": "广州羽毛球队"
   },
   "广深地区": {
     "entity_id": "LOC_0158",
     "standard_name": "广深地区"
+  },
+  "广田彩花": {
+    "entity_id": "PER_0308",
+    "standard_name": "广田彩花"
+  },
+  "Sayaka Hirota": {
+    "entity_id": "PER_0308",
+    "standard_name": "广田彩花"
   },
   "库沙扬托": {
     "entity_id": "PER_0309",
@@ -5192,12 +4948,16 @@
     "standard_name": "弗朗西斯·蒂亚福"
   },
   "蒂亚福": {
-    "entity_id": "PER_0695",
-    "standard_name": "蒂亚福"
+    "entity_id": "PER_0314",
+    "standard_name": "弗朗西斯·蒂亚福"
   },
   "弗雷德里克·麦斯": {
     "entity_id": "PER_0315",
     "standard_name": "弗雷德里克·麦斯"
+  },
+  "Mads": {
+    "entity_id": "PER_0640",
+    "standard_name": "维克多·麦斯"
   },
   "张中良": {
     "entity_id": "PER_0316",
@@ -5344,8 +5104,8 @@
     "standard_name": "徐承宰"
   },
   "徐金": {
-    "entity_id": "PER_0356",
-    "standard_name": "徐金"
+    "entity_id": "PER_0350",
+    "standard_name": "徐承宰"
   },
   "徐文婧": {
     "entity_id": "PER_0351",
@@ -5395,11 +5155,11 @@
     "entity_id": "PER_0357",
     "standard_name": "德尔吕"
   },
-  "德差波": {
+  "德差波·帕克卡波": {
     "entity_id": "PER_0359",
     "standard_name": "德差波·帕克卡波"
   },
-  "德差波·帕克卡波": {
+  "德差波": {
     "entity_id": "PER_0359",
     "standard_name": "德差波·帕克卡波"
   },
@@ -5439,11 +5199,11 @@
     "entity_id": "LOC_0166",
     "standard_name": "悉尼奥林匹克公园体育中心"
   },
-  "意大利": {
+  "意大利共和国": {
     "entity_id": "LOC_0168",
     "standard_name": "意大利共和国"
   },
-  "意大利共和国": {
+  "意大利": {
     "entity_id": "LOC_0168",
     "standard_name": "意大利共和国"
   },
@@ -5507,7 +5267,15 @@
     "entity_id": "PER_0369",
     "standard_name": "托普利亚"
   },
+  "托马·波波夫": {
+    "entity_id": "PER_0370",
+    "standard_name": "托马·波波夫"
+  },
   "大波波夫": {
+    "entity_id": "PER_0370",
+    "standard_name": "托马·波波夫"
+  },
+  "Toma Popov": {
     "entity_id": "PER_0370",
     "standard_name": "托马·波波夫"
   },
@@ -5539,6 +5307,18 @@
     "entity_id": "PER_0376",
     "standard_name": "拉哈尤/兰妮"
   },
+  "拉尼尔": {
+    "entity_id": "PER_0377",
+    "standard_name": "拉尼尔"
+  },
+  "Lanier": {
+    "entity_id": "PER_0377",
+    "standard_name": "拉尼尔"
+  },
+  "Ragnil": {
+    "entity_id": "PER_0377",
+    "standard_name": "拉尼尔"
+  },
   "拉差诺·因达农": {
     "entity_id": "PER_0378",
     "standard_name": "拉差诺·因达农"
@@ -5548,8 +5328,8 @@
     "standard_name": "因达农·拉差诺"
   },
   "因达农·拉差诺": {
-    "entity_id": "PER_0224",
-    "standard_name": "因达农·拉差诺"
+    "entity_id": "PER_0378",
+    "standard_name": "拉差诺·因达农"
   },
   "拉斯维加斯": {
     "entity_id": "LOC_0171",
@@ -5574,10 +5354,6 @@
   "拉马丹蒂": {
     "entity_id": "PER_0381",
     "standard_name": "拉马丹蒂"
-  },
-  "捷克": {
-    "entity_id": "LOC_0508",
-    "standard_name": "捷克共和国"
   },
   "播报员": {
     "entity_id": "PER_0382",
@@ -5627,11 +5403,11 @@
     "entity_id": "PER_0387",
     "standard_name": "斯蒂法尼"
   },
-  "斯里坎特": {
+  "斯里坎特·基达姆比": {
     "entity_id": "PER_0389",
     "standard_name": "斯里坎特·基达姆比"
   },
-  "斯里坎特·基达姆比": {
+  "斯里坎特": {
     "entity_id": "PER_0389",
     "standard_name": "斯里坎特·基达姆比"
   },
@@ -5699,11 +5475,11 @@
     "entity_id": "LOC_0178",
     "standard_name": "新德里"
   },
-  "新昌": {
+  "新昌县": {
     "entity_id": "LOC_0180",
     "standard_name": "新昌县"
   },
-  "新昌县": {
+  "新昌": {
     "entity_id": "LOC_0180",
     "standard_name": "新昌县"
   },
@@ -5779,11 +5555,11 @@
     "entity_id": "PER_0395",
     "standard_name": "时雨"
   },
-  "昆拉武特": {
+  "昆拉武特·威提讪": {
     "entity_id": "PER_0397",
     "standard_name": "昆拉武特·威提讪"
   },
-  "昆拉武特·威提讪": {
+  "昆拉武特": {
     "entity_id": "PER_0397",
     "standard_name": "昆拉武特·威提讪"
   },
@@ -5872,8 +5648,8 @@
     "standard_name": "昭通市昭阳区人民政府"
   },
   "昭阳区人民政府": {
-    "entity_id": "ORG_0283",
-    "standard_name": "昭阳区人民政府"
+    "entity_id": "ORG_0281",
+    "standard_name": "昭通市昭阳区人民政府"
   },
   "昭通市融媒体中心": {
     "entity_id": "ORG_0282",
@@ -5907,6 +5683,10 @@
     "entity_id": "PER_0403",
     "standard_name": "普萨拉·文卡塔·辛杜"
   },
+  "辛杜": {
+    "entity_id": "PER_0403",
+    "standard_name": "普萨拉·文卡塔·辛杜"
+  },
   "普里娅": {
     "entity_id": "PER_0404",
     "standard_name": "普里娅"
@@ -5934,6 +5714,14 @@
   "曲靖市": {
     "entity_id": "LOC_0193",
     "standard_name": "曲靖市"
+  },
+  "曹梓涵": {
+    "entity_id": "PER_0406",
+    "standard_name": "曹梓涵"
+  },
+  "Cao Zihuan": {
+    "entity_id": "PER_0406",
+    "standard_name": "曹梓涵"
   },
   "曾晓昕": {
     "entity_id": "PER_0407",
@@ -6035,14 +5823,6 @@
     "entity_id": "PER_0429",
     "standard_name": "李嬴政"
   },
-  "李宁体育用品有限公司": {
-    "entity_id": "ORG_0291",
-    "standard_name": "李宁（中国）体育用品有限公司"
-  },
-  "李宁": {
-    "entity_id": "ORG_0291",
-    "standard_name": "李宁（中国）体育用品有限公司"
-  },
   "李宁品牌": {
     "entity_id": "ORG_0289",
     "standard_name": "李宁品牌"
@@ -6055,11 +5835,19 @@
     "entity_id": "ORG_0291",
     "standard_name": "李宁（中国）体育用品有限公司"
   },
+  "李宁": {
+    "entity_id": "ORG_0291",
+    "standard_name": "李宁（中国）体育用品有限公司"
+  },
   "李宁先生": {
     "entity_id": "ORG_0291",
     "standard_name": "李宁（中国）体育用品有限公司"
   },
   "李宁公司": {
+    "entity_id": "ORG_0291",
+    "standard_name": "李宁（中国）体育用品有限公司"
+  },
+  "李宁体育用品有限公司": {
     "entity_id": "ORG_0291",
     "standard_name": "李宁（中国）体育用品有限公司"
   },
@@ -6090,6 +5878,14 @@
   "李志强": {
     "entity_id": "PER_0435",
     "standard_name": "李志强"
+  },
+  "李怡婧": {
+    "entity_id": "PER_0436",
+    "standard_name": "李怡婧"
+  },
+  "Li Yijing": {
+    "entity_id": "PER_0436",
+    "standard_name": "李怡婧"
   },
   "李怡泓": {
     "entity_id": "PER_0437",
@@ -6155,6 +5951,18 @@
     "entity_id": "PER_0450",
     "standard_name": "李绍玉"
   },
+  "李美妙": {
+    "entity_id": "PER_0451",
+    "standard_name": "李美妙"
+  },
+  "Ratchanok Intanon": {
+    "entity_id": "PER_0451",
+    "standard_name": "李美妙"
+  },
+  "拉差诺": {
+    "entity_id": "PER_0451",
+    "standard_name": "李美妙"
+  },
   "李芳任": {
     "entity_id": "PER_0452",
     "standard_name": "李芳任"
@@ -6166,6 +5974,14 @@
   "李茜": {
     "entity_id": "PER_0454",
     "standard_name": "李茜"
+  },
+  "李诗沣": {
+    "entity_id": "PER_0455",
+    "standard_name": "李诗沣"
+  },
+  "Li Shifeng": {
+    "entity_id": "PER_0455",
+    "standard_name": "李诗沣"
   },
   "李谦": {
     "entity_id": "PER_0456",
@@ -6252,12 +6068,12 @@
     "standard_name": "杨莉媛"
   },
   "杨雅婷": {
-    "entity_id": "PER_0477",
-    "standard_name": "杨雅婷（Yeung Nga Ting）"
+    "entity_id": "PER_0476",
+    "standard_name": "杨雅婷"
   },
   "杨雅婷（Yeung Nga Ting）": {
-    "entity_id": "PER_0477",
-    "standard_name": "杨雅婷（Yeung Nga Ting）"
+    "entity_id": "PER_0476",
+    "standard_name": "杨雅婷"
   },
   "杨霈霈": {
     "entity_id": "PER_0478",
@@ -6270,10 +6086,6 @@
   "杨霈霖（Yeung Pui Lam）": {
     "entity_id": "PER_0480",
     "standard_name": "杨霈霖（Yeung Pui Lam）"
-  },
-  "杭州亚运会": {
-    "entity_id": "EVENT_0825",
-    "standard_name": "2022年杭州亚运会"
   },
   "杭州富阳博卡体育用品有限公司": {
     "entity_id": "ORG_0292",
@@ -6355,6 +6167,14 @@
     "entity_id": "EVENT_0270",
     "standard_name": "林丹杯羽毛球赛"
   },
+  "林俊易": {
+    "entity_id": "PER_0485",
+    "standard_name": "林俊易"
+  },
+  "Lin Chun-yi": {
+    "entity_id": "PER_0485",
+    "standard_name": "林俊易"
+  },
   "林昀儒": {
     "entity_id": "PER_0486",
     "standard_name": "林昀儒"
@@ -6370,6 +6190,14 @@
   "林瑞蓉": {
     "entity_id": "PER_0489",
     "standard_name": "林瑞蓉"
+  },
+  "林祥毅": {
+    "entity_id": "PER_0490",
+    "standard_name": "林祥毅"
+  },
+  "Lin Xiangyi": {
+    "entity_id": "PER_0490",
+    "standard_name": "林祥毅"
   },
   "林美娟": {
     "entity_id": "PER_0491",
@@ -6563,6 +6391,10 @@
     "entity_id": "LOC_0208",
     "standard_name": "武威市"
   },
+  "武威": {
+    "entity_id": "LOC_0208",
+    "standard_name": "武威市"
+  },
   "比利时国家足球队": {
     "entity_id": "ORG_0301",
     "standard_name": "比利时国家足球队"
@@ -6572,8 +6404,8 @@
     "standard_name": "比利时国家足球队"
   },
   "比利时": {
-    "entity_id": "LOC_0550",
-    "standard_name": "比利时"
+    "entity_id": "LOC_0209",
+    "standard_name": "比利时王国"
   },
   "比利时王国": {
     "entity_id": "LOC_0209",
@@ -6663,21 +6495,21 @@
     "entity_id": "EVENT_0274",
     "standard_name": "汤姆斯杯"
   },
-  "汤姆斯杯和尤伯杯": {
-    "entity_id": "EVENT_0275",
-    "standard_name": "汤姆斯杯和尤伯杯"
-  },
-  "汤尤杯": {
-    "entity_id": "EVENT_0278",
-    "standard_name": "汤尤杯"
-  },
   "汤姆斯杯和尤伯杯世界羽毛球团体锦标赛": {
     "entity_id": "EVENT_0276",
     "standard_name": "汤姆斯杯和尤伯杯世界羽毛球团体锦标赛"
   },
+  "汤尤杯": {
+    "entity_id": "EVENT_0276",
+    "standard_name": "汤姆斯杯和尤伯杯世界羽毛球团体锦标赛"
+  },
+  "汤姆斯杯和尤伯杯": {
+    "entity_id": "EVENT_0276",
+    "standard_name": "汤姆斯杯和尤伯杯世界羽毛球团体锦标赛"
+  },
   "汤姆斯杯和尤伯杯羽毛球赛": {
-    "entity_id": "EVENT_0277",
-    "standard_name": "汤姆斯杯和尤伯杯羽毛球赛"
+    "entity_id": "EVENT_0276",
+    "standard_name": "汤姆斯杯和尤伯杯世界羽毛球团体锦标赛"
   },
   "汤恩佳": {
     "entity_id": "PER_0522",
@@ -6707,15 +6539,23 @@
     "entity_id": "PER_0527",
     "standard_name": "沈诗瑶"
   },
-  "沈阳": {
-    "entity_id": "LOC_0215",
-    "standard_name": "沈阳市"
-  },
   "沈阳市": {
     "entity_id": "LOC_0215",
     "standard_name": "沈阳市"
   },
+  "沈阳": {
+    "entity_id": "LOC_0215",
+    "standard_name": "沈阳市"
+  },
   "沙西丽·德拉达那猜": {
+    "entity_id": "PER_0529",
+    "standard_name": "沙西丽·德拉达那猜"
+  },
+  "沙西丽": {
+    "entity_id": "PER_0529",
+    "standard_name": "沙西丽·德拉达那猜"
+  },
+  "Sapsiree Taerattanachai": {
     "entity_id": "PER_0529",
     "standard_name": "沙西丽·德拉达那猜"
   },
@@ -6730,10 +6570,6 @@
   "河南省": {
     "entity_id": "LOC_0217",
     "standard_name": "河南省"
-  },
-  "法国": {
-    "entity_id": "ORG_0591",
-    "standard_name": "法国国家男子足球队"
   },
   "法国国家羽毛球队": {
     "entity_id": "ORG_0308",
@@ -6751,6 +6587,14 @@
     "entity_id": "LOC_0705",
     "standard_name": "巴黎市"
   },
+  "法汉": {
+    "entity_id": "PER_0530",
+    "standard_name": "法汉"
+  },
+  "Farhan": {
+    "entity_id": "PER_0530",
+    "standard_name": "法汉"
+  },
   "法蒂尔": {
     "entity_id": "PER_0531",
     "standard_name": "法蒂尔"
@@ -6767,11 +6611,11 @@
     "entity_id": "LOC_0220",
     "standard_name": "泛美地区"
   },
-  "波兰": {
-    "entity_id": "LOC_0638",
-    "standard_name": "波兰共和国"
-  },
   "波波夫": {
+    "entity_id": "PER_0532",
+    "standard_name": "波波夫"
+  },
+  "小波波夫": {
     "entity_id": "PER_0532",
     "standard_name": "波波夫"
   },
@@ -6795,13 +6639,13 @@
     "entity_id": "ORG_1391",
     "standard_name": "泰国国家田径队"
   },
+  "泰国羽毛球队": {
+    "entity_id": "ORG_0310",
+    "standard_name": "泰国国家羽毛球队"
+  },
   "泰国大师赛": {
     "entity_id": "EVENT_0283",
     "standard_name": "泰国羽毛球大师赛"
-  },
-  "泰国": {
-    "entity_id": "LOC_0223",
-    "standard_name": "泰王国"
   },
   "泰国羽毛球协会": {
     "entity_id": "ORG_0311",
@@ -6814,10 +6658,6 @@
   "泰国羽毛球赛": {
     "entity_id": "EVENT_0284",
     "standard_name": "泰国羽毛球赛"
-  },
-  "泰国羽毛球队": {
-    "entity_id": "ORG_0312",
-    "standard_name": "泰国羽毛球队"
   },
   "泰王国": {
     "entity_id": "LOC_0223",
@@ -6981,15 +6821,15 @@
   },
   "浙江队": {
     "entity_id": "ORG_1112",
-    "standard_name": "浙江队"
+    "standard_name": "浙江省游泳队"
   },
   "浙江省运动会": {
     "entity_id": "EVENT_0288",
     "standard_name": "浙江省运动会"
   },
   "省运会": {
-    "entity_id": "EVENT_0952",
-    "standard_name": "省运会"
+    "entity_id": "EVENT_0288",
+    "standard_name": "浙江省运动会"
   },
   "浙江羽毛球队": {
     "entity_id": "ORG_0322",
@@ -7124,20 +6964,16 @@
     "standard_name": "渝水区"
   },
   "渡边勇大": {
-    "entity_id": "PER_0545",
-    "standard_name": "渡边勇大（Watanabe Yuta）"
+    "entity_id": "PER_0544",
+    "standard_name": "渡边勇大"
   },
   "渡边勇大（Watanabe Yuta）": {
-    "entity_id": "PER_0545",
-    "standard_name": "渡边勇大（Watanabe Yuta）"
+    "entity_id": "PER_0544",
+    "standard_name": "渡边勇大"
   },
   "渡边航贵": {
     "entity_id": "PER_0546",
     "standard_name": "渡边航贵"
-  },
-  "温布尔登网球锦标赛": {
-    "entity_id": "EVENT_0017",
-    "standard_name": "2024年温布尔登网球锦标赛"
   },
   "温瑞博": {
     "entity_id": "PER_0547",
@@ -7231,10 +7067,6 @@
     "entity_id": "PER_0548",
     "standard_name": "潘斌龙"
   },
-  "澳大利亚公开赛": {
-    "entity_id": "EVENT_0087",
-    "standard_name": "2026年澳大利亚羽毛球公开赛"
-  },
   "澳大利亚网球公开赛": {
     "entity_id": "EVENT_0295",
     "standard_name": "澳大利亚网球公开赛"
@@ -7246,10 +7078,6 @@
   "澳网": {
     "entity_id": "EVENT_0295",
     "standard_name": "澳大利亚网球公开赛"
-  },
-  "超级500澳大利亚公开赛": {
-    "entity_id": "EVENT_0087",
-    "standard_name": "2026年澳大利亚羽毛球公开赛"
   },
   "澳大利亚羽毛球协会": {
     "entity_id": "ORG_0340",
@@ -7275,13 +7103,13 @@
     "entity_id": "LOC_0249",
     "standard_name": "澳大利亚联邦"
   },
+  "Australia": {
+    "entity_id": "LOC_0249",
+    "standard_name": "澳大利亚联邦"
+  },
   "澳门东亚运动会体育馆": {
     "entity_id": "LOC_0251",
     "standard_name": "澳门东亚运动会体育馆"
-  },
-  "澳门公开赛": {
-    "entity_id": "EVENT_0103",
-    "standard_name": "2026澳门羽毛球公开赛"
   },
   "澳门羽毛球公开赛官方账号": {
     "entity_id": "ORG_0341",
@@ -7312,8 +7140,8 @@
     "standard_name": "爱知县-名古屋市"
   },
   "爱知-名古屋": {
-    "entity_id": "LOC_0648",
-    "standard_name": "爱知-名古屋"
+    "entity_id": "LOC_0254",
+    "standard_name": "爱知县-名古屋市"
   },
   "牛冠凯": {
     "entity_id": "PER_0552",
@@ -7439,6 +7267,14 @@
     "entity_id": "PER_0581",
     "standard_name": "王眱祯"
   },
+  "王祉怡": {
+    "entity_id": "PER_0582",
+    "standard_name": "王祉怡"
+  },
+  "Wang Zhiyi": {
+    "entity_id": "PER_0582",
+    "standard_name": "王祉怡"
+  },
   "王者之志": {
     "entity_id": "EVENT_0299",
     "standard_name": "王者之志"
@@ -7516,12 +7352,8 @@
     "standard_name": "瑞典王国"
   },
   "瑞典": {
-    "entity_id": "LOC_0556",
-    "standard_name": "瑞典"
-  },
-  "瑞士": {
-    "entity_id": "LOC_0514",
-    "standard_name": "瑞士联邦"
+    "entity_id": "LOC_0259",
+    "standard_name": "瑞典王国"
   },
   "瑞士公开赛": {
     "entity_id": "EVENT_0302",
@@ -7584,12 +7416,12 @@
     "standard_name": "田中湧士"
   },
   "田口真彩": {
-    "entity_id": "PER_0599",
-    "standard_name": "田口真彩（Taguchi Maya）"
+    "entity_id": "PER_0598",
+    "standard_name": "田口真彩"
   },
   "田口真彩（Taguchi Maya）": {
-    "entity_id": "PER_0599",
-    "standard_name": "田口真彩（Taguchi Maya）"
+    "entity_id": "PER_0598",
+    "standard_name": "田口真彩"
   },
   "田珊": {
     "entity_id": "PER_0600",
@@ -7667,6 +7499,14 @@
     "entity_id": "PER_0609",
     "standard_name": "石中玉"
   },
+  "石宇奇": {
+    "entity_id": "PER_0610",
+    "standard_name": "石宇奇"
+  },
+  "Shi Yuqi": {
+    "entity_id": "PER_0610",
+    "standard_name": "石宇奇"
+  },
   "石晟绮": {
     "entity_id": "PER_0611",
     "standard_name": "石晟绮"
@@ -7731,10 +7571,6 @@
     "entity_id": "ORG_0357",
     "standard_name": "科东阳辰公司"
   },
-  "科博利": {
-    "entity_id": "PER_1639",
-    "standard_name": "弗拉维奥·科博利"
-  },
   "科斯蒂亚": {
     "entity_id": "PER_0621",
     "standard_name": "科斯蒂亚"
@@ -7776,8 +7612,12 @@
     "standard_name": "第31届世界大学生夏季运动会"
   },
   "成都大运会": {
-    "entity_id": "EVENT_0976",
-    "standard_name": "2021年成都世界大学生夏季运动会"
+    "entity_id": "EVENT_0305",
+    "standard_name": "第31届世界大学生夏季运动会"
+  },
+  "2021年成都世界大学生夏季运动会": {
+    "entity_id": "EVENT_0305",
+    "standard_name": "第31届世界大学生夏季运动会"
   },
   "第三届“内自同城”羽毛球赛": {
     "entity_id": "EVENT_0306",
@@ -7915,10 +7755,6 @@
     "entity_id": "PER_0639",
     "standard_name": "纳帕帕卡孔"
   },
-  "纽约": {
-    "entity_id": "LOC_0560",
-    "standard_name": "纽约市"
-  },
   "绥德县": {
     "entity_id": "LOC_0272",
     "standard_name": "绥德县"
@@ -7971,6 +7807,14 @@
     "entity_id": "PER_0647",
     "standard_name": "罗圣胜"
   },
+  "罗徐敏": {
+    "entity_id": "PER_0648",
+    "standard_name": "罗徐敏"
+  },
+  "Luo Xumin": {
+    "entity_id": "PER_0648",
+    "standard_name": "罗徐敏"
+  },
   "罗必胜": {
     "entity_id": "PER_0649",
     "standard_name": "罗必胜"
@@ -8016,8 +7860,8 @@
     "standard_name": "美国国家羽毛球队"
   },
   "美国队": {
-    "entity_id": "ORG_1449",
-    "standard_name": "美国队"
+    "entity_id": "ORG_1132",
+    "standard_name": "美国游泳队"
   },
   "美国羽毛球公开赛": {
     "entity_id": "EVENT_0321",
@@ -8043,6 +7887,10 @@
     "entity_id": "EVENT_0322",
     "standard_name": "羽毛球世界巡回赛超级300赛"
   },
+  "羽毛球超级300赛": {
+    "entity_id": "EVENT_0322",
+    "standard_name": "羽毛球世界巡回赛超级300赛"
+  },
   "羽毛球四大顶级赛事（全英、印尼、中国、马来西亚等公开赛的统称或历史概念）": {
     "entity_id": "EVENT_0323",
     "standard_name": "羽毛球四大顶级赛事（全英、印尼、中国、马来西亚等公开赛的统称或历史概念）"
@@ -8059,9 +7907,13 @@
     "entity_id": "ORG_0364",
     "standard_name": "羽毛球国家集训队"
   },
-  "羽毛球超级300赛": {
-    "entity_id": "EVENT_0322",
-    "standard_name": "羽毛球世界巡回赛超级300赛"
+  "翁泓阳": {
+    "entity_id": "PER_0655",
+    "standard_name": "翁泓阳"
+  },
+  "Weng Hongyang": {
+    "entity_id": "PER_0655",
+    "standard_name": "翁泓阳"
   },
   "老年大学（具体指代不详，疑为巢湖市或安巢经开区辖区内的老年大学）": {
     "entity_id": "ORG_0365",
@@ -8107,6 +7959,14 @@
     "entity_id": "PER_0661",
     "standard_name": "胡品一"
   },
+  "胡哲安": {
+    "entity_id": "PER_0662",
+    "standard_name": "胡哲安"
+  },
+  "Hu Zhe'an": {
+    "entity_id": "PER_0662",
+    "standard_name": "胡哲安"
+  },
   "胡奕萱": {
     "entity_id": "PER_0663",
     "standard_name": "胡奕萱"
@@ -8118,6 +7978,14 @@
   "胡林": {
     "entity_id": "PER_0667",
     "standard_name": "胡珂源/林祥毅"
+  },
+  "胡珂源": {
+    "entity_id": "PER_0666",
+    "standard_name": "胡珂源"
+  },
+  "Hu Keyuan": {
+    "entity_id": "PER_0666",
+    "standard_name": "胡珂源"
   },
   "胡珂源/林祥毅": {
     "entity_id": "PER_0667",
@@ -8191,18 +8059,6 @@
     "entity_id": "PER_0677",
     "standard_name": "苗亚轩"
   },
-  "英国": {
-    "entity_id": "LOC_0409",
-    "standard_name": "大不列颠及北爱尔兰联合王国"
-  },
-  "英伦三岛": {
-    "entity_id": "LOC_0282",
-    "standard_name": "英国"
-  },
-  "英伦": {
-    "entity_id": "LOC_0282",
-    "standard_name": "英国"
-  },
   "范嘉茵": {
     "entity_id": "PER_0678",
     "standard_name": "范嘉茵"
@@ -8219,17 +8075,9 @@
     "entity_id": "LOC_0283",
     "standard_name": "药都体育综合馆"
   },
-  "荷兰": {
-    "entity_id": "ORG_0803",
-    "standard_name": "荷兰国家男子篮球队"
-  },
   "莫汉库马尔": {
     "entity_id": "PER_0681",
     "standard_name": "莫汉库马尔"
-  },
-  "莱巴金娜": {
-    "entity_id": "PER_1564",
-    "standard_name": "叶莲娜·莱巴金娜"
   },
   "莱恩": {
     "entity_id": "PER_0683",
@@ -8242,6 +8090,14 @@
   "莱汉": {
     "entity_id": "PER_0685",
     "standard_name": "莱汉"
+  },
+  "菲克里": {
+    "entity_id": "PER_0686",
+    "standard_name": "菲克里"
+  },
+  "Fikri": {
+    "entity_id": "PER_0686",
+    "standard_name": "菲克里"
   },
   "菲利克斯·奥热-阿利亚西姆": {
     "entity_id": "PER_0687",
@@ -8272,8 +8128,8 @@
     "standard_name": "萨格勒布"
   },
   "萨里": {
-    "entity_id": "LOC_0369",
-    "standard_name": "Surrey"
+    "entity_id": "PER_0690",
+    "standard_name": "萨里"
   },
   "葛雅特莉": {
     "entity_id": "PER_0691",
@@ -8294,6 +8150,14 @@
   "蒂娜": {
     "entity_id": "PER_0696",
     "standard_name": "蒂娜"
+  },
+  "蒋振邦": {
+    "entity_id": "PER_0697",
+    "standard_name": "蒋振邦"
+  },
+  "Jiang Zhenbang": {
+    "entity_id": "PER_0697",
+    "standard_name": "蒋振邦"
   },
   "蒯曼": {
     "entity_id": "PER_0698",
@@ -8415,9 +8279,13 @@
     "entity_id": "LOC_0290",
     "standard_name": "西安市"
   },
-  "西班牙": {
-    "entity_id": "LOC_0292",
-    "standard_name": "西班牙王国"
+  "西本拳太": {
+    "entity_id": "PER_0716",
+    "standard_name": "西本拳太"
+  },
+  "Kenta Nishimoto": {
+    "entity_id": "PER_0716",
+    "standard_name": "西本拳太"
   },
   "西班牙国家足球队": {
     "entity_id": "ORG_0371",
@@ -8428,6 +8296,10 @@
     "standard_name": "西班牙国家足球队"
   },
   "西班牙王国": {
+    "entity_id": "LOC_0292",
+    "standard_name": "西班牙王国"
+  },
+  "西班牙": {
     "entity_id": "LOC_0292",
     "standard_name": "西班牙王国"
   },
@@ -8727,10 +8599,6 @@
     "entity_id": "PER_0775",
     "standard_name": "赵韦程"
   },
-  "超级1000赛事": {
-    "entity_id": "EVENT_0328",
-    "standard_name": "超级1000赛事"
-  },
   "越南": {
     "entity_id": "LOC_0298",
     "standard_name": "越南"
@@ -8871,10 +8739,6 @@
     "entity_id": "PER_0793",
     "standard_name": "郑加恒"
   },
-  "郑州": {
-    "entity_id": "LOC_0567",
-    "standard_name": "郑州市"
-  },
   "郑思维": {
     "entity_id": "PER_0794",
     "standard_name": "郑思维"
@@ -8987,6 +8851,10 @@
     "entity_id": "PER_0808",
     "standard_name": "金·阿斯特鲁普"
   },
+  "伦加德": {
+    "entity_id": "PER_0918",
+    "standard_name": "马蒂亚斯·伦加德"
+  },
   "金业球馆": {
     "entity_id": "LOC_0310",
     "standard_name": "金业球馆"
@@ -9083,11 +8951,11 @@
     "entity_id": "LOC_0313",
     "standard_name": "银川河东国际机场"
   },
-  "银川站": {
+  "银川高铁站": {
     "entity_id": "LOC_0315",
     "standard_name": "银川高铁站"
   },
-  "银川高铁站": {
+  "银川站": {
     "entity_id": "LOC_0315",
     "standard_name": "银川高铁站"
   },
@@ -9112,6 +8980,10 @@
     "standard_name": "长佳村"
   },
   "长春市": {
+    "entity_id": "LOC_0318",
+    "standard_name": "长春市"
+  },
+  "长春": {
     "entity_id": "LOC_0318",
     "standard_name": "长春市"
   },
@@ -9174,10 +9046,6 @@
   "过江索道": {
     "entity_id": "LOC_0322",
     "standard_name": "长江索道"
-  },
-  "长沙": {
-    "entity_id": "LOC_0569",
-    "standard_name": "长沙市"
   },
   "阜阳理工学院": {
     "entity_id": "ORG_0392",
@@ -9251,6 +9119,22 @@
     "entity_id": "PER_0834",
     "standard_name": "阿尔维·法汉"
   },
+  "阿尔菲安": {
+    "entity_id": "PER_0835",
+    "standard_name": "阿尔菲安"
+  },
+  "Alfian": {
+    "entity_id": "PER_0835",
+    "standard_name": "阿尔菲安"
+  },
+  "阿尤什": {
+    "entity_id": "PER_0836",
+    "standard_name": "阿尤什"
+  },
+  "Ayush Shetty": {
+    "entity_id": "PER_0836",
+    "standard_name": "阿尤什"
+  },
   "阿尤什·谢提": {
     "entity_id": "PER_0837",
     "standard_name": "阿尤什·谢提"
@@ -9268,8 +9152,8 @@
     "standard_name": "阿根廷共和国"
   },
   "阿根廷": {
-    "entity_id": "LOC_0572",
-    "standard_name": "阿根廷"
+    "entity_id": "ORG_0398",
+    "standard_name": "阿根廷国家足球队"
   },
   "阿根廷国家足球队": {
     "entity_id": "ORG_0398",
@@ -9300,8 +9184,8 @@
     "standard_name": "阿迪达斯集团"
   },
   "阿迪达斯": {
-    "entity_id": "ORG_0822",
-    "standard_name": "阿迪达斯"
+    "entity_id": "ORG_0399",
+    "standard_name": "阿迪达斯集团"
   },
   "阿里夫": {
     "entity_id": "PER_0844",
@@ -9310,6 +9194,14 @@
   "阿里尔·赫尔瓦尼": {
     "entity_id": "PER_0845",
     "standard_name": "阿里尔·赫尔瓦尼"
+  },
+  "陆光祖": {
+    "entity_id": "PER_0846",
+    "standard_name": "陆光祖"
+  },
+  "Lu Guangzu": {
+    "entity_id": "PER_0846",
+    "standard_name": "陆光祖"
   },
   "陆锡明": {
     "entity_id": "PER_0847",
@@ -9407,6 +9299,14 @@
     "entity_id": "PER_0870",
     "standard_name": "陈柏阳/刘毅"
   },
+  "陈樊淑湉": {
+    "entity_id": "PER_0871",
+    "standard_name": "陈樊淑湉"
+  },
+  "Chen Fantián": {
+    "entity_id": "PER_0871",
+    "standard_name": "陈樊淑湉"
+  },
   "陈樊淑湉/罗徐敏": {
     "entity_id": "PER_0872",
     "standard_name": "陈樊淑湉/罗徐敏"
@@ -9450,6 +9350,14 @@
   "陈金": {
     "entity_id": "PER_0881",
     "standard_name": "陈金"
+  },
+  "陈雨菲": {
+    "entity_id": "PER_0882",
+    "standard_name": "陈雨菲"
+  },
+  "Chen Yufei": {
+    "entity_id": "PER_0882",
+    "standard_name": "陈雨菲"
   },
   "陈韦妏": {
     "entity_id": "PER_0883",
@@ -9607,22 +9515,6 @@
     "entity_id": "PER_0894",
     "standard_name": "韩千禧"
   },
-  "韩国国家羽毛球队": {
-    "entity_id": "ORG_0404",
-    "standard_name": "韩国国家羽毛球队"
-  },
-  "韩国组合": {
-    "entity_id": "ORG_0406",
-    "standard_name": "韩国羽毛球队"
-  },
-  "韩国队": {
-    "entity_id": "ORG_1152",
-    "standard_name": "韩国国家队"
-  },
-  "韩国羽毛球队": {
-    "entity_id": "ORG_0406",
-    "standard_name": "韩国羽毛球队"
-  },
   "韩国羽毛球协会": {
     "entity_id": "ORG_0405",
     "standard_name": "韩国羽毛球协会"
@@ -9631,9 +9523,33 @@
     "entity_id": "ORG_0405",
     "standard_name": "韩国羽毛球协会"
   },
+  "韩国羽毛球队": {
+    "entity_id": "ORG_0406",
+    "standard_name": "韩国羽毛球队"
+  },
+  "韩国组合": {
+    "entity_id": "ORG_0406",
+    "standard_name": "韩国羽毛球队"
+  },
+  "韩国国家羽毛球队": {
+    "entity_id": "ORG_0406",
+    "standard_name": "韩国羽毛球队"
+  },
+  "韩国队": {
+    "entity_id": "ORG_1152",
+    "standard_name": "韩国国家队"
+  },
   "韩姗姗": {
     "entity_id": "PER_0895",
     "standard_name": "韩姗姗"
+  },
+  "韩悦": {
+    "entity_id": "PER_0896",
+    "standard_name": "韩悦"
+  },
+  "Han Yue": {
+    "entity_id": "PER_0896",
+    "standard_name": "韩悦"
   },
   "韩蓁": {
     "entity_id": "PER_0897",
@@ -9706,6 +9622,14 @@
   "香港羽毛球公开赛": {
     "entity_id": "EVENT_0339",
     "standard_name": "香港羽毛球公开赛"
+  },
+  "马丁": {
+    "entity_id": "PER_0905",
+    "standard_name": "马丁"
+  },
+  "Martin": {
+    "entity_id": "PER_0905",
+    "standard_name": "马丁"
   },
   "马克斯·阿尔特迈尔": {
     "entity_id": "PER_0906",
@@ -9831,7 +9755,15 @@
     "entity_id": "PER_0918",
     "standard_name": "马蒂亚斯·伦加德"
   },
+  "Linggaard": {
+    "entity_id": "PER_0918",
+    "standard_name": "马蒂亚斯·伦加德"
+  },
   "马蒂亚斯·克里斯蒂安森": {
+    "entity_id": "PER_0919",
+    "standard_name": "马蒂亚斯·克里斯蒂安森"
+  },
+  "克里斯蒂安森": {
     "entity_id": "PER_0919",
     "standard_name": "马蒂亚斯·克里斯蒂安森"
   },
@@ -9839,13 +9771,45 @@
     "entity_id": "PER_0919",
     "standard_name": "马蒂亚斯·克里斯蒂安森"
   },
+  "Christiansen": {
+    "entity_id": "PER_0919",
+    "standard_name": "马蒂亚斯·克里斯蒂安森"
+  },
   "马鞍山市": {
     "entity_id": "LOC_0344",
     "standard_name": "马鞍山市"
   },
+  "马鞍山": {
+    "entity_id": "LOC_0344",
+    "standard_name": "马鞍山市"
+  },
+  "骆建佑": {
+    "entity_id": "PER_0920",
+    "standard_name": "骆建佑"
+  },
+  "Loh Kean Yew": {
+    "entity_id": "PER_0920",
+    "standard_name": "骆建佑"
+  },
+  "高家炫": {
+    "entity_id": "PER_0921",
+    "standard_name": "高家炫"
+  },
+  "Gao Jiaxuan": {
+    "entity_id": "PER_0921",
+    "standard_name": "高家炫"
+  },
   "高家炫/魏雅欣": {
     "entity_id": "PER_0922",
     "standard_name": "高家炫/魏雅欣"
+  },
+  "高昉洁": {
+    "entity_id": "PER_0923",
+    "standard_name": "高昉洁"
+  },
+  "Gao Fangjie": {
+    "entity_id": "PER_0923",
+    "standard_name": "高昉洁"
   },
   "高桥布鲁娜": {
     "entity_id": "PER_0924",
@@ -9866,6 +9830,14 @@
   "魏玥玥": {
     "entity_id": "PER_0928",
     "standard_name": "魏玥玥"
+  },
+  "魏雅欣": {
+    "entity_id": "PER_0929",
+    "standard_name": "魏雅欣"
+  },
+  "Wei Yaxin": {
+    "entity_id": "PER_0929",
+    "standard_name": "魏雅欣"
   },
   "魏雅欣的混双搭档们": {
     "entity_id": "PER_0930",
@@ -9894,6 +9866,14 @@
   "鲍雨柔": {
     "entity_id": "PER_0935",
     "standard_name": "鲍雨柔"
+  },
+  "鲍骊婧": {
+    "entity_id": "PER_0936",
+    "standard_name": "鲍骊婧"
+  },
+  "Bao Lijing": {
+    "entity_id": "PER_0936",
+    "standard_name": "鲍骊婧"
   },
   "鲍骊婧/曹梓涵": {
     "entity_id": "PER_0937",
@@ -10083,10 +10063,6 @@
     "entity_id": "EVENT_0357",
     "standard_name": "2026上海国际游艇生活嘉年华"
   },
-  "2026世界斯诺克·上海大师赛": {
-    "entity_id": "EVENT_0359",
-    "standard_name": "2026世界斯诺克上海大师赛"
-  },
   "2026世界斯诺克·上海大师赛官方实名认证平台": {
     "entity_id": "ORG_0416",
     "standard_name": "2026世界斯诺克·上海大师赛官方实名认证平台"
@@ -10107,6 +10083,10 @@
     "entity_id": "EVENT_0359",
     "standard_name": "2026世界斯诺克上海大师赛"
   },
+  "2026世界斯诺克·上海大师赛": {
+    "entity_id": "EVENT_0359",
+    "standard_name": "2026世界斯诺克上海大师赛"
+  },
   "2026世界斯诺克台球团体锦标赛": {
     "entity_id": "EVENT_0360",
     "standard_name": "2026世界斯诺克台球团体锦标赛"
@@ -10123,10 +10103,6 @@
     "entity_id": "EVENT_0363",
     "standard_name": "2026北外滩斯诺克嘉年华"
   },
-  "2026年WTT卢布尔雅那球星挑战赛": {
-    "entity_id": "EVENT_0364",
-    "standard_name": "2026年WTT卢布尔雅那球星挑战赛"
-  },
   "2026年世界斯诺克台球团体锦标赛": {
     "entity_id": "EVENT_0365",
     "standard_name": "2026年世界斯诺克台球团体锦标赛"
@@ -10138,10 +10114,6 @@
   "2026年亚洲运动会": {
     "entity_id": "EVENT_0367",
     "standard_name": "2026年亚洲运动会"
-  },
-  "2026年爱知-名古屋亚运会": {
-    "entity_id": "EVENT_0069",
-    "standard_name": "2026年名古屋亚运会"
   },
   "2026年北京TOP独牙传奇中式九球公开赛": {
     "entity_id": "EVENT_0368",
@@ -10172,12 +10144,24 @@
     "standard_name": "2026年斯诺克排名赛版冠军联赛"
   },
   "冠军联赛": {
-    "entity_id": "EVENT_0486",
-    "standard_name": "斯诺克冠军联赛（排名赛版）"
+    "entity_id": "EVENT_0378",
+    "standard_name": "Championship League"
   },
-  "2026斯诺克中国公开赛": {
-    "entity_id": "EVENT_0373",
-    "standard_name": "2026斯诺克中国公开赛"
+  "斯诺克冠军联赛（排名赛版）": {
+    "entity_id": "EVENT_0372",
+    "standard_name": "2026年斯诺克排名赛版冠军联赛"
+  },
+  "斯诺克排名赛版冠军联赛": {
+    "entity_id": "EVENT_0372",
+    "standard_name": "2026年斯诺克排名赛版冠军联赛"
+  },
+  "斯诺克冠军联赛": {
+    "entity_id": "EVENT_0379",
+    "standard_name": "Championship League Snooker"
+  },
+  "排名赛冠军联赛": {
+    "entity_id": "EVENT_0372",
+    "standard_name": "2026年斯诺克排名赛版冠军联赛"
   },
   "2026斯诺克冠军联赛（排名赛版本）": {
     "entity_id": "EVENT_0374",
@@ -10199,25 +10183,17 @@
     "entity_id": "PER_0960",
     "standard_name": "Asa Tribe"
   },
-  "Asia": {
-    "entity_id": "LOC_0349",
-    "standard_name": "Asia"
-  },
-  "Australia": {
-    "entity_id": "LOC_0350",
-    "standard_name": "Australia"
-  },
   "BeMoreFab": {
     "entity_id": "ORG_0418",
     "standard_name": "BeMoreFab"
   },
   "BeMoreFab儿童癌症慈善机构": {
-    "entity_id": "ORG_0420",
-    "standard_name": "BeMoreFab儿童癌症慈善机构"
+    "entity_id": "ORG_0418",
+    "standard_name": "BeMoreFab"
   },
   "BeMoreFab Children's Cancer Charity": {
-    "entity_id": "ORG_0419",
-    "standard_name": "BeMoreFab Children's Cancer Charity"
+    "entity_id": "ORG_0420",
+    "standard_name": "BeMoreFab儿童癌症慈善机构"
   },
   "BeMoreFab基金": {
     "entity_id": "ORG_0421",
@@ -10256,8 +10232,8 @@
     "standard_name": "Champion of Champions"
   },
   "冠中冠邀请赛": {
-    "entity_id": "EVENT_0443",
-    "standard_name": "冠中冠邀请赛"
+    "entity_id": "EVENT_0377",
+    "standard_name": "Champion of Champions"
   },
   "Championship League": {
     "entity_id": "EVENT_0378",
@@ -10266,22 +10242,6 @@
   "Championship League Snooker": {
     "entity_id": "EVENT_0379",
     "standard_name": "Championship League Snooker"
-  },
-  "斯诺克冠军联赛": {
-    "entity_id": "EVENT_0486",
-    "standard_name": "斯诺克冠军联赛（排名赛版）"
-  },
-  "China Open": {
-    "entity_id": "EVENT_0380",
-    "standard_name": "China Open"
-  },
-  "Clark": {
-    "entity_id": "PER_0963",
-    "standard_name": "Clark"
-  },
-  "克拉克": {
-    "entity_id": "PER_1208",
-    "standard_name": "温德姆·克拉克"
   },
   "Colin Ingram": {
     "entity_id": "PER_0964",
@@ -10315,14 +10275,6 @@
     "entity_id": "EVENT_0381",
     "standard_name": "County Championship"
   },
-  "Craig Steadman": {
-    "entity_id": "PER_0966",
-    "standard_name": "Craig Steadman"
-  },
-  "克雷格·斯泰德曼": {
-    "entity_id": "PER_1038",
-    "standard_name": "克雷格·斯泰德曼"
-  },
   "Dan Lawrence": {
     "entity_id": "PER_0967",
     "standard_name": "Dan Lawrence"
@@ -10334,22 +10286,6 @@
   "Data Skrive": {
     "entity_id": "ORG_0423",
     "standard_name": "Data Skrive"
-  },
-  "Dylan Emery": {
-    "entity_id": "PER_0969",
-    "standard_name": "Dylan Emery"
-  },
-  "迪伦·埃默里": {
-    "entity_id": "PER_1295",
-    "standard_name": "迪伦·埃默里"
-  },
-  "England": {
-    "entity_id": "LOC_0355",
-    "standard_name": "England"
-  },
-  "英格兰": {
-    "entity_id": "LOC_0458",
-    "standard_name": "英格兰"
   },
   "Europe": {
     "entity_id": "LOC_0356",
@@ -10391,21 +10327,9 @@
     "entity_id": "PER_0972",
     "standard_name": "Hadley"
   },
-  "Haydon Pinhey": {
-    "entity_id": "PER_0973",
-    "standard_name": "Haydon Pinhey"
-  },
-  "海顿·平海": {
-    "entity_id": "PER_1205",
-    "standard_name": "海顿·平海"
-  },
   "IBSF 国际比利和斯诺克联合会": {
     "entity_id": "ORG_0426",
     "standard_name": "IBSF 国际比利和斯诺克联合会"
-  },
-  "India": {
-    "entity_id": "LOC_0358",
-    "standard_name": "India"
   },
   "IndyCar系列赛": {
     "entity_id": "ORG_0427",
@@ -10427,38 +10351,6 @@
     "entity_id": "ORG_0428",
     "standard_name": "Instagram"
   },
-  "Jack Lisowski": {
-    "entity_id": "PER_0975",
-    "standard_name": "Jack Lisowski"
-  },
-  "利索夫斯基": {
-    "entity_id": "PER_1172",
-    "standard_name": "杰克·利索夫斯基"
-  },
-  "John Higgins": {
-    "entity_id": "PER_0976",
-    "standard_name": "John Higgins"
-  },
-  "希金斯": {
-    "entity_id": "PER_1237",
-    "standard_name": "约翰·希金斯"
-  },
-  "Judd Trump": {
-    "entity_id": "PER_0977",
-    "standard_name": "Judd Trump"
-  },
-  "特鲁姆普": {
-    "entity_id": "PER_1285",
-    "standard_name": "贾德·特鲁姆普"
-  },
-  "Julien Leclercq": {
-    "entity_id": "PER_0978",
-    "standard_name": "Julien Leclercq"
-  },
-  "朱利安·勒克莱尔": {
-    "entity_id": "PER_1166",
-    "standard_name": "朱利安·勒克莱尔"
-  },
   "Kieran Carlson": {
     "entity_id": "PER_0979",
     "standard_name": "Kieran Carlson"
@@ -10466,14 +10358,6 @@
   "基兰·卡森": {
     "entity_id": "PER_0979",
     "standard_name": "Kieran Carlson"
-  },
-  "Kyren Wilson": {
-    "entity_id": "PER_0980",
-    "standard_name": "Kyren Wilson"
-  },
-  "凯伦·威尔逊": {
-    "entity_id": "PER_1041",
-    "standard_name": "凯伦·威尔逊"
   },
   "Leicester": {
     "entity_id": "LOC_0359",
@@ -10499,34 +10383,6 @@
     "entity_id": "ORG_0429",
     "standard_name": "MagentaTV"
   },
-  "Mark Allen": {
-    "entity_id": "PER_0981",
-    "standard_name": "Mark Allen"
-  },
-  "艾伦": {
-    "entity_id": "PER_1330",
-    "standard_name": "马克·艾伦"
-  },
-  "Mark Selby": {
-    "entity_id": "PER_0982",
-    "standard_name": "Mark Selby"
-  },
-  "塞尔比": {
-    "entity_id": "PER_1328",
-    "standard_name": "马克·塞尔比"
-  },
-  "Mark Williams": {
-    "entity_id": "PER_0983",
-    "standard_name": "Mark Williams"
-  },
-  "马克威廉姆斯": {
-    "entity_id": "PER_1331",
-    "standard_name": "马克威廉姆斯"
-  },
-  "马克·威廉姆斯": {
-    "entity_id": "PER_1329",
-    "standard_name": "马克·威廉姆斯"
-  },
   "Masters Tournament": {
     "entity_id": "EVENT_0386",
     "standard_name": "Masters Tournament"
@@ -10542,42 +10398,6 @@
   "塞尔特": {
     "entity_id": "PER_1325",
     "standard_name": "马修·塞尔特"
-  },
-  "Mattioli Arena": {
-    "entity_id": "LOC_0361",
-    "standard_name": "Mattioli Arena"
-  },
-  "马蒂奥利竞技场": {
-    "entity_id": "LOC_0484",
-    "standard_name": "马蒂奥利竞技场"
-  },
-  "Metro (UK)": {
-    "entity_id": "ORG_0430",
-    "standard_name": "Metro (UK)"
-  },
-  "英国地铁报": {
-    "entity_id": "ORG_0551",
-    "standard_name": "英国地铁报"
-  },
-  "Michael Holt": {
-    "entity_id": "PER_0985",
-    "standard_name": "Michael Holt"
-  },
-  "迈克尔·霍尔特": {
-    "entity_id": "PER_1293",
-    "standard_name": "迈克尔·霍尔特"
-  },
-  "霍尔特": {
-    "entity_id": "PER_1310",
-    "standard_name": "阿里斯特·卡特"
-  },
-  "Michal Szubarczyk": {
-    "entity_id": "PER_0986",
-    "standard_name": "Michal Szubarczyk"
-  },
-  "米哈乌·苏巴尔奇克": {
-    "entity_id": "PER_1235",
-    "standard_name": "米哈乌·苏巴尔奇克"
   },
   "NBA季后赛": {
     "entity_id": "EVENT_0387",
@@ -10595,14 +10415,6 @@
     "entity_id": "EVENT_0388",
     "standard_name": "NBA常规赛"
   },
-  "Neil Robertson": {
-    "entity_id": "PER_0987",
-    "standard_name": "Neil Robertson"
-  },
-  "罗伯逊": {
-    "entity_id": "PER_1111",
-    "standard_name": "尼尔·罗伯逊"
-  },
   "New York State": {
     "entity_id": "LOC_0362",
     "standard_name": "New York State"
@@ -10610,14 +10422,6 @@
   "纽约州": {
     "entity_id": "LOC_0362",
     "standard_name": "New York State"
-  },
-  "Nottingham": {
-    "entity_id": "LOC_0363",
-    "standard_name": "Nottingham"
-  },
-  "诺丁汉": {
-    "entity_id": "LOC_0470",
-    "standard_name": "诺丁汉"
   },
   "Ollie Pope": {
     "entity_id": "PER_0988",
@@ -10638,22 +10442,6 @@
   "Road America": {
     "entity_id": "LOC_0364",
     "standard_name": "Road America赛道"
-  },
-  "Ronnie O'Sullivan": {
-    "entity_id": "PER_0989",
-    "standard_name": "Ronnie O'Sullivan"
-  },
-  "奥沙利文": {
-    "entity_id": "PER_1246",
-    "standard_name": "罗尼·奥沙利文"
-  },
-  "Rory McIlroy": {
-    "entity_id": "PER_0990",
-    "standard_name": "Rory McIlroy"
-  },
-  "罗里·麦克罗伊": {
-    "entity_id": "PER_1252",
-    "standard_name": "罗里·麦克罗伊"
   },
   "Royal Birkdale": {
     "entity_id": "LOC_0365",
@@ -10692,8 +10480,8 @@
     "standard_name": "Shanghai Exhibition Match"
   },
   "上海表演赛": {
-    "entity_id": "EVENT_0424",
-    "standard_name": "上海表演赛"
+    "entity_id": "EVENT_0423",
+    "standard_name": "上海斯诺克表演赛"
   },
   "Shanghai Masters": {
     "entity_id": "EVENT_0392",
@@ -10703,14 +10491,6 @@
     "entity_id": "EVENT_0469",
     "standard_name": "斯诺克上海大师赛"
   },
-  "Shinnecock Hills": {
-    "entity_id": "LOC_0367",
-    "standard_name": "Shinnecock Hills"
-  },
-  "辛纳科克山": {
-    "entity_id": "LOC_0475",
-    "standard_name": "辛纳科克山"
-  },
   "Sophia Gardens": {
     "entity_id": "LOC_0368",
     "standard_name": "Sophia Gardens"
@@ -10718,10 +10498,6 @@
   "索菲亚花园": {
     "entity_id": "LOC_0368",
     "standard_name": "Sophia Gardens"
-  },
-  "Surrey": {
-    "entity_id": "LOC_0369",
-    "standard_name": "Surrey"
   },
   "Surrey County Cricket Club": {
     "entity_id": "ORG_0431",
@@ -10812,8 +10588,8 @@
     "standard_name": "WTA250诺丁汉公开赛"
   },
   "WTA250诺丁汉站": {
-    "entity_id": "EVENT_0401",
-    "standard_name": "WTA250诺丁汉站"
+    "entity_id": "EVENT_0400",
+    "standard_name": "WTA250诺丁汉公开赛"
   },
   "WTA250诺丁汉": {
     "entity_id": "EVENT_0400",
@@ -10836,8 +10612,8 @@
     "standard_name": "WTA500巴特洪堡公开赛"
   },
   "WTA500巴特洪堡站": {
-    "entity_id": "EVENT_0404",
-    "standard_name": "WTA500巴特洪堡站"
+    "entity_id": "EVENT_0403",
+    "standard_name": "WTA500巴特洪堡公开赛"
   },
   "巴特洪堡500赛": {
     "entity_id": "EVENT_0403",
@@ -10888,16 +10664,16 @@
     "standard_name": "WTT多哈冠军赛"
   },
   "多哈冠军赛": {
-    "entity_id": "EVENT_1162",
-    "standard_name": "多哈冠军赛"
+    "entity_id": "EVENT_0409",
+    "standard_name": "WTT多哈冠军赛"
   },
   "WTT多哈球星挑战赛": {
     "entity_id": "EVENT_0410",
     "standard_name": "WTT多哈球星挑战赛"
   },
   "多哈球星挑战赛": {
-    "entity_id": "EVENT_1163",
-    "standard_name": "多哈球星挑战赛"
+    "entity_id": "EVENT_0410",
+    "standard_name": "WTT多哈球星挑战赛"
   },
   "WTT萨格勒布常规挑战赛": {
     "entity_id": "EVENT_0411",
@@ -10931,29 +10707,13 @@
     "entity_id": "EVENT_0415",
     "standard_name": "World Snooker Wuhan Open"
   },
-  "Wu Yize": {
-    "entity_id": "PER_0995",
-    "standard_name": "Wu Yize"
-  },
-  "吴宜泽": {
-    "entity_id": "PER_1073",
-    "standard_name": "吴宜泽"
-  },
   "Wuhan Open Qualifiers": {
     "entity_id": "EVENT_0416",
     "standard_name": "Wuhan Open Qualifiers"
   },
   "武汉公开赛资格赛": {
-    "entity_id": "EVENT_0512",
-    "standard_name": "武汉公开赛资格赛"
-  },
-  "Wyndham Clark": {
-    "entity_id": "PER_0996",
-    "standard_name": "Wyndham Clark"
-  },
-  "温德姆·克拉克": {
-    "entity_id": "PER_1208",
-    "standard_name": "温德姆·克拉克"
+    "entity_id": "EVENT_0416",
+    "standard_name": "Wuhan Open Qualifiers"
   },
   "X (formerly Twitter)": {
     "entity_id": "ORG_0437",
@@ -10962,14 +10722,6 @@
   "X平台": {
     "entity_id": "ORG_0437",
     "standard_name": "X (formerly Twitter)"
-  },
-  "Zhao Xintong": {
-    "entity_id": "PER_0998",
-    "standard_name": "Zhao Xintong"
-  },
-  "赵心童": {
-    "entity_id": "PER_1288",
-    "standard_name": "赵心童"
   },
   "cinch锦标赛": {
     "entity_id": "EVENT_0417",
@@ -11019,6 +10771,10 @@
     "entity_id": "ORG_0442",
     "standard_name": "上海久事体育赛事运营管理有限公司"
   },
+  "久事体育": {
+    "entity_id": "ORG_0442",
+    "standard_name": "上海久事体育赛事运营管理有限公司"
+  },
   "上海久狮台球俱乐部": {
     "entity_id": "ORG_0443",
     "standard_name": "上海久狮台球俱乐部"
@@ -11040,8 +10796,8 @@
     "standard_name": "上海外滩"
   },
   "外滩": {
-    "entity_id": "LOC_0405",
-    "standard_name": "外滩"
+    "entity_id": "LOC_0374",
+    "standard_name": "上海外滩"
   },
   "上海外滩斯诺克表演赛": {
     "entity_id": "EVENT_0421",
@@ -11072,12 +10828,12 @@
     "standard_name": "上海市浦东新区唐镇"
   },
   "浦东新区唐镇": {
-    "entity_id": "LOC_0443",
-    "standard_name": "浦东新区唐镇"
+    "entity_id": "LOC_0376",
+    "standard_name": "上海市浦东新区唐镇"
   },
   "唐镇": {
-    "entity_id": "LOC_0403",
-    "standard_name": "唐镇"
+    "entity_id": "LOC_0376",
+    "standard_name": "上海市浦东新区唐镇"
   },
   "上海市老年人体育协会": {
     "entity_id": "ORG_0449",
@@ -11147,17 +10903,25 @@
     "entity_id": "ORG_0456",
     "standard_name": "上观新闻客户端"
   },
+  "上观新闻": {
+    "entity_id": "ORG_0456",
+    "standard_name": "上观新闻客户端"
+  },
   "世界乒乓球锦标赛团体赛": {
     "entity_id": "EVENT_0425",
     "standard_name": "世界乒乓球锦标赛团体赛"
   },
   "世乒赛团体赛": {
-    "entity_id": "EVENT_0713",
-    "standard_name": "世界乒乓球团体锦标赛"
+    "entity_id": "EVENT_0425",
+    "standard_name": "世界乒乓球锦标赛团体赛"
   },
   "伦敦世乒赛团体赛": {
-    "entity_id": "EVENT_0743",
-    "standard_name": "伦敦世乒赛团体赛"
+    "entity_id": "EVENT_0673",
+    "standard_name": "2026年伦敦世界乒乓球锦标赛团体赛"
+  },
+  "世界乒乓球团体锦标赛": {
+    "entity_id": "EVENT_0425",
+    "standard_name": "世界乒乓球锦标赛团体赛"
   },
   "世界会客厅": {
     "entity_id": "LOC_0380",
@@ -11255,19 +11019,19 @@
     "entity_id": "ORG_0465",
     "standard_name": "东方传媒技术"
   },
-  "东方明珠塔": {
-    "entity_id": "LOC_0381",
-    "standard_name": "东方明珠塔"
-  },
-  "东方明珠": {
-    "entity_id": "LOC_0382",
-    "standard_name": "东方明珠广播电视塔"
-  },
   "东方明珠广播电视塔": {
     "entity_id": "LOC_0382",
     "standard_name": "东方明珠广播电视塔"
   },
   "上海之巅东方明珠": {
+    "entity_id": "LOC_0382",
+    "standard_name": "东方明珠广播电视塔"
+  },
+  "东方明珠": {
+    "entity_id": "LOC_0382",
+    "standard_name": "东方明珠广播电视塔"
+  },
+  "东方明珠塔": {
     "entity_id": "LOC_0382",
     "standard_name": "东方明珠广播电视塔"
   },
@@ -11279,10 +11043,6 @@
     "entity_id": "ORG_0467",
     "standard_name": "东湖集团"
   },
-  "东莞": {
-    "entity_id": "LOC_0420",
-    "standard_name": "广东省东莞市"
-  },
   "东莞台球协会": {
     "entity_id": "ORG_0468",
     "standard_name": "东莞台球协会"
@@ -11292,6 +11052,10 @@
     "standard_name": "东莞市"
   },
   "广东东莞": {
+    "entity_id": "LOC_0420",
+    "standard_name": "广东省东莞市"
+  },
+  "东莞": {
     "entity_id": "LOC_0420",
     "standard_name": "广东省东莞市"
   },
@@ -11359,6 +11123,18 @@
     "entity_id": "EVENT_0435",
     "standard_name": "中国斯诺克公开赛"
   },
+  "斯诺克中国公开赛": {
+    "entity_id": "EVENT_0435",
+    "standard_name": "中国斯诺克公开赛"
+  },
+  "2026斯诺克中国公开赛": {
+    "entity_id": "EVENT_0435",
+    "standard_name": "中国斯诺克公开赛"
+  },
+  "China Open": {
+    "entity_id": "EVENT_0435",
+    "standard_name": "中国斯诺克公开赛"
+  },
   "中国斯诺克公开赛资格赛": {
     "entity_id": "EVENT_0436",
     "standard_name": "中国斯诺克公开赛资格赛"
@@ -11396,20 +11172,20 @@
     "standard_name": "丹尼·维尔斯"
   },
   "丹尼维尔斯": {
-    "entity_id": "PER_1005",
-    "standard_name": "丹尼尔·维尔斯"
+    "entity_id": "PER_1003",
+    "standard_name": "丹尼·维尔斯"
   },
   "丹尼尔·威尔斯": {
-    "entity_id": "PER_1004",
-    "standard_name": "丹尼尔·威尔斯"
+    "entity_id": "PER_1003",
+    "standard_name": "丹尼·维尔斯"
   },
   "威尔斯": {
-    "entity_id": "PER_1004",
-    "standard_name": "丹尼尔·威尔斯"
+    "entity_id": "PER_1003",
+    "standard_name": "丹尼·维尔斯"
   },
   "丹尼尔·维尔斯": {
-    "entity_id": "PER_1005",
-    "standard_name": "丹尼尔·维尔斯"
+    "entity_id": "PER_1003",
+    "standard_name": "丹尼·维尔斯"
   },
   "丹尼斯·泰勒": {
     "entity_id": "PER_1006",
@@ -11456,8 +11232,8 @@
     "standard_name": "乔·奥康纳"
   },
   "奥康纳": {
-    "entity_id": "PER_1101",
-    "standard_name": "奥康纳"
+    "entity_id": "PER_1009",
+    "standard_name": "乔·奥康纳"
   },
   "乔·斯宾塞": {
     "entity_id": "PER_1010",
@@ -11496,16 +11272,8 @@
     "standard_name": "亚洲杯乒乓球赛"
   },
   "海口亚洲杯": {
-    "entity_id": "EVENT_0789",
-    "standard_name": "海口亚洲杯"
-  },
-  "亨得利": {
-    "entity_id": "PER_1158",
-    "standard_name": "斯蒂芬·亨得利"
-  },
-  "Stephen Hendry": {
-    "entity_id": "PER_1018",
-    "standard_name": "亨得利"
+    "entity_id": "EVENT_0440",
+    "standard_name": "亚洲杯"
   },
   "人民日报客户端": {
     "entity_id": "ORG_0486",
@@ -11536,8 +11304,8 @@
     "standard_name": "伊恩·伯恩斯"
   },
   "伯恩斯": {
-    "entity_id": "PER_1024",
-    "standard_name": "伯恩斯"
+    "entity_id": "PER_1021",
+    "standard_name": "伊恩·伯恩斯"
   },
   "伊恩·伯斯": {
     "entity_id": "PER_1021",
@@ -11551,29 +11319,25 @@
     "entity_id": "PER_1023",
     "standard_name": "休吉尔"
   },
-  "伯顿": {
-    "entity_id": "PER_1304",
-    "standard_name": "阿尔菲·伯顿"
-  },
-  "佩奇": {
-    "entity_id": "PER_1177",
-    "standard_name": "杰克逊·佩奇"
-  },
   "侯赛因·瓦菲": {
     "entity_id": "PER_1027",
     "standard_name": "侯赛因·瓦菲"
   },
   "瓦菲": {
-    "entity_id": "PER_1227",
-    "standard_name": "瓦菲"
+    "entity_id": "PER_1027",
+    "standard_name": "侯赛因·瓦菲"
   },
   "俄克拉荷马城雷霆队": {
     "entity_id": "ORG_0488",
     "standard_name": "俄克拉荷马城雷霆队"
   },
   "雷霆": {
-    "entity_id": "ORG_0652",
-    "standard_name": "俄克拉荷马城雷霆"
+    "entity_id": "ORG_0488",
+    "standard_name": "俄克拉荷马城雷霆队"
+  },
+  "俄克拉荷马城雷霆": {
+    "entity_id": "ORG_0488",
+    "standard_name": "俄克拉荷马城雷霆队"
   },
   "保罗·亨特": {
     "entity_id": "PER_1028",
@@ -11600,10 +11364,14 @@
     "standard_name": "克利夫兰骑士队"
   },
   "骑士": {
-    "entity_id": "ORG_0653",
-    "standard_name": "克利夫兰骑士"
+    "entity_id": "ORG_0490",
+    "standard_name": "克利夫兰骑士队"
   },
   "克里夫兰骑士队": {
+    "entity_id": "ORG_0490",
+    "standard_name": "克利夫兰骑士队"
+  },
+  "克利夫兰骑士": {
     "entity_id": "ORG_0490",
     "standard_name": "克利夫兰骑士队"
   },
@@ -11611,17 +11379,13 @@
     "entity_id": "PER_1031",
     "standard_name": "克劳利"
   },
-  "乔丹·布朗（注：‘克拉克’可能为音译误差，常匹配对手为乔丹·布朗）": {
-    "entity_id": "PER_1032",
-    "standard_name": "克拉克"
-  },
   "克里斯·韦克林": {
     "entity_id": "PER_1033",
     "standard_name": "克里斯·韦克林"
   },
   "韦克林": {
-    "entity_id": "PER_1322",
-    "standard_name": "韦克林"
+    "entity_id": "PER_1033",
+    "standard_name": "克里斯·韦克林"
   },
   "克里斯蒂亚诺·罗纳尔多": {
     "entity_id": "PER_1034",
@@ -11642,6 +11406,14 @@
   "克雷格·奥弗顿": {
     "entity_id": "PER_1037",
     "standard_name": "克雷格·奥弗顿"
+  },
+  "克雷格·斯泰德曼": {
+    "entity_id": "PER_1038",
+    "standard_name": "克雷格·斯泰德曼"
+  },
+  "Craig Steadman": {
+    "entity_id": "PER_1038",
+    "standard_name": "克雷格·斯泰德曼"
   },
   "克雷格·斯特德曼": {
     "entity_id": "PER_1039",
@@ -11675,17 +11447,13 @@
     "entity_id": "LOC_0390",
     "standard_name": "兴国宾馆"
   },
-  "冠中冠": {
-    "entity_id": "EVENT_0482",
-    "standard_name": "斯诺克冠中冠赛"
-  },
-  "冠中冠赛事": {
-    "entity_id": "EVENT_0442",
-    "standard_name": "冠中冠"
-  },
   "冯依凡": {
     "entity_id": "PER_1040",
     "standard_name": "冯依凡"
+  },
+  "凯伦·威尔逊": {
+    "entity_id": "PER_1041",
+    "standard_name": "凯伦·威尔逊"
   },
   "威尔逊": {
     "entity_id": "PER_1041",
@@ -11700,8 +11468,12 @@
     "standard_name": "凯伦·威尔逊"
   },
   "凯伦・威尔逊": {
-    "entity_id": "PER_1042",
-    "standard_name": "凯伦・威尔逊"
+    "entity_id": "PER_1041",
+    "standard_name": "凯伦·威尔逊"
+  },
+  "Kyren Wilson": {
+    "entity_id": "PER_1041",
+    "standard_name": "凯伦·威尔逊"
   },
   "凯司令": {
     "entity_id": "ORG_0491",
@@ -11780,8 +11552,8 @@
     "standard_name": "加里·威尔逊"
   },
   "加里威尔逊": {
-    "entity_id": "PER_1056",
-    "standard_name": "加里威尔逊"
+    "entity_id": "PER_1055",
+    "standard_name": "加里·威尔逊"
   },
   "努斯勒": {
     "entity_id": "PER_1057",
@@ -11947,10 +11719,6 @@
     "entity_id": "PER_1065",
     "standard_name": "史蒂夫·戴维斯"
   },
-  "史蒂文斯": {
-    "entity_id": "PER_1324",
-    "standard_name": "马修·史蒂文斯"
-  },
   "史蒂芬·亨得利": {
     "entity_id": "PER_1067",
     "standard_name": "史蒂芬·亨得利"
@@ -11958,10 +11726,6 @@
   "吉大港": {
     "entity_id": "LOC_0402",
     "standard_name": "吉大港"
-  },
-  "吉尔伯特": {
-    "entity_id": "PER_1094",
-    "standard_name": "大卫·吉尔伯特"
   },
   "吉米·怀特": {
     "entity_id": "PER_1070",
@@ -11982,6 +11746,14 @@
   "吴安仪": {
     "entity_id": "PER_1072",
     "standard_name": "吴安仪"
+  },
+  "吴宜泽": {
+    "entity_id": "PER_1073",
+    "standard_name": "吴宜泽"
+  },
+  "Wu Yize": {
+    "entity_id": "PER_1073",
+    "standard_name": "吴宜泽"
   },
   "周跃龙": {
     "entity_id": "PER_1074",
@@ -12006,10 +11778,6 @@
   "国家知识产权局": {
     "entity_id": "ORG_0501",
     "standard_name": "国家知识产权局"
-  },
-  "国强": {
-    "entity_id": "PER_1284",
-    "standard_name": "贺国强"
   },
   "国际女子职业网球协会": {
     "entity_id": "ORG_0503",
@@ -12052,8 +11820,8 @@
     "standard_name": "国际足联世界杯"
   },
   "美加墨世界杯": {
-    "entity_id": "EVENT_0621",
-    "standard_name": "美加墨世界杯"
+    "entity_id": "EVENT_0453",
+    "standard_name": "国际足联世界杯"
   },
   "世界杯": {
     "entity_id": "EVENT_0604",
@@ -12066,14 +11834,6 @@
   "FIFA世界杯": {
     "entity_id": "EVENT_0453",
     "standard_name": "国际足联世界杯"
-  },
-  "国际锦标赛": {
-    "entity_id": "EVENT_0454",
-    "standard_name": "国际锦标赛"
-  },
-  "国锦赛": {
-    "entity_id": "EVENT_0491",
-    "standard_name": "斯诺克国际锦标赛"
   },
   "土耳其国家斯诺克队": {
     "entity_id": "ORG_0507",
@@ -12092,12 +11852,12 @@
     "standard_name": "圣安东尼奥马刺队"
   },
   "马刺": {
-    "entity_id": "ORG_0691",
-    "standard_name": "圣安东尼奥马刺"
+    "entity_id": "ORG_0508",
+    "standard_name": "圣安东尼奥马刺队"
   },
   "圣安东尼奥马刺": {
-    "entity_id": "ORG_0691",
-    "standard_name": "圣安东尼奥马刺"
+    "entity_id": "ORG_0508",
+    "standard_name": "圣安东尼奥马刺队"
   },
   "坎讷": {
     "entity_id": "PER_1079",
@@ -12139,15 +11899,11 @@
     "entity_id": "PER_1088",
     "standard_name": "塞克斯"
   },
-  "墨菲": {
-    "entity_id": "PER_1255",
-    "standard_name": "肖恩·墨菲"
-  },
-  "外滩茂悦": {
+  "外滩茂悦大酒店": {
     "entity_id": "LOC_0407",
     "standard_name": "外滩茂悦大酒店"
   },
-  "外滩茂悦大酒店": {
+  "外滩茂悦": {
     "entity_id": "LOC_0407",
     "standard_name": "外滩茂悦大酒店"
   },
@@ -12160,6 +11916,18 @@
     "standard_name": "多米尼克·戴尔"
   },
   "大不列颠及北爱尔兰联合王国": {
+    "entity_id": "LOC_0409",
+    "standard_name": "大不列颠及北爱尔兰联合王国"
+  },
+  "英国": {
+    "entity_id": "LOC_0409",
+    "standard_name": "大不列颠及北爱尔兰联合王国"
+  },
+  "英伦三岛": {
+    "entity_id": "LOC_0409",
+    "standard_name": "大不列颠及北爱尔兰联合王国"
+  },
+  "英伦": {
     "entity_id": "LOC_0409",
     "standard_name": "大不列颠及北爱尔兰联合王国"
   },
@@ -12176,6 +11944,10 @@
     "standard_name": "大卫·利里"
   },
   "大卫·吉尔伯特": {
+    "entity_id": "PER_1094",
+    "standard_name": "大卫·吉尔伯特"
+  },
+  "吉尔伯特": {
     "entity_id": "PER_1094",
     "standard_name": "大卫·吉尔伯特"
   },
@@ -12283,18 +12055,6 @@
     "entity_id": "PER_1108",
     "standard_name": "安东尼·麦克吉尔"
   },
-  "宾汉姆": {
-    "entity_id": "PER_1148",
-    "standard_name": "斯图尔特·宾汉姆"
-  },
-  "密尔沃基雄鹿队": {
-    "entity_id": "ORG_0512",
-    "standard_name": "密尔沃基雄鹿队"
-  },
-  "雄鹿": {
-    "entity_id": "ORG_0708",
-    "standard_name": "密尔沃基雄鹿"
-  },
   "小凯撒球馆": {
     "entity_id": "LOC_0414",
     "standard_name": "小凯撒球馆"
@@ -12304,8 +12064,8 @@
     "standard_name": "尤金"
   },
   "尤金站": {
-    "entity_id": "EVENT_1177",
-    "standard_name": "尤金站"
+    "entity_id": "LOC_0415",
+    "standard_name": "尤金"
   },
   "尼尔·罗伯逊": {
     "entity_id": "PER_1111",
@@ -12315,9 +12075,17 @@
     "entity_id": "PER_1111",
     "standard_name": "尼尔·罗伯逊"
   },
+  "罗伯逊": {
+    "entity_id": "PER_1111",
+    "standard_name": "尼尔·罗伯逊"
+  },
   "尼尔・罗伯逊": {
-    "entity_id": "PER_1112",
-    "standard_name": "尼尔・罗伯逊"
+    "entity_id": "PER_1111",
+    "standard_name": "尼尔·罗伯逊"
+  },
+  "Neil Robertson": {
+    "entity_id": "PER_1111",
+    "standard_name": "尼尔·罗伯逊"
   },
   "山东老体协队": {
     "entity_id": "ORG_0513",
@@ -12539,10 +12307,6 @@
     "entity_id": "EVENT_0462",
     "standard_name": "德国大师赛"
   },
-  "德约科维奇": {
-    "entity_id": "PER_1850",
-    "standard_name": "诺瓦克·德约科维奇"
-  },
   "惠氏": {
     "entity_id": "ORG_0519",
     "standard_name": "惠氏"
@@ -12607,6 +12371,10 @@
     "entity_id": "PER_1147",
     "standard_name": "斯图亚特·宾汉姆"
   },
+  "宾汉姆": {
+    "entity_id": "PER_1148",
+    "standard_name": "斯图尔特·宾汉姆"
+  },
   "斯图尔特·宾汉姆": {
     "entity_id": "PER_1148",
     "standard_name": "斯图尔特·宾汉姆"
@@ -12618,10 +12386,6 @@
   "斯泰德曼": {
     "entity_id": "PER_1150",
     "standard_name": "斯泰德曼"
-  },
-  "斯瓦泰克": {
-    "entity_id": "PER_1497",
-    "standard_name": "伊加·斯瓦泰克"
   },
   "斯科特·唐纳森": {
     "entity_id": "PER_1153",
@@ -12648,6 +12412,14 @@
     "standard_name": "斯蒂文·霍尔沃斯"
   },
   "斯蒂芬·亨得利": {
+    "entity_id": "PER_1158",
+    "standard_name": "斯蒂芬·亨得利"
+  },
+  "亨得利": {
+    "entity_id": "PER_1158",
+    "standard_name": "斯蒂芬·亨得利"
+  },
+  "Stephen Hendry": {
     "entity_id": "PER_1158",
     "standard_name": "斯蒂芬·亨得利"
   },
@@ -12699,25 +12471,9 @@
     "entity_id": "EVENT_0471",
     "standard_name": "斯诺克世界大奖赛"
   },
-  "斯诺克世界锦标赛": {
-    "entity_id": "EVENT_0472",
-    "standard_name": "斯诺克世界锦标赛"
-  },
-  "克鲁斯堡世锦赛": {
-    "entity_id": "EVENT_0472",
-    "standard_name": "斯诺克世界锦标赛"
-  },
-  "斯诺克世锦赛": {
-    "entity_id": "EVENT_0472",
-    "standard_name": "斯诺克世界锦标赛"
-  },
   "斯诺克世锦赛决赛": {
     "entity_id": "EVENT_0473",
     "standard_name": "斯诺克世锦赛决赛"
-  },
-  "斯诺克中国公开赛": {
-    "entity_id": "EVENT_0474",
-    "standard_name": "斯诺克中国公开赛"
   },
   "斯诺克中国赛资格赛": {
     "entity_id": "EVENT_0475",
@@ -12755,11 +12511,19 @@
     "entity_id": "EVENT_0480",
     "standard_name": "斯诺克元老赛"
   },
-  "斯诺克冠中冠": {
-    "entity_id": "EVENT_0481",
-    "standard_name": "斯诺克冠中冠"
-  },
   "斯诺克冠中冠赛": {
+    "entity_id": "EVENT_0482",
+    "standard_name": "斯诺克冠中冠赛"
+  },
+  "冠中冠": {
+    "entity_id": "EVENT_0482",
+    "standard_name": "斯诺克冠中冠赛"
+  },
+  "斯诺克冠中冠": {
+    "entity_id": "EVENT_0482",
+    "standard_name": "斯诺克冠中冠赛"
+  },
+  "冠中冠赛事": {
     "entity_id": "EVENT_0482",
     "standard_name": "斯诺克冠中冠赛"
   },
@@ -12778,18 +12542,6 @@
   "32强赛": {
     "entity_id": "EVENT_0485",
     "standard_name": "斯诺克冠军联赛32强赛"
-  },
-  "斯诺克冠军联赛（排名赛版）": {
-    "entity_id": "EVENT_0486",
-    "standard_name": "斯诺克冠军联赛（排名赛版）"
-  },
-  "斯诺克排名赛版冠军联赛": {
-    "entity_id": "EVENT_0496",
-    "standard_name": "斯诺克排名赛版冠军联赛"
-  },
-  "排名赛冠军联赛": {
-    "entity_id": "EVENT_0486",
-    "standard_name": "斯诺克冠军联赛（排名赛版）"
   },
   "斯诺克北爱尔兰公开赛": {
     "entity_id": "EVENT_0487",
@@ -12820,6 +12572,14 @@
     "standard_name": "斯诺克印度公开赛"
   },
   "斯诺克国际锦标赛": {
+    "entity_id": "EVENT_0491",
+    "standard_name": "斯诺克国际锦标赛"
+  },
+  "国锦赛": {
+    "entity_id": "EVENT_0491",
+    "standard_name": "斯诺克国际锦标赛"
+  },
+  "国际锦标赛": {
     "entity_id": "EVENT_0491",
     "standard_name": "斯诺克国际锦标赛"
   },
@@ -12912,8 +12672,8 @@
     "standard_name": "斯诺克沙特大师赛"
   },
   "沙特大师赛": {
-    "entity_id": "EVENT_0515",
-    "standard_name": "沙特大师赛"
+    "entity_id": "EVENT_0504",
+    "standard_name": "斯诺克沙特大师赛"
   },
   "斯诺克球员系列赛": {
     "entity_id": "EVENT_0505",
@@ -12922,26 +12682,6 @@
   "球员系列赛": {
     "entity_id": "EVENT_0505",
     "standard_name": "斯诺克球员系列赛"
-  },
-  "斯诺克苏格兰公开赛": {
-    "entity_id": "EVENT_0506",
-    "standard_name": "斯诺克苏格兰公开赛"
-  },
-  "苏格兰公开赛": {
-    "entity_id": "EVENT_0528",
-    "standard_name": "苏格兰斯诺克公开赛"
-  },
-  "斯诺克英国锦标赛": {
-    "entity_id": "EVENT_0507",
-    "standard_name": "斯诺克英国锦标赛"
-  },
-  "英锦赛": {
-    "entity_id": "EVENT_0531",
-    "standard_name": "英国锦标赛"
-  },
-  "英国锦标赛": {
-    "entity_id": "EVENT_1259",
-    "standard_name": "英国田径锦标赛"
   },
   "斯诺克表演赛": {
     "entity_id": "EVENT_0508",
@@ -12995,6 +12735,14 @@
     "entity_id": "PER_1165",
     "standard_name": "朱利安·勒克莱克"
   },
+  "朱利安·勒克莱尔": {
+    "entity_id": "PER_1166",
+    "standard_name": "朱利安·勒克莱尔"
+  },
+  "Julien Leclercq": {
+    "entity_id": "PER_1166",
+    "standard_name": "朱利安·勒克莱尔"
+  },
   "朱琳": {
     "entity_id": "PER_1167",
     "standard_name": "朱琳"
@@ -13027,7 +12775,15 @@
     "entity_id": "PER_1172",
     "standard_name": "杰克·利索夫斯基"
   },
+  "利索夫斯基": {
+    "entity_id": "PER_1172",
+    "standard_name": "杰克·利索夫斯基"
+  },
   "小司机": {
+    "entity_id": "PER_1172",
+    "standard_name": "杰克·利索夫斯基"
+  },
+  "Jack Lisowski": {
     "entity_id": "PER_1172",
     "standard_name": "杰克·利索夫斯基"
   },
@@ -13063,6 +12819,10 @@
     "entity_id": "PER_1177",
     "standard_name": "杰克逊·佩奇"
   },
+  "佩奇": {
+    "entity_id": "PER_1177",
+    "standard_name": "杰克逊·佩奇"
+  },
   "杰夫·坎迪": {
     "entity_id": "PER_1178",
     "standard_name": "杰夫·坎迪"
@@ -13084,16 +12844,16 @@
     "standard_name": "杰米·克拉克"
   },
   "杰米克拉克": {
-    "entity_id": "PER_1183",
-    "standard_name": "杰米克拉克"
+    "entity_id": "PER_1181",
+    "standard_name": "杰米·克拉克"
   },
   "杰米·奥尼尔": {
     "entity_id": "PER_1182",
     "standard_name": "杰米·奥尼尔"
   },
   "杰米奥尼尔": {
-    "entity_id": "PER_1184",
-    "standard_name": "杰米奥尼尔"
+    "entity_id": "PER_1182",
+    "standard_name": "杰米·奥尼尔"
   },
   "查莉·赫尔": {
     "entity_id": "PER_1185",
@@ -13123,10 +12883,6 @@
     "entity_id": "PER_1189",
     "standard_name": "桑卡姆"
   },
-  "桑坎姆": {
-    "entity_id": "PER_1279",
-    "standard_name": "诺鹏·桑坎姆"
-  },
   "椭圆球场": {
     "entity_id": "LOC_0426",
     "standard_name": "椭圆球场"
@@ -13144,10 +12900,14 @@
     "standard_name": "武汉市"
   },
   "武汉": {
-    "entity_id": "LOC_0372",
-    "standard_name": "Wuhan"
+    "entity_id": "LOC_0429",
+    "standard_name": "武汉市"
   },
   "武汉赛区": {
+    "entity_id": "LOC_0429",
+    "standard_name": "武汉市"
+  },
+  "Wuhan": {
     "entity_id": "LOC_0429",
     "standard_name": "武汉市"
   },
@@ -13211,11 +12971,11 @@
     "entity_id": "PER_1197",
     "standard_name": "沈申义"
   },
-  "沙特": {
+  "沙特阿拉伯": {
     "entity_id": "LOC_0435",
     "standard_name": "沙特阿拉伯"
   },
-  "沙特阿拉伯": {
+  "沙特": {
     "entity_id": "LOC_0435",
     "standard_name": "沙特阿拉伯"
   },
@@ -13236,12 +12996,12 @@
     "standard_name": "波士顿凯尔特人队"
   },
   "波士顿凯尔特人": {
-    "entity_id": "ORG_0755",
-    "standard_name": "波士顿凯尔特人"
+    "entity_id": "ORG_0528",
+    "standard_name": "波士顿凯尔特人队"
   },
   "凯尔特人": {
-    "entity_id": "ORG_0755",
-    "standard_name": "波士顿凯尔特人"
+    "entity_id": "ORG_0528",
+    "standard_name": "波士顿凯尔特人队"
   },
   "泰勒·威尔逊": {
     "entity_id": "PER_1198",
@@ -13311,6 +13071,14 @@
     "entity_id": "PER_1200",
     "standard_name": "海登·平尼"
   },
+  "海顿·平海": {
+    "entity_id": "PER_1200",
+    "standard_name": "海登·平尼"
+  },
+  "海顿平海": {
+    "entity_id": "PER_1200",
+    "standard_name": "海登·平尼"
+  },
   "海登·平希": {
     "entity_id": "PER_1201",
     "standard_name": "海登·平希"
@@ -13327,19 +13095,15 @@
     "entity_id": "PER_1204",
     "standard_name": "海顿·平尼"
   },
-  "海顿平海": {
-    "entity_id": "PER_1207",
-    "standard_name": "海顿平海"
-  },
   "海顿平希": {
     "entity_id": "PER_1206",
     "standard_name": "海顿平希"
   },
-  "海鸥丽晶": {
+  "海鸥丽晶酒店": {
     "entity_id": "LOC_0445",
     "standard_name": "海鸥丽晶酒店"
   },
-  "海鸥丽晶酒店": {
+  "海鸥丽晶": {
     "entity_id": "LOC_0445",
     "standard_name": "海鸥丽晶酒店"
   },
@@ -13362,6 +13126,22 @@
   "温布尔登": {
     "entity_id": "LOC_0447",
     "standard_name": "温布尔登"
+  },
+  "温德姆·克拉克": {
+    "entity_id": "PER_1208",
+    "standard_name": "温德姆·克拉克"
+  },
+  "克拉克": {
+    "entity_id": "PER_1208",
+    "standard_name": "温德姆·克拉克"
+  },
+  "乔丹·布朗（注：‘克拉克’可能为音译误差，常匹配对手为乔丹·布朗）": {
+    "entity_id": "PER_1208",
+    "standard_name": "温德姆·克拉克"
+  },
+  "Wyndham Clark": {
+    "entity_id": "PER_1208",
+    "standard_name": "温德姆·克拉克"
   },
   "滕帅": {
     "entity_id": "PER_1209",
@@ -13460,8 +13240,8 @@
     "standard_name": "玛丽亚·萨卡里"
   },
   "萨卡里": {
-    "entity_id": "PER_1270",
-    "standard_name": "萨卡里"
+    "entity_id": "PER_1222",
+    "standard_name": "玛丽亚·萨卡里"
   },
   "玛丽亚・萨卡里": {
     "entity_id": "PER_1223",
@@ -13559,6 +13339,14 @@
     "entity_id": "PER_1234",
     "standard_name": "米切尔"
   },
+  "米哈乌·苏巴尔奇克": {
+    "entity_id": "PER_1235",
+    "standard_name": "米哈乌·苏巴尔奇克"
+  },
+  "Michal Szubarczyk": {
+    "entity_id": "PER_1235",
+    "standard_name": "米哈乌·苏巴尔奇克"
+  },
   "系列赛决赛": {
     "entity_id": "EVENT_0521",
     "standard_name": "系列赛决赛"
@@ -13568,6 +13356,14 @@
     "standard_name": "约维奇"
   },
   "约翰·希金斯": {
+    "entity_id": "PER_1237",
+    "standard_name": "约翰·希金斯"
+  },
+  "希金斯": {
+    "entity_id": "PER_1237",
+    "standard_name": "约翰·希金斯"
+  },
+  "John Higgins": {
     "entity_id": "PER_1237",
     "standard_name": "约翰·希金斯"
   },
@@ -13588,8 +13384,8 @@
     "standard_name": "维克托·文班亚马"
   },
   "文班亚马": {
-    "entity_id": "PER_1674",
-    "standard_name": "文班亚马"
+    "entity_id": "PER_1241",
+    "standard_name": "维克托·文班亚马"
   },
   "维普拉杰·尼加姆": {
     "entity_id": "PER_1242",
@@ -13635,13 +13431,21 @@
     "entity_id": "PER_1246",
     "standard_name": "罗尼·奥沙利文"
   },
+  "奥沙利文": {
+    "entity_id": "PER_1246",
+    "standard_name": "罗尼·奥沙利文"
+  },
+  "Ronnie O'Sullivan": {
+    "entity_id": "PER_1246",
+    "standard_name": "罗尼·奥沙利文"
+  },
   "罗斯·缪尔": {
     "entity_id": "PER_1247",
     "standard_name": "罗斯·缪尔"
   },
   "罗斯缪尔": {
-    "entity_id": "PER_1248",
-    "standard_name": "罗斯缪尔"
+    "entity_id": "PER_1247",
+    "standard_name": "罗斯·缪尔"
   },
   "罗比": {
     "entity_id": "PER_1249",
@@ -13658,6 +13462,14 @@
   "罗泽涛": {
     "entity_id": "PER_1251",
     "standard_name": "罗泽涛"
+  },
+  "罗里·麦克罗伊": {
+    "entity_id": "PER_1252",
+    "standard_name": "罗里·麦克罗伊"
+  },
+  "Rory McIlroy": {
+    "entity_id": "PER_1252",
+    "standard_name": "罗里·麦克罗伊"
   },
   "美国U20锦标赛": {
     "entity_id": "EVENT_0523",
@@ -13700,6 +13512,10 @@
     "standard_name": "肖国栋"
   },
   "肖恩·墨菲": {
+    "entity_id": "PER_1255",
+    "standard_name": "肖恩·墨菲"
+  },
+  "墨菲": {
     "entity_id": "PER_1255",
     "standard_name": "肖恩·墨菲"
   },
@@ -13763,6 +13579,22 @@
     "entity_id": "EVENT_0528",
     "standard_name": "苏格兰斯诺克公开赛"
   },
+  "苏格兰公开赛": {
+    "entity_id": "EVENT_0528",
+    "standard_name": "苏格兰斯诺克公开赛"
+  },
+  "斯诺克苏格兰公开赛": {
+    "entity_id": "EVENT_0528",
+    "standard_name": "苏格兰斯诺克公开赛"
+  },
+  "英国地铁报": {
+    "entity_id": "ORG_0551",
+    "standard_name": "英国地铁报"
+  },
+  "Metro (UK)": {
+    "entity_id": "ORG_0551",
+    "standard_name": "英国地铁报"
+  },
   "英国广播公司": {
     "entity_id": "ORG_0552",
     "standard_name": "英国广播公司"
@@ -13783,6 +13615,18 @@
     "entity_id": "EVENT_0530",
     "standard_name": "英国斯诺克锦标赛"
   },
+  "英锦赛": {
+    "entity_id": "EVENT_0531",
+    "standard_name": "英国锦标赛"
+  },
+  "斯诺克英国锦标赛": {
+    "entity_id": "EVENT_0530",
+    "standard_name": "英国斯诺克锦标赛"
+  },
+  "英国锦标赛": {
+    "entity_id": "EVENT_1259",
+    "standard_name": "英国田径锦标赛"
+  },
   "英国镜报": {
     "entity_id": "ORG_0553",
     "standard_name": "英国镜报"
@@ -13790,6 +13634,14 @@
   "镜报": {
     "entity_id": "ORG_0553",
     "standard_name": "英国镜报"
+  },
+  "英格兰": {
+    "entity_id": "LOC_0458",
+    "standard_name": "英格兰"
+  },
+  "England": {
+    "entity_id": "LOC_0458",
+    "standard_name": "英格兰"
   },
   "英格兰vs新西兰测试赛": {
     "entity_id": "EVENT_0532",
@@ -13816,8 +13668,8 @@
     "standard_name": "英格兰国家足球队"
   },
   "英格兰队": {
-    "entity_id": "ORG_1455",
-    "standard_name": "英格兰队"
+    "entity_id": "ORG_0555",
+    "standard_name": "英格兰国家足球队"
   },
   "范争一": {
     "entity_id": "PER_1266",
@@ -13875,10 +13727,6 @@
     "entity_id": "ORG_0558",
     "standard_name": "萨默塞特郡板球队"
   },
-  "葡萄牙": {
-    "entity_id": "ORG_0596",
-    "standard_name": "葡萄牙国家男子足球队"
-  },
   "葡萄牙国家足球队": {
     "entity_id": "ORG_0559",
     "standard_name": "葡萄牙国家足球队"
@@ -13886,6 +13734,10 @@
   "葡萄牙队": {
     "entity_id": "ORG_0559",
     "standard_name": "葡萄牙国家足球队"
+  },
+  "葡萄牙": {
+    "entity_id": "ORG_0596",
+    "standard_name": "葡萄牙国家男子足球队"
   },
   "董松": {
     "entity_id": "PER_1272",
@@ -13959,6 +13811,14 @@
     "entity_id": "ORG_0564",
     "standard_name": "警方"
   },
+  "诺丁汉": {
+    "entity_id": "LOC_0470",
+    "standard_name": "诺丁汉"
+  },
+  "Nottingham": {
+    "entity_id": "LOC_0470",
+    "standard_name": "诺丁汉"
+  },
   "诺丁汉郡": {
     "entity_id": "ORG_0565",
     "standard_name": "诺丁汉郡板球队"
@@ -13970,6 +13830,10 @@
   "诺蓬·桑坎姆": {
     "entity_id": "PER_1278",
     "standard_name": "诺蓬·桑坎姆"
+  },
+  "桑坎姆": {
+    "entity_id": "PER_1279",
+    "standard_name": "诺鹏·桑坎姆"
   },
   "诺鹏·桑坎姆": {
     "entity_id": "PER_1279",
@@ -14007,17 +13871,37 @@
     "entity_id": "PER_1284",
     "standard_name": "贺国强"
   },
+  "国强": {
+    "entity_id": "PER_1284",
+    "standard_name": "贺国强"
+  },
   "贾德·特鲁姆普": {
     "entity_id": "PER_1285",
     "standard_name": "贾德·特鲁姆普"
   },
+  "特鲁姆普": {
+    "entity_id": "PER_1285",
+    "standard_name": "贾德·特鲁姆普"
+  },
   "贾德・特鲁姆普": {
-    "entity_id": "PER_1286",
-    "standard_name": "贾德・特鲁姆普"
+    "entity_id": "PER_1285",
+    "standard_name": "贾德·特鲁姆普"
+  },
+  "Judd Trump": {
+    "entity_id": "PER_1285",
+    "standard_name": "贾德·特鲁姆普"
   },
   "赛克斯": {
     "entity_id": "PER_1287",
     "standard_name": "赛克斯"
+  },
+  "赵心童": {
+    "entity_id": "PER_1288",
+    "standard_name": "赵心童"
+  },
+  "Zhao Xintong": {
+    "entity_id": "PER_1288",
+    "standard_name": "赵心童"
   },
   "赵翰洋": {
     "entity_id": "PER_1289",
@@ -14027,21 +13911,25 @@
     "entity_id": "ORG_0566",
     "standard_name": "路易斯安那州立大学"
   },
+  "Louisiana State University": {
+    "entity_id": "ORG_0566",
+    "standard_name": "路易斯安那州立大学"
+  },
   "辛内科克山": {
     "entity_id": "LOC_0474",
     "standard_name": "辛内科克山"
   },
-  "辛纳": {
-    "entity_id": "PER_1666",
-    "standard_name": "扬尼克·辛纳"
+  "辛纳科克山": {
+    "entity_id": "LOC_0475",
+    "standard_name": "辛纳科克山"
+  },
+  "Shinnecock Hills": {
+    "entity_id": "LOC_0475",
+    "standard_name": "辛纳科克山"
   },
   "达卡": {
     "entity_id": "LOC_0476",
     "standard_name": "达卡"
-  },
-  "达科": {
-    "entity_id": "PER_2159",
-    "standard_name": "达科·约奇克"
   },
   "迈克尔·菲尔普斯": {
     "entity_id": "PER_1292",
@@ -14051,21 +13939,41 @@
     "entity_id": "PER_1292",
     "standard_name": "迈克尔·菲尔普斯"
   },
+  "迈克尔·霍尔特": {
+    "entity_id": "PER_1293",
+    "standard_name": "迈克尔·霍尔特"
+  },
+  "霍尔特": {
+    "entity_id": "PER_1310",
+    "standard_name": "阿里斯特·卡特"
+  },
+  "Michael Holt": {
+    "entity_id": "PER_1293",
+    "standard_name": "迈克尔·霍尔特"
+  },
   "迈阿密热火队": {
     "entity_id": "ORG_0567",
     "standard_name": "迈阿密热火队"
   },
   "热火": {
-    "entity_id": "ORG_0816",
-    "standard_name": "迈阿密热火"
+    "entity_id": "ORG_0567",
+    "standard_name": "迈阿密热火队"
   },
   "迈阿密热火": {
-    "entity_id": "ORG_0816",
-    "standard_name": "迈阿密热火"
+    "entity_id": "ORG_0567",
+    "standard_name": "迈阿密热火队"
   },
   "迪伦·埃莫里": {
     "entity_id": "PER_1294",
     "standard_name": "迪伦·埃莫里"
+  },
+  "迪伦·埃默里": {
+    "entity_id": "PER_1295",
+    "standard_name": "迪伦·埃默里"
+  },
+  "Dylan Emery": {
+    "entity_id": "PER_1295",
+    "standard_name": "迪伦·埃默里"
   },
   "迪米特里·奥恰洛夫": {
     "entity_id": "PER_1296",
@@ -14123,6 +14031,10 @@
     "entity_id": "PER_1304",
     "standard_name": "阿尔菲·伯顿"
   },
+  "伯顿": {
+    "entity_id": "PER_1304",
+    "standard_name": "阿尔菲·伯顿"
+  },
   "阿尔菲·博登": {
     "entity_id": "PER_1305",
     "standard_name": "阿尔菲·博登"
@@ -14160,8 +14072,8 @@
     "standard_name": "阿隆·希尔"
   },
   "阿隆希尔": {
-    "entity_id": "PER_1312",
-    "standard_name": "阿隆希尔"
+    "entity_id": "PER_1311",
+    "standard_name": "阿隆·希尔"
   },
   "陆家嘴": {
     "entity_id": "LOC_0478",
@@ -14215,10 +14127,6 @@
     "entity_id": "ORG_0572",
     "standard_name": "霸州市委宣传部"
   },
-  "静安": {
-    "entity_id": "LOC_0672",
-    "standard_name": "静安区"
-  },
   "静安野豹队": {
     "entity_id": "ORG_0573",
     "standard_name": "静安野豹队"
@@ -14255,6 +14163,10 @@
     "entity_id": "PER_1324",
     "standard_name": "马修·史蒂文斯"
   },
+  "史蒂文斯": {
+    "entity_id": "PER_1324",
+    "standard_name": "马修·史蒂文斯"
+  },
   "马修·塞尔特": {
     "entity_id": "PER_1325",
     "standard_name": "马修·塞尔特"
@@ -14279,7 +14191,27 @@
     "entity_id": "PER_1328",
     "standard_name": "马克·塞尔比"
   },
+  "塞尔比": {
+    "entity_id": "PER_1328",
+    "standard_name": "马克·塞尔比"
+  },
+  "Mark Selby": {
+    "entity_id": "PER_1328",
+    "standard_name": "马克·塞尔比"
+  },
+  "马克·威廉姆斯": {
+    "entity_id": "PER_1329",
+    "standard_name": "马克·威廉姆斯"
+  },
+  "马克威廉姆斯": {
+    "entity_id": "PER_1329",
+    "standard_name": "马克·威廉姆斯"
+  },
   "威廉姆斯": {
+    "entity_id": "PER_1329",
+    "standard_name": "马克·威廉姆斯"
+  },
+  "Mark Williams": {
     "entity_id": "PER_1329",
     "standard_name": "马克·威廉姆斯"
   },
@@ -14291,7 +14223,15 @@
     "entity_id": "PER_1330",
     "standard_name": "马克·艾伦"
   },
+  "艾伦": {
+    "entity_id": "PER_1330",
+    "standard_name": "马克·艾伦"
+  },
   "马克艾伦": {
+    "entity_id": "PER_1330",
+    "standard_name": "马克·艾伦"
+  },
+  "Mark Allen": {
     "entity_id": "PER_1330",
     "standard_name": "马克·艾伦"
   },
@@ -14310,6 +14250,14 @@
   "马海龙": {
     "entity_id": "PER_1334",
     "standard_name": "马海龙"
+  },
+  "马蒂奥利竞技场": {
+    "entity_id": "LOC_0484",
+    "standard_name": "马蒂奥利竞技场"
+  },
+  "Mattioli Arena": {
+    "entity_id": "LOC_0484",
+    "standard_name": "马蒂奥利竞技场"
   },
   "高阳": {
     "entity_id": "PER_1335",
@@ -14399,26 +14347,6 @@
     "entity_id": "EVENT_0547",
     "standard_name": "2026年美加墨世界杯小组赛"
   },
-  "2026年国际足联世界杯": {
-    "entity_id": "EVENT_0546",
-    "standard_name": "2026年国际足联世界杯"
-  },
-  "2026美加墨世界杯": {
-    "entity_id": "EVENT_0546",
-    "standard_name": "2026年国际足联世界杯"
-  },
-  "2026年世界杯": {
-    "entity_id": "EVENT_0546",
-    "standard_name": "2026年国际足联世界杯"
-  },
-  "2026世界杯": {
-    "entity_id": "EVENT_0546",
-    "standard_name": "2026年国际足联世界杯"
-  },
-  "美加墨足球世界杯": {
-    "entity_id": "EVENT_0546",
-    "standard_name": "2026年国际足联世界杯"
-  },
   "2026年美加墨世界杯小组赛": {
     "entity_id": "EVENT_0547",
     "standard_name": "2026年美加墨世界杯小组赛"
@@ -14458,14 +14386,6 @@
   "弗洛伦蒂诺-佩雷斯": {
     "entity_id": "PER_1342",
     "standard_name": "Florentino Pérez"
-  },
-  "Ghana": {
-    "entity_id": "LOC_0486",
-    "standard_name": "Ghana"
-  },
-  "加纳": {
-    "entity_id": "LOC_0495",
-    "standard_name": "加纳共和国"
   },
   "Herbert Hainer": {
     "entity_id": "PER_1343",
@@ -14527,23 +14447,23 @@
     "entity_id": "PER_1349",
     "standard_name": "万-比萨卡"
   },
-  "乌兹别克斯坦": {
-    "entity_id": "ORG_0578",
-    "standard_name": "乌兹别克斯坦国家足球队"
-  },
   "乌兹别克斯坦共和国": {
     "entity_id": "LOC_0489",
     "standard_name": "乌兹别克斯坦共和国"
   },
-  "乌兹别克斯坦国家男子足球队": {
-    "entity_id": "ORG_0577",
-    "standard_name": "乌兹别克斯坦国家男子足球队"
-  },
-  "乌兹别克斯坦国家队": {
-    "entity_id": "ORG_0577",
-    "standard_name": "乌兹别克斯坦国家男子足球队"
+  "乌兹别克斯坦": {
+    "entity_id": "ORG_0578",
+    "standard_name": "乌兹别克斯坦国家足球队"
   },
   "乌兹别克斯坦国家足球队": {
+    "entity_id": "ORG_0578",
+    "standard_name": "乌兹别克斯坦国家足球队"
+  },
+  "乌兹别克斯坦国家男子足球队": {
+    "entity_id": "ORG_0578",
+    "standard_name": "乌兹别克斯坦国家足球队"
+  },
+  "乌兹别克斯坦国家队": {
     "entity_id": "ORG_0578",
     "standard_name": "乌兹别克斯坦国家足球队"
   },
@@ -14560,8 +14480,8 @@
     "standard_name": "亚特兰大足球俱乐部"
   },
   "亚特兰大": {
-    "entity_id": "LOC_0528",
-    "standard_name": "亚特兰大"
+    "entity_id": "ORG_0579",
+    "standard_name": "亚特兰大足球俱乐部"
   },
   "伊万-托尼": {
     "entity_id": "PER_1351",
@@ -14580,8 +14500,8 @@
     "standard_name": "伊朗国家足球队"
   },
   "伊朗": {
-    "entity_id": "LOC_0530",
-    "standard_name": "伊朗"
+    "entity_id": "ORG_0580",
+    "standard_name": "伊朗国家足球队"
   },
   "伊莱沙": {
     "entity_id": "PER_1353",
@@ -14595,11 +14515,11 @@
     "entity_id": "PER_1354",
     "standard_name": "佩德罗·内托"
   },
-  "克罗地亚": {
+  "克罗地亚共和国": {
     "entity_id": "LOC_0492",
     "standard_name": "克罗地亚共和国"
   },
-  "克罗地亚共和国": {
+  "克罗地亚": {
     "entity_id": "LOC_0492",
     "standard_name": "克罗地亚共和国"
   },
@@ -14610,10 +14530,6 @@
   "克里斯-伍德": {
     "entity_id": "PER_1355",
     "standard_name": "克里斯·伍德"
-  },
-  "内马托夫": {
-    "entity_id": "PER_1467",
-    "standard_name": "鲁斯塔姆·内马托夫"
   },
   "切尔西足球俱乐部": {
     "entity_id": "ORG_0581",
@@ -14639,17 +14555,17 @@
     "entity_id": "ORG_0582",
     "standard_name": "刚果民主共和国国家足球队"
   },
-  "利昂内尔-梅西": {
-    "entity_id": "PER_1357",
-    "standard_name": "利昂内尔-梅西"
-  },
-  "梅西": {
-    "entity_id": "PER_1534",
-    "standard_name": "利昂内尔·梅西"
-  },
   "加尼耶夫": {
     "entity_id": "PER_1358",
     "standard_name": "加尼耶夫"
+  },
+  "加纳": {
+    "entity_id": "LOC_0495",
+    "standard_name": "加纳共和国"
+  },
+  "Ghana": {
+    "entity_id": "LOC_0494",
+    "standard_name": "加纳"
   },
   "加纳共和国": {
     "entity_id": "LOC_0495",
@@ -14672,16 +14588,16 @@
     "standard_name": "南非共和国"
   },
   "南非": {
-    "entity_id": "LOC_0825",
-    "standard_name": "南非"
+    "entity_id": "LOC_0496",
+    "standard_name": "南非共和国"
   },
   "卡塔尔国": {
     "entity_id": "LOC_0497",
     "standard_name": "卡塔尔国"
   },
   "卡塔尔": {
-    "entity_id": "LOC_0533",
-    "standard_name": "卡塔尔"
+    "entity_id": "LOC_0497",
+    "standard_name": "卡塔尔国"
   },
   "卡库塔": {
     "entity_id": "PER_1360",
@@ -14792,8 +14708,12 @@
     "standard_name": "圣地亚哥·伯纳乌球场"
   },
   "伯纳乌球场": {
-    "entity_id": "LOC_0589",
-    "standard_name": "伯纳乌球场"
+    "entity_id": "LOC_0498",
+    "standard_name": "圣地亚哥·伯纳乌球场"
+  },
+  "伯纳乌": {
+    "entity_id": "LOC_0498",
+    "standard_name": "圣地亚哥·伯纳乌球场"
   },
   "坎帕斯": {
     "entity_id": "PER_1379",
@@ -14838,10 +14758,6 @@
   "沃特金斯": {
     "entity_id": "PER_1384",
     "standard_name": "奥利-沃特金斯"
-  },
-  "奥利塞": {
-    "entity_id": "PER_1449",
-    "standard_name": "迈克尔·奥利塞"
   },
   "奥斯皮纳": {
     "entity_id": "PER_1386",
@@ -14891,15 +14807,19 @@
     "entity_id": "PER_1395",
     "standard_name": "巴坎布"
   },
-  "巴拿马": {
-    "entity_id": "LOC_0502",
-    "standard_name": "巴拿马共和国"
-  },
   "巴拿马共和国": {
     "entity_id": "LOC_0502",
     "standard_name": "巴拿马共和国"
   },
+  "巴拿马": {
+    "entity_id": "LOC_0502",
+    "standard_name": "巴拿马共和国"
+  },
   "巴西联邦共和国": {
+    "entity_id": "LOC_0503",
+    "standard_name": "巴西联邦共和国"
+  },
+  "巴西": {
     "entity_id": "LOC_0503",
     "standard_name": "巴西联邦共和国"
   },
@@ -14991,13 +14911,13 @@
     "entity_id": "ORG_0587",
     "standard_name": "拜仁慕尼黑足球俱乐部"
   },
-  "挪威": {
-    "entity_id": "LOC_0507",
-    "standard_name": "挪威王国"
-  },
   "挪威国家男子足球队": {
     "entity_id": "ORG_0588",
     "standard_name": "挪威国家男子足球队"
+  },
+  "挪威": {
+    "entity_id": "LOC_0507",
+    "standard_name": "挪威王国"
   },
   "挪威国家足球队": {
     "entity_id": "ORG_0589",
@@ -15012,6 +14932,10 @@
     "standard_name": "挪威王国"
   },
   "捷克共和国": {
+    "entity_id": "LOC_0508",
+    "standard_name": "捷克共和国"
+  },
+  "捷克": {
     "entity_id": "LOC_0508",
     "standard_name": "捷克共和国"
   },
@@ -15091,6 +15015,10 @@
     "entity_id": "LOC_0511",
     "standard_name": "法兰西共和国"
   },
+  "法国": {
+    "entity_id": "ORG_0591",
+    "standard_name": "法国国家男子足球队"
+  },
   "法国国家男子足球队": {
     "entity_id": "ORG_0591",
     "standard_name": "法国国家男子足球队"
@@ -15151,6 +15079,10 @@
     "entity_id": "LOC_0514",
     "standard_name": "瑞士联邦"
   },
+  "瑞士": {
+    "entity_id": "LOC_0514",
+    "standard_name": "瑞士联邦"
+  },
   "瓜达拉哈拉": {
     "entity_id": "LOC_0515",
     "standard_name": "瓜达拉哈拉"
@@ -15188,8 +15120,8 @@
     "standard_name": "祖德·贝林厄姆"
   },
   "贝林厄姆": {
-    "entity_id": "PER_2150",
-    "standard_name": "贝林厄姆"
+    "entity_id": "PER_2145",
+    "standard_name": "裘德·贝林厄姆"
   },
   "福克斯新闻频道": {
     "entity_id": "ORG_0594",
@@ -15228,8 +15160,8 @@
     "standard_name": "突尼斯共和国"
   },
   "突尼斯": {
-    "entity_id": "LOC_0557",
-    "standard_name": "突尼斯"
+    "entity_id": "LOC_0516",
+    "standard_name": "突尼斯共和国"
   },
   "米纳": {
     "entity_id": "PER_1423",
@@ -15323,6 +15255,10 @@
     "entity_id": "LOC_0517",
     "standard_name": "荷兰王国"
   },
+  "荷兰": {
+    "entity_id": "ORG_0803",
+    "standard_name": "荷兰国家男子篮球队"
+  },
   "莫兹格沃伊": {
     "entity_id": "PER_1437",
     "standard_name": "莫兹格沃伊"
@@ -15354,10 +15290,6 @@
   "葡萄牙国家队": {
     "entity_id": "ORG_0596",
     "standard_name": "葡萄牙国家男子足球队"
-  },
-  "裘德-贝林厄姆": {
-    "entity_id": "PER_1441",
-    "standard_name": "裘德-贝林厄姆"
   },
   "西汉姆联足球俱乐部": {
     "entity_id": "ORG_0597",
@@ -15412,6 +15344,10 @@
     "standard_name": "达文森-桑切斯"
   },
   "迈克尔·奥利塞": {
+    "entity_id": "PER_1449",
+    "standard_name": "迈克尔·奥利塞"
+  },
+  "奥利塞": {
     "entity_id": "PER_1449",
     "standard_name": "迈克尔·奥利塞"
   },
@@ -15508,6 +15444,10 @@
     "standard_name": "马苏亚库"
   },
   "鲁斯塔姆·内马托夫": {
+    "entity_id": "PER_1467",
+    "standard_name": "鲁斯塔姆·内马托夫"
+  },
+  "内马托夫": {
     "entity_id": "PER_1467",
     "standard_name": "鲁斯塔姆·内马托夫"
   },
@@ -15626,10 +15566,6 @@
   "麦科勒姆": {
     "entity_id": "PER_1471",
     "standard_name": "CJ·麦科勒姆"
-  },
-  "ESPN": {
-    "entity_id": "ORG_0704",
-    "standard_name": "娱乐与体育节目电视网"
   },
   "Fanatics": {
     "entity_id": "ORG_0604",
@@ -16215,6 +16151,10 @@
     "entity_id": "PER_1497",
     "standard_name": "伊加·斯瓦泰克"
   },
+  "斯瓦泰克": {
+    "entity_id": "PER_1497",
+    "standard_name": "伊加·斯瓦泰克"
+  },
   "伊戈尔·塔雷": {
     "entity_id": "PER_1498",
     "standard_name": "伊戈尔·塔雷"
@@ -16275,10 +16215,6 @@
     "entity_id": "PER_1502",
     "standard_name": "佩德罗马拉尼昂"
   },
-  "俄克拉荷马城雷霆": {
-    "entity_id": "ORG_0652",
-    "standard_name": "俄克拉荷马城雷霆"
-  },
   "保罗·皮尔斯": {
     "entity_id": "PER_1503",
     "standard_name": "保罗·皮尔斯"
@@ -16314,10 +16250,6 @@
   "元砂晏翔仁": {
     "entity_id": "PER_1508",
     "standard_name": "元砂晏翔仁"
-  },
-  "克利夫兰骑士": {
-    "entity_id": "ORG_0653",
-    "standard_name": "克利夫兰骑士"
   },
   "克耶尔德·祖伊德马": {
     "entity_id": "PER_1509",
@@ -16495,6 +16427,14 @@
     "entity_id": "PER_1534",
     "standard_name": "利昂内尔·梅西"
   },
+  "梅西": {
+    "entity_id": "PER_1534",
+    "standard_name": "利昂内尔·梅西"
+  },
+  "利昂内尔-梅西": {
+    "entity_id": "PER_1534",
+    "standard_name": "利昂内尔·梅西"
+  },
   "利物浦足球俱乐部": {
     "entity_id": "ORG_0661",
     "standard_name": "利物浦足球俱乐部"
@@ -16608,8 +16548,8 @@
     "standard_name": "博斯曼·博塔"
   },
   "博塔": {
-    "entity_id": "PER_1992",
-    "standard_name": "博塔"
+    "entity_id": "PER_1541",
+    "standard_name": "博斯曼·博塔"
   },
   "博柏利": {
     "entity_id": "ORG_0673",
@@ -16687,11 +16627,11 @@
     "entity_id": "LOC_0534",
     "standard_name": "卡玛萨里"
   },
-  "卡纳克": {
+  "卡纳克·贾哈": {
     "entity_id": "PER_1553",
     "standard_name": "卡纳克·贾哈"
   },
-  "卡纳克·贾哈": {
+  "卡纳克": {
     "entity_id": "PER_1553",
     "standard_name": "卡纳克·贾哈"
   },
@@ -16760,6 +16700,10 @@
     "standard_name": "古蔺赤渡酒队"
   },
   "叶莲娜·莱巴金娜": {
+    "entity_id": "PER_1564",
+    "standard_name": "叶莲娜·莱巴金娜"
+  },
+  "莱巴金娜": {
     "entity_id": "PER_1564",
     "standard_name": "叶莲娜·莱巴金娜"
   },
@@ -17203,10 +17147,6 @@
     "entity_id": "PER_1602",
     "standard_name": "姆博科"
   },
-  "姆巴佩": {
-    "entity_id": "PER_2008",
-    "standard_name": "基利安·姆巴佩"
-  },
   "姆布拉": {
     "entity_id": "PER_1604",
     "standard_name": "姆布拉"
@@ -17224,6 +17164,10 @@
     "standard_name": "威尔特·张伯伦"
   },
   "娱乐与体育节目电视网": {
+    "entity_id": "ORG_0704",
+    "standard_name": "娱乐与体育节目电视网"
+  },
+  "ESPN": {
     "entity_id": "ORG_0704",
     "standard_name": "娱乐与体育节目电视网"
   },
@@ -17287,6 +17231,10 @@
     "entity_id": "PER_1614",
     "standard_name": "安德烈·卢布列夫"
   },
+  "卢布列夫": {
+    "entity_id": "PER_1614",
+    "standard_name": "安德烈·卢布列夫"
+  },
   "安德烈·阿加西": {
     "entity_id": "PER_1615",
     "standard_name": "安德烈·阿加西"
@@ -17312,6 +17260,14 @@
     "standard_name": "宜宾长江首城队"
   },
   "密尔沃基雄鹿": {
+    "entity_id": "ORG_0708",
+    "standard_name": "密尔沃基雄鹿"
+  },
+  "雄鹿": {
+    "entity_id": "ORG_0708",
+    "standard_name": "密尔沃基雄鹿"
+  },
+  "密尔沃基雄鹿队": {
     "entity_id": "ORG_0708",
     "standard_name": "密尔沃基雄鹿"
   },
@@ -17467,19 +17423,19 @@
     "entity_id": "PER_1630",
     "standard_name": "布鲁克斯比"
   },
-  "布鲁克林篮网": {
-    "entity_id": "ORG_0721",
-    "standard_name": "布鲁克林篮网"
-  },
-  "篮网": {
-    "entity_id": "ORG_0722",
-    "standard_name": "布鲁克林篮网队"
-  },
   "布鲁克林篮网队": {
     "entity_id": "ORG_0722",
     "standard_name": "布鲁克林篮网队"
   },
   "篮网队": {
+    "entity_id": "ORG_0722",
+    "standard_name": "布鲁克林篮网队"
+  },
+  "篮网": {
+    "entity_id": "ORG_0722",
+    "standard_name": "布鲁克林篮网队"
+  },
+  "布鲁克林篮网": {
     "entity_id": "ORG_0722",
     "standard_name": "布鲁克林篮网队"
   },
@@ -17552,6 +17508,10 @@
     "standard_name": "弗拉格"
   },
   "弗拉维奥·科博利": {
+    "entity_id": "PER_1639",
+    "standard_name": "弗拉维奥·科博利"
+  },
+  "科博利": {
     "entity_id": "PER_1639",
     "standard_name": "弗拉维奥·科博利"
   },
@@ -17719,6 +17679,10 @@
     "entity_id": "PER_1666",
     "standard_name": "扬尼克·辛纳"
   },
+  "辛纳": {
+    "entity_id": "PER_1666",
+    "standard_name": "扬尼克·辛纳"
+  },
   "拉唐": {
     "entity_id": "PER_1667",
     "standard_name": "拉唐"
@@ -17755,10 +17719,6 @@
     "entity_id": "EVENT_0611",
     "standard_name": "拉沃尔杯"
   },
-  "拉莫斯": {
-    "entity_id": "PER_2009",
-    "standard_name": "塞尔吉奥·拉莫斯"
-  },
   "拜仁青年杯": {
     "entity_id": "EVENT_0612",
     "standard_name": "拜仁青年杯"
@@ -17772,8 +17732,8 @@
     "standard_name": "摩纳哥足球俱乐部"
   },
   "摩纳哥": {
-    "entity_id": "LOC_0918",
-    "standard_name": "摩纳哥"
+    "entity_id": "ORG_0737",
+    "standard_name": "摩纳哥足球俱乐部"
   },
   "斋藤翔": {
     "entity_id": "PER_1675",
@@ -17932,8 +17892,8 @@
     "standard_name": "本·谢尔顿"
   },
   "谢尔顿": {
-    "entity_id": "PER_1852",
-    "standard_name": "谢尔顿"
+    "entity_id": "PER_1698",
+    "standard_name": "本·谢尔顿"
   },
   "本菲卡足球俱乐部": {
     "entity_id": "ORG_0741",
@@ -18315,7 +18275,7 @@
     "entity_id": "PER_1750",
     "standard_name": "波汉科娃"
   },
-  "波特兰开拓者": {
+  "波特兰开拓者队": {
     "entity_id": "ORG_0757",
     "standard_name": "波特兰开拓者队"
   },
@@ -18323,7 +18283,7 @@
     "entity_id": "ORG_0757",
     "standard_name": "波特兰开拓者队"
   },
-  "波特兰开拓者队": {
+  "波特兰开拓者": {
     "entity_id": "ORG_0757",
     "standard_name": "波特兰开拓者队"
   },
@@ -18584,8 +18544,8 @@
     "standard_name": "瑞安·赫拉芬贝赫"
   },
   "赫拉芬贝赫": {
-    "entity_id": "PER_1865",
-    "standard_name": "赫拉芬贝赫"
+    "entity_id": "PER_1768",
+    "standard_name": "瑞安·赫拉芬贝赫"
   },
   "瓦西里": {
     "entity_id": "PER_1769",
@@ -18628,8 +18588,8 @@
     "standard_name": "福拉林·巴洛贡"
   },
   "巴洛贡": {
-    "entity_id": "PER_2723",
-    "standard_name": "巴洛贡"
+    "entity_id": "PER_1774",
+    "standard_name": "福拉林·巴洛贡"
   },
   "福斯特": {
     "entity_id": "PER_1775",
@@ -18732,8 +18692,8 @@
     "standard_name": "米格尔·阿尔米隆"
   },
   "阿尔米隆": {
-    "entity_id": "PER_1897",
-    "standard_name": "阿尔米隆"
+    "entity_id": "PER_1792",
+    "standard_name": "米格尔·阿尔米隆"
   },
   "米歇尔·埃贝彻尔": {
     "entity_id": "PER_1793",
@@ -18799,7 +18759,7 @@
     "entity_id": "ORG_0785",
     "standard_name": "纽卡斯尔联足球俱乐部"
   },
-  "纽约尼克斯": {
+  "纽约尼克斯队": {
     "entity_id": "ORG_0787",
     "standard_name": "纽约尼克斯队"
   },
@@ -18807,11 +18767,15 @@
     "entity_id": "ORG_0787",
     "standard_name": "纽约尼克斯队"
   },
-  "纽约尼克斯队": {
+  "纽约尼克斯": {
     "entity_id": "ORG_0787",
     "standard_name": "纽约尼克斯队"
   },
   "纽约市": {
+    "entity_id": "LOC_0560",
+    "standard_name": "纽约市"
+  },
+  "纽约": {
     "entity_id": "LOC_0560",
     "standard_name": "纽约市"
   },
@@ -18844,8 +18808,8 @@
     "standard_name": "维尼修斯·儒尼奥尔"
   },
   "维尼修斯": {
-    "entity_id": "PER_2131",
-    "standard_name": "维尼修斯"
+    "entity_id": "PER_1801",
+    "standard_name": "维尼修斯·儒尼奥尔"
   },
   "维纳斯·威廉姆斯": {
     "entity_id": "PER_1802",
@@ -18918,6 +18882,26 @@
   "罗纳尔多": {
     "entity_id": "PER_1810",
     "standard_name": "罗纳尔多·路易斯·纳扎里奥·德·利马"
+  },
+  "2026年国际足联世界杯": {
+    "entity_id": "EVENT_0621",
+    "standard_name": "美加墨世界杯"
+  },
+  "2026美加墨世界杯": {
+    "entity_id": "EVENT_0621",
+    "standard_name": "美加墨世界杯"
+  },
+  "2026年世界杯": {
+    "entity_id": "EVENT_0621",
+    "standard_name": "美加墨世界杯"
+  },
+  "2026世界杯": {
+    "entity_id": "EVENT_0621",
+    "standard_name": "美加墨世界杯"
+  },
+  "美加墨足球世界杯": {
+    "entity_id": "EVENT_0621",
+    "standard_name": "美加墨世界杯"
   },
   "美国国家足球队": {
     "entity_id": "ORG_0791",
@@ -19275,6 +19259,10 @@
     "entity_id": "PER_1850",
     "standard_name": "诺瓦克·德约科维奇"
   },
+  "德约科维奇": {
+    "entity_id": "PER_1850",
+    "standard_name": "诺瓦克·德约科维奇"
+  },
   "德约": {
     "entity_id": "PER_1850",
     "standard_name": "诺瓦克·德约科维奇"
@@ -19303,15 +19291,15 @@
     "entity_id": "PER_1857",
     "standard_name": "费利克斯·奥热-阿利亚西姆"
   },
+  "费城76人队": {
+    "entity_id": "ORG_0808",
+    "standard_name": "费城76人队"
+  },
   "费城76人": {
     "entity_id": "ORG_0808",
     "standard_name": "费城76人队"
   },
   "76人": {
-    "entity_id": "ORG_0807",
-    "standard_name": "费城76人"
-  },
-  "费城76人队": {
     "entity_id": "ORG_0808",
     "standard_name": "费城76人队"
   },
@@ -19419,15 +19407,15 @@
     "entity_id": "LOC_0566",
     "standard_name": "达拉斯"
   },
-  "达拉斯独行侠": {
-    "entity_id": "ORG_0813",
-    "standard_name": "达拉斯独行侠"
+  "达拉斯独行侠队": {
+    "entity_id": "ORG_0814",
+    "standard_name": "达拉斯独行侠队"
   },
   "独行侠": {
     "entity_id": "ORG_0814",
     "standard_name": "达拉斯独行侠队"
   },
-  "达拉斯独行侠队": {
+  "达拉斯独行侠": {
     "entity_id": "ORG_0814",
     "standard_name": "达拉斯独行侠队"
   },
@@ -19491,6 +19479,10 @@
     "entity_id": "LOC_0567",
     "standard_name": "郑州市"
   },
+  "郑州": {
+    "entity_id": "LOC_0567",
+    "standard_name": "郑州市"
+  },
   "郑智": {
     "entity_id": "PER_1882",
     "standard_name": "郑智"
@@ -19527,15 +19519,15 @@
     "entity_id": "LOC_0568",
     "standard_name": "重庆龙兴专业足球场"
   },
+  "金州勇士队": {
+    "entity_id": "ORG_0819",
+    "standard_name": "金州勇士队"
+  },
   "金州勇士": {
     "entity_id": "ORG_0819",
     "standard_name": "金州勇士队"
   },
   "勇士": {
-    "entity_id": "ORG_0818",
-    "standard_name": "金州勇士"
-  },
-  "金州勇士队": {
     "entity_id": "ORG_0819",
     "standard_name": "金州勇士队"
   },
@@ -19556,6 +19548,10 @@
     "standard_name": "长南开史"
   },
   "长沙市": {
+    "entity_id": "LOC_0569",
+    "standard_name": "长沙市"
+  },
+  "长沙": {
     "entity_id": "LOC_0569",
     "standard_name": "长沙市"
   },
@@ -19618,10 +19614,6 @@
   "阿森纳": {
     "entity_id": "ORG_0821",
     "standard_name": "阿森纳足球俱乐部"
-  },
-  "阿纳尔迪": {
-    "entity_id": "PER_1929",
-    "standard_name": "马泰奥·阿纳尔迪"
   },
   "阿舒尔": {
     "entity_id": "PER_1902",
@@ -19835,6 +19827,10 @@
     "entity_id": "PER_1929",
     "standard_name": "马泰奥·阿纳尔迪"
   },
+  "阿纳尔迪": {
+    "entity_id": "PER_1929",
+    "standard_name": "马泰奥·阿纳尔迪"
+  },
   "马特·弗里兹": {
     "entity_id": "PER_1930",
     "standard_name": "马特·弗里兹"
@@ -20036,8 +20032,8 @@
     "standard_name": "2014年东京世界乒乓球团体锦标赛"
   },
   "东京世乒赛": {
-    "entity_id": "EVENT_0723",
-    "standard_name": "东京世乒赛"
+    "entity_id": "EVENT_0637",
+    "standard_name": "2014年东京世界乒乓球团体锦标赛"
   },
   "2015年苏州世界乒乓球锦标赛": {
     "entity_id": "EVENT_0638",
@@ -20063,6 +20059,14 @@
     "entity_id": "EVENT_0639",
     "standard_name": "2016年里约奥运会"
   },
+  "2016年里约热内卢奥运会": {
+    "entity_id": "EVENT_0639",
+    "standard_name": "2016年里约奥运会"
+  },
+  "2016年里约热内卢夏季奥运会": {
+    "entity_id": "EVENT_0639",
+    "standard_name": "2016年里约奥运会"
+  },
   "2017年亚洲乒乓球锦标赛": {
     "entity_id": "EVENT_0640",
     "standard_name": "2017年亚洲乒乓球锦标赛"
@@ -20082,10 +20086,6 @@
   "2019年男子世界杯决赛": {
     "entity_id": "EVENT_0642",
     "standard_name": "2019年乒乓球男子世界杯"
-  },
-  "2020年东京夏季奥运会": {
-    "entity_id": "EVENT_0003",
-    "standard_name": "2020年东京奥运会"
   },
   "2021年休斯敦世界乒乓球锦标赛": {
     "entity_id": "EVENT_0644",
@@ -20116,16 +20116,16 @@
     "standard_name": "2024年世界乒乓球团体锦标赛"
   },
   "伦敦团体世乒赛": {
-    "entity_id": "EVENT_0746",
-    "standard_name": "伦敦团体世乒赛"
+    "entity_id": "EVENT_0648",
+    "standard_name": "2024年世界乒乓球团体锦标赛"
   },
   "2024年亚洲乒乓球锦标赛": {
     "entity_id": "EVENT_0649",
     "standard_name": "2024年亚洲乒乓球锦标赛"
   },
   "亚洲乒乓球锦标赛": {
-    "entity_id": "EVENT_0737",
-    "standard_name": "亚洲乒乓球锦标赛"
+    "entity_id": "EVENT_0649",
+    "standard_name": "2024年亚洲乒乓球锦标赛"
   },
   "2024亚锦赛": {
     "entity_id": "EVENT_0649",
@@ -20156,8 +20156,8 @@
     "standard_name": "2025年多哈世界乒乓球锦标赛"
   },
   "多哈世乒赛": {
-    "entity_id": "EVENT_0759",
-    "standard_name": "多哈世界乒乓球锦标赛"
+    "entity_id": "EVENT_0654",
+    "standard_name": "2025年多哈世界乒乓球锦标赛"
   },
   "2025年澳门世界杯": {
     "entity_id": "EVENT_0655",
@@ -20168,8 +20168,8 @@
     "standard_name": "2025年澳门世界杯乒乓球赛"
   },
   "澳门世界杯": {
-    "entity_id": "EVENT_0791",
-    "standard_name": "澳门世界杯"
+    "entity_id": "EVENT_0678",
+    "standard_name": "2026年澳门世界杯"
   },
   "2026WTT美国大满贯": {
     "entity_id": "EVENT_0657",
@@ -20340,8 +20340,8 @@
     "standard_name": "WTT卢布尔雅那站球星挑战赛"
   },
   "WTT球星挑战赛": {
-    "entity_id": "EVENT_0703",
-    "standard_name": "WTT球星挑战赛"
+    "entity_id": "EVENT_0689",
+    "standard_name": "WTT卢布尔雅那站球星挑战赛"
   },
   "WTT大满贯": {
     "entity_id": "EVENT_0690",
@@ -20408,8 +20408,8 @@
     "standard_name": "WTT澳门冠军赛"
   },
   "澳门冠军赛": {
-    "entity_id": "EVENT_0792",
-    "standard_name": "澳门冠军赛"
+    "entity_id": "EVENT_0702",
+    "standard_name": "WTT澳门冠军赛"
   },
   "WTT球星赛": {
     "entity_id": "EVENT_0703",
@@ -20452,8 +20452,8 @@
     "standard_name": "WTT重庆冠军赛"
   },
   "重庆冠军赛": {
-    "entity_id": "EVENT_0811",
-    "standard_name": "重庆冠军赛"
+    "entity_id": "EVENT_0709",
+    "standard_name": "WTT重庆冠军赛"
   },
   "WTT香港年终总决赛": {
     "entity_id": "EVENT_0710",
@@ -20563,17 +20563,9 @@
     "entity_id": "ORG_0851",
     "standard_name": "上海龙腾乒乓球俱乐部"
   },
-  "世界乒乓球团体锦标赛": {
-    "entity_id": "EVENT_0713",
-    "standard_name": "世界乒乓球团体锦标赛"
-  },
   "世界乒乓球日": {
     "entity_id": "EVENT_0714",
     "standard_name": "世界乒乓球日"
-  },
-  "世界乒乓球职业大联盟 (WTT)": {
-    "entity_id": "ORG_0852",
-    "standard_name": "世界乒乓球职业大联盟 (WTT)"
   },
   "世界乒乓球联合会（WTT）": {
     "entity_id": "ORG_0854",
@@ -20755,6 +20747,10 @@
     "entity_id": "ORG_0866",
     "standard_name": "中国国家乒乓球队二队"
   },
+  "国家乒乓球二队": {
+    "entity_id": "ORG_0866",
+    "standard_name": "中国国家乒乓球队二队"
+  },
   "中国国家乒乓球队女一队": {
     "entity_id": "ORG_0867",
     "standard_name": "中国国家乒乓球队女一队"
@@ -20780,6 +20776,10 @@
     "standard_name": "中国国家乒乓球队选拔赛"
   },
   "中国国家乒乓球队青年队": {
+    "entity_id": "ORG_0869",
+    "standard_name": "中国国家乒乓球队青年队"
+  },
+  "国家青年乒乓球队": {
     "entity_id": "ORG_0869",
     "standard_name": "中国国家乒乓球队青年队"
   },
@@ -20972,16 +20972,12 @@
     "standard_name": "伦敦世乒团体赛"
   },
   "伦敦世乒赛（团体赛）": {
-    "entity_id": "EVENT_0744",
-    "standard_name": "伦敦世乒赛（团体赛）"
+    "entity_id": "EVENT_0743",
+    "standard_name": "伦敦世乒赛团体赛"
   },
   "伦敦世界乒乓球锦标赛团体赛": {
     "entity_id": "EVENT_0745",
     "standard_name": "伦敦世界乒乓球锦标赛团体赛"
-  },
-  "伯纳乌": {
-    "entity_id": "LOC_0589",
-    "standard_name": "伯纳乌球场"
   },
   "佐藤瞳": {
     "entity_id": "PER_1964",
@@ -21008,6 +21004,10 @@
     "standard_name": "佛山代表队"
   },
   "佛罗里达大学": {
+    "entity_id": "ORG_0885",
+    "standard_name": "佛罗里达大学"
+  },
+  "University of Florida": {
     "entity_id": "ORG_0885",
     "standard_name": "佛罗里达大学"
   },
@@ -21040,8 +21040,8 @@
     "standard_name": "日本全国游泳锦标赛"
   },
   "全锦赛": {
-    "entity_id": "EVENT_0752",
-    "standard_name": "全锦赛"
+    "entity_id": "EVENT_0747",
+    "standard_name": "全国乒乓球锦标赛"
   },
   "全国少年乒乓球锦标赛": {
     "entity_id": "EVENT_0748",
@@ -21228,8 +21228,8 @@
     "standard_name": "卢卡·莫德里奇"
   },
   "莫德里奇": {
-    "entity_id": "PER_2138",
-    "standard_name": "莫德里奇"
+    "entity_id": "PER_1996",
+    "standard_name": "卢卡·莫德里奇"
   },
   "卢布尔雅那WTT挑战赛": {
     "entity_id": "EVENT_0753",
@@ -21303,15 +21303,11 @@
     "entity_id": "LOC_0602",
     "standard_name": "国和时尚中心"
   },
-  "国家乒乓球一队": {
-    "entity_id": "ORG_0893",
-    "standard_name": "国家乒乓球一队"
-  },
-  "国家乒乓球二队": {
-    "entity_id": "ORG_0894",
-    "standard_name": "国家乒乓球二队"
-  },
   "国家乒乓球队一队": {
+    "entity_id": "ORG_0895",
+    "standard_name": "国家乒乓球队一队"
+  },
+  "国家乒乓球一队": {
     "entity_id": "ORG_0895",
     "standard_name": "国家乒乓球队一队"
   },
@@ -21330,10 +21326,6 @@
   "国家女子乒乓球队": {
     "entity_id": "ORG_0898",
     "standard_name": "国家女子乒乓球队"
-  },
-  "国家青年乒乓球队": {
-    "entity_id": "ORG_0899",
-    "standard_name": "国家青年乒乓球队"
   },
   "国家青年集训体系": {
     "entity_id": "ORG_0900",
@@ -21371,7 +21363,15 @@
     "entity_id": "PER_2008",
     "standard_name": "基利安·姆巴佩"
   },
+  "姆巴佩": {
+    "entity_id": "PER_2008",
+    "standard_name": "基利安·姆巴佩"
+  },
   "塞尔吉奥·拉莫斯": {
+    "entity_id": "PER_2009",
+    "standard_name": "塞尔吉奥·拉莫斯"
+  },
+  "拉莫斯": {
     "entity_id": "PER_2009",
     "standard_name": "塞尔吉奥·拉莫斯"
   },
@@ -21384,8 +21384,8 @@
     "standard_name": "夏季奥林匹克运动会"
   },
   "多哈世界乒乓球锦标赛": {
-    "entity_id": "EVENT_0759",
-    "standard_name": "多哈世界乒乓球锦标赛"
+    "entity_id": "EVENT_0758",
+    "standard_name": "多哈世乒赛"
   },
   "多特蒙德普鲁士1909球类比赛俱乐部": {
     "entity_id": "ORG_0905",
@@ -21444,8 +21444,8 @@
     "standard_name": "天津乒乓球队"
   },
   "天津队": {
-    "entity_id": "ORG_1319",
-    "standard_name": "天津队"
+    "entity_id": "ORG_1318",
+    "standard_name": "天津田径队"
   },
   "天津市翔云乒乓体育培训学校有限公司": {
     "entity_id": "ORG_0910",
@@ -21518,14 +21518,6 @@
   "女单世界杯": {
     "entity_id": "EVENT_0764",
     "standard_name": "女子乒乓球世界杯"
-  },
-  "威斯特法伦球场": {
-    "entity_id": "LOC_0660",
-    "standard_name": "西格纳伊度纳公园球场"
-  },
-  "威斯特法伦": {
-    "entity_id": "LOC_0609",
-    "standard_name": "威斯特法伦球场"
   },
   "威海": {
     "entity_id": "LOC_0610",
@@ -21608,8 +21600,8 @@
     "standard_name": "安德斯·林德"
   },
   "林德": {
-    "entity_id": "PER_2084",
-    "standard_name": "林德"
+    "entity_id": "PER_2021",
+    "standard_name": "安德斯·林德"
   },
   "安徽省合肥市包河区": {
     "entity_id": "LOC_0615",
@@ -21624,16 +21616,12 @@
     "standard_name": "安踏体育用品有限公司"
   },
   "安踏": {
-    "entity_id": "ORG_1329",
-    "standard_name": "安踏"
+    "entity_id": "ORG_0916",
+    "standard_name": "安踏体育用品有限公司"
   },
   "宝宝": {
     "entity_id": "PER_2022",
     "standard_name": "宝宝"
-  },
-  "宝山": {
-    "entity_id": "LOC_0617",
-    "standard_name": "宝山区"
   },
   "宝山国投私募基金队": {
     "entity_id": "ORG_0917",
@@ -21727,11 +21715,11 @@
     "entity_id": "LOC_0618",
     "standard_name": "布达佩斯"
   },
-  "布鲁娜": {
+  "布鲁娜·高桥": {
     "entity_id": "PER_2035",
     "standard_name": "布鲁娜·高桥"
   },
-  "布鲁娜·高桥": {
+  "布鲁娜": {
     "entity_id": "PER_2035",
     "standard_name": "布鲁娜·高桥"
   },
@@ -21740,8 +21728,8 @@
     "standard_name": "帕特里克·弗朗西斯卡"
   },
   "弗朗西斯卡": {
-    "entity_id": "PER_2040",
-    "standard_name": "弗朗西斯卡"
+    "entity_id": "PER_2036",
+    "standard_name": "帕特里克·弗朗西斯卡"
   },
   "平野早矢香": {
     "entity_id": "PER_2037",
@@ -21968,8 +21956,8 @@
     "standard_name": "新疆维吾尔自治区"
   },
   "新疆": {
-    "entity_id": "LOC_0924",
-    "standard_name": "新疆"
+    "entity_id": "LOC_0629",
+    "standard_name": "新疆维吾尔自治区"
   },
   "方博": {
     "entity_id": "PER_2054",
@@ -21998,10 +21986,6 @@
   "日本乒协": {
     "entity_id": "ORG_0938",
     "standard_name": "日本乒乓球协会"
-  },
-  "日本乒乓球队": {
-    "entity_id": "ORG_0940",
-    "standard_name": "日本国家乒乓球队"
   },
   "日本国家女子乒乓球队": {
     "entity_id": "ORG_0941",
@@ -22150,10 +22134,6 @@
   "杜塞尔多夫": {
     "entity_id": "ORG_0951",
     "standard_name": "杜塞尔多夫乒乓球俱乐部"
-  },
-  "杜达": {
-    "entity_id": "PER_2149",
-    "standard_name": "贝内迪克特·杜达"
   },
   "杨剑俊": {
     "entity_id": "PER_2076",
@@ -22336,8 +22316,8 @@
     "standard_name": "河北省乒乓球队"
   },
   "河北队": {
-    "entity_id": "ORG_1106",
-    "standard_name": "河北队"
+    "entity_id": "ORG_1105",
+    "standard_name": "河北省游泳队"
   },
   "河北省队": {
     "entity_id": "ORG_0960",
@@ -22368,8 +22348,12 @@
     "standard_name": "河北省苗子钓赛"
   },
   "河南济源": {
-    "entity_id": "LOC_0641",
-    "standard_name": "济源"
+    "entity_id": "LOC_0636",
+    "standard_name": "河南济源"
+  },
+  "济源": {
+    "entity_id": "LOC_0636",
+    "standard_name": "河南济源"
   },
   "河南省乒乓球集训队": {
     "entity_id": "ORG_0966",
@@ -22387,9 +22371,9 @@
     "entity_id": "LOC_0638",
     "standard_name": "波兰共和国"
   },
-  "波尔": {
-    "entity_id": "PER_2142",
-    "standard_name": "蒂莫·波尔"
+  "波兰": {
+    "entity_id": "LOC_0638",
+    "standard_name": "波兰共和国"
   },
   "泰达杯京津冀青少年乒乓球赛": {
     "entity_id": "EVENT_0784",
@@ -22430,10 +22414,6 @@
   "济宁青训一队": {
     "entity_id": "ORG_0968",
     "standard_name": "济宁青训一队"
-  },
-  "济源": {
-    "entity_id": "LOC_0641",
-    "standard_name": "济源"
   },
   "浙江Xuperman乒乓球俱乐部": {
     "entity_id": "ORG_0969",
@@ -22531,17 +22511,13 @@
     "entity_id": "LOC_0647",
     "standard_name": "湖北钟祥"
   },
-  "爱知-名古屋亚运会": {
-    "entity_id": "EVENT_0069",
-    "standard_name": "2026年名古屋亚运会"
-  },
   "特鲁尔·莫雷加德": {
     "entity_id": "PER_2101",
     "standard_name": "特鲁尔·莫雷加德"
   },
   "莫雷加德": {
-    "entity_id": "PER_2140",
-    "standard_name": "莫雷加德"
+    "entity_id": "PER_2102",
+    "standard_name": "特鲁尔斯·莫雷加德"
   },
   "特鲁尔斯·莫雷加德": {
     "entity_id": "PER_2102",
@@ -22827,6 +22803,10 @@
     "entity_id": "PER_2141",
     "standard_name": "蒂姆·波尔"
   },
+  "波尔": {
+    "entity_id": "PER_2142",
+    "standard_name": "蒂莫·波尔"
+  },
   "蒂沃利体育馆": {
     "entity_id": "LOC_0657",
     "standard_name": "蒂沃利体育馆"
@@ -22856,6 +22836,10 @@
     "standard_name": "虹口区乒乓球队"
   },
   "裘德·贝林厄姆": {
+    "entity_id": "PER_2145",
+    "standard_name": "裘德·贝林厄姆"
+  },
+  "裘德-贝林厄姆": {
     "entity_id": "PER_2145",
     "standard_name": "裘德·贝林厄姆"
   },
@@ -22895,6 +22879,14 @@
     "entity_id": "LOC_0660",
     "standard_name": "西格纳伊度纳公园球场"
   },
+  "威斯特法伦球场": {
+    "entity_id": "LOC_0660",
+    "standard_name": "西格纳伊度纳公园球场"
+  },
+  "威斯特法伦": {
+    "entity_id": "LOC_0660",
+    "standard_name": "西格纳伊度纳公园球场"
+  },
   "西蒙·高茨": {
     "entity_id": "PER_2146",
     "standard_name": "西蒙·高茨"
@@ -22924,6 +22916,10 @@
     "standard_name": "谯城区灵津渡社区"
   },
   "贝内迪克特·杜达": {
+    "entity_id": "PER_2149",
+    "standard_name": "贝内迪克特·杜达"
+  },
+  "杜达": {
     "entity_id": "PER_2149",
     "standard_name": "贝内迪克特·杜达"
   },
@@ -22972,6 +22968,10 @@
     "standard_name": "达科·约奇克"
   },
   "约奇克": {
+    "entity_id": "PER_2159",
+    "standard_name": "达科·约奇克"
+  },
+  "达科": {
     "entity_id": "PER_2159",
     "standard_name": "达科·约奇克"
   },
@@ -23047,11 +23047,11 @@
     "entity_id": "PER_2171",
     "standard_name": "郭芮辰"
   },
-  "里约": {
+  "里约热内卢": {
     "entity_id": "LOC_0665",
     "standard_name": "里约热内卢"
   },
-  "里约热内卢": {
+  "里约": {
     "entity_id": "LOC_0665",
     "standard_name": "里约热内卢"
   },
@@ -23094,10 +23094,6 @@
   "长崎美柚": {
     "entity_id": "PER_2176",
     "standard_name": "长崎美柚"
-  },
-  "长春": {
-    "entity_id": "LOC_0318",
-    "standard_name": "长春市"
   },
   "闫安": {
     "entity_id": "PER_2177",
@@ -23200,10 +23196,14 @@
     "standard_name": "静安中安弘乒乓球队"
   },
   "静安中安弘队": {
-    "entity_id": "ORG_1009",
-    "standard_name": "静安中安弘队"
+    "entity_id": "ORG_1008",
+    "standard_name": "静安中安弘乒乓球队"
   },
   "静安区": {
+    "entity_id": "LOC_0672",
+    "standard_name": "静安区"
+  },
+  "静安": {
     "entity_id": "LOC_0672",
     "standard_name": "静安区"
   },
@@ -23287,10 +23287,6 @@
     "entity_id": "PER_2199",
     "standard_name": "黄宁"
   },
-  "黄浦": {
-    "entity_id": "LOC_0747",
-    "standard_name": "黄浦区"
-  },
   "黄浦区工人体育馆": {
     "entity_id": "LOC_0676",
     "standard_name": "黄浦区工人体育馆"
@@ -23312,8 +23308,8 @@
     "standard_name": "齐内丁·齐达内"
   },
   "齐达内": {
-    "entity_id": "PER_2202",
-    "standard_name": "齐达内"
+    "entity_id": "PER_2201",
+    "standard_name": "齐内丁·齐达内"
   },
   "齐鲁医药学院": {
     "entity_id": "ORG_1014",
@@ -23363,7 +23359,7 @@
     "entity_id": "EVENT_0816",
     "standard_name": "2009年世界游泳锦标赛"
   },
-  "2012年伦敦夏季奥林匹克运动会": {
+  "2012年伦敦奥运会": {
     "entity_id": "EVENT_0819",
     "standard_name": "2012年伦敦奥运会"
   },
@@ -23371,7 +23367,7 @@
     "entity_id": "EVENT_0819",
     "standard_name": "2012年伦敦奥运会"
   },
-  "2012年伦敦奥运会": {
+  "2012年伦敦夏季奥林匹克运动会": {
     "entity_id": "EVENT_0819",
     "standard_name": "2012年伦敦奥运会"
   },
@@ -23382,14 +23378,6 @@
   "巴塞罗那世锦赛": {
     "entity_id": "EVENT_0820",
     "standard_name": "2013年巴塞罗那世界游泳锦标赛"
-  },
-  "2016年里约热内卢夏季奥运会": {
-    "entity_id": "EVENT_0639",
-    "standard_name": "2016年里约奥运会"
-  },
-  "2016年里约热内卢奥运会": {
-    "entity_id": "EVENT_0639",
-    "standard_name": "2016年里约奥运会"
   },
   "2019年光州世界游泳锦标赛": {
     "entity_id": "EVENT_0823",
@@ -23408,6 +23396,18 @@
     "standard_name": "2021年陕西全运会"
   },
   "2022年杭州亚运会": {
+    "entity_id": "EVENT_0825",
+    "standard_name": "2022年杭州亚运会"
+  },
+  "杭州亚运会": {
+    "entity_id": "EVENT_0866",
+    "standard_name": "亚洲运动会(杭州)"
+  },
+  "2023年杭州亚运会": {
+    "entity_id": "EVENT_0825",
+    "standard_name": "2022年杭州亚运会"
+  },
+  "杭州亚洲运动会": {
     "entity_id": "EVENT_0825",
     "standard_name": "2022年杭州亚运会"
   },
@@ -23435,10 +23435,6 @@
     "entity_id": "EVENT_0828",
     "standard_name": "2023年和25年世界游泳锦标赛"
   },
-  "2023年杭州亚运会": {
-    "entity_id": "EVENT_0825",
-    "standard_name": "2022年杭州亚运会"
-  },
   "2024年世界游泳锦标赛": {
     "entity_id": "EVENT_0830",
     "standard_name": "2024年世界游泳锦标赛"
@@ -23458,10 +23454,6 @@
   "2025年世界游泳锦标赛": {
     "entity_id": "EVENT_0833",
     "standard_name": "2025年世界游泳锦标赛"
-  },
-  "2026全国游泳冠军赛": {
-    "entity_id": "EVENT_0877",
-    "standard_name": "全国游泳冠军赛"
   },
   "2026年'奔跑吧·少年'象州县小学生暨职工子女游泳比赛": {
     "entity_id": "EVENT_0835",
@@ -23503,14 +23495,6 @@
     "entity_id": "EVENT_0842",
     "standard_name": "2026年全国残疾人游泳锦标赛"
   },
-  "2026年全国游泳冠军赛": {
-    "entity_id": "EVENT_0877",
-    "standard_name": "全国游泳冠军赛"
-  },
-  "2026年名古屋亚洲运动会": {
-    "entity_id": "EVENT_0069",
-    "standard_name": "2026年名古屋亚运会"
-  },
   "2026年沙洋县第一届'北联杯'中小学生游泳比赛": {
     "entity_id": "EVENT_0845",
     "standard_name": "2026年沙洋县第一届'北联杯'中小学生游泳比赛"
@@ -23518,10 +23502,6 @@
   "2026年温州市中学生游泳比赛暨浙江省第十一届中小学生游泳联赛选拔赛": {
     "entity_id": "EVENT_0846",
     "standard_name": "2026年温州市中学生游泳比赛暨浙江省第十一届中小学生游泳联赛选拔赛"
-  },
-  "2026年爱知-名古屋亚洲运动会": {
-    "entity_id": "EVENT_0069",
-    "standard_name": "2026年名古屋亚运会"
   },
   "2026年通羊城区第二届小学生游泳比赛": {
     "entity_id": "EVENT_0849",
@@ -23599,14 +23579,6 @@
     "entity_id": "PER_2209",
     "standard_name": "Donald Trump Jr."
   },
-  "Fred Kerley": {
-    "entity_id": "PER_2210",
-    "standard_name": "Fred Kerley"
-  },
-  "弗雷德·克利": {
-    "entity_id": "PER_2738",
-    "standard_name": "弗雷德·克利"
-  },
   "Grant Hackett": {
     "entity_id": "PER_2211",
     "standard_name": "Grant Hackett"
@@ -23647,14 +23619,6 @@
     "entity_id": "PER_2215",
     "standard_name": "Kyle Kirvay"
   },
-  "Martens": {
-    "entity_id": "PER_2216",
-    "standard_name": "Martens"
-  },
-  "马尔腾斯": {
-    "entity_id": "PER_2502",
-    "standard_name": "马尔腾斯"
-  },
   "Maximilian Martin": {
     "entity_id": "PER_2217",
     "standard_name": "Maximilian Martin"
@@ -23662,14 +23626,6 @@
   "马克西米利安·马丁": {
     "entity_id": "PER_2217",
     "standard_name": "Maximilian Martin"
-  },
-  "Regan Smith": {
-    "entity_id": "PER_2218",
-    "standard_name": "Regan Smith"
-  },
-  "里根-史密斯": {
-    "entity_id": "PER_3057",
-    "standard_name": "里根-史密斯"
   },
   "Samuel Short": {
     "entity_id": "PER_2219",
@@ -23690,14 +23646,6 @@
   "特里斯坦·埃弗兰": {
     "entity_id": "PER_2220",
     "standard_name": "Tristan Evelyn"
-  },
-  "Usain Bolt": {
-    "entity_id": "PER_2221",
-    "standard_name": "Usain Bolt"
-  },
-  "博尔特": {
-    "entity_id": "PER_2713",
-    "standard_name": "尤塞恩·博尔特"
   },
   "WTT冠军赛": {
     "entity_id": "EVENT_0856",
@@ -23782,14 +23730,6 @@
   "世界大运会": {
     "entity_id": "EVENT_0859",
     "standard_name": "世界大学生运动会"
-  },
-  "世界游泳联合会": {
-    "entity_id": "ORG_1066",
-    "standard_name": "国际游泳联合会"
-  },
-  "世界泳联": {
-    "entity_id": "ORG_1066",
-    "standard_name": "国际游泳联合会"
   },
   "世界游泳锦标赛": {
     "entity_id": "EVENT_0860",
@@ -23975,10 +23915,6 @@
     "entity_id": "PER_2233",
     "standard_name": "伍洪良"
   },
-  "体育总局游泳中心": {
-    "entity_id": "ORG_1063",
-    "standard_name": "国家体育总局游泳运动管理中心"
-  },
   "何宇博": {
     "entity_id": "PER_2234",
     "standard_name": "何宇博"
@@ -24007,10 +23943,6 @@
     "entity_id": "PER_2240",
     "standard_name": "余宗达"
   },
-  "俄罗斯": {
-    "entity_id": "LOC_0686",
-    "standard_name": "俄罗斯联邦"
-  },
   "俄罗斯游泳锦标赛": {
     "entity_id": "EVENT_0871",
     "standard_name": "俄罗斯游泳锦标赛"
@@ -24020,6 +23952,10 @@
     "standard_name": "俄罗斯游泳队"
   },
   "俄罗斯联邦": {
+    "entity_id": "LOC_0686",
+    "standard_name": "俄罗斯联邦"
+  },
+  "俄罗斯": {
     "entity_id": "LOC_0686",
     "standard_name": "俄罗斯联邦"
   },
@@ -24059,17 +23995,29 @@
     "entity_id": "EVENT_0877",
     "standard_name": "全国游泳冠军赛"
   },
+  "全国冠军赛": {
+    "entity_id": "EVENT_1134",
+    "standard_name": "全国田径冠军赛"
+  },
   "去年的全国冠军赛": {
     "entity_id": "EVENT_0877",
     "standard_name": "全国游泳冠军赛"
   },
+  "2026年全国游泳冠军赛": {
+    "entity_id": "EVENT_0877",
+    "standard_name": "全国游泳冠军赛"
+  },
   "游泳冠军赛": {
-    "entity_id": "EVENT_0927",
-    "standard_name": "游泳冠军赛"
+    "entity_id": "EVENT_0877",
+    "standard_name": "全国游泳冠军赛"
   },
   "冠军赛": {
     "entity_id": "EVENT_0927",
     "standard_name": "游泳冠军赛"
+  },
+  "2026全国游泳冠军赛": {
+    "entity_id": "EVENT_0877",
+    "standard_name": "全国游泳冠军赛"
   },
   "全国游泳冠军赛50米蛙泳预赛": {
     "entity_id": "EVENT_0878",
@@ -24271,10 +24219,6 @@
     "entity_id": "EVENT_0884",
     "standard_name": "名古屋亚洲残疾人运动会"
   },
-  "名古屋亚运": {
-    "entity_id": "EVENT_0069",
-    "standard_name": "2026年名古屋亚运会"
-  },
   "名古屋市": {
     "entity_id": "LOC_0692",
     "standard_name": "名古屋市"
@@ -24379,6 +24323,10 @@
     "entity_id": "ORG_1063",
     "standard_name": "国家体育总局游泳运动管理中心"
   },
+  "体育总局游泳中心": {
+    "entity_id": "ORG_1063",
+    "standard_name": "国家体育总局游泳运动管理中心"
+  },
   "国家体育总局游泳中心": {
     "entity_id": "ORG_1063",
     "standard_name": "国家体育总局游泳运动管理中心"
@@ -24404,6 +24352,14 @@
     "standard_name": "国际游泳联合会"
   },
   "FINA": {
+    "entity_id": "ORG_1066",
+    "standard_name": "国际游泳联合会"
+  },
+  "世界泳联": {
+    "entity_id": "ORG_1066",
+    "standard_name": "国际游泳联合会"
+  },
+  "世界游泳联合会": {
     "entity_id": "ORG_1066",
     "standard_name": "国际游泳联合会"
   },
@@ -24484,8 +24440,8 @@
     "standard_name": "女子200米个人混合泳"
   },
   "女子200米混合泳": {
-    "entity_id": "EVENT_0894",
-    "standard_name": "女子200米混合泳"
+    "entity_id": "EVENT_0893",
+    "standard_name": "女子200米个人混合泳"
   },
   "女子200米蛙泳": {
     "entity_id": "EVENT_0895",
@@ -24643,15 +24599,11 @@
     "entity_id": "PER_2302",
     "standard_name": "尼古拉斯·桑托斯"
   },
-  "山东游泳队": {
-    "entity_id": "ORG_1072",
-    "standard_name": "山东游泳队"
-  },
-  "山东队": {
-    "entity_id": "ORG_1075",
-    "standard_name": "山东队"
-  },
   "山东省游泳队": {
+    "entity_id": "ORG_1073",
+    "standard_name": "山东省游泳队"
+  },
+  "山东游泳队": {
     "entity_id": "ORG_1073",
     "standard_name": "山东省游泳队"
   },
@@ -24663,6 +24615,10 @@
     "entity_id": "ORG_1074",
     "standard_name": "山东运动员"
   },
+  "山东田径队": {
+    "entity_id": "ORG_1075",
+    "standard_name": "山东田径队"
+  },
   "山东青食": {
     "entity_id": "ORG_1076",
     "standard_name": "山东青食"
@@ -24670,10 +24626,6 @@
   "山东青食游泳队": {
     "entity_id": "ORG_1077",
     "standard_name": "山东青食游泳队"
-  },
-  "山西": {
-    "entity_id": "LOC_0701",
-    "standard_name": "山西省"
   },
   "山西游泳队": {
     "entity_id": "ORG_1078",
@@ -24684,6 +24636,10 @@
     "standard_name": "山西游泳队"
   },
   "山西省": {
+    "entity_id": "LOC_0701",
+    "standard_name": "山西省"
+  },
+  "山西": {
     "entity_id": "LOC_0701",
     "standard_name": "山西省"
   },
@@ -24743,15 +24699,19 @@
     "entity_id": "PER_2305",
     "standard_name": "常昊"
   },
-  "广东游泳队": {
+  "广东省田径队": {
     "entity_id": "ORG_1080",
-    "standard_name": "广东游泳队"
+    "standard_name": "广东省田径队"
   },
   "广东省二沙体育训练中心": {
     "entity_id": "ORG_1081",
     "standard_name": "广东省二沙体育训练中心"
   },
   "广东省游泳队": {
+    "entity_id": "ORG_1082",
+    "standard_name": "广东省游泳队"
+  },
+  "广东游泳队": {
     "entity_id": "ORG_1082",
     "standard_name": "广东省游泳队"
   },
@@ -25143,10 +25103,6 @@
     "entity_id": "PER_2371",
     "standard_name": "杨雯文"
   },
-  "杭州亚洲运动会": {
-    "entity_id": "EVENT_0825",
-    "standard_name": "2022年杭州亚运会"
-  },
   "杭州奥体中心游泳馆": {
     "entity_id": "LOC_0712",
     "standard_name": "杭州奥体中心游泳馆"
@@ -25392,8 +25348,8 @@
     "standard_name": "湖北游泳队"
   },
   "湖北队": {
-    "entity_id": "ORG_1124",
-    "standard_name": "湖北队"
+    "entity_id": "ORG_1123",
+    "standard_name": "湖北省游泳队"
   },
   "湖北省游泳队": {
     "entity_id": "ORG_1123",
@@ -25903,10 +25859,6 @@
     "entity_id": "ORG_1137",
     "standard_name": "象州县教育体育局"
   },
-  "贵州": {
-    "entity_id": "LOC_1055",
-    "standard_name": "贵州省"
-  },
   "贵州省残疾人联合会": {
     "entity_id": "ORG_1138",
     "standard_name": "贵州省残疾人联合会"
@@ -26036,8 +25988,8 @@
     "standard_name": "重庆游泳队"
   },
   "重庆队": {
-    "entity_id": "ORG_1145",
-    "standard_name": "重庆队"
+    "entity_id": "ORG_1144",
+    "standard_name": "重庆游泳队"
   },
   "金山区": {
     "entity_id": "LOC_0742",
@@ -26204,12 +26156,20 @@
     "standard_name": "香港游泳队"
   },
   "香港特别行政区游泳队": {
-    "entity_id": "ORG_1154",
-    "standard_name": "香港特别行政区游泳队"
+    "entity_id": "ORG_1153",
+    "standard_name": "香港游泳队"
   },
   "马尔尚": {
     "entity_id": "PER_2501",
     "standard_name": "马尔尚"
+  },
+  "马尔腾斯": {
+    "entity_id": "PER_2502",
+    "standard_name": "马尔腾斯"
+  },
+  "Martens": {
+    "entity_id": "PER_2502",
+    "standard_name": "马尔腾斯"
   },
   "马永慧": {
     "entity_id": "PER_2503",
@@ -26276,6 +26236,10 @@
     "standard_name": "黄梓淳"
   },
   "黄浦区": {
+    "entity_id": "LOC_0747",
+    "standard_name": "黄浦区"
+  },
+  "黄浦": {
     "entity_id": "LOC_0747",
     "standard_name": "黄浦区"
   },
@@ -26399,10 +26363,6 @@
     "entity_id": "EVENT_0975",
     "standard_name": "2021年全国田径冠军赛暨东京奥运会选拔赛"
   },
-  "2021年成都世界大学生夏季运动会": {
-    "entity_id": "EVENT_0976",
-    "standard_name": "2021年成都世界大学生夏季运动会"
-  },
   "2023年布达佩斯世界田径锦标赛": {
     "entity_id": "EVENT_0977",
     "standard_name": "2023年布达佩斯世界田径锦标赛"
@@ -26416,8 +26376,8 @@
     "standard_name": "2025年东京世界田径锦标赛"
   },
   "东京世锦赛": {
-    "entity_id": "EVENT_1095",
-    "standard_name": "东京世锦赛"
+    "entity_id": "EVENT_1094",
+    "standard_name": "东京世界田径锦标赛"
   },
   "2025年中华人民共和国全国运动会": {
     "entity_id": "EVENT_0979",
@@ -26511,10 +26471,6 @@
     "entity_id": "EVENT_0996",
     "standard_name": "2026全国U系列田径联赛"
   },
-  "2026全国田径冠军赛": {
-    "entity_id": "EVENT_1014",
-    "standard_name": "2026年全国田径冠军赛"
-  },
   "2026大学生百英里接力赛": {
     "entity_id": "EVENT_0998",
     "standard_name": "2026大学生百英里接力赛"
@@ -26588,6 +26544,10 @@
     "standard_name": "2026年全国现代五项障碍跑联赛暨UIPM世锦赛选拔赛（成都·简阳站）"
   },
   "2026年全国田径冠军赛": {
+    "entity_id": "EVENT_1014",
+    "standard_name": "2026年全国田径冠军赛"
+  },
+  "2026全国田径冠军赛": {
     "entity_id": "EVENT_1014",
     "standard_name": "2026年全国田径冠军赛"
   },
@@ -26762,14 +26722,6 @@
   "Aaron Kubala": {
     "entity_id": "PER_2517",
     "standard_name": "Aaron Kubala"
-  },
-  "Adaejah Hodge": {
-    "entity_id": "PER_3079",
-    "standard_name": "阿达贾·霍奇"
-  },
-  "阿达贾·霍奇": {
-    "entity_id": "PER_3079",
-    "standard_name": "阿达贾·霍奇"
   },
   "Ainara Alcuaz Rodraguez": {
     "entity_id": "PER_2519",
@@ -26991,14 +26943,6 @@
     "entity_id": "PER_2527",
     "standard_name": "JR·希尔德布兰德"
   },
-  "Ja'Kobe Tharp": {
-    "entity_id": "PER_3022",
-    "standard_name": "贾科比·萨普"
-  },
-  "贾科比·萨普": {
-    "entity_id": "PER_3022",
-    "standard_name": "贾科比·萨普"
-  },
   "Jayden Reid": {
     "entity_id": "PER_2529",
     "standard_name": "Jayden Reid"
@@ -27074,10 +27018,6 @@
   "Lingyi HE": {
     "entity_id": "PER_2534",
     "standard_name": "Lingyi HE"
-  },
-  "Louisiana State University": {
-    "entity_id": "ORG_0566",
-    "standard_name": "路易斯安那州立大学"
   },
   "Lululemon": {
     "entity_id": "ORG_1186",
@@ -27174,14 +27114,6 @@
   "NIKE": {
     "entity_id": "ORG_1192",
     "standard_name": "NIKE"
-  },
-  "National Collegiate Athletic Association": {
-    "entity_id": "ORG_1193",
-    "standard_name": "National Collegiate Athletic Association"
-  },
-  "NCAA": {
-    "entity_id": "ORG_0790",
-    "standard_name": "美国全国大学体育协会"
   },
   "Netflix": {
     "entity_id": "ORG_1194",
@@ -27339,10 +27271,6 @@
     "entity_id": "EVENT_1079",
     "standard_name": "USATF孤星大奖赛"
   },
-  "UTMB": {
-    "entity_id": "EVENT_1237",
-    "standard_name": "环勃朗峰超级越野赛"
-  },
   "UTMB宁海越野挑战赛": {
     "entity_id": "EVENT_1081",
     "standard_name": "UTMB宁海越野挑战赛"
@@ -27350,10 +27278,6 @@
   "UTMB环勃朗峰超级越野赛": {
     "entity_id": "EVENT_1082",
     "standard_name": "UTMB环勃朗峰超级越野赛"
-  },
-  "University of Florida": {
-    "entity_id": "ORG_0885",
-    "standard_name": "佛罗里达大学"
   },
   "University of Oregon": {
     "entity_id": "ORG_1208",
@@ -27544,8 +27468,8 @@
     "standard_name": "世界室内田径锦标赛"
   },
   "世界室内锦标赛": {
-    "entity_id": "EVENT_1088",
-    "standard_name": "世界室内锦标赛"
+    "entity_id": "EVENT_1087",
+    "standard_name": "世界室内田径锦标赛"
   },
   "世界田径接力锦标赛": {
     "entity_id": "EVENT_1089",
@@ -27568,8 +27492,8 @@
     "standard_name": "世界田径钻石联赛"
   },
   "钻石联赛": {
-    "entity_id": "EVENT_1286",
-    "standard_name": "钻石联赛"
+    "entity_id": "EVENT_1090",
+    "standard_name": "世界田径钻石联赛"
   },
   "世界田径锦标赛": {
     "entity_id": "EVENT_1091",
@@ -27867,11 +27791,11 @@
     "entity_id": "LOC_0784",
     "standard_name": "乐东黎族自治县"
   },
-  "乐刻": {
+  "乐刻运动": {
     "entity_id": "ORG_1248",
     "standard_name": "乐刻运动"
   },
-  "乐刻运动": {
+  "乐刻": {
     "entity_id": "ORG_1248",
     "standard_name": "乐刻运动"
   },
@@ -27950,14 +27874,6 @@
   "亚丁": {
     "entity_id": "LOC_0790",
     "standard_name": "亚丁"
-  },
-  "亚历山大体育场": {
-    "entity_id": "LOC_0791",
-    "standard_name": "亚历山大体育场"
-  },
-  "伯明翰亚历山大体育场": {
-    "entity_id": "LOC_0801",
-    "standard_name": "伯明翰亚历山大体育场"
   },
   "亚历山德拉镇": {
     "entity_id": "LOC_0792",
@@ -28103,6 +28019,14 @@
     "entity_id": "LOC_0800",
     "standard_name": "伯明翰"
   },
+  "伯明翰亚历山大体育场": {
+    "entity_id": "LOC_0801",
+    "standard_name": "伯明翰亚历山大体育场"
+  },
+  "亚历山大体育场": {
+    "entity_id": "LOC_0801",
+    "standard_name": "伯明翰亚历山大体育场"
+  },
   "伯明翰室内锦标赛": {
     "entity_id": "EVENT_1120",
     "standard_name": "伯明翰室内锦标赛"
@@ -28228,8 +28152,8 @@
     "standard_name": "克里斯蒂安·科尔曼"
   },
   "科尔曼": {
-    "entity_id": "PER_2912",
-    "standard_name": "科尔曼"
+    "entity_id": "PER_2588",
+    "standard_name": "克里斯蒂安·科尔曼"
   },
   "克里斯蒂安·米勒": {
     "entity_id": "PER_2589",
@@ -28679,10 +28603,6 @@
     "entity_id": "ORG_1279",
     "standard_name": "南海体校"
   },
-  "博捷体育": {
-    "entity_id": "ORG_1291",
-    "standard_name": "四川博捷体育文化传播有限公司"
-  },
   "博茨瓦纳": {
     "entity_id": "LOC_0826",
     "standard_name": "博茨瓦纳"
@@ -28944,6 +28864,10 @@
     "standard_name": "嘉峪关长城马拉松"
   },
   "四川博捷体育文化传播有限公司": {
+    "entity_id": "ORG_1291",
+    "standard_name": "四川博捷体育文化传播有限公司"
+  },
+  "博捷体育": {
     "entity_id": "ORG_1291",
     "standard_name": "四川博捷体育文化传播有限公司"
   },
@@ -29611,6 +29535,14 @@
     "entity_id": "PER_2713",
     "standard_name": "尤塞恩·博尔特"
   },
+  "博尔特": {
+    "entity_id": "PER_2713",
+    "standard_name": "尤塞恩·博尔特"
+  },
+  "Usain Bolt": {
+    "entity_id": "PER_2713",
+    "standard_name": "尤塞恩·博尔特"
+  },
   "尹丽丽": {
     "entity_id": "PER_2714",
     "standard_name": "尹丽丽"
@@ -29859,10 +29791,6 @@
     "entity_id": "ORG_1351",
     "standard_name": "广东省田径协会"
   },
-  "广东省田径队": {
-    "entity_id": "ORG_1352",
-    "standard_name": "广东省田径队"
-  },
   "广发证券": {
     "entity_id": "ORG_1353",
     "standard_name": "广发证券"
@@ -29895,11 +29823,11 @@
     "entity_id": "ORG_1356",
     "standard_name": "广汽埃安新能源汽车股份有限公司"
   },
-  "广西": {
+  "广西壮族自治区": {
     "entity_id": "LOC_0899",
     "standard_name": "广西壮族自治区"
   },
-  "广西壮族自治区": {
+  "广西": {
     "entity_id": "LOC_0899",
     "standard_name": "广西壮族自治区"
   },
@@ -29967,7 +29895,15 @@
     "entity_id": "PER_2737",
     "standard_name": "弗里曼"
   },
+  "弗雷德·克利": {
+    "entity_id": "PER_2738",
+    "standard_name": "弗雷德·克利"
+  },
   "克利": {
+    "entity_id": "PER_2738",
+    "standard_name": "弗雷德·克利"
+  },
+  "Fred Kerley": {
     "entity_id": "PER_2738",
     "standard_name": "弗雷德·克利"
   },
@@ -30395,14 +30331,6 @@
     "entity_id": "LOC_0926",
     "standard_name": "日松贡布酒店"
   },
-  "日照": {
-    "entity_id": "LOC_0928",
-    "standard_name": "日照市"
-  },
-  "山东日照": {
-    "entity_id": "LOC_0928",
-    "standard_name": "日照市"
-  },
   "日照全国田径冠军赛": {
     "entity_id": "EVENT_1202",
     "standard_name": "日照全国田径冠军赛"
@@ -30412,6 +30340,14 @@
     "standard_name": "日照全国田径冠军赛"
   },
   "日照市": {
+    "entity_id": "LOC_0928",
+    "standard_name": "日照市"
+  },
+  "日照": {
+    "entity_id": "LOC_0928",
+    "standard_name": "日照市"
+  },
+  "山东日照": {
     "entity_id": "LOC_0928",
     "standard_name": "日照市"
   },
@@ -30891,10 +30827,6 @@
     "entity_id": "LOC_0948",
     "standard_name": "歌美海体育公园"
   },
-  "武威": {
-    "entity_id": "LOC_0208",
-    "standard_name": "武威市"
-  },
   "武川县": {
     "entity_id": "LOC_0950",
     "standard_name": "武川县"
@@ -31130,10 +31062,6 @@
   "浙江绍兴上虞": {
     "entity_id": "LOC_0966",
     "standard_name": "浙江省绍兴市上虞区"
-  },
-  "浙江绍兴": {
-    "entity_id": "LOC_1026",
-    "standard_name": "绍兴市"
   },
   "浦戈文": {
     "entity_id": "PER_2868",
@@ -31480,6 +31408,10 @@
     "standard_name": "玛可河林区"
   },
   "环勃朗峰超级越野赛": {
+    "entity_id": "EVENT_1237",
+    "standard_name": "环勃朗峰超级越野赛"
+  },
+  "UTMB": {
     "entity_id": "EVENT_1237",
     "standard_name": "环勃朗峰超级越野赛"
   },
@@ -31943,11 +31875,11 @@
     "entity_id": "PER_2926",
     "standard_name": "终军"
   },
-  "绍兴上虞": {
-    "entity_id": "LOC_1027",
-    "standard_name": "绍兴市上虞区"
-  },
   "绍兴市": {
+    "entity_id": "LOC_1026",
+    "standard_name": "绍兴市"
+  },
+  "浙江绍兴": {
     "entity_id": "LOC_1026",
     "standard_name": "绍兴市"
   },
@@ -31956,6 +31888,10 @@
     "standard_name": "绍兴市"
   },
   "绍兴市上虞区": {
+    "entity_id": "LOC_1027",
+    "standard_name": "绍兴市上虞区"
+  },
+  "绍兴上虞": {
     "entity_id": "LOC_1027",
     "standard_name": "绍兴市上虞区"
   },
@@ -32047,6 +31983,10 @@
     "entity_id": "ORG_1447",
     "standard_name": "美国大学体育协会"
   },
+  "NCAA": {
+    "entity_id": "ORG_0790",
+    "standard_name": "美国全国大学体育协会"
+  },
   "美国奥运选拔赛": {
     "entity_id": "EVENT_1251",
     "standard_name": "美国奥运选拔赛"
@@ -32124,8 +32064,8 @@
     "standard_name": "肯尼·贝德纳雷克"
   },
   "贝德纳雷克": {
-    "entity_id": "PER_3012",
-    "standard_name": "贝德纳雷克"
+    "entity_id": "PER_2948",
+    "standard_name": "肯尼·贝德纳雷克"
   },
   "肯尼亚": {
     "entity_id": "LOC_1034",
@@ -32623,6 +32563,10 @@
     "entity_id": "LOC_1055",
     "standard_name": "贵州省"
   },
+  "贵州": {
+    "entity_id": "LOC_1055",
+    "standard_name": "贵州省"
+  },
   "贵阳半程马拉松": {
     "entity_id": "EVENT_1271",
     "standard_name": "贵阳半程马拉松"
@@ -32690,6 +32634,14 @@
   "贾畋": {
     "entity_id": "PER_3021",
     "standard_name": "贾畋"
+  },
+  "贾科比·萨普": {
+    "entity_id": "PER_3022",
+    "standard_name": "贾科比·萨普"
+  },
+  "Ja'Kobe Tharp": {
+    "entity_id": "PER_3022",
+    "standard_name": "贾科比·萨普"
   },
   "贾米拉·克拉托奇维洛娃": {
     "entity_id": "PER_3023",
@@ -32927,6 +32879,14 @@
     "entity_id": "LOC_1064",
     "standard_name": "都格镇"
   },
+  "里根-史密斯": {
+    "entity_id": "PER_3057",
+    "standard_name": "里根-史密斯"
+  },
+  "Regan Smith": {
+    "entity_id": "PER_3057",
+    "standard_name": "里根-史密斯"
+  },
   "重庆峡谷城文旅集团": {
     "entity_id": "ORG_1472",
     "standard_name": "重庆峡谷城文旅集团"
@@ -33162,6 +33122,14 @@
   "鲍威尔": {
     "entity_id": "PER_3078",
     "standard_name": "阿萨法·鲍威尔"
+  },
+  "阿达贾·霍奇": {
+    "entity_id": "PER_3079",
+    "standard_name": "阿达贾·霍奇"
+  },
+  "Adaejah Hodge": {
+    "entity_id": "PER_3079",
+    "standard_name": "阿达贾·霍奇"
   },
   "阿隆·贾奇": {
     "entity_id": "PER_3080",
@@ -33403,10 +33371,6 @@
     "entity_id": "EVENT_1298",
     "standard_name": "首届板铃球亚洲锦标赛"
   },
-  "香格里拉": {
-    "entity_id": "LOC_1096",
-    "standard_name": "香格里拉镇"
-  },
   "香格里拉越野赛": {
     "entity_id": "EVENT_1299",
     "standard_name": "香格里拉越野赛"
@@ -33415,11 +33379,15 @@
     "entity_id": "LOC_1096",
     "standard_name": "香格里拉镇"
   },
-  "香港100": {
+  "香格里拉": {
+    "entity_id": "LOC_1096",
+    "standard_name": "香格里拉镇"
+  },
+  "香港100越野赛": {
     "entity_id": "EVENT_1301",
     "standard_name": "香港100越野赛"
   },
-  "香港100越野赛": {
+  "香港100": {
     "entity_id": "EVENT_1301",
     "standard_name": "香港100越野赛"
   },
@@ -33490,10 +33458,6 @@
   "马赛": {
     "entity_id": "LOC_1099",
     "standard_name": "马赛"
-  },
-  "马鞍山": {
-    "entity_id": "LOC_0344",
-    "standard_name": "马鞍山市"
   },
   "马鞍山市第二十二中学": {
     "entity_id": "ORG_1493",
@@ -33680,8 +33644,12 @@
     "standard_name": "中华人民共和国"
   },
   "中国": {
-    "entity_id": "LOC_0352",
-    "standard_name": "China"
+    "entity_id": "LOC_0022",
+    "standard_name": "中华人民共和国"
+  },
+  "China": {
+    "entity_id": "LOC_0022",
+    "standard_name": "中华人民共和国"
   },
   "2026年美加墨世界杯": {
     "entity_id": "EVENT_0093",
@@ -33691,13 +33659,21 @@
     "entity_id": "EVENT_0430",
     "standard_name": "世界斯诺克锦标赛"
   },
-  "Shanghai": {
-    "entity_id": "LOC_0366",
-    "standard_name": "Shanghai"
+  "斯诺克世界锦标赛": {
+    "entity_id": "EVENT_0430",
+    "standard_name": "世界斯诺克锦标赛"
   },
-  "中华人民共和国全国运动会": {
-    "entity_id": "EVENT_0212",
-    "standard_name": "全国运动会"
+  "克鲁斯堡世锦赛": {
+    "entity_id": "EVENT_0430",
+    "standard_name": "世界斯诺克锦标赛"
+  },
+  "斯诺克世锦赛": {
+    "entity_id": "EVENT_0430",
+    "standard_name": "世界斯诺克锦标赛"
+  },
+  "日本国家花样游泳队": {
+    "entity_id": "ORG_1092",
+    "standard_name": "日本国家花样游泳队"
   },
   "中国香港特别行政区": {
     "entity_id": "LOC_0034",
@@ -33739,11 +33715,31 @@
     "entity_id": "LOC_0032",
     "standard_name": "中国澳门特别行政区"
   },
-  "中国羽毛球协会（中国羽毛球队）": {
-    "entity_id": "ORG_0067",
-    "standard_name": "中国国家羽毛球队"
-  },
   "中国台湾地区": {
+    "entity_id": "LOC_0027",
+    "standard_name": "中国台湾地区"
+  },
+  "台湾": {
+    "entity_id": "LOC_0027",
+    "standard_name": "中国台湾地区"
+  },
+  "中国台北地区": {
+    "entity_id": "LOC_0027",
+    "standard_name": "中国台湾地区"
+  },
+  "中国台湾省": {
+    "entity_id": "LOC_0027",
+    "standard_name": "中国台湾地区"
+  },
+  "中国台湾（中国台北）": {
+    "entity_id": "LOC_0027",
+    "standard_name": "中国台湾地区"
+  },
+  "台湾省": {
+    "entity_id": "LOC_0027",
+    "standard_name": "中国台湾地区"
+  },
+  "中国台湾": {
     "entity_id": "LOC_0027",
     "standard_name": "中国台湾地区"
   },
@@ -33756,28 +33752,16 @@
     "standard_name": "美利坚合众国"
   },
   "美国": {
-    "entity_id": "LOC_0371",
-    "standard_name": "United States"
+    "entity_id": "LOC_0275",
+    "standard_name": "美利坚合众国"
   },
-  "中国台湾": {
-    "entity_id": "LOC_0027",
-    "standard_name": "中国台湾地区"
+  "United States": {
+    "entity_id": "LOC_0275",
+    "standard_name": "美利坚合众国"
   },
   "2025年世界羽毛球锦标赛": {
     "entity_id": "EVENT_0018",
     "standard_name": "2025年世界羽毛球锦标赛"
-  },
-  "中国台湾（中国台北）": {
-    "entity_id": "LOC_0027",
-    "standard_name": "中国台湾地区"
-  },
-  "China national badminton team": {
-    "entity_id": "ORG_0004",
-    "standard_name": "China national badminton team"
-  },
-  "China": {
-    "entity_id": "LOC_0352",
-    "standard_name": "China"
   },
   "Masters": {
     "entity_id": "EVENT_0385",
@@ -33786,14 +33770,6 @@
   "World Championship": {
     "entity_id": "EVENT_0413",
     "standard_name": "World Championship"
-  },
-  "United States": {
-    "entity_id": "LOC_0371",
-    "standard_name": "United States"
-  },
-  "Wuhan": {
-    "entity_id": "LOC_0372",
-    "standard_name": "Wuhan"
   },
   "国际篮联篮球世界杯": {
     "entity_id": "EVENT_0604",
@@ -33807,7 +33783,15 @@
     "entity_id": "ORG_0790",
     "standard_name": "美国全国大学体育协会"
   },
+  "National Collegiate Athletic Association": {
+    "entity_id": "ORG_0790",
+    "standard_name": "美国全国大学体育协会"
+  },
   "日本国家乒乓球队": {
+    "entity_id": "ORG_0940",
+    "standard_name": "日本国家乒乓球队"
+  },
+  "日本乒乓球队": {
     "entity_id": "ORG_0940",
     "standard_name": "日本国家乒乓球队"
   }

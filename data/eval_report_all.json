@@ -1,0 +1,276 @@
+{
+  "metrics": {
+    "link_accuracy": 0.9872,
+    "disambiguation_accuracy": 0.8984,
+    "alias_recall": 0.9872,
+    "single_candidate_accuracy": 0.9963,
+    "total_mentions": 3289,
+    "correct_links": 3247,
+    "multi_candidate_total": 305,
+    "multi_candidate_correct": 274,
+    "alias_mentions": 3289,
+    "alias_correct": 3247
+  },
+  "coref": null,
+  "targets": {
+    "link_accuracy": 0.85,
+    "disambiguation_accuracy": 0.85,
+    "alias_recall": 0.85,
+    "nil_f1": 0.8,
+    "coref_accuracy": 0.8
+  },
+  "errors": [
+    {
+      "mention": "省运会",
+      "expected_name": "浙江省运动会",
+      "predicted_name": "省运会",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "东京奥运会",
+      "expected_name": "2020年东京奥运会",
+      "predicted_name": "2020年东京奥运会羽毛球比赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "东京奥运会",
+      "expected_name": "2020年东京奥运会",
+      "predicted_name": "2020年东京奥运会羽毛球比赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "中国澳门羽毛球公开赛",
+      "expected_name": "澳门羽毛球公开赛",
+      "predicted_name": "2026年中国澳门羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "美国公开赛",
+      "expected_name": "美国羽毛球公开赛",
+      "predicted_name": "美国公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "上海队",
+      "expected_name": "上海市体育代表团羽毛球队",
+      "predicted_name": "上海队",
+      "entity_type": "ORG"
+    },
+    {
+      "mention": "圣坛组合",
+      "expected_name": "刘圣书/谭宁",
+      "predicted_name": "圣坛组合",
+      "entity_type": "PER"
+    },
+    {
+      "mention": "圣坛组合",
+      "expected_name": "刘圣书/谭宁",
+      "predicted_name": "圣坛组合",
+      "entity_type": "PER"
+    },
+    {
+      "mention": "中国澳门羽毛球公开赛",
+      "expected_name": "澳门羽毛球公开赛",
+      "predicted_name": "2026年中国澳门羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "世锦赛",
+      "expected_name": "世界羽毛球锦标赛",
+      "predicted_name": "世界游泳锦标赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "澳大利亚公开赛",
+      "expected_name": "2026年澳大利亚羽毛球公开赛",
+      "predicted_name": "澳大利亚公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "中国澳门羽毛球公开赛",
+      "expected_name": "澳门羽毛球公开赛",
+      "predicted_name": "2026年中国澳门羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "中国澳门羽毛球公开赛",
+      "expected_name": "澳门羽毛球公开赛",
+      "predicted_name": "2026年中国澳门羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "中国澳门羽毛球公开赛",
+      "expected_name": "澳门羽毛球公开赛",
+      "predicted_name": "2026年中国澳门羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "德国公开赛",
+      "expected_name": "德国羽毛球公开赛",
+      "predicted_name": "德国公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "澳大利亚公开赛",
+      "expected_name": "2026年澳大利亚羽毛球公开赛",
+      "predicted_name": "澳大利亚公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "中国澳门羽毛球公开赛",
+      "expected_name": "澳门羽毛球公开赛",
+      "predicted_name": "2026年中国澳门羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "泰国大师赛",
+      "expected_name": "泰国羽毛球大师赛",
+      "predicted_name": "泰国大师赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "澳大利亚公开赛",
+      "expected_name": "2026年澳大利亚羽毛球公开赛",
+      "predicted_name": "澳大利亚公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "澳大利亚公开赛",
+      "expected_name": "2026年澳大利亚羽毛球公开赛",
+      "predicted_name": "澳大利亚公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "中国澳门羽毛球公开赛",
+      "expected_name": "澳门羽毛球公开赛",
+      "predicted_name": "2026年中国澳门羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "中国澳门羽毛球公开赛",
+      "expected_name": "澳门羽毛球公开赛",
+      "predicted_name": "2026年中国澳门羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "中国澳门羽毛球公开赛",
+      "expected_name": "澳门羽毛球公开赛",
+      "predicted_name": "2026年中国澳门羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "澳大利亚公开赛",
+      "expected_name": "2026年澳大利亚羽毛球公开赛",
+      "predicted_name": "澳大利亚公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "凤凰组合",
+      "expected_name": "冯彦哲/黄东萍",
+      "predicted_name": "凤凰组合",
+      "entity_type": "PER"
+    },
+    {
+      "mention": "中国澳门羽毛球公开赛",
+      "expected_name": "澳门羽毛球公开赛",
+      "predicted_name": "2026年中国澳门羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "中国澳门公开赛",
+      "expected_name": "澳门羽毛球公开赛",
+      "predicted_name": "中国澳门公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "澳大利亚公开赛",
+      "expected_name": "2026年澳大利亚羽毛球公开赛",
+      "predicted_name": "澳大利亚公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "澳大利亚公开赛",
+      "expected_name": "2026年澳大利亚羽毛球公开赛",
+      "predicted_name": "澳大利亚公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "泰国大师赛",
+      "expected_name": "泰国羽毛球大师赛",
+      "predicted_name": "泰国大师赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "泰国大师赛",
+      "expected_name": "泰国羽毛球大师赛",
+      "predicted_name": "泰国大师赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "泰国公开赛",
+      "expected_name": "2026年泰国公开赛",
+      "predicted_name": "2026年泰国羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "泰国公开赛",
+      "expected_name": "2026年泰国公开赛",
+      "predicted_name": "2026年泰国羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "泰国公开赛",
+      "expected_name": "2026年泰国公开赛",
+      "predicted_name": "2026年泰国羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "澳大利亚公开赛",
+      "expected_name": "2026年澳大利亚羽毛球公开赛",
+      "predicted_name": "澳大利亚公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "澳大利亚公开赛",
+      "expected_name": "2026年澳大利亚羽毛球公开赛",
+      "predicted_name": "澳大利亚公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "澳大利亚公开赛",
+      "expected_name": "2026年澳大利亚羽毛球公开赛",
+      "predicted_name": "澳大利亚公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "澳大利亚公开赛",
+      "expected_name": "2026年澳大利亚羽毛球公开赛",
+      "predicted_name": "澳大利亚公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "澳大利亚公开赛",
+      "expected_name": "2026年澳大利亚羽毛球公开赛",
+      "predicted_name": "澳大利亚公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "澳大利亚公开赛",
+      "expected_name": "2026年澳大利亚羽毛球公开赛",
+      "predicted_name": "澳大利亚公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "胡林",
+      "expected_name": "胡珂源/林祥毅",
+      "predicted_name": "胡林",
+      "entity_type": "PER"
+    },
+    {
+      "mention": "澳大利亚公开赛",
+      "expected_name": "2026年澳大利亚羽毛球公开赛",
+      "predicted_name": "澳大利亚公开赛",
+      "entity_type": "EVENT"
+    }
+  ]
+}
