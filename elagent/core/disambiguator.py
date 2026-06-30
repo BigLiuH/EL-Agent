@@ -37,12 +37,12 @@ class Disambiguator:
         #   - 先验概率基于标注数据统计
         #   - keyword_weight 现在承载上下文得分（区分词文档命中+局部重叠）
         self.name_match_weight = 0.15         # 名称匹配度
-        self.prior_weight = 0.17              # 先验概率
-        self.name_completeness_weight = 0.15  # 名称完整度
+        self.prior_weight = 0.15              # 先验概率
+        self.name_completeness_weight = 0.09  # 名称完整度
         self.type_weight = 0.15               # 类型一致性
         self.keyword_weight = 0.00            # 关键词重叠
         self.popularity_weight = 0.00         # 实体流行度
-        self.domain_weight = 0.15             # 领域匹配（加性）
+        self.domain_weight = 0.10             # 领域匹配（加性）
 
         # 加载先验概率
         self.prior_probs = self._load_prior_probs()
@@ -194,32 +194,41 @@ class Disambiguator:
 
     def _domain_score(self, mention: Mention, entity: Entity, full_text: str = "",
                        all_entities: list = None) -> float:
-        """领域匹配得分（加性）：实体名区分2-gram在全文中的命中密度"""
+        """领域匹配得分（加性）：实体名区分2+3+4-gram在全文中的命中密度"""
         full_text = (full_text or mention.context or "").lower()
         if len(full_text) < 10:
             return 0.0
 
         all_names = [entity.standard_name] + list(entity.aliases)
-        entity_bigrams = set()
+        entity_ngrams = set()
         for name in all_names:
             name_lower = name.lower()
             for i in range(len(name_lower) - 1):
-                entity_bigrams.add(name_lower[i:i+2])
+                entity_ngrams.add(name_lower[i:i+2])
+            for i in range(len(name_lower) - 2):
+                entity_ngrams.add(name_lower[i:i+3])
 
-        mention_bigrams = set()
         mt = mention.text.lower()
+        mention_ngrams = set()
         for i in range(len(mt) - 1):
-            mention_bigrams.add(mt[i:i+2])
+            mention_ngrams.add(mt[i:i+2])
+        for i in range(len(mt) - 2):
+            mention_ngrams.add(mt[i:i+3])
 
-        diff_bigrams = entity_bigrams - mention_bigrams
-        if not diff_bigrams:
+        diff_ngrams = entity_ngrams - mention_ngrams
+        if not diff_ngrams:
             return 0.0
 
-        total_hits = sum(full_text.count(bg) for bg in diff_bigrams)
+        total_hits = sum(full_text.count(ng) for ng in diff_ngrams)
         text_len = max(len(full_text), 1)
         density = total_hits / (text_len / 100.0)
+        score = min(density / 5.0, 1.0)
 
-        return min(density / 5.0, 1.0)
+        # 实体名过长（>mention 1.5倍）= 过度细化，domain减半
+        if len(entity.standard_name) > len(mention.text) * 1.5:
+            score *= 0.5
+
+        return score
 
     def _name_match_score(self, mention: Mention, entity: Entity) -> float:
         """

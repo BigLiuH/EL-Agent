@@ -1,15 +1,15 @@
 {
   "metrics": {
-    "link_accuracy": 0.9809,
-    "disambiguation_accuracy": 0.8533,
-    "alias_recall": 0.9816,
+    "link_accuracy": 0.9813,
+    "disambiguation_accuracy": 0.8566,
+    "alias_recall": 0.982,
     "single_candidate_accuracy": 0.9994,
     "total_mentions": 40942,
-    "correct_links": 40162,
+    "correct_links": 40178,
     "multi_candidate_total": 4964,
-    "multi_candidate_correct": 4236,
+    "multi_candidate_correct": 4252,
     "alias_mentions": 40911,
-    "alias_correct": 40160
+    "alias_correct": 40176
   },
   "targets": {
     "link_accuracy": 0.85,
@@ -307,18 +307,6 @@
       "entity_type": "EVENT"
     },
     {
-      "mention": "洛杉矶奥运周期",
-      "expected_name": "2028年洛杉矶夏季奥林匹克运动会周期",
-      "predicted_name": "2024-2028奥运周期",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "洛杉矶奥运周期",
-      "expected_name": "2028年洛杉矶夏季奥林匹克运动会周期",
-      "predicted_name": "2024-2028奥运周期",
-      "entity_type": "EVENT"
-    },
-    {
       "mention": "马来西亚公开赛",
       "expected_name": "马来西亚羽毛球公开赛",
       "predicted_name": "马来西亚公开赛",
@@ -427,12 +415,6 @@
       "entity_type": "EVENT"
     },
     {
-      "mention": "新加坡公开赛",
-      "expected_name": "新加坡羽毛球公开赛",
-      "predicted_name": "2024年新加坡羽毛球公开赛",
-      "entity_type": "EVENT"
-    },
-    {
       "mention": "2026年澳大利亚公开赛",
       "expected_name": "2026 Australian Open",
       "predicted_name": "2026年澳大利亚羽毛球公开赛",
@@ -535,6 +517,12 @@
       "entity_type": "EVENT"
     },
     {
+      "mention": "2026年印尼羽毛球公开赛",
+      "expected_name": "2026年印度尼西亚羽毛球公开赛",
+      "predicted_name": "印度尼西亚羽毛球公开赛",
+      "entity_type": "EVENT"
+    },
+    {
       "mention": "世锦赛",
       "expected_name": "世界羽毛球锦标赛",
       "predicted_name": "世界游泳锦标赛",
@@ -616,6 +604,18 @@
       "mention": "印度公开赛",
       "expected_name": "印度羽毛球公开赛",
       "predicted_name": "印度公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "全英公开赛",
+      "expected_name": "全英羽毛球公开赛",
+      "predicted_name": "全英公开赛",
+      "entity_type": "EVENT"
+    },
+    {
+      "mention": "德国公开赛",
+      "expected_name": "德国羽毛球公开赛",
+      "predicted_name": "德国公开赛",
       "entity_type": "EVENT"
     }
   ]
