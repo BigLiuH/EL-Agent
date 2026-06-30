@@ -7,11 +7,13 @@ LLM消歧模块
 支持: OpenRouter (OpenAI兼容API)
 """
 
+import hashlib
 import json
 import logging
 import os
 import re
 import time
+from pathlib import Path
 from typing import List, Dict, Optional
 
 from ..models.mention import Mention
@@ -49,7 +51,8 @@ class LLMDisambiguator:
         self.client = None
         self._available = False
         self._call_count = 0
-        self._cache = {}  # (mention_text, article_hash) -> entity_id
+        self._cache_file = Path(__file__).parent.parent.parent / "data" / "llm_cache.json"
+        self._cache = self._load_cache()  # 持久化缓存
         self._init_client(api_key)
 
     def _init_client(self, api_key: str = None):
@@ -78,10 +81,67 @@ class LLMDisambiguator:
             return False
         return True
 
+    def _call_with_retry(self, messages, max_tokens=30):
+        """API调用带重试（429限流自动等待）"""
+        for attempt in range(3):
+            try:
+                response = self.client.chat.completions.create(
+                    model=self.model, max_tokens=max_tokens, temperature=0,
+                    messages=messages)
+                return response
+            except Exception as e:
+                if "429" in str(e) and attempt < 2:
+                    wait = (attempt + 1) * 5
+                    logger.debug(f"限流，等待{wait}s...")
+                    time.sleep(wait)
+                else:
+                    raise
+        return None
+
+    def _load_cache(self) -> dict:
+        """加载持久化缓存"""
+        if self._cache_file.exists():
+            try:
+                with open(self._cache_file, "r", encoding="utf-8") as f:
+                    return json.load(f)
+            except Exception:
+                pass
+        return {}
+
+    def _save_cache(self):
+        """保存缓存到磁盘"""
+        try:
+            with open(self._cache_file, "w", encoding="utf-8") as f:
+                json.dump(self._cache, f, ensure_ascii=False)
+        except Exception:
+            pass
+
+    def get_article_domain(self, full_text: str) -> str:
+        """判断文章运动领域（缓存），每篇文章只调一次LLM"""
+        text_key = hashlib.md5(full_text[:500].encode()).hexdigest()
+        if text_key in self._cache:
+            return self._cache.get(text_key, "")
+
+        if not self.available or len(full_text) < 50:
+            return ""
+
+        try:
+            prompt = f"以下文章主要讨论哪种体育运动？只回复一个词，如：羽毛球、乒乓球、游泳、斯诺克、田径、足球、篮球。\n\n{full_text[:1500]}"
+            response = self._call_with_retry(
+                [{"role": "user", "content": prompt}], max_tokens=10)
+            if not response: return ""
+            domain = response.choices[0].message.content.strip()
+            self._cache[text_key] = domain
+            self._save_cache()
+            self._call_count += 1
+            print(f"  [LLM #{self._call_count}] 文章领域: {domain}")
+            return domain
+        except Exception:
+            return ""
+
     def reset(self):
-        """重置调用计数和缓存（每次评测前调用）"""
+        """重置调用计数（缓存保留）"""
         self._call_count = 0
-        self._cache = {}
 
     def disambiguate(self,
                      mention: Mention,
@@ -93,7 +153,7 @@ class LLMDisambiguator:
             return candidates[:top_k]
 
         # 缓存检查
-        cache_key = (mention.text, hash(full_text[:200]) if full_text else 0)
+        cache_key = (mention.text, hashlib.md5((full_text[:200] or "").encode()).hexdigest())
         if cache_key in self._cache:
             best_id = self._cache[cache_key]
             return self._reorder(candidates, best_id, top_k)
@@ -102,7 +162,9 @@ class LLMDisambiguator:
             best_id = self._call_llm(mention, candidates[:5], full_text)
             if best_id:
                 self._cache[cache_key] = best_id
+                self._save_cache()  # 持久化
                 self._call_count += 1
+                print(f"  [LLM #{self._call_count}] 消歧 {mention.text} -> {best_id}")
                 return self._reorder(candidates, best_id, top_k)
         except Exception as e:
             logger.debug(f"LLM调用失败，回退: {e}")
@@ -129,11 +191,17 @@ class LLMDisambiguator:
                 f"类型={entity.entity_type} 别名={aliases_str}"
             )
 
-        context = full_text[:2000] if full_text else (mention.context or "")[:2000]
+        # 取mention周围±1000字的窗口作为上下文
+        if full_text:
+            start = max(0, mention.start_pos - 1000)
+            end = min(len(full_text), mention.end_pos + 1000)
+            context = full_text[start:end]
+        else:
+            context = (mention.context or "")[:2000]
 
-        prompt = f"""体育实体链接：根据文章语境，判断"{mention.text}"最可能指向哪个候选实体。只返回JSON：{{"entity_id":"ID","reason":"理由"}}
+        prompt = f"""根据文章语境，\"{mention.text}\"最可能是以下哪个实体？只回复entity_id，不要解释。
 
-文章（截取）：
+文章：
 {context}
 
 候选：
@@ -143,12 +211,9 @@ class LLMDisambiguator:
         if self._call_count > 0:
             time.sleep(self.call_interval)
 
-        response = self.client.chat.completions.create(
-            model=self.model,
-            max_tokens=150,
-            temperature=0,
-            messages=[{"role": "user", "content": prompt}]
-        )
+        response = self._call_with_retry(
+            [{"role": "user", "content": prompt}], max_tokens=30)
+        if not response: return None
 
         content = response.choices[0].message.content.strip()
         result = self._parse_response(content)
@@ -157,22 +222,32 @@ class LLMDisambiguator:
         return result.get("entity_id") if result else None
 
     def _parse_response(self, content: str) -> Optional[Dict]:
+        # 尝试JSON
         try:
             return json.loads(content)
         except json.JSONDecodeError:
-            match = re.search(r'\{[^}]+\}', content)
-            if match:
-                try:
-                    return json.loads(match.group())
-                except json.JSONDecodeError:
-                    pass
-        return None
+            pass
+        # 尝试提取JSON片段
+        match = re.search(r'\{[^}]+\}', content)
+        if match:
+            try:
+                return json.loads(match.group())
+            except json.JSONDecodeError:
+                pass
+        # 纯文本：提取第一个看起来像entity_id的token（如 EVENT_0472）
+        for token in content.strip().split():
+            token = token.strip('"\'` ,.;')
+            if '_' in token and len(token) > 5:
+                return {"entity_id": token}
+        # 直接取第一行内容
+        first_line = content.strip().split('\n')[0].strip('"\'` ,.;')
+        return {"entity_id": first_line} if first_line else None
 
 
 llm_disambiguator = LLMDisambiguator(
-    model="nvidia/nemotron-3-ultra-550b-a55b:free",
+    model="openai/gpt-oss-20b:free",
     base_url="https://openrouter.ai/api/v1",
-    max_calls=100,       # 小规模测试最多100次
+    max_calls=500,       # gap<0.01触发 ~400次
     call_interval=1.0,   # 每秒1次
     call_timeout=15,     # 15秒超时
 )

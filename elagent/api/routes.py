@@ -245,7 +245,7 @@ def _simple_link(mention: Mention) -> LinkResult:
     return result
 
 
-def _enhanced_link(mention: Mention, trace=None, full_text: str = "") -> LinkResult:
+def _enhanced_link(mention: Mention, trace=None, full_text: str = "", article_domain: str = "") -> LinkResult:
     """
     增强的实体链接（Phase 2实现）
 
@@ -290,7 +290,7 @@ def _enhanced_link(mention: Mention, trace=None, full_text: str = "") -> LinkRes
             return result
 
         candidates = [Candidate(entity=e, score=0.95, match_source="alias") for e in alias_entities]
-        ranked = disambiguator.disambiguate(mention, candidates, top_k=5, full_text=full_text)
+        ranked = disambiguator.disambiguate(mention, candidates, top_k=5, full_text=full_text, article_domain=article_domain)
         if ranked:
             ranked = _llm_fallback(mention, ranked, full_text, trace)
             best = ranked[0]
@@ -332,7 +332,7 @@ def _enhanced_link(mention: Mention, trace=None, full_text: str = "") -> LinkRes
             return result
 
         candidates = [Candidate(entity=e, score=0.75, match_source="fuzzy") for e in fuzzy_candidates]
-        ranked = disambiguator.disambiguate(mention, candidates, top_k=5, full_text=full_text)
+        ranked = disambiguator.disambiguate(mention, candidates, top_k=5, full_text=full_text, article_domain=article_domain)
         if ranked:
             ranked = _llm_fallback(mention, ranked, full_text, trace)
             best = ranked[0]
@@ -400,7 +400,7 @@ def _enhanced_link(mention: Mention, trace=None, full_text: str = "") -> LinkRes
                     # 多候选使用消歧器
                     candidates = [Candidate(entity=e, score=0.5, match_source="bm25")
                                   for e in bm25_entities]
-                    ranked = disambiguator.disambiguate(mention, candidates, top_k=5, full_text=full_text)
+                    ranked = disambiguator.disambiguate(mention, candidates, top_k=5, full_text=full_text, article_domain=article_domain)
                     if ranked:
                         ranked = _llm_fallback(mention, ranked, full_text, trace)
                         best = ranked[0]

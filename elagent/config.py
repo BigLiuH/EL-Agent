@@ -53,11 +53,11 @@ class Config:
     log_level: str = "INFO"
 
     # LLM消歧配置
-    llm_enabled: bool = False          # 是否启用LLM消歧
-    llm_model: str = "nvidia/nemotron-3-ultra-550b-a55b:free"  # 模型
+    llm_enabled: bool = True           # 是否启用LLM消歧
+    llm_model: str = "openai/gpt-oss-20b:free"  # 模型
     llm_base_url: str = "https://openrouter.ai/api/v1"  # API地址
     llm_api_key: Optional[str] = None  # API Key（默认从OPENROUTER_API_KEY环境变量读取）
-    llm_score_gap: float = 0.03        # top-2得分差小于此值时触发LLM
+    llm_score_gap: float = 0.01        # top-2得分差小于0.01时触发LLM
     llm_max_candidates: int = 5        # 送入LLM的最多候选数
 
     def __post_init__(self):

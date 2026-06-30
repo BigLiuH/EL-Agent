@@ -59,7 +59,8 @@ class Disambiguator:
                      mention: Mention,
                      candidates: List[Candidate],
                      top_k: int = 1,
-                     full_text: str = "") -> List[Candidate]:
+                     full_text: str = "",
+                     article_domain: str = "") -> List[Candidate]:
         if not candidates:
             return []
         if len(candidates) == 1:
@@ -73,7 +74,7 @@ class Disambiguator:
         all_entities = [c.entity for c in candidates]
         scored_candidates = []
         for candidate in candidates:
-            score = self._compute_score(mention, candidate, full_text, all_entities)
+            score = self._compute_score(mention, candidate, full_text, all_entities, article_domain)
             candidate.score = score
             scored_candidates.append(candidate)
         scored_candidates.sort(key=lambda x: x.score, reverse=True)
@@ -81,7 +82,7 @@ class Disambiguator:
         return scored_candidates[:top_k]
 
     def _compute_score(self, mention: Mention, candidate: Candidate, full_text: str = "",
-                        all_entities: list = None) -> float:
+                        all_entities: list = None, article_domain: str = "") -> float:
         """
         计算候选实体的综合得分
 
@@ -101,7 +102,7 @@ class Disambiguator:
         keyword_score = self._keyword_overlap_score(mention, entity, full_text)
 
         # 3. 领域匹配得分（加性）
-        domain_score = self._domain_score(mention, entity, full_text, all_entities)
+        domain_score = self._domain_score(mention, entity, full_text, all_entities, article_domain)
 
         # 4. 先验概率得分
         prior_score = self._prior_probability_score(entity)
@@ -193,7 +194,7 @@ class Disambiguator:
         return len(overlap) / max(len(name_tokens), 1)
 
     def _domain_score(self, mention: Mention, entity: Entity, full_text: str = "",
-                       all_entities: list = None) -> float:
+                       all_entities: list = None, article_domain: str = "") -> float:
         """领域匹配得分（加性）：实体名区分2+3+4-gram在全文中的命中密度"""
         full_text = (full_text or mention.context or "").lower()
         if len(full_text) < 10:
@@ -227,6 +228,10 @@ class Disambiguator:
         # 实体名过长（>mention 1.5倍）= 过度细化，domain减半
         if len(entity.standard_name) > len(mention.text) * 1.5:
             score *= 0.5
+
+        # LLM判断的文章领域匹配 → 额外加分
+        if article_domain and article_domain in entity.standard_name:
+            score = min(score + 0.15, 1.0)
 
         return score
 

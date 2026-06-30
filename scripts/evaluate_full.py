@@ -260,7 +260,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="实体链接系统完整评测")
     parser.add_argument("--articles", default="Dataset/llm_extracted_merged.json", help="文章数据路径")
-    parser.add_argument("--max-articles", type=int, default=99999, help="最大评测文章数")
+    parser.add_argument("--max-articles", type=int, default=9999, help="最大评测文章数")
 
     args = parser.parse_args()
     evaluate(args.articles, args.max_articles)
