@@ -135,7 +135,7 @@ def main():
     parser.add_argument("--no-coref", action="store_true", help="跳过共指消解评测")
     parser.add_argument("--max-articles", type=int, default=99999, help="最大评测文章数")
     parser.add_argument("--articles", default="Dataset/llm_extracted_merged.json", help="实体链接数据")
-    parser.add_argument("--coref-articles", default="Dataset/annotations_with_pronouns_v2.json", help="共指消解数据")
+    parser.add_argument("--coref-articles", default="Dataset/llm_extracted_with_coref.json", help="共指消解合并数据")
     args = parser.parse_args()
 
     enable_coref = not args.no_coref

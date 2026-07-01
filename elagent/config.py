@@ -53,7 +53,7 @@ class Config:
     log_level: str = "INFO"
 
     # LLM消歧配置
-    llm_enabled: bool = True           # 是否启用LLM消歧
+    llm_enabled: bool = False          # 是否启用LLM消歧
     llm_model: str = "openai/gpt-oss-20b:free"  # 模型
     llm_base_url: str = "https://openrouter.ai/api/v1"  # API地址
     llm_api_key: Optional[str] = None  # API Key（默认从OPENROUTER_API_KEY环境变量读取）

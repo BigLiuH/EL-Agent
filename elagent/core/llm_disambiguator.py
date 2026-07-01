@@ -109,12 +109,17 @@ class LLMDisambiguator:
         return {}
 
     def _save_cache(self):
-        """保存缓存到磁盘"""
-        try:
-            with open(self._cache_file, "w", encoding="utf-8") as f:
-                json.dump(self._cache, f, ensure_ascii=False)
-        except Exception:
-            pass
+        """立即写入缓存到磁盘，每次调用LLM后必须保存"""
+        self._cache_file.parent.mkdir(parents=True, exist_ok=True)
+        cache_path = str(self._cache_file.resolve())
+        tmp = cache_path + ".tmp"
+        data = json.dumps(self._cache, ensure_ascii=False, indent=2)
+        with open(tmp, "w", encoding="utf-8") as f:
+            f.write(data)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp, cache_path)
+        print(f"  [缓存] 已保存 {len(self._cache)} 条记录")
 
     def get_article_domain(self, full_text: str) -> str:
         """判断文章运动领域（缓存），每篇文章只调一次LLM"""
@@ -149,14 +154,17 @@ class LLMDisambiguator:
                      full_text: str = "",
                      top_k: int = 1) -> List[Candidate]:
         """LLM消歧"""
-        if not self.available or len(candidates) < 2:
+        if len(candidates) < 2:
             return candidates[:top_k]
 
-        # 缓存检查
-        cache_key = (mention.text, hashlib.md5((full_text[:200] or "").encode()).hexdigest())
+        # 缓存优先（max_calls到了也能用历史缓存）
+        cache_key = f"{mention.text}|{hashlib.md5((full_text[:200] or '').encode()).hexdigest()}"
         if cache_key in self._cache:
             best_id = self._cache[cache_key]
             return self._reorder(candidates, best_id, top_k)
+
+        if not self.available:
+            return candidates[:top_k]
 
         try:
             best_id = self._call_llm(mention, candidates[:5], full_text)
@@ -167,6 +175,7 @@ class LLMDisambiguator:
                 print(f"  [LLM #{self._call_count}] 消歧 {mention.text} -> {best_id}")
                 return self._reorder(candidates, best_id, top_k)
         except Exception as e:
+            print(f"  [LLM ERROR] {e}")
             logger.debug(f"LLM调用失败，回退: {e}")
 
         return candidates[:top_k]
@@ -234,13 +243,19 @@ class LLMDisambiguator:
                 return json.loads(match.group())
             except json.JSONDecodeError:
                 pass
-        # 纯文本：提取第一个看起来像entity_id的token（如 EVENT_0472）
+        # 纯文本：提取entity_id（去掉 ID=、id= 等前缀）
         for token in content.strip().split():
-            token = token.strip('"\'` ,.;')
+            token = token.strip('"\'` ,.;:')
+            # 去掉常见前缀
+            for prefix in ['ID=', 'id=', 'Id=', 'entity_id=']:
+                if token.startswith(prefix):
+                    token = token[len(prefix):]
             if '_' in token and len(token) > 5:
                 return {"entity_id": token}
-        # 直接取第一行内容
-        first_line = content.strip().split('\n')[0].strip('"\'` ,.;')
+        first_line = content.strip().split('\n')[0].strip('"\'` ,.;:')
+        for prefix in ['ID=', 'id=', 'Id=', 'entity_id=']:
+            if first_line.startswith(prefix):
+                first_line = first_line[len(prefix):]
         return {"entity_id": first_line} if first_line else None
 
 
