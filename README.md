@@ -134,16 +134,19 @@ curl -X POST http://localhost:8000/link \
 
 ## API接口
 
-| 方法 | 路径 | 说明 |
-|---|---|---|
-| GET | `/health` | 健康检查 |
-| GET | `/kb/stats` | 知识库统计 |
-| POST | `/link` | **单条实体链接**（核心接口） |
-| POST | `/batch_link` | 批量实体链接 |
-| POST | `/nil_check` | **NIL检测**（独立 Skill） |
-| POST | `/coref` | **共指消解**（独立 Skill，按需启用） |
-| GET | `/trace/{trace_id}` | 查询追溯日志 |
-| GET | `/traces` | 列出最近的追溯日志 |
+| 方法 | 路径 | 说明 | Skill |
+|---|---|---|---|
+| POST | `/link` | **实体链接**（全流程） | 🔗 组合 |
+| POST | `/batch_link` | 批量实体链接 | 🔗 组合 |
+| POST | `/standardize` | **实体标准化**（别名→标准名+ID） | ✅ 独立 |
+| POST | `/disambiguate` | **消歧**（候选排序 top-3） | ✅ 独立 |
+| POST | `/nil_check` | **NIL 检测** | ✅ 独立 |
+| POST | `/coref` | **共指消解** | ✅ 独立 |
+| GET | `/health` | 健康检查 | — |
+| GET | `/kb/stats` | 知识库统计 | — |
+| GET | `/trace/{id}` | 追溯查询 | — |
+| POST | `/trace/{id}/replay` | 追溯回放 | — |
+| POST | `/trace/{id}/rollback` | 追溯回滚 | — |
 
 ---
 
