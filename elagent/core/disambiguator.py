@@ -46,6 +46,8 @@ class Disambiguator:
 
         # 加载先验概率
         self.prior_probs = self._load_prior_probs()
+        # 百分位排名预计算（按概率从高到低排序）
+        self.prior_ranked = sorted(self.prior_probs.items(), key=lambda x: -x[1]) if self.prior_probs else []
 
     def _load_prior_probs(self) -> Dict[str, float]:
         """加载先验概率"""
@@ -130,30 +132,14 @@ class Disambiguator:
         return total_score
 
     def _prior_probability_score(self, entity: Entity) -> float:
-        """
-        计算先验概率得分
-
-        基于实体在标注数据中出现的频率。
-
-        Args:
-            entity: 候选实体
-
-        Returns:
-            先验概率得分 (0-1)
-        """
+        """先验概率：cbrt压缩，中频实体差距最小化"""
         if not self.prior_probs:
-            return 0.5  # 无先验概率时给中间分
-
+            return 0.5
         prob = self.prior_probs.get(entity.id, 0.0)
-
-        # 归一化到0-1（使用log缩放，避免高频实体过于主导）
         if prob > 0:
-            import math
-            # 使用log缩放，最大概率约为0.015，归一化到0-1
-            normalized = min(math.log(prob * 1000 + 1) / math.log(20), 1.0)
-            return normalized
-
-        return 0.1  # 未出现过的实体给低分
+            max_prob = max(self.prior_probs.values()) if self.prior_probs else 0.015
+            return min((prob / max_prob) ** (1/3), 1.0)
+        return 0.05
 
     def _type_match_score(self, mention: Mention, entity: Entity) -> float:
         """

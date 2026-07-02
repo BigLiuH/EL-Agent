@@ -1,15 +1,15 @@
 {
   "metrics": {
-    "link_accuracy": 0.9821,
-    "disambiguation_accuracy": 0.8623,
-    "alias_recall": 0.9828,
+    "link_accuracy": 0.983,
+    "disambiguation_accuracy": 0.8696,
+    "alias_recall": 0.9837,
     "single_candidate_accuracy": 0.9994,
     "total_mentions": 40942,
-    "correct_links": 40209,
+    "correct_links": 40245,
     "multi_candidate_total": 4947,
-    "multi_candidate_correct": 4266,
+    "multi_candidate_correct": 4302,
     "alias_mentions": 40911,
-    "alias_correct": 40207
+    "alias_correct": 40243
   },
   "targets": {
     "link_accuracy": 0.85,
@@ -22,18 +22,6 @@
       "mention": "省运会",
       "expected_name": "浙江省运动会",
       "predicted_name": "省运会",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "东京奥运会",
-      "expected_name": "2020年东京奥运会",
-      "predicted_name": "2020年东京奥运会羽毛球比赛",
-      "entity_type": "EVENT"
-    },
-    {
-      "mention": "东京奥运会",
-      "expected_name": "2020年东京奥运会",
-      "predicted_name": "2020年东京奥运会羽毛球比赛",
       "entity_type": "EVENT"
     },
     {
@@ -613,10 +601,22 @@
       "entity_type": "ORG"
     },
     {
-      "mention": "国家一队",
-      "expected_name": "中国羽毛球国家队一队",
-      "predicted_name": "中国国家乒乓球队一队",
+      "mention": "北京队",
+      "expected_name": "北京羽毛球队",
+      "predicted_name": "北京队",
       "entity_type": "ORG"
+    },
+    {
+      "mention": "浙江队",
+      "expected_name": "浙江羽毛球队",
+      "predicted_name": "浙江省游泳队",
+      "entity_type": "ORG"
+    },
+    {
+      "mention": "马来西亚公开赛",
+      "expected_name": "马来西亚羽毛球公开赛",
+      "predicted_name": "马来西亚公开赛",
+      "entity_type": "EVENT"
     }
   ]
 }

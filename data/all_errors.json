@@ -6,12 +6,6 @@
     "entity_type": "EVENT"
   },
   {
-    "mention": "东京奥运会",
-    "expected_name": "2020年东京奥运会",
-    "predicted_name": "2020年东京奥运会羽毛球比赛",
-    "entity_type": "EVENT"
-  },
-  {
     "mention": "中国澳门羽毛球公开赛",
     "expected_name": "澳门羽毛球公开赛",
     "predicted_name": "2026年中国澳门羽毛球公开赛",
@@ -264,12 +258,6 @@
     "entity_type": "ORG"
   },
   {
-    "mention": "国家一队",
-    "expected_name": "中国羽毛球国家队一队",
-    "predicted_name": "中国国家乒乓球队一队",
-    "entity_type": "ORG"
-  },
-  {
     "mention": "北京队",
     "expected_name": "北京羽毛球队",
     "predicted_name": "北京队",
@@ -326,7 +314,7 @@
   {
     "mention": "东京奥运会",
     "expected_name": "东京奥林匹克运动会",
-    "predicted_name": "2020年东京奥运会羽毛球比赛",
+    "predicted_name": "2020年东京奥运会",
     "entity_type": "EVENT"
   },
   {
@@ -370,12 +358,6 @@
     "expected_name": "维克多·麦斯",
     "predicted_name": "安德斯·斯考劳普·拉斯姆森",
     "entity_type": "PER"
-  },
-  {
-    "mention": "泰国赛",
-    "expected_name": "Thailand Open",
-    "predicted_name": "泰国羽毛球赛",
-    "entity_type": "EVENT"
   },
   {
     "mention": "东南亚",
@@ -474,9 +456,9 @@
     "entity_type": "ORG"
   },
   {
-    "mention": "斯诺克冠军联赛",
-    "expected_name": "2026年斯诺克排名赛版冠军联赛",
-    "predicted_name": "Championship League Snooker",
+    "mention": "中国公开赛",
+    "expected_name": "中国斯诺克公开赛",
+    "predicted_name": "中国游泳公开赛",
     "entity_type": "EVENT"
   },
   {
@@ -870,9 +852,15 @@
     "entity_type": "ORG"
   },
   {
+    "mention": "蒙牛",
+    "expected_name": "内蒙古蒙牛乳业（集团）股份有限公司",
+    "predicted_name": "蒙牛集团",
+    "entity_type": "ORG"
+  },
+  {
     "mention": "世预赛",
     "expected_name": "国际篮联篮球世界杯预选赛",
-    "predicted_name": "世界杯预选赛",
+    "predicted_name": "国际篮联世界杯预选赛",
     "entity_type": "EVENT"
   },
   {
@@ -888,10 +876,10 @@
     "entity_type": "ORG"
   },
   {
-    "mention": "世预赛",
-    "expected_name": "国际篮联世界杯预选赛",
-    "predicted_name": "世界杯预选赛",
-    "entity_type": "EVENT"
+    "mention": "北京男篮",
+    "expected_name": "北京首钢男篮",
+    "predicted_name": "北京首钢篮球俱乐部",
+    "entity_type": "ORG"
   },
   {
     "mention": "中国台北",
@@ -904,12 +892,6 @@
     "expected_name": "杭州市",
     "predicted_name": "杭州奥体中心体育场",
     "entity_type": "LOC"
-  },
-  {
-    "mention": "北京男篮",
-    "expected_name": "北京首钢篮球俱乐部",
-    "predicted_name": "北京首钢男篮",
-    "entity_type": "ORG"
   },
   {
     "mention": "山东男篮",
@@ -1068,6 +1050,12 @@
     "entity_type": "EVENT"
   },
   {
+    "mention": "中国大满贯",
+    "expected_name": "WTT中国大满贯赛",
+    "predicted_name": "WTT中国大满贯",
+    "entity_type": "EVENT"
+  },
+  {
     "mention": "洛杉矶奥运会",
     "expected_name": "2028年洛杉矶夏季奥运会",
     "predicted_name": "2028年洛杉矶奥运会",
@@ -1102,12 +1090,6 @@
     "expected_name": "中国乒乓球超级联赛",
     "predicted_name": "中国乒乓球俱乐部超级联赛",
     "entity_type": "EVENT"
-  },
-  {
-    "mention": "国家一队",
-    "expected_name": "国家乒乓球队一队",
-    "predicted_name": "中国国家乒乓球队一队",
-    "entity_type": "ORG"
   },
   {
     "mention": "国家二队",
@@ -1272,12 +1254,6 @@
     "entity_type": "EVENT"
   },
   {
-    "mention": "中国大满贯",
-    "expected_name": "WTT中国大满贯",
-    "predicted_name": "WTT中国大满贯赛",
-    "entity_type": "EVENT"
-  },
-  {
     "mention": "天津队",
     "expected_name": "天津乒乓球队",
     "predicted_name": "天津队",
@@ -1310,19 +1286,13 @@
   {
     "mention": "伦敦世乒赛",
     "expected_name": "世界乒乓球锦标赛（伦敦站）",
-    "predicted_name": "2026年世界乒乓球锦标赛",
+    "predicted_name": "伦敦世界乒乓球锦标赛团体赛",
     "entity_type": "EVENT"
   },
   {
     "mention": "无锡亚锦赛",
     "expected_name": "亚洲乒乓球锦标赛（无锡）",
     "predicted_name": "2017年亚洲乒乓球锦标赛",
-    "entity_type": "EVENT"
-  },
-  {
-    "mention": "伦敦世乒赛",
-    "expected_name": "世界乒乓球锦标赛（伦敦站）",
-    "predicted_name": "伦敦世界乒乓球锦标赛团体赛",
     "entity_type": "EVENT"
   },
   {
@@ -1362,12 +1332,6 @@
     "entity_type": "LOC"
   },
   {
-    "mention": "国家二队",
-    "expected_name": "中国国家乒乓球队二队",
-    "predicted_name": "中国羽毛球国家队二队",
-    "entity_type": "ORG"
-  },
-  {
     "mention": "日本T联赛",
     "expected_name": "日本乒乓球T联赛",
     "predicted_name": "日本T联赛",
@@ -1376,7 +1340,7 @@
   {
     "mention": "伦敦世乒赛",
     "expected_name": "世界乒乓球锦标赛伦敦站",
-    "predicted_name": "2026年伦敦世界乒乓球团体锦标赛",
+    "predicted_name": "伦敦世界乒乓球锦标赛团体赛",
     "entity_type": "EVENT"
   },
   {
@@ -1412,7 +1376,7 @@
   {
     "mention": "伦敦世乒赛",
     "expected_name": "2026年世界乒乓球锦标赛",
-    "predicted_name": "2026年伦敦世界乒乓球团体锦标赛",
+    "predicted_name": "伦敦世界乒乓球锦标赛团体赛",
     "entity_type": "EVENT"
   },
   {
@@ -1431,12 +1395,6 @@
     "mention": "WTT球星挑战赛",
     "expected_name": "WTT卢布尔雅那站球星挑战赛",
     "predicted_name": "WTT球星挑战赛",
-    "entity_type": "EVENT"
-  },
-  {
-    "mention": "雅典奥运会",
-    "expected_name": "2004年夏季奥运会",
-    "predicted_name": "2004年雅典奥运会",
     "entity_type": "EVENT"
   },
   {
@@ -1502,7 +1460,7 @@
   {
     "mention": "广东队",
     "expected_name": "广东省游泳队",
-    "predicted_name": "广东省田径队",
+    "predicted_name": "广东羽毛球队",
     "entity_type": "ORG"
   },
   {
@@ -1530,15 +1488,9 @@
     "entity_type": "ORG"
   },
   {
-    "mention": "广东队",
-    "expected_name": "广东省游泳队",
-    "predicted_name": "广东羽毛球队",
-    "entity_type": "ORG"
-  },
-  {
     "mention": "山东队",
     "expected_name": "山东省游泳队",
-    "predicted_name": "何玉曙光",
+    "predicted_name": "赵一朴",
     "entity_type": "ORG"
   },
   {
@@ -1575,12 +1527,6 @@
     "mention": "美国队",
     "expected_name": "美国游泳队",
     "predicted_name": "美国队",
-    "entity_type": "ORG"
-  },
-  {
-    "mention": "山东队",
-    "expected_name": "山东省游泳队",
-    "predicted_name": "赵一朴",
     "entity_type": "ORG"
   },
   {
@@ -1674,12 +1620,6 @@
     "entity_type": "ORG"
   },
   {
-    "mention": "2024年世锦赛",
-    "expected_name": "2024年世界游泳锦标赛",
-    "predicted_name": "2024年斯诺克世界锦标赛",
-    "entity_type": "EVENT"
-  },
-  {
     "mention": "河南队",
     "expected_name": "河南省游泳队",
     "predicted_name": "河南队",
@@ -1713,6 +1653,12 @@
     "mention": "山东队",
     "expected_name": "山东省游泳队",
     "predicted_name": "李易峰",
+    "entity_type": "ORG"
+  },
+  {
+    "mention": "组委会",
+    "expected_name": "赛事组委会",
+    "predicted_name": "广东省第十届残疾人运动会特奥乒乓球项目组委会",
     "entity_type": "ORG"
   },
   {
@@ -1770,6 +1716,12 @@
     "entity_type": "ORG"
   },
   {
+    "mention": "广东队",
+    "expected_name": "广东省田径队",
+    "predicted_name": "广东羽毛球队",
+    "entity_type": "ORG"
+  },
+  {
     "mention": "上海队",
     "expected_name": "上海市田径队",
     "predicted_name": "上海队",
@@ -1796,7 +1748,7 @@
   {
     "mention": "山东队",
     "expected_name": "山东田径队",
-    "predicted_name": "何玉曙光",
+    "predicted_name": "赵一朴",
     "entity_type": "ORG"
   },
   {
