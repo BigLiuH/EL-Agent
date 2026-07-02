@@ -15,6 +15,8 @@ from .schemas import (
     EntityResponse,
     NILRequest, NILResponse,
     CorefRequest, CorefResponse, CorefResult,
+    StandardizeRequest, StandardizeResponse,
+    DisambiguateRequest, DisambiguateResponse, DisambiguateResult,
 )
 from ..core.knowledge_base import knowledge_base
 from ..core.bm25_index import bm25_index
@@ -294,6 +296,112 @@ async def nil_check(request: NILRequest):
         confidence=nil_result.confidence,
         reason=nil_result.reason,
     )
+
+
+@router.post("/standardize", response_model=StandardizeResponse, tags=["实体标准化"],
+    summary="实体标准化（独立 Skill）",
+    description=(
+        "将别名/简称/曾用名映射为标准全称 + 唯一 ID。"
+        "不执行消歧和 NIL 检测，仅做精确匹配查找。\n\n"
+        "**实现**: 纯规则，查 KB 别名表和标准名索引。\n"
+        "**成本**: O(1) 哈希表查找，无大模型调用。"
+    ))
+async def standardize(request: StandardizeRequest):
+    """别名/简称 → 标准全称 + 唯一 ID。仅做精确匹配查找。"""
+    if not knowledge_base.loaded:
+        raise HTTPException(status_code=503, detail="知识库未加载")
+
+    # 标准名匹配
+    entity = knowledge_base.get_entity_by_name(request.text)
+    if entity:
+        return StandardizeResponse(
+            matched=True,
+            standard_name=entity.standard_name,
+            entity_id=entity.id,
+            entity_type=entity.entity_type,
+        )
+
+    # 别名匹配
+    aliases = knowledge_base.search_by_alias(request.text)
+    if aliases:
+        best = aliases[0]
+        return StandardizeResponse(
+            matched=True,
+            standard_name=best.standard_name,
+            entity_id=best.id,
+            entity_type=best.entity_type,
+        )
+
+    return StandardizeResponse(matched=False)
+
+
+@router.post("/disambiguate", response_model=DisambiguateResponse, tags=["消歧"],
+    summary="消歧（独立 Skill）",
+    description=(
+        "对给定的文本和指称，从候选实体中选择最匹配的一个。"
+        "返回 top-5 候选及得分。\n\n"
+        "**消歧器**: 5 信号加权评分（名称匹配 0.15 + 先验 0.15 + "
+        "完整度 0.09 + 类型 0.15 + 领域 0.10）× context_boost\n"
+        "**成本**: 纯规则计算，单次 <1ms"
+    ))
+async def disambiguate_endpoint(request: DisambiguateRequest):
+    """从候选中消歧选择最佳实体。返回 top-3 及得分。"""
+    if not knowledge_base.loaded:
+        raise HTTPException(status_code=503, detail="知识库未加载")
+
+    mention = Mention(
+        text=request.mention.text,
+        start_pos=request.mention.start_pos,
+        end_pos=request.mention.end_pos,
+        entity_type=request.mention.entity_type,
+        context=request.text,
+    )
+
+    # 召回候选
+    alias_entities = knowledge_base.search_by_alias(mention.text)
+    name_entity = knowledge_base.get_entity_by_name(mention.text)
+
+    all_candidates = list(alias_entities)
+    if name_entity and name_entity not in alias_entities:
+        all_candidates.append(name_entity)
+
+    if not all_candidates:
+        return DisambiguateResponse(is_nil=True, ranked=[])
+
+    if len(all_candidates) == 1:
+        return DisambiguateResponse(ranked=[
+            DisambiguateResult(
+                entity=EntityResponse(
+                    id=all_candidates[0].id,
+                    standard_name=all_candidates[0].standard_name,
+                    entity_type=all_candidates[0].entity_type,
+                    aliases=all_candidates[0].aliases,
+                    description=all_candidates[0].description,
+                ),
+                score=1.0,
+                match_source="standard",
+            )
+        ])
+
+    candidates = [Candidate(entity=e, score=0.95, match_source="alias") for e in all_candidates]
+    ranked = disambiguator.disambiguate(mention, candidates, top_k=3, full_text=request.text)
+
+    results = []
+    for c in ranked:
+        results.append(DisambiguateResult(
+            entity=EntityResponse(
+                id=c.entity.id,
+                standard_name=c.entity.standard_name,
+                entity_type=c.entity.entity_type,
+                aliases=c.entity.aliases,
+                description=c.entity.description,
+            ),
+            score=c.score,
+            match_source=c.match_source,
+        ))
+
+    return DisambiguateResponse(ranked=results,
+                                is_nil=len(results) == 0)
 
 
 @router.post("/coref", response_model=CorefResponse, tags=["共指消解"],

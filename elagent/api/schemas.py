@@ -135,6 +135,61 @@ class CorefRequest(BaseModel):
         }
 
 
+class StandardizeRequest(BaseModel):
+    """实体标准化请求"""
+    text: str = Field(..., description="待标准化的指称文本，如'国羽'、'世锦赛'")
+
+    class Config:
+        json_schema_extra = {
+            "example": {"text": "国羽"}
+        }
+
+
+class StandardizeResponse(BaseModel):
+    """实体标准化响应"""
+    matched: bool = Field(False, description="True=在KB中找到对应实体")
+    standard_name: Optional[str] = Field(None, description="标准全称，如'中国国家羽毛球队'")
+    entity_id: Optional[str] = Field(None, description="实体ID，如'ORG_0067'")
+    entity_type: Optional[str] = Field(None, description="实体类型")
+
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "matched": True,
+                "standard_name": "中国国家羽毛球队",
+                "entity_id": "ORG_0067",
+                "entity_type": "ORG"
+            }
+        }
+
+
+class DisambiguateRequest(BaseModel):
+    """消歧请求"""
+    text: str = Field(..., description="完整文本")
+    mention: MentionRequest = Field(..., description="需要消歧的指称")
+
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "text": "浙江队潘展乐在2026年全国游泳冠军赛上夺冠，浙江队表现出色。",
+                "mention": {"text": "浙江队", "start_pos": 0, "end_pos": 3, "entity_type": "ORG"}
+            }
+        }
+
+
+class DisambiguateResult(BaseModel):
+    """消歧结果项"""
+    entity: Optional[EntityResponse] = Field(None, description="消歧后的实体")
+    score: float = Field(0.0, description="置信度(0~1)")
+    match_source: str = Field("", description="匹配来源: alias/fuzzy/bm25")
+
+
+class DisambiguateResponse(BaseModel):
+    """消歧响应"""
+    ranked: List[DisambiguateResult] = Field(default_factory=list, description="候选实体按得分降序排列")
+    is_nil: bool = Field(False, description="True=无匹配实体")
+
+
 # ============================================================
 # 响应模型
 # ============================================================
