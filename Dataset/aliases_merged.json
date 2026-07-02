@@ -175,14 +175,6 @@
     "entity_id": "EVENT_0022",
     "standard_name": "2025年法国公开赛"
   },
-  "2025年深圳林丹杯": {
-    "entity_id": "EVENT_0023",
-    "standard_name": "2025年深圳林丹杯"
-  },
-  "林丹杯": {
-    "entity_id": "EVENT_0270",
-    "standard_name": "林丹杯羽毛球赛"
-  },
   "2025年苏迪曼杯": {
     "entity_id": "EVENT_0024",
     "standard_name": "2025年苏迪曼杯"
@@ -564,16 +556,16 @@
     "standard_name": "2026年泰国羽毛球公开赛"
   },
   "泰国公开赛": {
-    "entity_id": "EVENT_0082",
-    "standard_name": "2026年泰国公开赛"
+    "entity_id": "EVENT_0129",
+    "standard_name": "Thailand Open"
   },
   "泰国羽毛球公开赛": {
     "entity_id": "EVENT_0083",
     "standard_name": "2026年泰国羽毛球公开赛"
   },
-  "泰国": {
-    "entity_id": "LOC_0223",
-    "standard_name": "泰王国"
+  "2026年泰国公开赛": {
+    "entity_id": "EVENT_0083",
+    "standard_name": "2026年泰国羽毛球公开赛"
   },
   "2026年洛宁县“翎美杯”第一届中小学生羽毛球锦标赛": {
     "entity_id": "EVENT_0084",
@@ -702,26 +694,6 @@
   "洛杉矶奥运周期": {
     "entity_id": "EVENT_0647",
     "standard_name": "2024-2028奥运周期"
-  },
-  "2028年洛杉矶奥运会": {
-    "entity_id": "EVENT_0683",
-    "standard_name": "2028年洛杉矶夏季奥运会"
-  },
-  "洛杉矶奥运会": {
-    "entity_id": "EVENT_0683",
-    "standard_name": "2028年洛杉矶夏季奥运会"
-  },
-  "洛杉矶奥运": {
-    "entity_id": "EVENT_0111",
-    "standard_name": "2028年洛杉矶奥运会"
-  },
-  "2028年夏季奥运会": {
-    "entity_id": "EVENT_0111",
-    "standard_name": "2028年洛杉矶奥运会"
-  },
-  "2028年奥运会": {
-    "entity_id": "EVENT_0111",
-    "standard_name": "2028年洛杉矶奥运会"
   },
   "2028年洛杉矶奥运会周期重大赛事": {
     "entity_id": "EVENT_0112",
@@ -2671,10 +2643,6 @@
     "entity_id": "PER_0113",
     "standard_name": "全奕陈"
   },
-  "全英公开赛": {
-    "entity_id": "EVENT_0214",
-    "standard_name": "全英羽毛球公开赛"
-  },
   "全英羽毛球公开赛": {
     "entity_id": "EVENT_0214",
     "standard_name": "全英羽毛球公开赛"
@@ -2684,6 +2652,10 @@
     "standard_name": "全英羽毛球公开赛"
   },
   "全英赛": {
+    "entity_id": "EVENT_0214",
+    "standard_name": "全英羽毛球公开赛"
+  },
+  "全英公开赛": {
     "entity_id": "EVENT_0214",
     "standard_name": "全英羽毛球公开赛"
   },
@@ -2895,17 +2867,13 @@
     "entity_id": "PER_0874",
     "standard_name": "陈清晨/贾一凡"
   },
-  "刘圣书/谭宁": {
-    "entity_id": "PER_0132",
-    "standard_name": "刘圣书/谭宁"
+  "刘圣书/谭宁组合": {
+    "entity_id": "ORG_0158",
+    "standard_name": "刘圣书/谭宁组合"
   },
   "圣坛组合": {
     "entity_id": "ORG_0415",
     "standard_name": "（未明确，应指国羽女双一组）"
-  },
-  "刘圣书/谭宁组合": {
-    "entity_id": "ORG_0158",
-    "standard_name": "刘圣书/谭宁组合"
   },
   "刘壮怀": {
     "entity_id": "PER_0133",
@@ -3379,18 +3347,6 @@
     "entity_id": "ORG_0181",
     "standard_name": "印度尼西亚国家羽毛球队"
   },
-  "印度尼西亚大师赛": {
-    "entity_id": "EVENT_0227",
-    "standard_name": "印度尼西亚大师赛"
-  },
-  "印尼大师赛": {
-    "entity_id": "EVENT_0229",
-    "standard_name": "印度尼西亚羽毛球大师赛"
-  },
-  "印尼羽毛球大师赛": {
-    "entity_id": "EVENT_0227",
-    "standard_name": "印度尼西亚大师赛"
-  },
   "印度尼西亚羽毛球公开赛": {
     "entity_id": "EVENT_0228",
     "standard_name": "印度尼西亚羽毛球公开赛"
@@ -3428,6 +3384,18 @@
     "standard_name": "印度尼西亚共和国"
   },
   "印度尼西亚羽毛球大师赛": {
+    "entity_id": "EVENT_0229",
+    "standard_name": "印度尼西亚羽毛球大师赛"
+  },
+  "印尼大师赛": {
+    "entity_id": "EVENT_0229",
+    "standard_name": "印度尼西亚羽毛球大师赛"
+  },
+  "印度尼西亚大师赛": {
+    "entity_id": "EVENT_0229",
+    "standard_name": "印度尼西亚羽毛球大师赛"
+  },
+  "印尼羽毛球大师赛": {
     "entity_id": "EVENT_0229",
     "standard_name": "印度尼西亚羽毛球大师赛"
   },
@@ -3942,6 +3910,10 @@
   "土耳其": {
     "entity_id": "LOC_0107",
     "standard_name": "土耳其"
+  },
+  "刘圣书/谭宁": {
+    "entity_id": "PER_0226",
+    "standard_name": "圣坛组合"
   },
   "圣羽堂羽毛球馆": {
     "entity_id": "ORG_0212",
@@ -4767,6 +4739,10 @@
     "entity_id": "ORG_0244",
     "standard_name": "市全民健身领导委员会"
   },
+  "根河市总工会": {
+    "entity_id": "ORG_0245",
+    "standard_name": "根河市总工会"
+  },
   "市教育体育局": {
     "entity_id": "ORG_0246",
     "standard_name": "市教育体育局"
@@ -5115,10 +5091,6 @@
     "entity_id": "PER_0355",
     "standard_name": "徐邦荣"
   },
-  "德国公开赛": {
-    "entity_id": "EVENT_0257",
-    "standard_name": "德国羽毛球公开赛"
-  },
   "德国国家足球队": {
     "entity_id": "ORG_0257",
     "standard_name": "德国国家足球队"
@@ -5132,6 +5104,10 @@
     "standard_name": "德国羽毛球公开赛"
   },
   "德国赛": {
+    "entity_id": "EVENT_0257",
+    "standard_name": "德国羽毛球公开赛"
+  },
+  "德国公开赛": {
     "entity_id": "EVENT_0257",
     "standard_name": "德国羽毛球公开赛"
   },
@@ -6151,6 +6127,14 @@
     "entity_id": "EVENT_0270",
     "standard_name": "林丹杯羽毛球赛"
   },
+  "林丹杯": {
+    "entity_id": "EVENT_0270",
+    "standard_name": "林丹杯羽毛球赛"
+  },
+  "2025年深圳林丹杯": {
+    "entity_id": "EVENT_0270",
+    "standard_name": "林丹杯羽毛球赛"
+  },
   "林俊易": {
     "entity_id": "PER_0485",
     "standard_name": "林俊易"
@@ -6627,10 +6611,6 @@
     "entity_id": "ORG_0310",
     "standard_name": "泰国国家羽毛球队"
   },
-  "泰国大师赛": {
-    "entity_id": "EVENT_0283",
-    "standard_name": "泰国羽毛球大师赛"
-  },
   "泰国羽毛球协会": {
     "entity_id": "ORG_0311",
     "standard_name": "泰国羽毛球协会"
@@ -6639,11 +6619,19 @@
     "entity_id": "EVENT_0283",
     "standard_name": "泰国羽毛球大师赛"
   },
+  "泰国大师赛": {
+    "entity_id": "EVENT_0283",
+    "standard_name": "泰国羽毛球大师赛"
+  },
   "泰国羽毛球赛": {
     "entity_id": "EVENT_0284",
     "standard_name": "泰国羽毛球赛"
   },
   "泰王国": {
+    "entity_id": "LOC_0223",
+    "standard_name": "泰王国"
+  },
+  "泰国": {
     "entity_id": "LOC_0223",
     "standard_name": "泰王国"
   },
@@ -7339,11 +7327,11 @@
     "entity_id": "LOC_0259",
     "standard_name": "瑞典王国"
   },
-  "瑞士公开赛": {
+  "瑞士羽毛球公开赛": {
     "entity_id": "EVENT_0302",
     "standard_name": "瑞士羽毛球公开赛"
   },
-  "瑞士羽毛球公开赛": {
+  "瑞士公开赛": {
     "entity_id": "EVENT_0302",
     "standard_name": "瑞士羽毛球公开赛"
   },
@@ -9667,10 +9655,6 @@
     "entity_id": "EVENT_0341",
     "standard_name": "马来西亚100赛"
   },
-  "马来西亚公开赛": {
-    "entity_id": "EVENT_0344",
-    "standard_name": "马来西亚羽毛球公开赛"
-  },
   "马来西亚国家羽毛球队": {
     "entity_id": "ORG_0410",
     "standard_name": "马来西亚国家羽毛球队"
@@ -9700,6 +9684,10 @@
     "standard_name": "马来西亚羽毛球公开赛"
   },
   "大马赛": {
+    "entity_id": "EVENT_0344",
+    "standard_name": "马来西亚羽毛球公开赛"
+  },
+  "马来西亚公开赛": {
     "entity_id": "EVENT_0344",
     "standard_name": "马来西亚羽毛球公开赛"
   },
@@ -10539,10 +10527,6 @@
     "entity_id": "EVENT_0396",
     "standard_name": "Twenty20"
   },
-  "U.S. Open": {
-    "entity_id": "EVENT_0397",
-    "standard_name": "U.S. Open"
-  },
   "WCT巡回赛": {
     "entity_id": "ORG_0432",
     "standard_name": "WCT巡回赛"
@@ -10690,14 +10674,6 @@
   "世界斯诺克武汉公开赛": {
     "entity_id": "EVENT_0415",
     "standard_name": "World Snooker Wuhan Open"
-  },
-  "Wuhan Open Qualifiers": {
-    "entity_id": "EVENT_0416",
-    "standard_name": "Wuhan Open Qualifiers"
-  },
-  "武汉公开赛资格赛": {
-    "entity_id": "EVENT_0416",
-    "standard_name": "Wuhan Open Qualifiers"
   },
   "X (formerly Twitter)": {
     "entity_id": "ORG_0437",
@@ -11055,10 +11031,6 @@
     "entity_id": "ORG_0470",
     "standard_name": "中体大健康微信公众号"
   },
-  "中国一队": {
-    "entity_id": "ORG_0477",
-    "standard_name": "中国国家斯诺克一队"
-  },
   "中国中央电视台新闻": {
     "entity_id": "ORG_0472",
     "standard_name": "中国中央电视台新闻"
@@ -11075,10 +11047,6 @@
     "entity_id": "ORG_0473",
     "standard_name": "中国乒乓球队教练组"
   },
-  "中国二队": {
-    "entity_id": "ORG_0478",
-    "standard_name": "中国国家斯诺克二队"
-  },
   "中国台球俱乐部职业联赛": {
     "entity_id": "ORG_0475",
     "standard_name": "中国台球俱乐部职业联赛"
@@ -11091,7 +11059,15 @@
     "entity_id": "ORG_0477",
     "standard_name": "中国国家斯诺克一队"
   },
+  "中国一队": {
+    "entity_id": "ORG_0477",
+    "standard_name": "中国国家斯诺克一队"
+  },
   "中国国家斯诺克二队": {
+    "entity_id": "ORG_0478",
+    "standard_name": "中国国家斯诺克二队"
+  },
+  "中国二队": {
     "entity_id": "ORG_0478",
     "standard_name": "中国国家斯诺克二队"
   },
@@ -11610,10 +11586,6 @@
   "北爱尔兰斯诺克公开赛": {
     "entity_id": "EVENT_0448",
     "standard_name": "北爱尔兰斯诺克公开赛"
-  },
-  "北爱尔兰杯": {
-    "entity_id": "EVENT_0488",
-    "standard_name": "斯诺克北爱尔兰杯"
   },
   "华盛顿大学": {
     "entity_id": "ORG_0493",
@@ -12539,6 +12511,10 @@
     "entity_id": "EVENT_0488",
     "standard_name": "斯诺克北爱尔兰杯"
   },
+  "北爱尔兰杯": {
+    "entity_id": "EVENT_0488",
+    "standard_name": "斯诺克北爱尔兰杯"
+  },
   "斯诺克单局限时赛": {
     "entity_id": "EVENT_0489",
     "standard_name": "斯诺克单局限时赛"
@@ -12878,6 +12854,14 @@
   "武汉光谷体育馆": {
     "entity_id": "LOC_0428",
     "standard_name": "武汉光谷体育馆"
+  },
+  "武汉公开赛资格赛": {
+    "entity_id": "EVENT_0512",
+    "standard_name": "武汉公开赛资格赛"
+  },
+  "Wuhan Open Qualifiers": {
+    "entity_id": "EVENT_0512",
+    "standard_name": "武汉公开赛资格赛"
   },
   "武汉市": {
     "entity_id": "LOC_0429",
@@ -13600,8 +13584,8 @@
     "standard_name": "英国斯诺克锦标赛"
   },
   "英锦赛": {
-    "entity_id": "EVENT_0531",
-    "standard_name": "英国锦标赛"
+    "entity_id": "EVENT_0530",
+    "standard_name": "英国斯诺克锦标赛"
   },
   "斯诺克英国锦标赛": {
     "entity_id": "EVENT_0530",
@@ -20263,6 +20247,26 @@
     "entity_id": "EVENT_0683",
     "standard_name": "2028年洛杉矶夏季奥运会"
   },
+  "2028年洛杉矶奥运会": {
+    "entity_id": "EVENT_0683",
+    "standard_name": "2028年洛杉矶夏季奥运会"
+  },
+  "洛杉矶奥运会": {
+    "entity_id": "EVENT_0683",
+    "standard_name": "2028年洛杉矶夏季奥运会"
+  },
+  "洛杉矶奥运": {
+    "entity_id": "EVENT_0683",
+    "standard_name": "2028年洛杉矶夏季奥运会"
+  },
+  "2028年夏季奥运会": {
+    "entity_id": "EVENT_0683",
+    "standard_name": "2028年洛杉矶夏季奥运会"
+  },
+  "2028年奥运会": {
+    "entity_id": "EVENT_0683",
+    "standard_name": "2028年洛杉矶夏季奥运会"
+  },
   "A·勒布伦": {
     "entity_id": "PER_1952",
     "standard_name": "A·勒布伦"
@@ -21749,7 +21753,7 @@
   },
   "组委会": {
     "entity_id": "ORG_1139",
-    "standard_name": "赛事组委会"
+    "standard_name": "滦河横渡挑战赛赛事组委会"
   },
   "广富林": {
     "entity_id": "LOC_0620",
@@ -24207,15 +24211,15 @@
     "entity_id": "PER_2264",
     "standard_name": "叶诗文"
   },
-  "名古屋亚残运会": {
-    "entity_id": "EVENT_0884",
-    "standard_name": "名古屋亚洲残疾人运动会"
-  },
   "名古屋亚残运会选拔赛": {
     "entity_id": "EVENT_0883",
     "standard_name": "名古屋亚残运会选拔赛"
   },
   "名古屋亚洲残疾人运动会": {
+    "entity_id": "EVENT_0884",
+    "standard_name": "名古屋亚洲残疾人运动会"
+  },
+  "名古屋亚残运会": {
     "entity_id": "EVENT_0884",
     "standard_name": "名古屋亚洲残疾人运动会"
   },
@@ -25874,6 +25878,10 @@
   "贾智迪": {
     "entity_id": "PER_2453",
     "standard_name": "贾智迪"
+  },
+  "滦河横渡挑战赛赛事组委会": {
+    "entity_id": "ORG_1139",
+    "standard_name": "滦河横渡挑战赛赛事组委会"
   },
   "赵一朴": {
     "entity_id": "PER_2454",
@@ -33742,10 +33750,6 @@
   "中国台湾": {
     "entity_id": "LOC_0027",
     "standard_name": "中国台湾地区"
-  },
-  "2026年泰国公开赛": {
-    "entity_id": "EVENT_0082",
-    "standard_name": "2026年泰国公开赛"
   },
   "美利坚合众国": {
     "entity_id": "LOC_0275",

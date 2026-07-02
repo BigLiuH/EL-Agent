@@ -228,18 +228,6 @@
       "entity_id": "EVENT_0022"
     },
     {
-      "standard_name": "2025年深圳林丹杯",
-      "entity_type": "EVENT",
-      "description": "羽毛球赛事，由著名羽毛球运动员林丹发起或命名，2025年5月29-31日在深圳举行，的幸战队计划出征此次赛事。",
-      "aliases": [
-        "林丹杯"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0023"
-    },
-    {
       "standard_name": "2025年苏迪曼杯",
       "entity_type": "EVENT",
       "description": "世界羽毛球混合团体锦标赛，苏迪曼杯是羽毛球界重要团体赛事，2025年举办，文章中提到陈雨菲与勒莎娜在此赛事有过交手。",
@@ -808,7 +796,7 @@
       "aliases": [
         "泰国公开赛",
         "泰国羽毛球公开赛",
-        "泰国"
+        "2026年泰国公开赛"
       ],
       "sources": [
         "kb_badminton"
@@ -1026,24 +1014,6 @@
         "kb_badminton"
       ],
       "entity_id": "EVENT_0110"
-    },
-    {
-      "standard_name": "2028年洛杉矶奥运会",
-      "entity_type": "EVENT",
-      "description": "2028年在美国洛杉矶举行的夏季奥运会，安大略会议中心被指定为乒乓球正式赛场，2026年WTT美国大满贯作为奥运场馆适应演练。",
-      "aliases": [
-        "洛杉矶奥运会",
-        "洛杉矶奥运",
-        "2028年夏季奥运会",
-        "2028年奥运会"
-      ],
-      "sources": [
-        "kb_badminton",
-        "kb_ppq",
-        "kb_swimming",
-        "kb_tj"
-      ],
-      "entity_id": "EVENT_0111"
     },
     {
       "standard_name": "2028年洛杉矶奥运会周期重大赛事",
@@ -4550,16 +4520,6 @@
       "entity_id": "PER_0113"
     },
     {
-      "standard_name": "全英公开赛",
-      "entity_type": "EVENT",
-      "description": "羽毛球赛事，历史悠久，属于BWF世界巡回赛，刘圣书/谭宁获得冠军。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0213"
-    },
-    {
       "standard_name": "全英羽毛球公开赛",
       "entity_type": "EVENT",
       "description": "历史悠久的顶级羽毛球公开赛，世界羽联超级1000赛事。2024年赛事中，蒋振邦/魏雅欣止步混双八强，此后二人被拆对。",
@@ -4976,18 +4936,6 @@
         "kb_part2"
       ],
       "entity_id": "PER_0131"
-    },
-    {
-      "standard_name": "刘圣书/谭宁",
-      "entity_type": "PER",
-      "description": "中国羽毛球新生代女双组合，由刘圣书和谭宁搭档。在“凡尘组合”退役后，她们继承衣钵，升至世界女双排名第一的位置。",
-      "aliases": [
-        "圣坛组合"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "PER_0132"
     },
     {
       "standard_name": "刘圣书/谭宁组合",
@@ -5957,19 +5905,6 @@
       "entity_id": "ORG_0181"
     },
     {
-      "standard_name": "印度尼西亚大师赛",
-      "entity_type": "EVENT",
-      "description": "羽毛球赛事，法汉在本赛季问鼎冠军，该赛事是世界羽联巡回赛的一部分。",
-      "aliases": [
-        "印尼大师赛",
-        "印尼羽毛球大师赛"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0227"
-    },
-    {
       "standard_name": "印度尼西亚羽毛球公开赛",
       "entity_type": "EVENT",
       "description": "在印度尼西亚举办的世界羽联世界巡回赛高级别赛事。文中提到在该赛事上，陈柏阳/刘毅曾在八进四时负于伊斯法哈尼/咖塔玛。",
@@ -6017,7 +5952,9 @@
       "entity_type": "EVENT",
       "description": "羽毛球国际赛事，帕尼查蓬在2024年获得男单亚军。",
       "aliases": [
-        "印尼大师赛"
+        "印尼大师赛",
+        "印度尼西亚大师赛",
+        "印尼羽毛球大师赛"
       ],
       "sources": [
         "kb_badminton"
@@ -7072,7 +7009,10 @@
       "standard_name": "圣坛组合",
       "entity_type": "PER",
       "description": "羽毛球女双组合的昵称，具体成员未明确，在新加坡公开赛中可能作为决赛对手出现。",
-      "aliases": [],
+      "aliases": [
+        "刘圣书/谭宁",
+        "圣坛组合"
+      ],
       "sources": [
         "kb_badminton"
       ],
@@ -8816,7 +8756,7 @@
       "entity_id": "ORG_0244"
     },
     {
-      "standard_name": "市总工会",
+      "standard_name": "根河市总工会",
       "entity_type": "ORG",
       "description": "机构名：工会组织。描述：承办2026年根河市羽毛球赛，旨在丰富各族职工群众精神文化生活，凝聚干事热情。",
       "aliases": [],
@@ -9602,16 +9542,6 @@
         "kb_badminton"
       ],
       "entity_id": "PER_0356"
-    },
-    {
-      "standard_name": "德国公开赛",
-      "entity_type": "EVENT",
-      "description": "羽毛球国际赛事，在德国举行，韩千禧今年曾获冠军的赛事。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0256"
     },
     {
       "standard_name": "德国国家足球队",
@@ -11739,7 +11669,8 @@
       "entity_type": "EVENT",
       "description": "一项以中国著名羽毛球运动员林丹命名的羽毛球赛事，通常具有较高水平和影响力。文中“的幸强无敌队”曾出征此项赛事。",
       "aliases": [
-        "林丹杯"
+        "林丹杯",
+        "2025年深圳林丹杯"
       ],
       "sources": [
         "kb_badminton"
@@ -12693,16 +12624,6 @@
       "entity_id": "ORG_0310"
     },
     {
-      "standard_name": "泰国大师赛",
-      "entity_type": "EVENT",
-      "description": "羽毛球赛事，帕尼查蓬本赛季闯入男单决赛但获亚军。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0281"
-    },
-    {
       "standard_name": "泰国羽毛球协会",
       "entity_type": "ORG",
       "description": "泰国国家羽毛球运动管理机构，其旗下运动员代表泰国参加国际比赛。",
@@ -13544,16 +13465,6 @@
       "entity_id": "PER_0548"
     },
     {
-      "standard_name": "澳大利亚公开赛",
-      "entity_type": "EVENT",
-      "description": "羽毛球赛事，上周举行，国羽男单选手朱轩辰在该赛事中止步首轮。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0294"
-    },
-    {
       "standard_name": "澳大利亚网球公开赛",
       "entity_type": "EVENT",
       "description": "网球四大满贯赛事之一，郑钦文因伤无缘2024年参赛。",
@@ -14187,16 +14098,6 @@
         "kb_ppq"
       ],
       "entity_id": "LOC_0259"
-    },
-    {
-      "standard_name": "瑞士公开赛",
-      "entity_type": "EVENT",
-      "description": "羽毛球赛事，李诗沣在此取得的最好战绩为四强。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0301"
     },
     {
       "standard_name": "瑞士羽毛球公开赛",
@@ -19321,16 +19222,6 @@
       "entity_id": "EVENT_0341"
     },
     {
-      "standard_name": "马来西亚公开赛",
-      "entity_type": "EVENT",
-      "description": "羽毛球赛事，属于BWF世界巡回赛，刘圣书/谭宁获得冠军。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0342"
-    },
-    {
       "standard_name": "马来西亚国家羽毛球队",
       "entity_type": "ORG",
       "description": "代表马来西亚参加国际羽毛球赛事的国家队。文章中指代谢炜杰/张御宇组成的男双组合。",
@@ -20876,18 +20767,6 @@
       "entity_id": "EVENT_0396"
     },
     {
-      "standard_name": "U.S. Open",
-      "entity_type": "EVENT",
-      "description": "高尔夫四大满贯赛事之一，2023年在辛纳科克山举行，温德姆·克拉克夺冠。",
-      "aliases": [
-        "美国公开赛"
-      ],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "EVENT_0397"
-    },
-    {
       "standard_name": "WCT巡回赛",
       "entity_type": "ORG",
       "description": "斯诺克巡回赛事组织，为职业和业余选手提供比赛平台，常冰玉上赛季重返该巡回赛。",
@@ -21118,18 +20997,6 @@
         "kb_billiards"
       ],
       "entity_id": "EVENT_0415"
-    },
-    {
-      "standard_name": "Wuhan Open Qualifiers",
-      "entity_type": "EVENT",
-      "description": "世界斯诺克武汉公开赛的资格赛阶段，2026年6月在莱斯特城举行，场地高温导致球员汗流浃背，引发批评。",
-      "aliases": [
-        "武汉公开赛资格赛"
-      ],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "EVENT_0416"
     },
     {
       "standard_name": "X (formerly Twitter)",
@@ -21771,16 +21638,6 @@
       "entity_id": "ORG_0470"
     },
     {
-      "standard_name": "中国一队",
-      "entity_type": "ORG",
-      "description": "代表中华人民共和国参加2026年世界斯诺克台球团体锦标赛的一支队伍，由李城杰、潘奕铭、徐嘉锐等队员组成，最终在该届赛事中夺冠。",
-      "aliases": [],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "ORG_0471"
-    },
-    {
       "standard_name": "中国中央电视台新闻",
       "entity_type": "ORG",
       "description": "中国新闻媒体机构，报道郑钦文比赛消息。",
@@ -21803,16 +21660,6 @@
         "kb_billiards"
       ],
       "entity_id": "ORG_0473"
-    },
-    {
-      "standard_name": "中国二队",
-      "entity_type": "ORG",
-      "description": "代表中华人民共和国参加2026年世界斯诺克台球团体锦标赛的另一支队伍，由马海龙、徐健豪、周金豪等队员组成。",
-      "aliases": [],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "ORG_0474"
     },
     {
       "standard_name": "中国台球俱乐部职业联赛",
@@ -22796,16 +22643,6 @@
         "kb_billiards"
       ],
       "entity_id": "EVENT_0448"
-    },
-    {
-      "standard_name": "北爱尔兰杯",
-      "entity_type": "EVENT",
-      "description": "斯诺克赛事，丁俊晖曾获得冠军，标志其早期职业生涯突破。",
-      "aliases": [],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "EVENT_0449"
     },
     {
       "standard_name": "华盛顿大学",
@@ -25172,7 +25009,10 @@
       "standard_name": "武汉公开赛资格赛",
       "entity_type": "EVENT",
       "description": "武汉公开赛的资格赛阶段，决定正赛参赛名额，是斯诺克排名赛的重要组成部分。",
-      "aliases": [],
+      "aliases": [
+        "Wuhan Open Qualifiers",
+        "武汉公开赛资格赛"
+      ],
       "sources": [
         "kb_billiards"
       ],
@@ -26339,17 +26179,6 @@
       "entity_id": "EVENT_0523"
     },
     {
-      "standard_name": "美国公开赛",
-      "entity_type": "EVENT",
-      "description": "美国高尔夫协会主办的高尔夫大满贯赛事之一，每年举办，历史悠久。",
-      "aliases": [],
-      "sources": [
-        "kb_billiards",
-        "kb_tj"
-      ],
-      "entity_id": "EVENT_0524"
-    },
-    {
       "standard_name": "美国职业篮球联赛",
       "entity_type": "EVENT",
       "description": "美国最高级别的男子篮球职业联赛，全球最具影响力的篮球赛事之一，拥有30支球队。",
@@ -26627,18 +26456,6 @@
         "kb_billiards"
       ],
       "entity_id": "EVENT_0530"
-    },
-    {
-      "standard_name": "英国锦标赛",
-      "entity_type": "EVENT",
-      "description": "斯诺克赛事，常冰玉在此轰出1杆147。",
-      "aliases": [
-        "英锦赛"
-      ],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "EVENT_0531"
     },
     {
       "standard_name": "英国镜报",
@@ -39341,7 +39158,10 @@
       "aliases": [
         "2028年洛杉矶奥运会",
         "2028洛杉矶奥运会",
-        "洛杉矶奥运会"
+        "洛杉矶奥运会",
+        "洛杉矶奥运",
+        "2028年夏季奥运会",
+        "2028年奥运会"
       ],
       "sources": [
         "kb_ppq",
@@ -45243,16 +45063,6 @@
       "entity_id": "LOC_0665"
     },
     {
-      "standard_name": "重庆冠军赛",
-      "entity_type": "EVENT",
-      "description": "WTT冠军赛重庆站，梁靖崑在此比赛中腰伤发作，2-0领先被逆转翻盘。",
-      "aliases": [],
-      "sources": [
-        "kb_ppq"
-      ],
-      "entity_id": "EVENT_0811"
-    },
-    {
       "standard_name": "金恺杰",
       "entity_type": "PER",
       "description": "生活在上海的青少年，热爱乒乓球、绘画和书法，有中法家庭背景（父亲来自南法，母亲中国人），会弹吉他，曾练习书法并参观上海博物馆东馆。",
@@ -47639,16 +47449,6 @@
         "kb_tj"
       ],
       "entity_id": "PER_2264"
-    },
-    {
-      "standard_name": "名古屋亚残运会",
-      "entity_type": "EVENT",
-      "description": "在日本名古屋举办的亚洲残疾人运动会，是亚洲地区最高水平的残疾人体育赛事之一。",
-      "aliases": [],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "EVENT_0882"
     },
     {
       "standard_name": "名古屋亚残运会选拔赛",
@@ -51526,7 +51326,7 @@
       "entity_id": "PER_2453"
     },
     {
-      "standard_name": "赛事组委会",
+      "standard_name": "滦河横渡挑战赛赛事组委会",
       "entity_type": "ORG",
       "description": "负责组织和管理滦河横渡挑战赛的机构，负责现场组织、水域救援和医疗救护保障等工作",
       "aliases": [
@@ -69274,18 +69074,6 @@
         "中国台湾"
       ],
       "description": "中国的一部分，以‘中国台北’名义参加国际体育赛事，其代表队参加了2026年中国澳门羽毛球公开赛。",
-      "sources": [
-        "kb_badminton"
-      ]
-    },
-    {
-      "entity_id": "EVENT_0082",
-      "standard_name": "2026年泰国公开赛",
-      "entity_type": "EVENT",
-      "aliases": [
-        "泰国公开赛"
-      ],
-      "description": "2026年在泰国举办的国际羽毛球公开赛，鲍骊婧/曹梓涵在此赛事中夺得女双冠军。",
       "sources": [
         "kb_badminton"
       ]
