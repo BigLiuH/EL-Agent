@@ -5504,7 +5504,9 @@
       "aliases": [
         "北京男篮",
         "北京首钢俱乐部",
-        "北京"
+        "北京",
+        "北京首钢男篮",
+        "北京首钢篮球俱乐部男子篮球队"
       ],
       "sources": [
         "kb_badminton",
@@ -7720,17 +7722,6 @@
         "kb_badminton"
       ],
       "entity_id": "EVENT_0246"
-    },
-    {
-      "standard_name": "女王杯",
-      "entity_type": "EVENT",
-      "description": "网球赛事，郭涵煜参加的双打比赛在该赛事中进行，半决赛中她搭档梅拉德诺维奇落败，张帅此前在女王杯首轮遭遇一轮游。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton",
-        "kb_billiards"
-      ],
-      "entity_id": "EVENT_0247"
     },
     {
       "standard_name": "姜杉",
@@ -13553,6 +13544,16 @@
       "entity_id": "PER_0548"
     },
     {
+      "standard_name": "澳大利亚公开赛",
+      "entity_type": "EVENT",
+      "description": "羽毛球赛事，上周举行，国羽男单选手朱轩辰在该赛事中止步首轮。",
+      "aliases": [],
+      "sources": [
+        "kb_badminton"
+      ],
+      "entity_id": "EVENT_0294"
+    },
+    {
       "standard_name": "澳大利亚网球公开赛",
       "entity_type": "EVENT",
       "description": "网球四大满贯赛事之一，郑钦文因伤无缘2024年参赛。",
@@ -15856,18 +15857,6 @@
         "kb_badminton"
       ],
       "entity_id": "PER_0686"
-    },
-    {
-      "standard_name": "菲利克斯·奥热-阿利亚西姆",
-      "entity_type": "PER",
-      "description": "加拿大职业网球运动员，年轻有为，世界排名曾进入前十，以全面技术、潜力和攻击性打法闻名，多次在ATP巡回赛中取得佳绩。",
-      "aliases": [
-        "阿利亚西姆"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "PER_0687"
     },
     {
       "standard_name": "萨姆-A",
@@ -20258,7 +20247,8 @@
         "斯诺克冠军联赛（排名赛版）",
         "斯诺克排名赛版冠军联赛",
         "斯诺克冠军联赛",
-        "排名赛冠军联赛"
+        "排名赛冠军联赛",
+        "Championship League Snooker"
       ],
       "sources": [
         "kb_billiards"
@@ -20405,18 +20395,6 @@
         "kb_billiards"
       ],
       "entity_id": "EVENT_0378"
-    },
-    {
-      "standard_name": "Championship League Snooker",
-      "entity_type": "EVENT",
-      "description": "斯诺克赛事，每年举办两站，一站排名赛，一站邀请赛，吸引128位顶尖选手参与，分成32个小组，头名晋级32强，冠军可获得3.3万英镑奖金和冠中冠邀请赛入场券。",
-      "aliases": [
-        "斯诺克冠军联赛"
-      ],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "EVENT_0379"
     },
     {
       "standard_name": "Colin Ingram",
@@ -20671,18 +20649,6 @@
       "entity_id": "EVENT_0386"
     },
     {
-      "standard_name": "Matthew Selt",
-      "entity_type": "PER",
-      "description": "英格兰斯诺克球员，世界排名曾进入前50，2026年武汉公开赛资格赛中获胜，但抱怨场地高温条件，调侃自己最大成就是没有中暑昏倒。",
-      "aliases": [
-        "塞尔特"
-      ],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "PER_0984"
-    },
-    {
       "standard_name": "NBA季后赛",
       "entity_type": "EVENT",
       "description": "NBA常规赛结束后进行的淘汰制锦标赛，决定当赛季的总冠军。文中提及斯图尔特和活塞队在季后赛中的表现。",
@@ -20800,18 +20766,6 @@
         "kb_billiards"
       ],
       "entity_id": "PER_0992"
-    },
-    {
-      "standard_name": "Shanghai Exhibition Match",
-      "entity_type": "EVENT",
-      "description": "在上海举办的斯诺克表演赛，用于选手热身和展示，如赵心童与吴宜泽的比赛，测试技战术水平。",
-      "aliases": [
-        "上海表演赛"
-      ],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "EVENT_0391"
     },
     {
       "standard_name": "Shanghai Masters",
@@ -21504,7 +21458,8 @@
       "entity_type": "EVENT",
       "description": "2023年在上海举办的斯诺克表演赛，赵心童、吴宜泽、艾伦等参加，具有高强度热身和检验状态的意义，艾伦最终夺冠。",
       "aliases": [
-        "上海表演赛"
+        "上海表演赛",
+        "Shanghai Exhibition Match"
       ],
       "sources": [
         "kb_billiards"
@@ -24275,24 +24230,13 @@
       "entity_type": "PER",
       "description": "英国斯诺克球员，曾获得世锦赛和大师赛冠军，接近大满贯，武汉公开赛资格赛被淘汰。",
       "aliases": [
-        "宾汉姆"
+        "宾汉姆",
+        "斯图尔特·宾汉姆"
       ],
       "sources": [
         "kb_billiards"
       ],
       "entity_id": "PER_1147"
-    },
-    {
-      "standard_name": "斯图尔特·宾汉姆",
-      "entity_type": "PER",
-      "description": "斯诺克名将，参与2026年冠军联赛等赛事。",
-      "aliases": [
-        "宾汉姆"
-      ],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "PER_1148"
     },
     {
       "standard_name": "斯坦·穆迪",
@@ -24646,7 +24590,8 @@
       "entity_type": "EVENT",
       "description": "斯诺克运动最重要的邀请赛之一，与世锦赛、英锦赛并称“三大赛”。为纪念保罗·亨特等传奇球员，其奖杯已更名。",
       "aliases": [
-        "大师赛"
+        "大师赛",
+        "Masters"
       ],
       "sources": [
         "kb_billiards"
@@ -27124,24 +27069,13 @@
       "entity_type": "PER",
       "description": "泰国斯诺克选手，亚洲斯诺克代表人物之一，职业生涯获得排名赛冠军，文中在2025年斯诺克武汉公开赛资格赛中以1-5负于吉尔伯特。",
       "aliases": [
-        "桑坎姆"
+        "桑坎姆",
+        "诺鹏·桑坎姆"
       ],
       "sources": [
         "kb_billiards"
       ],
       "entity_id": "PER_1278"
-    },
-    {
-      "standard_name": "诺鹏·桑坎姆",
-      "entity_type": "PER",
-      "description": "泰国斯诺克运动员。",
-      "aliases": [
-        "桑坎姆"
-      ],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "PER_1279"
     },
     {
       "standard_name": "谢拉",
@@ -27565,25 +27499,14 @@
       "entity_type": "PER",
       "description": "英国斯诺克运动员，六次排名赛冠军。",
       "aliases": [
-        "卡特"
-      ],
-      "sources": [
-        "kb_billiards"
-      ],
-      "entity_id": "PER_1309"
-    },
-    {
-      "standard_name": "阿里斯特·卡特",
-      "entity_type": "PER",
-      "description": "英国斯诺克选手，老牌劲旅，在2026-27赛季冠军联赛中参赛。",
-      "aliases": [
         "卡特",
+        "阿里斯特·卡特",
         "霍尔特"
       ],
       "sources": [
         "kb_billiards"
       ],
-      "entity_id": "PER_1310"
+      "entity_id": "PER_1309"
     },
     {
       "standard_name": "阿隆·希尔",
@@ -27815,7 +27738,8 @@
       "entity_type": "PER",
       "description": "英国斯诺克球员，曾担任奥沙利文陪练，武汉公开赛资格赛被淘汰。",
       "aliases": [
-        "塞尔特"
+        "塞尔特",
+        "Matthew Selt"
       ],
       "sources": [
         "kb_billiards"
@@ -28457,24 +28381,12 @@
       "entity_id": "PER_1358"
     },
     {
-      "standard_name": "加纳",
-      "entity_type": "LOC",
-      "description": "西非国家。其男子国家足球队是非洲足坛的传统强队，多次参加世界杯决赛圈比赛，拥有众多在欧洲顶级联赛效力的球员。",
-      "aliases": [
-        "Ghana",
-        "加纳"
-      ],
-      "sources": [
-        "kb_part1"
-      ],
-      "entity_id": "LOC_0494"
-    },
-    {
       "standard_name": "加纳共和国",
       "entity_type": "LOC",
       "description": "非洲国家，其男子国家足球队在2026世界杯小组赛第二轮中0-0战平英格兰，目前与英格兰同积4分，末轮打平即可确保晋级。",
       "aliases": [
-        "加纳"
+        "加纳",
+        "Ghana"
       ],
       "sources": [
         "kb_part1"
@@ -29467,18 +29379,6 @@
       "entity_id": "PER_1416"
     },
     {
-      "standard_name": "祖德·贝林厄姆",
-      "entity_type": "PER",
-      "description": "英格兰职业足球运动员，司职攻击型中场。目前效力于西班牙足球甲级联赛的皇家马德里俱乐部，是当今足坛最受瞩目的年轻球星之一。在文中提及的世界杯小组赛中当选全场最佳球员，并与加纳球员西博交换了球衣。",
-      "aliases": [
-        "贝林厄姆"
-      ],
-      "sources": [
-        "kb_part1"
-      ],
-      "entity_id": "PER_1417"
-    },
-    {
       "standard_name": "福克斯新闻频道",
       "entity_type": "ORG",
       "description": "美国有线电视新闻频道，以保守派立场著称，提供新闻、评论和娱乐节目，是美国主要媒体之一。",
@@ -29582,7 +29482,8 @@
       "entity_type": "PER",
       "description": "葡萄牙职业足球运动员，司职右后卫。在文中比赛中作为替补出场，并助攻莱奥打入第五球。",
       "aliases": [
-        "塞梅多"
+        "塞梅多",
+        "内尔松·塞梅多"
       ],
       "sources": [
         "kb_part1"
@@ -31792,18 +31693,6 @@
       "entity_id": "PER_1517"
     },
     {
-      "standard_name": "内尔松·塞梅多",
-      "entity_type": "PER",
-      "description": "葡萄牙国家队球员，在友谊赛中为C罗送出斜塞球助攻。",
-      "aliases": [
-        "塞梅多"
-      ],
-      "sources": [
-        "kb_part2"
-      ],
-      "entity_id": "PER_1519"
-    },
-    {
       "standard_name": "内森·库塔",
       "entity_type": "PER",
       "description": "荷兰男篮球员，来华参赛名单中的一员。",
@@ -32085,20 +31974,6 @@
         "kb_part2"
       ],
       "entity_id": "LOC_0532"
-    },
-    {
-      "standard_name": "北京首钢男篮",
-      "entity_type": "ORG",
-      "description": "中国男子篮球职业联赛（CBA）的传统强队，多次获得CBA总冠军，位于北京市，拥有赵睿、周琦等本土球星。",
-      "aliases": [
-        "北京男篮",
-        "北京首钢篮球俱乐部男子篮球队",
-        "北京首钢男篮"
-      ],
-      "sources": [
-        "kb_part2"
-      ],
-      "entity_id": "ORG_0665"
     },
     {
       "standard_name": "北原麻纪",
@@ -32864,23 +32739,13 @@
       "entity_id": "EVENT_0602"
     },
     {
-      "standard_name": "国际篮联世界杯预选赛",
-      "entity_type": "EVENT",
-      "description": "国际篮球联合会（FIBA）组织的世界杯预选赛，中国队为备战7月份开始的世预赛（对阵日本、中国台北）而进行集训和热身。",
-      "aliases": [
-        "世预赛"
-      ],
-      "sources": [
-        "kb_part2"
-      ],
-      "entity_id": "EVENT_0603"
-    },
-    {
       "standard_name": "国际篮联篮球世界杯预选赛",
       "entity_type": "EVENT",
       "description": "国际篮球赛事，中国男篮正在备战，包括亚洲区第3窗口期比赛。",
       "aliases": [
-        "世界杯预选赛"
+        "世界杯预选赛",
+        "国际篮联世界杯预选赛",
+        "世预赛"
       ],
       "sources": [
         "kb_part2"
@@ -37546,7 +37411,8 @@
       "entity_type": "PER",
       "description": "加拿大男子网球运动员，2026年法网四号种子，在1/4决赛负于科博利。",
       "aliases": [
-        "阿利亚西姆"
+        "阿利亚西姆",
+        "菲利克斯·奥热-阿利亚西姆"
       ],
       "sources": [
         "kb_part2"
@@ -38535,23 +38401,12 @@
       "entity_id": "ORG_0830"
     },
     {
-      "standard_name": "马德里竞技俱乐部",
-      "entity_type": "ORG",
-      "description": "西班牙足球俱乐部，托马斯曾效力。",
-      "aliases": [
-        "马竞"
-      ],
-      "sources": [
-        "kb_part2"
-      ],
-      "entity_id": "ORG_0831"
-    },
-    {
       "standard_name": "马德里竞技足球俱乐部",
       "entity_type": "ORG",
       "description": "西班牙足球俱乐部，位于马德里，西甲劲旅，以防守反击和青训著称。",
       "aliases": [
-        "马竞"
+        "马竞",
+        "马德里竞技俱乐部"
       ],
       "sources": [
         "kb_part2"
@@ -40031,10 +39886,12 @@
       "entity_id": "ORG_0849"
     },
     {
-      "standard_name": "上海队",
+      "standard_name": "上海市乒乓球队",
       "entity_type": "ORG",
-      "description": "中国上海市游泳队，覃海洋所在的队伍。在2026年全国游泳冠军赛上，上海队选手覃海洋获得男子50米蛙泳金牌。",
-      "aliases": [],
+      "description": "上海市乒乓球代表队，孙铭阳曾代表该队获得2025第十五届全运会乒乓球女子团体季军。",
+      "aliases": [
+        "上海队"
+      ],
       "sources": [
         "kb_ppq",
         "kb_swimming"
@@ -40369,7 +40226,9 @@
       "entity_type": "ORG",
       "description": "中国乒乓球国家队主力层，闫安于2008年晋升至此。",
       "aliases": [
-        "国家一队"
+        "国家一队",
+        "国家乒乓球队一队",
+        "国家乒乓球一队"
       ],
       "sources": [
         "kb_ppq"
@@ -40383,7 +40242,8 @@
       "aliases": [
         "国家二队",
         "中国国家乒乓球二队",
-        "国家乒乓球二队"
+        "国家乒乓球二队",
+        "国家乒乓球队二队"
       ],
       "sources": [
         "kb_ppq"
@@ -41660,31 +41520,6 @@
       "entity_id": "LOC_0602"
     },
     {
-      "standard_name": "国家乒乓球队一队",
-      "entity_type": "ORG",
-      "description": "中国乒乓球队最高级别队伍，任浩、牛冠凯等队员及教练均在此。",
-      "aliases": [
-        "国家一队",
-        "国家乒乓球一队"
-      ],
-      "sources": [
-        "kb_ppq"
-      ],
-      "entity_id": "ORG_0895"
-    },
-    {
-      "standard_name": "国家乒乓球队二队",
-      "entity_type": "ORG",
-      "description": "中国乒乓球队次级队伍，任浩曾在此训练并升入一队。",
-      "aliases": [
-        "国家二队"
-      ],
-      "sources": [
-        "kb_ppq"
-      ],
-      "entity_id": "ORG_0896"
-    },
-    {
       "standard_name": "国家体育总局乒羽运动管理中心",
       "entity_type": "ORG",
       "description": "中国国家体育总局下属中心，负责乒乓球和羽毛球项目的管理，王励勤兼任副主任。",
@@ -42832,10 +42667,12 @@
       "entity_id": "LOC_0623"
     },
     {
-      "standard_name": "总决赛",
+      "standard_name": "国际乒联世界巡回赛总决赛",
       "entity_type": "EVENT",
       "description": "国际乒联世界巡回赛总决赛，朱雨玲曾获得女单冠军。",
-      "aliases": [],
+      "aliases": [
+        "总决赛"
+      ],
       "sources": [
         "kb_ppq"
       ],
@@ -44214,24 +44051,13 @@
       "entity_type": "PER",
       "description": "瑞典男子乒乓球运动员，世界排名第二，本次2026美国大满贯的强劲对手之一。",
       "aliases": [
-        "莫雷加德"
+        "莫雷加德",
+        "特鲁尔斯·莫雷加德"
       ],
       "sources": [
         "kb_ppq"
       ],
       "entity_id": "PER_2101"
-    },
-    {
-      "standard_name": "特鲁尔斯·莫雷加德",
-      "entity_type": "PER",
-      "description": "瑞典男子乒乓球运动员，曾获世乒赛男单亚军，被温瑞博击败过。",
-      "aliases": [
-        "莫雷加德"
-      ],
-      "sources": [
-        "kb_ppq"
-      ],
-      "entity_id": "PER_2102"
     },
     {
       "standard_name": "猛犸新闻",
@@ -44897,7 +44723,8 @@
       "entity_type": "PER",
       "description": "德国乒乓球运动员，全名蒂姆·波尔，欧洲乒坛常青树，1981年出生，曾多次获得世界冠军，四十多岁仍活跃在顶级联赛，是欧洲乒乓球代表人物。",
       "aliases": [
-        "波尔"
+        "波尔",
+        "蒂莫·波尔"
       ],
       "sources": [
         "kb_ppq"
@@ -44913,18 +44740,6 @@
         "kb_ppq"
       ],
       "entity_id": "LOC_0657"
-    },
-    {
-      "standard_name": "蒂莫·波尔",
-      "entity_type": "PER",
-      "description": "德国男子乒乓球名将，多次获得世界冠军。2009年丹麦公开赛1/4决赛被张继科惊天逆转。",
-      "aliases": [
-        "波尔"
-      ],
-      "sources": [
-        "kb_ppq"
-      ],
-      "entity_id": "PER_2142"
     },
     {
       "standard_name": "蒙正体育一队",
@@ -44984,7 +44799,8 @@
       "description": "英格兰职业足球运动员，司职中场，效力于皇家马德里足球俱乐部。以其经典庆祝动作闻名，樊振东在赢球后曾复刻该动作。",
       "aliases": [
         "贝林厄姆",
-        "裘德-贝林厄姆"
+        "裘德-贝林厄姆",
+        "祖德·贝林厄姆"
       ],
       "sources": [
         "kb_ppq"
@@ -46718,7 +46534,8 @@
       "entity_type": "ORG",
       "description": "参加全国游泳冠军赛的直辖市代表队，在男女4X100米混合泳接力预赛中排名第七晋级。",
       "aliases": [
-        "上海队"
+        "上海队",
+        "上海游泳队"
       ],
       "sources": [
         "kb_swimming"
@@ -46734,18 +46551,6 @@
         "kb_swimming"
       ],
       "entity_id": "EVENT_0858"
-    },
-    {
-      "standard_name": "上海游泳队",
-      "entity_type": "ORG",
-      "description": "上海市的专业游泳队伍，在2026年全国游泳冠军赛女子4X100米混合泳接力预赛中排名第五晋级决赛。",
-      "aliases": [
-        "上海队"
-      ],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "ORG_1026"
     },
     {
       "standard_name": "上海滴水湖",
@@ -50035,39 +49840,17 @@
       "entity_id": "EVENT_0922"
     },
     {
-      "standard_name": "江苏游泳队",
-      "entity_type": "ORG",
-      "description": "江苏省的专业游泳队伍，在2026年全国游泳冠军赛女子4X100米混合泳接力预赛中排名第八晋级决赛。",
-      "aliases": [
-        "江苏队"
-      ],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "ORG_1097"
-    },
-    {
       "standard_name": "江苏省游泳队",
       "entity_type": "ORG",
       "description": "参加全国游泳冠军赛的省级代表队，在男女4X100米混合泳接力预赛中排名第六晋级。",
       "aliases": [
-        "江苏队"
+        "江苏队",
+        "江苏游泳队"
       ],
       "sources": [
         "kb_swimming"
       ],
       "entity_id": "ORG_1098"
-    },
-    {
-      "standard_name": "江苏队",
-      "entity_type": "ORG",
-      "description": "中国江苏省游泳队，张雨霏和董志豪所在的队伍。在2026年全国游泳冠军赛上，江苏队选手张雨霏获得女子50米蝶泳金牌，董志豪获得男子50米蛙泳铜牌。",
-      "aliases": [],
-      "sources": [
-        "kb_swimming",
-        "kb_tj"
-      ],
-      "entity_id": "ORG_1099"
     },
     {
       "standard_name": "江西省游泳队",
@@ -50183,38 +49966,17 @@
       "entity_id": "ORG_1103"
     },
     {
-      "standard_name": "河北游泳队",
-      "entity_type": "ORG",
-      "description": "河北省的专业游泳队伍，在2026年全国游泳冠军赛女子800米自由泳决赛快组中有李冰洁、高唯中和马永慧3人出战。",
-      "aliases": [
-        "河北队"
-      ],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "ORG_1104"
-    },
-    {
       "standard_name": "河北省游泳队",
       "entity_type": "ORG",
       "description": "代表河北省的游泳队，在2026年全国游泳冠军赛女子4X200米自由泳接力决赛中以7分48秒62获得亚军，并打破赛事纪录",
       "aliases": [
-        "河北队"
+        "河北队",
+        "河北游泳队"
       ],
       "sources": [
         "kb_swimming"
       ],
       "entity_id": "ORG_1105"
-    },
-    {
-      "standard_name": "河北队",
-      "entity_type": "ORG",
-      "description": "中国河北省游泳队，李冰洁所在的队伍。在2026年全国游泳冠军赛上，河北队选手李冰洁获得女子800米自由泳金牌，展现了河北队在长距离游泳项目上的统治地位。",
-      "aliases": [],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "ORG_1106"
     },
     {
       "standard_name": "河南省游泳队",
@@ -65611,10 +65373,12 @@
       "entity_id": "EVENT_1254"
     },
     {
-      "standard_name": "美国队",
+      "standard_name": "美国国家田径队",
       "entity_type": "ORG",
       "description": "美国国家田径队，林赛所属队伍。",
-      "aliases": [],
+      "aliases": [
+        "美国队"
+      ],
       "sources": [
         "kb_tj"
       ],
@@ -69565,18 +69329,6 @@
       "description": "泰国女子羽毛球运动员，2013年世锦赛女单冠军，多次亚锦赛冠军，2023年马来西亚大师赛女单冠军。",
       "sources": [
         "kb_badminton"
-      ]
-    },
-    {
-      "entity_id": "EVENT_0385",
-      "standard_name": "Masters",
-      "entity_type": "EVENT",
-      "aliases": [
-        "大师赛"
-      ],
-      "description": "斯诺克排名赛之一，凯伦·威尔逊曾是大师赛冠军得主，赛事在斯诺克赛季中具有重要地位。",
-      "sources": [
-        "kb_billiards"
       ]
     },
     {
