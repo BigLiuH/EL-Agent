@@ -42,12 +42,6 @@
     "entity_type": "EVENT"
   },
   {
-    "mention": "澳大利亚公开赛",
-    "expected_name": "2026年澳大利亚羽毛球公开赛",
-    "predicted_name": "澳大利亚公开赛",
-    "entity_type": "EVENT"
-  },
-  {
     "mention": "德国公开赛",
     "expected_name": "德国羽毛球公开赛",
     "predicted_name": "德国公开赛",
@@ -808,12 +802,6 @@
     "expected_name": "祖德·贝林厄姆",
     "predicted_name": "裘德·贝林厄姆",
     "entity_type": "PER"
-  },
-  {
-    "mention": "葡萄牙",
-    "expected_name": "葡萄牙国家足球队",
-    "predicted_name": "葡萄牙国家男子足球队",
-    "entity_type": "ORG"
   },
   {
     "mention": "世界杯",

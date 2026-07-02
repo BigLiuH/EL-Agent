@@ -13720,8 +13720,20 @@
     "standard_name": "葡萄牙国家足球队"
   },
   "葡萄牙": {
-    "entity_id": "ORG_0596",
-    "standard_name": "葡萄牙国家男子足球队"
+    "entity_id": "LOC_0518",
+    "standard_name": "葡萄牙共和国"
+  },
+  "葡萄牙国家男子足球队": {
+    "entity_id": "ORG_0559",
+    "standard_name": "葡萄牙国家足球队"
+  },
+  "葡萄牙男足": {
+    "entity_id": "ORG_0559",
+    "standard_name": "葡萄牙国家足球队"
+  },
+  "葡萄牙国家队": {
+    "entity_id": "ORG_0559",
+    "standard_name": "葡萄牙国家足球队"
   },
   "董松": {
     "entity_id": "PER_1272",
@@ -15262,18 +15274,6 @@
   "葡萄牙共和国": {
     "entity_id": "LOC_0518",
     "standard_name": "葡萄牙共和国"
-  },
-  "葡萄牙国家男子足球队": {
-    "entity_id": "ORG_0596",
-    "standard_name": "葡萄牙国家男子足球队"
-  },
-  "葡萄牙男足": {
-    "entity_id": "ORG_0596",
-    "standard_name": "葡萄牙国家男子足球队"
-  },
-  "葡萄牙国家队": {
-    "entity_id": "ORG_0596",
-    "standard_name": "葡萄牙国家男子足球队"
   },
   "西汉姆联足球俱乐部": {
     "entity_id": "ORG_0597",
