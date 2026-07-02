@@ -42,7 +42,7 @@ class Disambiguator:
         self.type_weight = 0.15               # 类型一致性
         self.keyword_weight = 0.00            # 关键词重叠
         self.popularity_weight = 0.00         # 实体流行度
-        self.domain_weight = 0.10             # 领域匹配（加性）
+        self.domain_weight = 0.15             # 领域匹配（加性）
 
         # 加载先验概率
         self.prior_probs = self._load_prior_probs()

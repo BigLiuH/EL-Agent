@@ -33,7 +33,7 @@ def rebuild():
 
         for alias in entity.get("aliases", []):
             if alias == standard_name:
-                continue  # 跳过和标准名相同的
+                continue
             if alias in aliases:
                 dup_count += 1
             aliases[alias] = {"entity_id": eid, "standard_name": standard_name}
@@ -43,7 +43,7 @@ def rebuild():
         json.dump(aliases, f, ensure_ascii=False, indent=2)
 
     print(f"实体: {len(kb['entities'])}")
-    print(f"别名: {total_aliases}（含冲突 {dup_count} 条，后被覆盖）")
+    print(f"别名: {total_aliases}（含冲突 {dup_count} 条，实体自有别名优先）")
     print(f"输出: {OUT_PATH}")
 
 

@@ -1,12 +1,12 @@
 {
   "metrics": {
-    "nil_accuracy": 0.8314,
+    "nil_accuracy": 0.8318,
     "total_nil": 2527,
-    "nil_correct": 2101,
-    "nil_missed": 426,
+    "nil_correct": 2102,
+    "nil_missed": 425,
     "total_linked": 212,
-    "link_correct": 202,
-    "link_accuracy": 0.9528
+    "link_correct": 200,
+    "link_accuracy": 0.9434
   },
   "errors": [
     {
@@ -28,7 +28,7 @@
       "entity_type": "ORG",
       "linked_name": "TNF100",
       "linked_id": "EVENT_1073",
-      "confidence": 0.20872523653078504
+      "confidence": 0.2335010705987385
     },
     {
       "mention": "马尔科·贝泽基",
@@ -91,7 +91,7 @@
       "entity_type": "EVENT",
       "linked_name": "德国乒乓球杯赛",
       "linked_id": "EVENT_0770",
-      "confidence": 0.3502550302664611
+      "confidence": 0.37168861834510974
     },
     {
       "mention": "圣地亚哥",
@@ -213,18 +213,11 @@
       "confidence": 0.8
     },
     {
-      "mention": "F1",
-      "entity_type": "ORG",
-      "linked_name": "F1嘉年华",
-      "linked_id": "EVENT_0382",
-      "confidence": 0.20220828289815113
-    },
-    {
       "mention": "大奖赛",
       "entity_type": "EVENT",
       "linked_name": "蚌埠大奖赛",
       "linked_id": "EVENT_1266",
-      "confidence": 0.3608880940924089
+      "confidence": 0.3803170891061142
     },
     {
       "mention": "世界汽车拉力锦标赛",
@@ -336,7 +329,7 @@
       "entity_type": "PER",
       "linked_name": "朱利安·勒克莱尔",
       "linked_id": "PER_1166",
-      "confidence": 0.3571380940924089
+      "confidence": 0.3765670891061142
     },
     {
       "mention": "阿斯顿马丁",
@@ -539,7 +532,7 @@
       "entity_type": "EVENT",
       "linked_name": "女子双打半决赛",
       "linked_id": "EVENT_0246",
-      "confidence": 0.3584343506448374
+      "confidence": 0.37711962243328
     },
     {
       "mention": "爱尔兰队",
@@ -579,9 +572,9 @@
     {
       "mention": "乔治",
       "entity_type": "PER",
-      "linked_name": "乔治·富拉尼",
-      "linked_id": "PER_1484",
-      "confidence": 0.34970828289815115
+      "linked_name": "乔治娅·亨特·贝尔",
+      "linked_id": "PER_2565",
+      "confidence": 0.3661504224394475
     },
     {
       "mention": "道奇",
@@ -595,7 +588,7 @@
       "entity_type": "EVENT",
       "linked_name": "雅典",
       "linked_id": "LOC_0671",
-      "confidence": 0.12670741121884208
+      "confidence": 0.1481409992974907
     },
     {
       "mention": "埃尔芬·埃文斯",
@@ -644,14 +637,14 @@
       "entity_type": "LOC",
       "linked_name": "华盛顿大学",
       "linked_id": "ORG_0493",
-      "confidence": 0.20970828289815113
+      "confidence": 0.2258162350989648
     },
     {
       "mention": "芝加哥",
       "entity_type": "LOC",
       "linked_name": "芝加哥公牛",
       "linked_id": "ORG_0799",
-      "confidence": 0.20970828289815113
+      "confidence": 0.2258162350989648
     },
     {
       "mention": "麦迪逊",
@@ -721,7 +714,7 @@
       "entity_type": "PER",
       "linked_name": "斯特拉·潘",
       "linked_id": "PER_0385",
-      "confidence": 0.3653475594742657
+      "confidence": 0.3899656873886516
     },
     {
       "mention": "希腊拉米亚",
@@ -756,13 +749,6 @@
       "entity_type": "ORG",
       "linked_name": "格雷",
       "linked_id": "PER_1728",
-      "confidence": 0.8
-    },
-    {
-      "mention": "E20 Masters",
-      "entity_type": "EVENT",
-      "linked_name": "Masters",
-      "linked_id": "EVENT_0385",
       "confidence": 0.8
     },
     {

@@ -650,7 +650,8 @@
         "2026年名古屋亚洲运动会",
         "2026年爱知-名古屋亚洲运动会",
         "2026年爱知-名古屋亚运会",
-        "爱知-名古屋亚运会"
+        "爱知-名古屋亚运会",
+        "2026年亚洲运动会"
       ],
       "sources": [
         "kb_badminton",
@@ -2109,7 +2110,8 @@
         "WTT世界乒联",
         "World Table Tennis（世界乒乓球职业大联盟）",
         "World Table Tennis",
-        "世界乒乓球职业大联盟 (WTT)"
+        "世界乒乓球职业大联盟 (WTT)",
+        "世界乒乓球联合会（WTT）"
       ],
       "sources": [
         "kb_badminton",
@@ -5836,16 +5838,6 @@
       "entity_id": "PER_0178"
     },
     {
-      "standard_name": "印度公开赛",
-      "entity_type": "EVENT",
-      "description": "羽毛球赛事，属于BWF世界巡回赛，刘圣书/谭宁获得冠军。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0225"
-    },
-    {
       "standard_name": "印度共和国",
       "entity_type": "LOC",
       "description": "国家，2026年世界斯诺克台球团体锦标赛的亚军获得者，印度队表现出色，闯入决赛。",
@@ -7349,16 +7341,6 @@
         "kb_ppq"
       ],
       "entity_id": "LOC_0119"
-    },
-    {
-      "standard_name": "大马大师赛",
-      "entity_type": "EVENT",
-      "description": "羽毛球赛事，即马来西亚大师赛。文章中胡哲安与乔纳坦的1/4决赛、李诗沣与大波波夫的比赛均发生在该赛事。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0239"
     },
     {
       "standard_name": "大鹅体育（成都）有限公司",
@@ -20051,20 +20033,6 @@
       "entity_id": "EVENT_0366"
     },
     {
-      "standard_name": "2026年亚洲运动会",
-      "entity_type": "EVENT",
-      "description": "2026年亚洲运动会，于日本名古屋举行，包括乒乓球等项目，涉及林诗栋的单打资格讨论。",
-      "aliases": [
-        "2026年爱知-名古屋亚运会",
-        "名古屋亚运会"
-      ],
-      "sources": [
-        "kb_billiards",
-        "kb_swimming"
-      ],
-      "entity_id": "EVENT_0367"
-    },
-    {
       "standard_name": "2026年北京TOP独牙传奇中式九球公开赛",
       "entity_type": "EVENT",
       "description": "2026年在北京举办的台球赛事，冠军奖金高达1000万元人民币，刷新了台球赛事的历史纪录，成为全球冠军奖金最高的台球赛事。",
@@ -21363,7 +21331,9 @@
       "aliases": [
         "世乒赛团体赛",
         "伦敦世乒赛团体赛",
-        "世界乒乓球团体锦标赛"
+        "世界乒乓球团体锦标赛",
+        "伦敦世乒赛（团体赛）",
+        "2026年伦敦世界乒乓球锦标赛团体赛"
       ],
       "sources": [
         "kb_billiards",
@@ -30252,16 +30222,6 @@
       "entity_id": "EVENT_0573"
     },
     {
-      "standard_name": "WNBA",
-      "entity_type": "ORG",
-      "description": "美国女子职业篮球联赛，凯特琳·克拉克效力于此。",
-      "aliases": [],
-      "sources": [
-        "kb_part2"
-      ],
-      "entity_id": "ORG_0614"
-    },
-    {
       "standard_name": "WNBA季后赛",
       "entity_type": "EVENT",
       "description": "WNBA赛季末的淘汰赛阶段，是联盟曝光和话题热度峰值期。",
@@ -33352,16 +33312,6 @@
         "kb_part2"
       ],
       "entity_id": "ORG_0711"
-    },
-    {
-      "standard_name": "山东男篮",
-      "entity_type": "ORG",
-      "description": "中国职业篮球俱乐部，拥有高诗岩等球员，面临青训体系短板问题。",
-      "aliases": [],
-      "sources": [
-        "kb_part2"
-      ],
-      "entity_id": "ORG_0712"
     },
     {
       "standard_name": "山东高速U21青年队",
@@ -36469,23 +36419,12 @@
       "entity_id": "ORG_0791"
     },
     {
-      "standard_name": "美国女子篮球协会",
-      "entity_type": "ORG",
-      "description": "美国女子篮球职业联赛，韩旭曾效力纽约自由人。",
-      "aliases": [
-        "WNBA"
-      ],
-      "sources": [
-        "kb_part2"
-      ],
-      "entity_id": "ORG_0792"
-    },
-    {
       "standard_name": "美国女子职业篮球联赛",
       "entity_type": "ORG",
       "description": "美国女子职业篮球联赛，本场比赛为达拉斯飞翼对阵亚特兰大梦想的常规赛。",
       "aliases": [
-        "WNBA"
+        "WNBA",
+        "美国女子篮球协会"
       ],
       "sources": [
         "kb_part2"
@@ -39021,18 +38960,6 @@
       "entity_id": "EVENT_0672"
     },
     {
-      "standard_name": "2026年伦敦世界乒乓球锦标赛团体赛",
-      "entity_type": "EVENT",
-      "description": "2026年在英国伦敦举行的世乒赛团体赛，中国女团在决赛中击败日本队获得七连冠，王曼昱在决胜盘立功。",
-      "aliases": [
-        "伦敦世乒赛团体赛"
-      ],
-      "sources": [
-        "kb_ppq"
-      ],
-      "entity_id": "EVENT_0673"
-    },
-    {
       "standard_name": "2026年全国少儿乒乓球锦标赛预赛第三站（女子）",
       "entity_type": "EVENT",
       "description": "由中国乒乓球协会主办，于2026年6月15日至21日在上海曹燕华乒乓培训学校举行，吸引68支队伍参赛，决出女子甲组团体和单打冠军。",
@@ -39706,18 +39633,6 @@
         "kb_ppq"
       ],
       "entity_id": "EVENT_0714"
-    },
-    {
-      "standard_name": "世界乒乓球联合会（WTT）",
-      "entity_type": "ORG",
-      "description": "世界乒乓球职业化运营机构，负责组织WTT系列赛事，近期点名梁靖崑并宣布其退出WTT美国大满贯赛事。",
-      "aliases": [
-        "世界乒联"
-      ],
-      "sources": [
-        "kb_ppq"
-      ],
-      "entity_id": "ORG_0854"
     },
     {
       "standard_name": "世界乒乓球锦标赛",
@@ -40522,18 +40437,6 @@
       "entity_id": "EVENT_0741"
     },
     {
-      "standard_name": "伦敦世乒赛团体赛",
-      "entity_type": "EVENT",
-      "description": "世界乒乓球锦标赛团体赛，在伦敦举办，王楚钦提及该赛事结束后休整备战。",
-      "aliases": [
-        "伦敦世乒赛（团体赛）"
-      ],
-      "sources": [
-        "kb_ppq"
-      ],
-      "entity_id": "EVENT_0743"
-    },
-    {
       "standard_name": "伦敦世乒赛（团体赛）",
       "entity_type": "EVENT",
       "description": "2024年在伦敦举行的世界乒乓球锦标赛团体赛，中国男团夺冠，梁靖崑在半决赛和决赛中上演‘让二追三’逆转，成为关键功臣。",
@@ -40753,16 +40656,6 @@
         "kb_ppq"
       ],
       "entity_id": "EVENT_0751"
-    },
-    {
-      "standard_name": "全锦赛",
-      "entity_type": "EVENT",
-      "description": "中国全国乒乓球锦标赛，朱雨玲曾获得女单冠军。",
-      "aliases": [],
-      "sources": [
-        "kb_ppq"
-      ],
-      "entity_id": "EVENT_0752"
     },
     {
       "standard_name": "兹拉坦·伊布拉希莫维奇",
@@ -47195,16 +47088,6 @@
       "entity_id": "ORG_1050"
     },
     {
-      "standard_name": "北京队",
-      "entity_type": "ORG",
-      "description": "中国北京市游泳队，宋伯睿所在的队伍。在2026年全国游泳冠军赛上，北京队选手宋伯睿获得男子200米仰泳金牌。",
-      "aliases": [],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "ORG_1051"
-    },
-    {
       "standard_name": "单县",
       "entity_type": "LOC",
       "description": "中国山东省菏泽市下辖县，'奔跑吧·少年'2026年第一届'单县一中杯'青少年U系列游泳邀请赛的举办地",
@@ -49788,18 +49671,6 @@
         "kb_swimming"
       ],
       "entity_id": "ORG_1109"
-    },
-    {
-      "standard_name": "浙江游泳队",
-      "entity_type": "ORG",
-      "description": "浙江省的专业游泳队伍，在2026年全国游泳冠军赛女子4X100米混合泳接力预赛中以4分05秒25的成绩排名第一晋级。",
-      "aliases": [
-        "浙江队"
-      ],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "ORG_1110"
     },
     {
       "standard_name": "浙江省游泳队",
@@ -52394,18 +52265,6 @@
       "entity_id": "EVENT_0977"
     },
     {
-      "standard_name": "2025年东京世界田径锦标赛",
-      "entity_type": "EVENT",
-      "description": "2025年在日本东京举行的世界田径锦标赛，塞维尔以9秒77夺得男子100米金牌。",
-      "aliases": [
-        "东京世锦赛"
-      ],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "EVENT_0978"
-    },
-    {
       "standard_name": "2025年中华人民共和国全国运动会",
       "entity_type": "EVENT",
       "description": "2025年举办的全国运动会，于子迪在女子200米蝶泳中游出2分06秒57。",
@@ -54746,22 +54605,13 @@
       "entity_type": "EVENT",
       "description": "在日本东京举办的世界田径锦标赛，中国男子4×400米接力队曾在此虽败犹荣。",
       "aliases": [
-        "东京世锦赛"
+        "东京世锦赛",
+        "2025年东京世界田径锦标赛"
       ],
       "sources": [
         "kb_tj"
       ],
       "entity_id": "EVENT_1094"
-    },
-    {
-      "standard_name": "东京世锦赛",
-      "entity_type": "EVENT",
-      "description": "2025年世界田径锦标赛，在东京举行。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "EVENT_1095"
     },
     {
       "standard_name": "东京精工黄金大奖赛",
@@ -58727,16 +58577,6 @@
         "kb_tj"
       ],
       "entity_id": "ORG_1318"
-    },
-    {
-      "standard_name": "天津队",
-      "entity_type": "ORG",
-      "description": "中国天津市田径队，张国伟已完成与天津队的4年续签。",
-      "aliases": [],
-      "sources": [
-        "kb_tj"
-      ],
-      "entity_id": "ORG_1319"
     },
     {
       "standard_name": "天生桥",
@@ -69112,33 +68952,10 @@
       "standard_name": "浙江省游泳队",
       "entity_type": "ORG",
       "aliases": [
-        "浙江队"
+        "浙江队",
+        "浙江游泳队"
       ],
       "description": "中国浙江省游泳队，吴卿风、余依婷、潘展乐、费立纬所在的队伍。在2026年全国游泳冠军赛上，浙江队选手在多个项目上获得奖牌，包括女子50米蝶泳银牌和铜牌、男子200米仰泳铜牌、男子400米自由泳银牌以及女子4X100米混合泳接力银牌。",
-      "sources": [
-        "kb_swimming"
-      ]
-    },
-    {
-      "entity_id": "ORG_1155",
-      "standard_name": "香港队",
-      "entity_type": "ORG",
-      "aliases": [
-        "香港队"
-      ],
-      "description": "代表香港特别行政区参加全国游泳比赛的队伍",
-      "sources": [
-        "kb_swimming"
-      ]
-    },
-    {
-      "entity_id": "ORG_1154",
-      "standard_name": "香港特别行政区游泳队",
-      "entity_type": "ORG",
-      "aliases": [
-        "香港队"
-      ],
-      "description": "参加全国游泳冠军赛的特别行政区代表队，在男女4X100米混合泳接力预赛中游出3分52秒37排名第二晋级。",
       "sources": [
         "kb_swimming"
       ]
