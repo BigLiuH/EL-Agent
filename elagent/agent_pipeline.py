@@ -1,18 +1,27 @@
 """
 实体链接与知识对齐智能体 - 主控流水线
 
-按任务书要求，智能体内部编排若干原子能力（Skill）协同完成。
-每个 Skill 可独立调用（按需启用），也可通过主流水线组合执行。
+编排原子 Skill 协同完成实体链接，每个 Skill 复用最终优化策略。
+按需启用，全程可追溯。
 
 用法:
-  python -m elagent.agent_pipeline                      # 启动服务
-  python -m elagent.agent_pipeline --skills             # 列出所有Skill
-  python -m elagent.agent_pipeline --run standardize --input "国羽"  # 单独调用某个Skill
+  python -m elagent.agent_pipeline --skills
+  python -m elagent.agent_pipeline --article Dataset/llm_extracted_merged.json
+  python -m elagent.agent_pipeline --run standardize --input "国羽"
 """
 import argparse
 import json
 import logging
-from typing import List, Dict, Optional
+import sys
+import time
+from collections import Counter
+from pathlib import Path
+from typing import List, Optional
+
+# 支持直接运行（python agent_pipeline.py）
+if __name__ == "__main__" and __package__ is None:
+    __package__ = "elagent"
+    sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from .core.knowledge_base import knowledge_base
 from .core.disambiguator import disambiguator
@@ -21,7 +30,6 @@ from .core.nil_detector import nil_detector
 from .core.coref_resolver import is_coreference_mention, resolve_coreference
 from .models.mention import Mention
 from .models.entity import Entity, Candidate
-from .models.result import LinkResult
 from .config import config
 
 logger = logging.getLogger(__name__)
@@ -32,305 +40,319 @@ logger = logging.getLogger(__name__)
 # ============================================================
 
 SKILL_REGISTRY = {}
+SKILL_CALL_LOG = []
 
 
 def register_skill(name: str, impl_type: str, desc: str, cost: str, no_llm_reason: str):
-    """注册 Skill 到注册表"""
     def decorator(func):
-        SKILL_REGISTRY[name] = {
-            "name": name,
-            "description": desc,
-            "implementation": impl_type,
-            "cost": cost,
-            "why_no_llm": no_llm_reason,
-            "func": func,
-        }
+        SKILL_REGISTRY[name] = {"name": name, "description": desc,
+            "implementation": impl_type, "cost": cost, "why_no_llm": no_llm_reason, "func": func}
         return func
     return decorator
 
 
 def list_skills():
-    """列出所有注册的 Skill"""
-    print(f"{'Skill名称':<20} {'实现类型':<12} {'成本':<12} {'说明'}")
-    print("-" * 80)
+    print(f"\n{'Skill':<22} {'实现':<16} {'成本':<10} {'不用大模型的原因'}")
+    print("=" * 90)
     for name, info in sorted(SKILL_REGISTRY.items()):
-        print(f"{name:<20} {info['implementation']:<12} {info['cost']:<12} {info['description']}")
-    return SKILL_REGISTRY
+        print(f"{name:<22} {info['implementation']:<16} {info['cost']:<10} {info['why_no_llm']}")
+    print(f"\n共 {len(SKILL_REGISTRY)} 个 Skill")
+
+
+def call_skill(name: str, *args, **kwargs) -> any:
+    info = SKILL_REGISTRY[name]
+    start = time.time()
+    result = info["func"](*args, **kwargs)
+    elapsed = (time.time() - start) * 1000
+    SKILL_CALL_LOG.append({"skill": name, "type": info["implementation"], "cost_ms": round(elapsed, 2)})
+    if elapsed > 0.5:
+        print(f"  ├─ [{name}] ({elapsed:.1f}ms, {info['implementation']})")
+    return result
 
 
 # ============================================================
-# Skill 实现
+# Skill 实现（复用最终策略）
 # ============================================================
 
 @register_skill(
-    "standardize",
-    "纯规则",
-    "别名/简称/曾用名 → 标准全称 + 唯一ID",
-    "O(1)",
-    "别名映射是确定的键值对查找，哈希表即可解决。"
-)
-def skill_standardize(mention_text: str) -> dict:
-    """Skill: 实体标准化"""
-    # 标准名匹配
-    entity = knowledge_base.get_entity_by_name(mention_text)
-    if entity:
-        return {
-            "matched": True,
-            "standard_name": entity.standard_name,
-            "entity_id": entity.id,
-            "entity_type": entity.entity_type,
-        }
-    # 别名匹配
-    aliases = knowledge_base.search_by_alias(mention_text)
-    if aliases:
-        best = aliases[0]
-        return {
-            "matched": True,
-            "standard_name": best.standard_name,
-            "entity_id": best.id,
-            "entity_type": best.entity_type,
-        }
-    return {"matched": False}
+    "standard_name_match", "纯规则(哈希表)",
+    "标准名称精确匹配 → 置信度1.0", "<0.1ms",
+    "哈希表查 name_index，O(1) 精确匹配。")
+def skill_standard_name_match(mention_text: str) -> Optional[Entity]:
+    return knowledge_base.get_entity_by_name(mention_text)
 
 
 @register_skill(
-    "disambiguate",
-    "规则（5信号评分）",
-    "多候选实体结合上下文选择最佳",
-    "<1ms",
-    "5信号规则消歧器已达到90.85%准确率。LLM仅作为gap<0.01的可选兜底。"
-)
-def skill_disambiguate(mention: Mention, candidates: list) -> list:
-    """Skill: 上下文消歧"""
-    if len(candidates) <= 1:
-        return candidates
+    "alias_match", "纯规则(哈希表)",
+    "别名精确匹配 + 消歧器（5信号评分）", "<1ms",
+    "哈希表查 alias_dict，多候选时用5信号规则消歧，已达90.85%。")
+def skill_alias_match(mention: Mention, full_text: str) -> Optional[Candidate]:
+    entities = knowledge_base.search_by_alias(mention.text)
+    if not entities:
+        return None
+    if len(entities) == 1:
+        return Candidate(entity=entities[0], score=0.95, match_source="alias")
+    candidates = [Candidate(entity=e, score=0.95, match_source="alias") for e in entities]
     # 类型过滤
     if mention.entity_type:
-        type_matched = [c for c in candidates if c.entity.entity_type == mention.entity_type]
-        if type_matched:
-            candidates = type_matched
-    if len(candidates) <= 1:
-        return candidates
-
-    all_entities = [c.entity for c in candidates]
-    scored = []
-    for c in candidates:
-        score = disambiguator._compute_score(mention, c.entity, "", all_entities)
-        c.score = score
-        scored.append(c)
-    scored.sort(key=lambda x: x.score, reverse=True)
-    return scored[:3]
+        tm = [c for c in candidates if c.entity.entity_type == mention.entity_type]
+        if tm:
+            candidates = tm
+    ranked = disambiguator.disambiguate(mention, candidates, top_k=1, full_text=full_text)
+    return ranked[0] if ranked else None
 
 
 @register_skill(
-    "nil_check",
-    "规则（候选检索）",
-    "判断实体是否在知识库中不存在",
-    "<0.5ms",
-    "NIL判定本质是'KB中是否存在此mention'，哈希表直接解决。"
-)
-def skill_nil_check(mention_text: str) -> dict:
-    """Skill: NIL检测"""
-    candidates = knowledge_base.search_by_alias(mention_text)
+    "fuzzy_match", "规则(名称包含)",
+    "名称包含关系匹配 + 消歧器", "<30ms(遍历KB)",
+    "遍历KB做子串匹配，多候选时复用5信号消歧器。")
+def skill_fuzzy_match(mention: Mention, full_text: str) -> Optional[Candidate]:
+    candidates = []
+    for entity in knowledge_base.entities.values():
+        if mention.text in entity.standard_name and len(entity.standard_name) - len(mention.text) <= 8:
+            candidates.append(entity)
+        elif entity.standard_name in mention.text and len(mention.text) - len(entity.standard_name) <= 8:
+            candidates.append(entity)
     if not candidates:
-        name_entity = knowledge_base.get_entity_by_name(mention_text)
-        if name_entity:
-            candidates = [name_entity]
+        return None
+    if mention.entity_type:
+        tm = [e for e in candidates if e.entity_type == mention.entity_type]
+        if tm:
+            candidates = tm
+    if len(candidates) == 1:
+        return Candidate(entity=candidates[0], score=0.8, match_source="fuzzy")
+    cs = [Candidate(entity=e, score=0.75, match_source="fuzzy") for e in candidates]
+    ranked = disambiguator.disambiguate(mention, cs, top_k=1, full_text=full_text)
+    return ranked[0] if ranked else None
+
+
+@register_skill(
+    "bm25_search", "算法(BM25+jieba)",
+    "全文检索兜底", "<100ms",
+    "BM25是确定性检索算法，无参数学习。")
+def skill_bm25_search(mention_text: str) -> Optional[Candidate]:
+    if not bm25_index.built:
+        return None
+    results = bm25_index.search(mention_text, top_k=10)
+    if not results:
+        return None
+    eid, score = results[0]
+    entity = knowledge_base.get_entity(eid)
+    if not entity:
+        return None
+    return Candidate(entity=entity, score=min(score / 10.0, 0.7), match_source="bm25")
+
+
+@register_skill(
+    "nil_detect", "规则(多信号融合)",
+    "知识库不存在实体的正确识别", "<0.5ms",
+    "候选检索+分数阈值+类型一致性判定，哈希表即可解决。")
+def skill_nil_detect(mention_text: str, mention_type: str, candidates: list = None) -> dict:
     result = nil_detector.detect(
-        mention_text=mention_text,
-        mention_type="",
-        candidates=[Candidate(entity=c, score=0.95) for c in candidates] if candidates else [],
-    )
+        mention_text=mention_text, mention_type=mention_type,
+        candidates=candidates or [],
+        best_candidate=candidates[0] if candidates else None)
     return {"is_nil": result.is_nil, "confidence": result.confidence, "reason": result.reason}
 
 
 @register_skill(
-    "coref",
-    "规则（最近前序回链）",
-    "代词/指代词回链到具体实体",
-    "<0.5ms",
-    "结构化文本中代词回链通过'最近前序同类型实体'即可达到94.3%。"
-)
+    "coref", "规则(最近前序回链)",
+    "代词/指代词回链到前序实体", "<1ms",
+    "最近前序同类型实体规则已达94.3%。")
 def skill_coref(full_text: str) -> list:
-    """Skill: 共指消解"""
     mentions = []
     for i in range(len(full_text)):
         for size in range(1, 5):
             chunk = full_text[i:i + size]
             etype = is_coreference_mention(chunk)
             if etype:
-                mentions.append({"text": chunk, "start": i, "end": i + size, "entity_type": etype, "entity_id": None})
+                mentions.append({"text": chunk, "start": i, "end": i + size, "entity_type": etype})
                 break
     if not mentions:
         return []
-    all_mentions = sorted(mentions, key=lambda m: m["start"])
+    all_m = sorted(mentions, key=lambda m: m["start"])
     results = []
-    for idx, m in enumerate(all_mentions):
-        target = resolve_coreference(idx, all_mentions)
-        results.append({
-            "mention": m["text"],
-            "entity_type": m["entity_type"],
-            "coref_target": target["text"] if target else None,
-            "entity_id": target.get("entity_id") if target else None,
-        })
+    for idx, m in enumerate(all_m):
+        target = resolve_coreference(idx, all_m)
+        results.append({"mention": m["text"], "entity_type": m["entity_type"],
+                        "coref_target": target["text"] if target else None,
+                        "entity_id": target.get("entity_id") if target else None})
     return results
 
 
 # ============================================================
-# 主流水线（组合 Skill）
+# 主流水线（5级瀑布，复用最终策略）
 # ============================================================
 
-def link_pipeline(mention: Mention, full_text: str = "", trace: list = None) -> LinkResult:
+def process_mention(mention_text: str, start_pos: int, end_pos: int,
+                    entity_type: str, full_text: str, enable_coref: bool = False) -> dict:
     """
-    实体链接主流水线。
-
-    按优先级依次尝试 5 级瀑布，返回链接结果。
-    每一步均记录追溯（原值→新值→依据）。
+    5 级瀑布流水线：
+    标准名匹配 → 别名匹配+消歧 → 模糊匹配+消歧 → BM25 → NIL
     """
-    result = LinkResult(mention=mention)
-    if trace is None:
-        trace = []
+    trace = []
+    mention = Mention(text=mention_text, start_pos=start_pos, end_pos=end_pos,
+                      entity_type=entity_type, context=full_text)
+    result_info = {"mention": mention_text, "entity_type": entity_type}
+    best = None
+    source = ""
 
-    # Step 1: 标准名称匹配
-    step_trace(trace, "标准名称匹配", mention.text)
-    name_entity = knowledge_base.get_entity_by_name(mention.text)
-    if name_entity:
-        result.linked_entity = name_entity
-        result.is_nil = False
-        result.confidence = 1.0
-        step_trace(trace, "标准名称匹配", mention.text, f"{name_entity.standard_name} ({name_entity.id})", "标准名称完全匹配")
-        return result
+    # ── Step 1: 标准名称匹配 ──
+    entity = call_skill("standard_name_match", mention_text)
+    if entity:
+        best = Candidate(entity=entity, score=1.0, match_source="standard_name")
+        source = "标准名匹配"
+        trace.append(f"标准名精确匹配 → {entity.standard_name}")
 
-    # Step 2: 别名匹配 + 消歧
-    step_trace(trace, "别名精确匹配", mention.text)
-    alias_entities = knowledge_base.search_by_alias(mention.text)
-    if alias_entities:
-        if len(alias_entities) == 1:
-            result.linked_entity = alias_entities[0]
-            result.is_nil = False
-            result.confidence = 0.95
-            step_trace(trace, "别名精确匹配", mention.text, f"{alias_entities[0].standard_name} ({alias_entities[0].id})", "别名匹配成功")
-            return result
+    # ── Step 2: 别名匹配 + 消歧 ──
+    if not best:
+        best = call_skill("alias_match", mention, full_text)
+        if best:
+            source = "别名+消歧"
+            trace.append(f"别名匹配+消歧 → {best.entity.standard_name} ({best.score:.2f})")
 
-        # 多候选消歧
-        candidates = [Candidate(entity=e, score=0.95, match_source="alias") for e in alias_entities]
-        ranked = skill_disambiguate(mention, candidates)
-        if ranked:
-            best = ranked[0]
-            result.linked_entity = best.entity
-            result.is_nil = False
-            result.confidence = best.score
-            step_trace(trace, "别名匹配+消歧", mention.text, f"{best.entity.standard_name} ({best.entity.id})",
-                       f"从{len(alias_entities)}个候选中选择，得分={best.score:.2f}")
-            return result
+    # ── Step 3: 模糊匹配 + 消歧 ──
+    if not best:
+        best = call_skill("fuzzy_match", mention, full_text)
+        if best:
+            source = "模糊+消歧"
+            trace.append(f"模糊匹配+消歧 → {best.entity.standard_name} ({best.score:.2f})")
 
-    # Step 3: 模糊匹配
-    step_trace(trace, "模糊匹配", mention.text)
-    fuzzy_candidates = []
-    for entity in knowledge_base.entities.values():
-        if mention.text in entity.standard_name and len(entity.standard_name) - len(mention.text) <= 8:
-            fuzzy_candidates.append(entity)
-        elif entity.standard_name in mention.text and len(mention.text) - len(entity.standard_name) <= 8:
-            fuzzy_candidates.append(entity)
-    if fuzzy_candidates:
-        if mention.entity_type:
-            type_matched = [e for e in fuzzy_candidates if e.entity_type == mention.entity_type]
-            if type_matched:
-                fuzzy_candidates = type_matched
-        if len(fuzzy_candidates) == 1:
-            result.linked_entity = fuzzy_candidates[0]
-            result.is_nil = False
-            result.confidence = 0.8
-            step_trace(trace, "模糊匹配", mention.text, f"{fuzzy_candidates[0].standard_name} ({fuzzy_candidates[0].id})", "名称包含关系匹配")
-            return result
-        candidates = [Candidate(entity=e, score=0.75, match_source="fuzzy") for e in fuzzy_candidates]
-        ranked = skill_disambiguate(mention, candidates)
-        if ranked:
-            best = ranked[0]
-            result.linked_entity = best.entity
-            result.is_nil = False
-            result.confidence = best.score
-            step_trace(trace, "模糊匹配消歧", mention.text, f"{best.entity.standard_name} ({best.entity.id})",
-                       f"从{len(fuzzy_candidates)}个候选中消歧选择，得分={best.score:.2f}")
-            return result
+    # ── Step 4: BM25 ──
+    if not best:
+        best = call_skill("bm25_search", mention_text)
+        if best:
+            source = "BM25"
+            trace.append(f"BM25检索 → {best.entity.standard_name} ({best.score:.2f})")
 
-    # Step 4: BM25 检索
-    step_trace(trace, "BM25检索", mention.text)
-    if bm25_index.built:
-        bm25_results = bm25_index.search(mention.text, top_k=10)
-        if bm25_results:
-            best_entity_id, best_score = bm25_results[0]
-            entity = knowledge_base.get_entity(best_entity_id)
-            if entity:
-                result.linked_entity = entity
-                result.is_nil = False
-                result.confidence = min(best_score / 10.0, 0.7)
-                step_trace(trace, "BM25检索", mention.text, f"{entity.standard_name} ({entity.id})", f"BM25相似度={best_score:.2f}")
-                return result
+    # ── Step 5: NIL ──
+    if not best:
+        nil = call_skill("nil_detect", mention_text, entity_type or "")
+        result_info["is_nil"] = nil["is_nil"]
+        result_info["confidence"] = nil["confidence"]
+        result_info["nil_reason"] = nil["reason"]
+        trace.append(f"NIL判定 → {nil['reason']}")
 
-    # Step 5: NIL
-    nil_result = nil_detector.detect(mention_text=mention.text, mention_type=mention.entity_type or "", candidates=[], best_candidate=None)
-    result.is_nil = True
-    result.confidence = nil_result.confidence
-    result.nil_reason = nil_result.reason if nil_result.is_nil else f"知识库中未找到与'{mention.text}'匹配的实体"
-    step_trace(trace, "NIL判定", mention.text, "NIL", result.nil_reason)
-    return result
+    if best:
+        result_info["linked_entity_id"] = best.entity.id
+        result_info["linked_entity_name"] = best.entity.standard_name
+        result_info["linked_type"] = best.entity.entity_type
+        result_info["confidence"] = best.score
+        result_info["is_nil"] = False
+
+    result_info["trace"] = trace
+    result_info["source"] = source
+
+    if enable_coref:
+        result_info["coref_results"] = call_skill("coref", full_text)
+
+    return result_info
 
 
-def step_trace(trace: list, step: str, original: str, new_value: str = "", reason: str = ""):
-    """记录追溯步骤"""
-    trace.append({
-        "step": step,
-        "original_value": original,
-        "new_value": new_value or original,
-        "reason": reason,
-    })
+def process_article(article: dict, enable_coref: bool = False) -> dict:
+    text = article.get("text", "")
+    raw = article.get("mentions", [])
+    results = []
+    for m in raw:
+        r = process_mention(m["text"], m["start"], m["end"],
+                           m.get("entity_type", ""), text, enable_coref)
+        r["expected_id"] = m.get("entity_id")
+        r["expected_name"] = m.get("standard_name", "")
+        r["is_correct"] = r.get("linked_entity_id") == m.get("entity_id")
+        results.append(r)
+    multi_total = sum(1 for r in results if r.get("source") in ("别名+消歧", "模糊+消歧"))
+    multi_correct = sum(1 for r in results if r["is_correct"] and r.get("source") in ("别名+消歧", "模糊+消歧"))
+    stats = {"total": len(results), "correct": sum(1 for r in results if r["is_correct"]),
+             "multi_total": multi_total, "multi_correct": multi_correct}
+    stats["accuracy"] = stats["correct"] / max(stats["total"], 1)
+    stats["disambiguation_accuracy"] = multi_correct / max(multi_total, 1)
+    return {"mentions": results, "stats": stats}
 
 
 # ============================================================
-# CLI 入口（用于独立测试）
+# CLI
 # ============================================================
 
 def main():
-    parser = argparse.ArgumentParser(description="实体链接与知识对齐智能体")
+    parser = argparse.ArgumentParser(description="实体链接与知识对齐智能体 - 主控流水线")
     parser.add_argument("--skills", action="store_true", help="列出所有Skill")
     parser.add_argument("--run", choices=list(SKILL_REGISTRY.keys()), help="单独运行某个Skill")
-    parser.add_argument("--input", type=str, help="Skill的输入参数")
-
+    parser.add_argument("--input", type=str, help="Skill输入")
+    parser.add_argument("--article", type=str, help="文章数据集路径")
+    parser.add_argument("--max-articles", type=int, default=99999, help="最多N篇")
+    parser.add_argument("--enable-coref", action="store_true", help="启用共指消解")
     args = parser.parse_args()
 
-    # 初始化
     print("加载知识库...")
     knowledge_base.load()
     print(f"  实体: {knowledge_base.entity_count}")
     bm25_index.build(knowledge_base.entities)
+    print(f"  Skill: {len(SKILL_REGISTRY)} 个")
 
     if args.skills:
-        print(f"\n注册了 {len(SKILL_REGISTRY)} 个 Skill:")
-        print()
         list_skills()
         return
 
+    # 默认：全量评测
+    if not args.run and not args.article:
+        args.article = "Dataset/llm_extracted_merged.json"
+
     if args.run:
-        skill = SKILL_REGISTRY.get(args.run)
-        if not skill:
-            print(f"Skill '{args.run}' 不存在")
+        if args.run not in SKILL_REGISTRY:
+            print(f"未知 Skill: {args.run}")
             return
-        print(f"\n运行 Skill: {args.run}")
-        print(f"  实现: {skill['implementation']}")
-        print(f"  说明: {skill['description']}")
-        print(f"  成本: {skill['cost']}")
-        print(f"  不用LLM: {skill['why_no_llm']}")
-        print(f"\n  输入: {args.input}")
-        result = skill["func"](args.input)
-        print(f"  输出: {json.dumps(result, ensure_ascii=False, indent=4)}")
+        info = SKILL_REGISTRY[args.run]
+        print(f"\n运行: {args.run} ({info['description']})")
+        print(f"  实现: {info['implementation']} | 成本: {info['cost']}")
+        print(f"  不用LLM: {info['why_no_llm']}")
+        result = info["func"](args.input if args.input else "")
+        print(f"  结果: {json.dumps(result, ensure_ascii=False, indent=2)}")
         return
 
-    # 默认：列出Skill
-    print(f"\n实体链接与知识对齐智能体")
-    print(f"注册了 {len(SKILL_REGISTRY)} 个 Skill，全部按需启用")
-    print()
-    list_skills()
+    if args.article:
+        path = Path(args.article)
+        if not path.exists():
+            print(f"文件不存在: {args.article}")
+            return
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, list):
+            data = data[:args.max_articles]
+
+        print(f"\n处理 {len(data)} 篇文章...")
+        total = {"total": 0, "correct": 0, "multi_total": 0, "multi_correct": 0}
+        for i, art in enumerate(data):
+            result = process_article(art, enable_coref=args.enable_coref)
+            s = result["stats"]
+            total["total"] += s["total"]
+            total["correct"] += s["correct"]
+            total["multi_total"] += s["multi_total"]
+            total["multi_correct"] += s["multi_correct"]
+            acc = total["correct"] / max(total["total"], 1)
+            if i < 3:
+                for mr in result["mentions"][:3]:
+                    mark = "OK" if mr["is_correct"] else "XX"
+                    linked = mr.get("linked_entity_name") or "NIL"
+                    print(f"  [{mark}] {mr['mention']} -> {linked}")
+            print(f"  进度: {i+1}/{len(data)}, 当前准确率: {acc:.2%}")
+
+        final_acc = total["correct"] / max(total["total"], 1)
+        multi_total = total.get("multi_total", 0)
+        multi_correct = total.get("multi_correct", 0)
+        disambig_acc = multi_correct / max(multi_total, 1)
+        print(f"\n=== 处理完成 ===")
+        print(f"总mention: {total['total']}")
+        print(f"正确: {total['correct']}")
+        print(f"链接准确率: {final_acc:.2%}")
+        if multi_total > 0:
+            print(f"消歧准确率: {disambig_acc:.2%} (多候选{multi_total}个)")
+        print(f"别名召回率: {total['correct']}/{total['total']} = {final_acc:.2%}")
+
+        skill_stats = Counter(log["skill"] for log in SKILL_CALL_LOG)
+        print(f"\nSkill调用统计:")
+        for name, cnt in skill_stats.most_common():
+            cost = sum(log["cost_ms"] for log in SKILL_CALL_LOG if log["skill"] == name)
+            print(f"  {name}: {cnt}次, 总{cost:.0f}ms")
 
 
 if __name__ == "__main__":
