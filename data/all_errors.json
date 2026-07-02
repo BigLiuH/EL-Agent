@@ -18,12 +18,6 @@
     "entity_type": "EVENT"
   },
   {
-    "mention": "上海队",
-    "expected_name": "上海市体育代表团羽毛球队",
-    "predicted_name": "上海队",
-    "entity_type": "ORG"
-  },
-  {
     "mention": "圣坛组合",
     "expected_name": "刘圣书/谭宁",
     "predicted_name": "圣坛组合",
@@ -33,6 +27,12 @@
     "mention": "世锦赛",
     "expected_name": "世界羽毛球锦标赛",
     "predicted_name": "世界游泳锦标赛",
+    "entity_type": "EVENT"
+  },
+  {
+    "mention": "澳大利亚公开赛",
+    "expected_name": "2026年澳大利亚羽毛球公开赛",
+    "predicted_name": "澳大利亚公开赛",
     "entity_type": "EVENT"
   },
   {
@@ -116,7 +116,7 @@
   {
     "mention": "美国队",
     "expected_name": "美国国家羽毛球队",
-    "predicted_name": "美国队",
+    "predicted_name": "美国国家花样游泳队",
     "entity_type": "ORG"
   },
   {
@@ -440,7 +440,7 @@
   {
     "mention": "总决赛",
     "expected_name": "CBA总决赛",
-    "predicted_name": "总决赛",
+    "predicted_name": "NBA总决赛",
     "entity_type": "EVENT"
   },
   {
@@ -522,12 +522,6 @@
     "entity_type": "LOC"
   },
   {
-    "mention": "上海表演赛",
-    "expected_name": "Shanghai Exhibition Match",
-    "predicted_name": "上海斯诺克表演赛",
-    "entity_type": "EVENT"
-  },
-  {
     "mention": "冠军联赛",
     "expected_name": "Championship League",
     "predicted_name": "2026年斯诺克排名赛版冠军联赛",
@@ -538,12 +532,6 @@
     "expected_name": "海顿·平海",
     "predicted_name": "海登·平尼",
     "entity_type": "PER"
-  },
-  {
-    "mention": "大师赛",
-    "expected_name": "Masters",
-    "predicted_name": "斯诺克大师赛",
-    "entity_type": "EVENT"
   },
   {
     "mention": "世锦赛",
@@ -571,8 +559,8 @@
   },
   {
     "mention": "霍尔特",
-    "expected_name": "迈克尔·霍尔特",
-    "predicted_name": "阿里斯特·卡特",
+    "expected_name": "阿里·卡特",
+    "predicted_name": "迈克尔·霍尔特",
     "entity_type": "PER"
   },
   {
@@ -604,12 +592,6 @@
     "expected_name": "克拉克",
     "predicted_name": "温德姆·克拉克",
     "entity_type": "PER"
-  },
-  {
-    "mention": "女王杯",
-    "expected_name": "WTA女王俱乐部锦标赛",
-    "predicted_name": "女王杯",
-    "entity_type": "EVENT"
   },
   {
     "mention": "中国赛资格赛",
@@ -714,24 +696,6 @@
     "entity_type": "EVENT"
   },
   {
-    "mention": "宾汉姆",
-    "expected_name": "斯图亚特·宾汉姆",
-    "predicted_name": "斯图尔特·宾汉姆",
-    "entity_type": "PER"
-  },
-  {
-    "mention": "塞尔特",
-    "expected_name": "马修·塞尔特",
-    "predicted_name": "Matthew Selt",
-    "entity_type": "PER"
-  },
-  {
-    "mention": "桑坎姆",
-    "expected_name": "诺蓬·桑坎姆",
-    "predicted_name": "诺鹏·桑坎姆",
-    "entity_type": "PER"
-  },
-  {
     "mention": "北爱赛",
     "expected_name": "北爱尔兰公开赛",
     "predicted_name": "北爱尔兰斯诺克公开赛",
@@ -742,12 +706,6 @@
     "expected_name": "卢布尔雅那球星挑战赛",
     "predicted_name": "2026WTT卢布尔雅那球星挑战赛",
     "entity_type": "EVENT"
-  },
-  {
-    "mention": "卡特",
-    "expected_name": "阿里·卡特",
-    "predicted_name": "阿里斯特·卡特",
-    "entity_type": "PER"
   },
   {
     "mention": "世界斯诺克巡回赛",
@@ -772,18 +730,6 @@
     "expected_name": "印度国家斯诺克队",
     "predicted_name": "印度队",
     "entity_type": "ORG"
-  },
-  {
-    "mention": "加纳",
-    "expected_name": "加纳共和国",
-    "predicted_name": "加纳",
-    "entity_type": "LOC"
-  },
-  {
-    "mention": "贝林厄姆",
-    "expected_name": "祖德·贝林厄姆",
-    "predicted_name": "裘德·贝林厄姆",
-    "entity_type": "PER"
   },
   {
     "mention": "世界杯",
@@ -842,7 +788,7 @@
   {
     "mention": "美国队",
     "expected_name": "美国国家足球队",
-    "predicted_name": "美国队",
+    "predicted_name": "美国国家花样游泳队",
     "entity_type": "ORG"
   },
   {
@@ -858,12 +804,6 @@
     "entity_type": "ORG"
   },
   {
-    "mention": "世预赛",
-    "expected_name": "国际篮联篮球世界杯预选赛",
-    "predicted_name": "国际篮联世界杯预选赛",
-    "entity_type": "EVENT"
-  },
-  {
     "mention": "世界杯",
     "expected_name": "国际篮联篮球世界杯",
     "predicted_name": "国际足联世界杯",
@@ -873,12 +813,6 @@
     "mention": "辽宁队",
     "expected_name": "辽宁沈阳三生飞豹篮球俱乐部",
     "predicted_name": "辽宁队",
-    "entity_type": "ORG"
-  },
-  {
-    "mention": "北京男篮",
-    "expected_name": "北京首钢男篮",
-    "predicted_name": "北京首钢篮球俱乐部",
     "entity_type": "ORG"
   },
   {
@@ -930,12 +864,6 @@
     "entity_type": "ORG"
   },
   {
-    "mention": "阿利亚西姆",
-    "expected_name": "费利克斯·奥热-阿利亚西姆",
-    "predicted_name": "菲利克斯·奥热-阿利亚西姆",
-    "entity_type": "PER"
-  },
-  {
     "mention": "诺丁汉站",
     "expected_name": "诺丁汉网球公开赛",
     "predicted_name": "WTA250诺丁汉公开赛",
@@ -960,18 +888,6 @@
     "entity_type": "ORG"
   },
   {
-    "mention": "马竞",
-    "expected_name": "马德里竞技俱乐部",
-    "predicted_name": "马德里竞技足球俱乐部",
-    "entity_type": "ORG"
-  },
-  {
-    "mention": "塞梅多",
-    "expected_name": "内尔松·塞梅多",
-    "predicted_name": "纳尔逊·塞梅多",
-    "entity_type": "PER"
-  },
-  {
     "mention": "圣保罗",
     "expected_name": "圣保罗足球俱乐部",
     "predicted_name": "圣保罗",
@@ -988,12 +904,6 @@
     "expected_name": "美国女子篮球协会",
     "predicted_name": "WNBA",
     "entity_type": "ORG"
-  },
-  {
-    "mention": "总决赛",
-    "expected_name": "NBA总决赛",
-    "predicted_name": "总决赛",
-    "entity_type": "EVENT"
   },
   {
     "mention": "老鹰",
@@ -1080,21 +990,15 @@
     "entity_type": "EVENT"
   },
   {
-    "mention": "莫雷加德",
-    "expected_name": "特鲁尔·莫雷加德",
-    "predicted_name": "特鲁尔斯·莫雷加德",
-    "entity_type": "PER"
-  },
-  {
     "mention": "乒超",
     "expected_name": "中国乒乓球超级联赛",
     "predicted_name": "中国乒乓球俱乐部超级联赛",
     "entity_type": "EVENT"
   },
   {
-    "mention": "国家二队",
-    "expected_name": "国家乒乓球队二队",
-    "predicted_name": "中国国家乒乓球队二队",
+    "mention": "国家一队",
+    "expected_name": "中国国家乒乓球队一队",
+    "predicted_name": "中国羽毛球国家队一队",
     "entity_type": "ORG"
   },
   {
@@ -1218,12 +1122,6 @@
     "entity_type": "LOC"
   },
   {
-    "mention": "河北队",
-    "expected_name": "河北省乒乓球队",
-    "predicted_name": "河北队",
-    "entity_type": "ORG"
-  },
-  {
     "mention": "国家青年队",
     "expected_name": "中国国家青年乒乓球队",
     "predicted_name": "中国国家乒乓球队青年队",
@@ -1234,12 +1132,6 @@
     "expected_name": "2024年世界乒乓球团体锦标赛",
     "predicted_name": "伦敦团体世乒赛",
     "entity_type": "EVENT"
-  },
-  {
-    "mention": "波尔",
-    "expected_name": "蒂姆·波尔",
-    "predicted_name": "蒂莫·波尔",
-    "entity_type": "PER"
   },
   {
     "mention": "乒超联赛",
@@ -1374,6 +1266,12 @@
     "entity_type": "EVENT"
   },
   {
+    "mention": "总决赛",
+    "expected_name": "国际乒联世界巡回赛总决赛",
+    "predicted_name": "NBA总决赛",
+    "entity_type": "EVENT"
+  },
+  {
     "mention": "伦敦世乒赛",
     "expected_name": "2026年世界乒乓球锦标赛",
     "predicted_name": "伦敦世界乒乓球锦标赛团体赛",
@@ -1483,8 +1381,8 @@
   },
   {
     "mention": "上海队",
-    "expected_name": "上海游泳队",
-    "predicted_name": "上海队",
+    "expected_name": "上海市游泳队",
+    "predicted_name": "上海市乒乓球队",
     "entity_type": "ORG"
   },
   {
@@ -1494,39 +1392,15 @@
     "entity_type": "ORG"
   },
   {
-    "mention": "江苏队",
-    "expected_name": "江苏游泳队",
-    "predicted_name": "江苏队",
-    "entity_type": "ORG"
-  },
-  {
-    "mention": "河北队",
-    "expected_name": "河北游泳队",
-    "predicted_name": "河北队",
-    "entity_type": "ORG"
-  },
-  {
-    "mention": "美国队",
-    "expected_name": "美国国家花样游泳队",
-    "predicted_name": "美国队",
-    "entity_type": "ORG"
-  },
-  {
     "mention": "NetEase Hao",
     "expected_name": "网易公司",
     "predicted_name": "网易号",
     "entity_type": "ORG"
   },
   {
-    "mention": "河北队",
-    "expected_name": "河北省游泳队",
-    "predicted_name": "河北队",
-    "entity_type": "ORG"
-  },
-  {
     "mention": "美国队",
     "expected_name": "美国游泳队",
-    "predicted_name": "美国队",
+    "predicted_name": "美国国家花样游泳队",
     "entity_type": "ORG"
   },
   {
@@ -1551,18 +1425,6 @@
     "mention": "北京队",
     "expected_name": "北京市游泳队",
     "predicted_name": "北京队",
-    "entity_type": "ORG"
-  },
-  {
-    "mention": "江苏队",
-    "expected_name": "江苏省游泳队",
-    "predicted_name": "江苏队",
-    "entity_type": "ORG"
-  },
-  {
-    "mention": "上海队",
-    "expected_name": "上海市游泳队",
-    "predicted_name": "上海队",
     "entity_type": "ORG"
   },
   {
@@ -1724,7 +1586,7 @@
   {
     "mention": "上海队",
     "expected_name": "上海市田径队",
-    "predicted_name": "上海队",
+    "predicted_name": "上海市乒乓球队",
     "entity_type": "ORG"
   },
   {
@@ -1737,12 +1599,6 @@
     "mention": "辽宁队",
     "expected_name": "辽宁省田径队",
     "predicted_name": "辽宁队",
-    "entity_type": "ORG"
-  },
-  {
-    "mention": "江苏队",
-    "expected_name": "江苏省田径队",
-    "predicted_name": "江苏队",
     "entity_type": "ORG"
   },
   {
@@ -1770,6 +1626,12 @@
     "entity_type": "EVENT"
   },
   {
+    "mention": "美国队",
+    "expected_name": "美国国家田径队",
+    "predicted_name": "美国国家花样游泳队",
+    "entity_type": "ORG"
+  },
+  {
     "mention": "NBC",
     "expected_name": "美国全国广播公司",
     "predicted_name": "全国广播公司",
@@ -1792,6 +1654,12 @@
     "expected_name": "亚洲杯乒乓球赛",
     "predicted_name": "亚洲杯",
     "entity_type": "EVENT"
+  },
+  {
+    "mention": "江苏队",
+    "expected_name": "江苏省田径队",
+    "predicted_name": "江苏省游泳队",
+    "entity_type": "ORG"
   },
   {
     "mention": "天津队",

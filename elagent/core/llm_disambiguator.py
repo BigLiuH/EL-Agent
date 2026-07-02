@@ -231,6 +231,8 @@ class LLMDisambiguator:
         return result.get("entity_id") if result else None
 
     def _parse_response(self, content: str) -> Optional[Dict]:
+        if not content:
+            return None
         # 尝试JSON
         try:
             return json.loads(content)
@@ -243,20 +245,23 @@ class LLMDisambiguator:
                 return json.loads(match.group())
             except json.JSONDecodeError:
                 pass
-        # 纯文本：提取entity_id（去掉 ID=、id= 等前缀）
+        # 纯文本：提取任何像ID的token
         for token in content.strip().split():
-            token = token.strip('"\'` ,.;:')
-            # 去掉常见前缀
-            for prefix in ['ID=', 'id=', 'Id=', 'entity_id=']:
+            token = token.strip('"\'` ,.;:1234567890.（）()、，。\t\r')
+            for prefix in ['ID=', 'id=', 'Id=', 'entity_id=', '实体ID=']:
                 if token.startswith(prefix):
                     token = token[len(prefix):]
             if '_' in token and len(token) > 5:
                 return {"entity_id": token}
-        first_line = content.strip().split('\n')[0].strip('"\'` ,.;:')
+        # 直接扫描全文字符，找包含_的单词
+        match = re.search(r'[A-Z]+_[0-9]+', content)
+        if match:
+            return {"entity_id": match.group()}
+        first_line = content.strip().split('\n')[0].strip('"\'` ,.;:1234567890.（）()、，。\t\r')
         for prefix in ['ID=', 'id=', 'Id=', 'entity_id=']:
             if first_line.startswith(prefix):
                 first_line = first_line[len(prefix):]
-        return {"entity_id": first_line} if first_line else None
+        return {"entity_id": first_line} if ('_' in first_line and len(first_line) > 5) else None
 
 
 llm_disambiguator = LLMDisambiguator(
