@@ -177,18 +177,6 @@ class DisambiguateRequest(BaseModel):
         }
 
 
-class DisambiguateResult(BaseModel):
-    """消歧结果项"""
-    entity: Optional[EntityResponse] = Field(None, description="消歧后的实体")
-    score: float = Field(0.0, description="置信度(0~1)")
-    match_source: str = Field("", description="匹配来源: alias/fuzzy/bm25")
-
-
-class DisambiguateResponse(BaseModel):
-    """消歧响应"""
-    ranked: List[DisambiguateResult] = Field(default_factory=list, description="候选实体按得分降序排列")
-    is_nil: bool = Field(False, description="True=无匹配实体")
-
 
 # ============================================================
 # 响应模型
@@ -354,6 +342,18 @@ class CorefResult(BaseModel):
     entity_id: Optional[str] = Field(None,
         description="回链到的实体 ID（如 'PER_0523'）")
 
+
+class DisambiguateResult(BaseModel):
+    """消歧结果项"""
+    entity: Optional[EntityResponse] = Field(None, description="消歧后的实体")
+    score: float = Field(0.0, description="置信度(0~1)")
+    match_source: str = Field("", description="匹配来源: alias/fuzzy/bm25")
+
+
+class DisambiguateResponse(BaseModel):
+    """消歧响应"""
+    ranked: List[DisambiguateResult] = Field(default_factory=list, description="候选实体按得分降序排列")
+    is_nil: bool = Field(False, description="True=无匹配实体")
 
 class CorefResponse(BaseModel):
     """共指消解响应"""

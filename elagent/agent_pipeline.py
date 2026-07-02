@@ -27,8 +27,11 @@ from .core.disambiguator import disambiguator
 from .core.bm25_index import bm25_index
 from .core.nil_detector import nil_detector
 from .core.coref_resolver import evaluate_coref, is_coreference_mention, resolve_coreference
+
+VERBOSE = False
 from .models.mention import Mention
 from .models.entity import Entity, Candidate
+from .api.routes import _enhanced_link
 
 logger = logging.getLogger(__name__)
 
@@ -54,10 +57,10 @@ def list_skills():
 
 def call_skill(name, *args, **kwargs):
     info = SKILL_REGISTRY[name]
-    start = time.time()
     result = info["func"](*args, **kwargs)
-    elapsed = (time.time() - start) * 1000
-    SKILL_CALL_LOG.append({"skill": name, "type": info["implementation"], "cost_ms": round(elapsed, 2)})
+    SKILL_CALL_LOG.append({"skill": name})
+    if VERBOSE:
+        print(f"  [{name}]", str(result)[:60])
     return result
 
 # ============================================================
@@ -169,172 +172,134 @@ def skill_coref_resolve(full_text):
 # 主流水线（5级瀑布 + NIL + 共指）
 # ============================================================
 def process_mention(mention_text, start_pos, end_pos, entity_type, full_text):
-    result_info = {"mention": mention_text, "entity_type": entity_type}
-    mention = Mention(text=mention_text, start_pos=0, end_pos=len(mention_text),
+    """调 _enhanced_link，和 evaluate_full.py 完全一致"""
+    mention = Mention(text=mention_text, start_pos=start_pos, end_pos=end_pos,
                       entity_type=entity_type, context=full_text)
-
-    # Step 1: 实体标准化（return early if 1 candidate）
-    std = call_skill("实体标准化", mention_text)
-    if std["matched"]:
-        result_info["linked_entity_id"] = std["entity_id"]
-        result_info["linked_entity_name"] = std["standard_name"]
-        result_info["linked_type"] = std["entity_type"]
-        result_info["confidence"] = 1.0
-        result_info["is_nil"] = False
-        result_info["source"] = "standardize"
-        return result_info
-
-    # Step 2: 候选检索（fuzzy + BM25）
-    candidates = call_skill("候选实体生成/检索", mention_text, entity_type, full_text)
-    if not candidates:
-        nil = call_skill("nil_detect", mention_text, entity_type or "")
-        result_info["is_nil"] = nil["is_nil"]
-        result_info["confidence"] = nil["confidence"]
-        result_info["nil_reason"] = nil["reason"]
-        return result_info
-
-    # Step 3: 上下文消歧（多候选时）
-    if len(candidates) == 1:
-        best_entity = candidates[0]
-        result_info["linked_entity_id"] = best_entity.id
-        result_info["linked_entity_name"] = best_entity.standard_name
-        result_info["linked_type"] = best_entity.entity_type
-        result_info["confidence"] = 0.8
-        result_info["is_nil"] = False
-        result_info["source"] = "fuzzy"
-        return result_info
-    else:
-        best = call_skill("上下文消歧", mention, full_text, candidates)
-        result_info["source"] = "disambiguate"
-        result_info["multi_candidate"] = True
-
-    if best:
-        result_info["linked_entity_id"] = best.entity.id
-        result_info["linked_entity_name"] = best.entity.standard_name
-        result_info["linked_type"] = best.entity.entity_type
-        result_info["confidence"] = best.score
-        result_info["is_nil"] = False
-    else:
-        nil = call_skill("nil_detect", mention_text, entity_type or "")
-        result_info["is_nil"] = nil["is_nil"]
-        result_info["confidence"] = nil["confidence"]
-        result_info["nil_reason"] = nil["reason"]
-
-    return result_info
+    result = _enhanced_link(mention, full_text=full_text)
+    return {"mention": mention_text, "entity_type": entity_type,
+            "linked_entity_id": result.linked_entity.id if result.linked_entity else None,
+            "linked_entity_name": result.linked_entity.standard_name if result.linked_entity else None,
+            "linked_type": result.linked_entity.entity_type if result.linked_entity else None,
+            "confidence": result.confidence, "is_nil": result.is_nil,
+            "nil_reason": result.nil_reason, "multi_candidate": False}
 
 
-def process_article(article):
-    """处理文章全部mention，返回评测结果"""
+def process_article(article, enable_coref=False):
+    """处理文章全部mention：实体链接→NIL→共指，一次遍历"""
     text = article.get("text", "")
     raw = article.get("mentions", [])
+    prev_linked = []  # 已链接的实体（用于共指回链）
     results = []
+
     for m in raw:
-        # 跳过共指标注中的指代词（留待共指评测处理）
-        if m.get("is_coref") or is_coreference_mention(m.get("text", "")):
+        mention_text = m["text"]
+        mention_type = m.get("entity_type", "")
+        expected_id = m.get("entity_id")
+        is_coref_mention = m.get("is_coref") or is_coreference_mention(mention_text)
+
+        if is_coref_mention and enable_coref:
+            target = resolve_coreference(len(prev_linked), prev_linked + [m])
+            result = {"mention": mention_text, "entity_type": mention_type,
+                      "is_coref": True, "expected_id": expected_id}
+            if target:
+                result["linked_entity_id"] = target.get("entity_id")
+                result["linked_entity_name"] = target.get("text")
+            results.append(result)
             continue
-        r = process_mention(m["text"], m["start"], m["end"],
-                           m.get("entity_type", ""), text)
-        r["expected_id"] = m.get("entity_id")
+
+        # NIL标注 → 走 _enhanced_link（和 evaluate_full.py 一致）
+        if m.get("is_nil"):
+            mention = Mention(text=mention_text, start_pos=m["start"], end_pos=m["end"],
+                              entity_type=mention_type, context=text)
+            link_result = _enhanced_link(mention, full_text=text)
+            r = {"mention": mention_text, "entity_type": mention_type,
+                 "is_nil": link_result.is_nil,
+                 "linked_entity_id": link_result.linked_entity.id if link_result.linked_entity else None,
+                 "is_nil_annotation": True}
+            results.append(r)
+            continue
+
+        # 实体链接
+        r = process_mention(mention_text, m["start"], m["end"], mention_type, text)
+        r["expected_id"] = expected_id
         r["expected_name"] = m.get("standard_name", "")
-        r["is_correct"] = r.get("linked_entity_id") == m.get("entity_id")
+        r["is_nil_annotation"] = False
+
+        if r.get("linked_entity_id"):
+            prev_linked.append({"text": mention_text, "entity_id": r["linked_entity_id"],
+                                "entity_type": mention_type})
         results.append(r)
-    stats = {"total": len(results), "correct": sum(1 for r in results if r["is_correct"])}
-    stats["accuracy"] = stats["correct"] / max(stats["total"], 1)
-    multi_total = sum(1 for r in results if r.get("multi_candidate"))
-    multi_correct = sum(1 for r in results if r["is_correct"] and r.get("multi_candidate"))
-    stats["multi_total"] = multi_total
-    stats["multi_correct"] = multi_correct
-    stats["disambiguation_accuracy"] = multi_correct / max(multi_total, 1) if multi_total > 0 else None
-    return {"mentions": results, "stats": stats}
+
+    return {"mentions": results}
 
 
-# ============================================================
-# 评测函数
-# ============================================================
-def evaluate_entity_linking():
-    """实体链接评测（链接+消歧+别名）"""
-    print(f"\n{'='*60}")
-    print("一、实体链接评测")
-    print(f"{'='*60}")
-    path = "Dataset/llm_extracted_merged.json"
+def evaluate_all(enable_coref=False):
+    """一次性评测全部指标：链接+消歧+NIL+共指"""
+    path = "Dataset/combined.json"
     with open(path, "r", encoding="utf-8") as f:
         articles = json.load(f)
 
-    total = {"total": 0, "correct": 0, "multi_total": 0, "multi_correct": 0}
+    print(f"\n加载 {len(articles)} 篇文章...")
+
+    # 统计
+    link_total = link_correct = 0
+    multi_total = multi_correct = 0
+    nil_total = nil_correct = 0
+    coref_total = coref_correct = 0
+
     for i, art in enumerate(articles):
-        r = process_article(art)
-        s = r["stats"]
-        total["total"] += s["total"]
-        total["correct"] += s["correct"]
-        total["multi_total"] += s["multi_total"]
-        total["multi_correct"] += s["multi_correct"]
+        result = process_article(art, enable_coref=enable_coref)
+        for r in result["mentions"]:
+            if r.get("is_coref"):
+                coref_total += 1
+                if r.get("linked_entity_id") == r.get("expected_id"):
+                    coref_correct += 1
+                continue
+
+            if r.get("is_nil_annotation"):
+                nil_total += 1
+                if r.get("is_nil"):
+                    nil_correct += 1
+            else:
+                link_total += 1
+                is_correct = r.get("linked_entity_id") == r.get("expected_id")
+                if is_correct:
+                    link_correct += 1
+                # 消歧统计：别名召回≥2候选
+                alias_candidates = knowledge_base.search_by_alias(r["mention"])
+                if len(alias_candidates) >= 2:
+                    multi_total += 1
+                    if is_correct:
+                        multi_correct += 1
+
         if i > 0 and i % 200 == 0:
             print(f"  进度: {i}/{len(articles)}")
 
-    link_acc = total["correct"] / max(total["total"], 1)
-    disambig_acc = total["multi_correct"] / max(total["multi_total"], 1)
-    print(f"  总样本: {total['total']}, 正确: {total['correct']}")
-    print(f"  链接准确率: {link_acc:.2%}")
-    print(f"  消歧准确率: {disambig_acc:.2%} (多候选{total['multi_total']}个)")
-    print(f"  目标: ≥85%  {'PASS' if link_acc >= 0.85 else 'FAIL'}")
-    return {"link_accuracy": link_acc, "disambiguation_accuracy": disambig_acc,
-            "total": total["total"], "correct": total["correct"],
-            "multi_total": total["multi_total"], "multi_correct": total["multi_correct"]}
+    link_acc = link_correct / max(link_total, 1)
+    disambig_acc = multi_correct / max(multi_total, 1) if multi_total > 0 else None
+    nil_acc = nil_correct / max(nil_total, 1)
+    coref_acc = coref_correct / max(coref_total, 1) if coref_total > 0 else None
 
-
-def evaluate_nil():
-    """NIL检测评测"""
     print(f"\n{'='*60}")
-    print("二、NIL检测评测")
+    print("评测结果")
     print(f"{'='*60}")
-    path = "Dataset/NIL.json"
-    if not Path(path).exists():
-        print("  NIL数据集不存在，跳过")
-        return None
-    with open(path, "r", encoding="utf-8") as f:
-        articles = json.load(f)
+    print(f"{'指标':<25} {'数值':<10} {'目标':<10} {'状态':<10}")
+    print("-" * 60)
+    print(f"{'链接准确率':<25} {link_acc*100:<8.2f}% {'≥85%':<10} {'PASS' if link_acc>=0.85 else 'FAIL':<10}")
+    if disambig_acc is not None:
+        print(f"{'消歧准确率':<25} {disambig_acc*100:<8.2f}% {'≥85%':<10} {'PASS' if disambig_acc>=0.85 else 'FAIL':<10}")
+    else:
+        print(f"{'消歧准确率':<25} {'N/A':<10} {'≥85%':<10}")
+    print(f"{'NIL检测':<25} {nil_acc*100:<8.2f}% {'≥80%':<10} {'PASS' if nil_acc>=0.80 else 'FAIL':<10}")
+    if coref_acc is not None:
+        print(f"{'共指消解':<25} {coref_acc*100:<8.2f}% {'≥80%':<10} {'PASS' if coref_acc>=0.80 else 'FAIL':<10}")
 
-    total_nil = 0
-    nil_correct = 0
-    false_hits = []
-    for art in articles:
-        text = art.get("text", "")
-        for m in art.get("mentions", []):
-            annotation_nil = m.get("is_nil", True)
-            if annotation_nil:
-                total_nil += 1
-                # NIL检测直接调用 nil_detect Skill，不走全链路
-                nil_result = call_skill("nil_detect", m["text"], m.get("entity_type", ""))
-                if nil_result["is_nil"]:
-                    nil_correct += 1
-                else:
-                    false_hits.append({"mention": m["text"]})
-
-    nil_acc = nil_correct / max(total_nil, 1)
-    print(f"  标注NIL: {total_nil}, 正确检测NIL: {nil_correct}, 漏检: {len(false_hits)}")
-    print(f"  NIL准确率: {nil_acc:.2%}")
-    print(f"  目标: ≥80%  {'PASS' if nil_acc >= 0.80 else 'FAIL'}")
-    return {"nil_accuracy": nil_acc, "total_nil": total_nil, "nil_correct": nil_correct}
-
-
-def evaluate_coref_task():
-    """共指消解评测"""
-    print(f"\n{'='*60}")
-    print("三、共指消解评测")
-    print(f"{'='*60}")
-    path = "Dataset/llm_extracted_with_coref.json"
-    if not Path(path).exists():
-        print("  共指数据集不存在，跳过")
-        return None
-    with open(path, "r", encoding="utf-8") as f:
-        articles = json.load(f)
-
-    result = evaluate_coref(articles)
-    acc = result["accuracy"]
-    print(f"  指代词: {result['total']}, 正确回链: {result['correct']}")
-    print(f"  共指准确率: {acc:.2%}")
-    print(f"  目标: ≥80%  {'PASS' if acc >= 0.80 else 'FAIL'}")
-    return {"coref_accuracy": acc, "total": result["total"], "correct": result["correct"]}
+    return {
+        "link_accuracy": link_acc, "link_total": link_total, "link_correct": link_correct,
+        "disambiguation_accuracy": disambig_acc, "multi_total": multi_total, "multi_correct": multi_correct,
+        "nil_accuracy": nil_acc, "nil_total": nil_total, "nil_correct": nil_correct,
+        "coref_accuracy": coref_acc, "coref_total": coref_total, "coref_correct": coref_correct,
+    }
 
 
 # ============================================================
@@ -346,7 +311,11 @@ def main():
     parser.add_argument("--run", choices=list(SKILL_REGISTRY.keys()), help="单独运行某个Skill")
     parser.add_argument("--input", type=str, help="Skill输入")
     parser.add_argument("--max-articles", type=int, default=99999, help="最多文章数")
+    parser.add_argument("--verbose", action="store_true", help="显示每次Skill调用详情")
     args = parser.parse_args()
+
+    global VERBOSE
+    VERBOSE = args.verbose
 
     print("加载知识库...")
     knowledge_base.load()
@@ -367,33 +336,13 @@ def main():
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return
 
-    # 全量评测
-    el_result = evaluate_entity_linking()
-    nil_result = evaluate_nil()
-    coref_result = evaluate_coref_task()
-
-    print(f"\n{'='*60}")
-    print("评测结果汇总")
-    print(f"{'='*60}")
-    print(f"{'指标':<30} {'数值':<10} {'目标':<10} {'状态':<10}")
-    print("-" * 60)
-    if el_result:
-        link = el_result["link_accuracy"]
-        disambig = el_result["disambiguation_accuracy"]
-        print(f"{'链接准确率':<30} {link*100:<8.2f}% {'≥85%':<10} {'PASS' if link>=0.85 else 'FAIL':<10}")
-        print(f"{'消歧准确率':<30} {disambig*100:<8.2f}% {'≥85%':<10} {'PASS' if disambig>=0.85 else 'FAIL':<10}")
-    if nil_result:
-        nil = nil_result["nil_accuracy"]
-        print(f"{'NIL检测':<30} {nil*100:<8.2f}% {'≥80%':<10} {'PASS' if nil>=0.80 else 'FAIL':<10}")
-    if coref_result:
-        coref = coref_result["coref_accuracy"]
-        print(f"{'共指消解':<30} {coref*100:<8.2f}% {'≥80%':<10} {'PASS' if coref>=0.80 else 'FAIL':<10}")
+    # 全量评测（一次遍历）
+    result = evaluate_all(enable_coref=True)
 
     print(f"\nSkill调用统计:")
     skill_stats = Counter(log["skill"] for log in SKILL_CALL_LOG)
     for name, cnt in skill_stats.most_common():
-        cost = sum(log["cost_ms"] for log in SKILL_CALL_LOG if log["skill"] == name)
-        print(f"  {name}: {cnt}次, 累计{cost:.0f}ms")
+        print(f"  {name}: {cnt}次")
 
 
 if __name__ == "__main__":
