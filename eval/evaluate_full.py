@@ -16,7 +16,7 @@ from typing import List, Dict
 from collections import defaultdict
 
 # 添加项目根目录到路径
-sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from elagent.core.knowledge_base import knowledge_base
 from elagent.core.bm25_index import bm25_index

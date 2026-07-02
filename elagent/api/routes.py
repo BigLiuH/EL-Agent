@@ -93,11 +93,18 @@ async def link_entity(request: LinkRequest):
             context=window_context,
         )
 
-        # 创建追溯日志
+        # 创建追溯日志（含原始输入，用于回放）
         trace = trace_logger.create_trace(
             mention_id=mention.id,
             mention_text=mention.text,
-            entity_type=mention.entity_type or "UNKNOWN"
+            entity_type=mention.entity_type or "UNKNOWN",
+            input_data={
+                "full_text": text,
+                "mention_text": mention.text,
+                "start_pos": mention.start_pos,
+                "end_pos": mention.end_pos,
+                "entity_type": mention.entity_type,
+            }
         )
 
         # Phase 2: 增强链接（BM25 + 消歧 + 上下文）
@@ -210,6 +217,72 @@ async def list_traces(limit: int = 100):
     """
     traces = trace_logger.list_traces(limit)
     return {"traces": traces, "total": len(traces)}
+
+
+@router.post("/trace/{trace_id}/replay", tags=["追溯"])
+async def replay_trace(trace_id: str):
+    """
+    追溯回放
+
+    用原始输入重新执行实体链接，验证结果是否可复现。
+    """
+    trace = trace_logger.get_trace(trace_id)
+    if trace is None:
+        trace = trace_logger.load_trace(trace_id)
+    if trace is None:
+        raise HTTPException(status_code=404, detail=f"追溯日志不存在: {trace_id}")
+
+    input_data = getattr(trace, "input_data", {})
+    if not input_data or not input_data.get("full_text"):
+        return {"trace_id": trace_id, "error": "该追溯日志未保存原始输入，无法回放"}
+
+    mention = Mention(
+        text=input_data["mention_text"],
+        start_pos=input_data.get("start_pos", 0),
+        end_pos=input_data.get("end_pos", len(input_data["mention_text"])),
+        entity_type=input_data.get("entity_type", ""),
+        context=input_data["full_text"],
+    )
+    result = _enhanced_link(mention, full_text=input_data["full_text"])
+
+    return {
+        "trace_id": trace_id,
+        "replay": {
+            "linked_entity": result.linked_entity.standard_name if result.linked_entity else None,
+            "linked_id": result.linked_entity.id if result.linked_entity else None,
+            "is_nil": result.is_nil,
+            "confidence": result.confidence,
+        },
+        "original": {
+            "linked_entity": trace.final_result.get("linked_entity_name"),
+            "linked_id": trace.final_result.get("linked_entity_id"),
+            "is_nil": trace.final_result.get("is_nil"),
+        },
+    }
+
+
+@router.post("/trace/{trace_id}/rollback", tags=["追溯"])
+async def rollback_trace(trace_id: str):
+    """
+    追溯回滚
+
+    返回实体链接前的原始状态。
+    """
+    trace = trace_logger.get_trace(trace_id)
+    if trace is None:
+        trace = trace_logger.load_trace(trace_id)
+    if trace is None:
+        raise HTTPException(status_code=404, detail=f"追溯日志不存在: {trace_id}")
+
+    input_data = getattr(trace, "input_data", {})
+    return {
+        "trace_id": trace_id,
+        "original_mention": {
+            "text": input_data.get("mention_text") or trace.mention_text,
+            "entity_type": input_data.get("entity_type") or trace.entity_type,
+        },
+        "rollback_success": True,
+    }
 
 
 @router.post("/nil_check", response_model=NILResponse, tags=["NIL检测"])

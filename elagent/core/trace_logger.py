@@ -46,6 +46,7 @@ class TraceLog:
     entity_type: str
     steps: List[TraceStep] = field(default_factory=list)
     final_result: Dict = field(default_factory=dict)
+    input_data: Dict = field(default_factory=dict)
     start_time: str = field(default_factory=lambda: datetime.now().isoformat())
     end_time: Optional[str] = None
     total_duration_ms: float = 0.0
@@ -78,6 +79,7 @@ class TraceLog:
             "entity_type": self.entity_type,
             "steps": [s.to_dict() for s in self.steps],
             "final_result": self.final_result,
+            "input_data": self.input_data,
             "start_time": self.start_time,
             "end_time": self.end_time,
             "total_duration_ms": self.total_duration_ms
@@ -102,7 +104,8 @@ class TraceLogger:
         self.storage_path.mkdir(parents=True, exist_ok=True)
         self.logs: Dict[str, TraceLog] = {}
 
-    def create_trace(self, mention_id: str, mention_text: str, entity_type: str) -> TraceLog:
+    def create_trace(self, mention_id: str, mention_text: str, entity_type: str,
+                     input_data: Dict = None) -> TraceLog:
         """
         创建追溯日志
 
@@ -110,6 +113,7 @@ class TraceLogger:
             mention_id: 指称ID
             mention_text: 指称文本
             entity_type: 实体类型
+            input_data: 原始输入数据（用于回放）
 
         Returns:
             追溯日志对象
@@ -121,6 +125,8 @@ class TraceLogger:
             mention_text=mention_text,
             entity_type=entity_type
         )
+        if input_data:
+            trace.input_data = input_data
         self.logs[trace_id] = trace
         return trace
 

@@ -12,7 +12,6 @@ from contextlib import asynccontextmanager
 from .api.routes import router
 from .core.knowledge_base import knowledge_base
 from .core.bm25_index import bm25_index
-from .core.bert_disambiguator import bert_disambiguator
 from .config import config
 
 
@@ -42,18 +41,6 @@ async def lifespan(app: FastAPI):
         logger.info("正在构建BM25索引...")
         bm25_index.build(knowledge_base.entities)
         logger.info("BM25索引构建完成")
-
-        # 加载BERT模型并构建向量索引（可选）
-        try:
-            logger.info("正在加载BERT消歧模型...")
-            bert_disambiguator.load_model()
-            if bert_disambiguator.loaded:
-                bert_disambiguator.build_index(knowledge_base.entities)
-                logger.info("BERT消歧模型加载完成")
-            else:
-                logger.warning("BERT消歧模型加载失败，将使用规则消歧")
-        except Exception as e:
-            logger.warning(f"BERT消歧模型加载失败: {e}，将使用规则消歧")
 
     except Exception as e:
         logger.error(f"初始化失败: {e}", exc_info=True)
