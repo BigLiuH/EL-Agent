@@ -735,7 +735,12 @@
         "26年世界羽联超级750新加坡公开赛",
         "2026年世界羽联超级750新加坡羽毛球公开赛",
         "2026年新加坡公开赛",
-        "2026新加坡羽毛球公开赛"
+        "2026新加坡羽毛球公开赛",
+        "新加坡站",
+        "新加坡公开赛",
+        "Singapore Badminton Open",
+        "Singapore Open",
+        "新加坡赛"
       ],
       "sources": [
         "kb_badminton"
@@ -940,12 +945,13 @@
       "entity_id": "ORG_0002"
     },
     {
-      "standard_name": "2026澳门羽毛球公开赛",
+      "standard_name": "2026年澳门羽毛球公开赛",
       "entity_type": "EVENT",
       "description": "世界羽联世界巡回赛超级300赛级别的年度羽毛球赛事，于2026年6月16日至21日在澳门东亚运动会体育馆举行。",
       "aliases": [
         "澳门羽毛球公开赛",
-        "2026年澳门羽毛球公开赛",
+        "2026澳门羽毛球公开赛",
+        "中国澳门羽毛球公开赛",
         "澳门公开赛"
       ],
       "sources": [
@@ -2815,16 +2821,6 @@
         "kb_badminton"
       ],
       "entity_id": "ORG_0076"
-    },
-    {
-      "standard_name": "中国澳门公开赛",
-      "entity_type": "EVENT",
-      "description": "羽毛球国际赛事，蒋振邦/魏雅欣等中国选手正在参加的比赛。",
-      "aliases": [],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0183"
     },
     {
       "standard_name": "中国烟草总公司云南省公司",
@@ -10112,22 +10108,6 @@
         "kb_swimming"
       ],
       "entity_id": "LOC_0177"
-    },
-    {
-      "standard_name": "新加坡羽毛球公开赛",
-      "entity_type": "EVENT",
-      "description": "在新加坡举办的世界羽联世界巡回赛高级别赛事。中国组合贾一凡/张殊贤在此赛事中曾夺得女双冠军。",
-      "aliases": [
-        "新加坡站",
-        "新加坡公开赛",
-        "Singapore Badminton Open",
-        "Singapore Open",
-        "新加坡赛"
-      ],
-      "sources": [
-        "kb_badminton"
-      ],
-      "entity_id": "EVENT_0262"
     },
     {
       "standard_name": "新华社",
@@ -31241,19 +31221,6 @@
       "entity_id": "ORG_0650"
     },
     {
-      "standard_name": "伦敦世界乒乓球锦标赛",
-      "entity_type": "EVENT",
-      "description": "2025年世界乒乓球锦标赛（团体赛），在伦敦举办，王皓未使用向鹏参赛，赛后引发争议。",
-      "aliases": [
-        "伦敦世乒赛"
-      ],
-      "sources": [
-        "kb_part2",
-        "kb_ppq"
-      ],
-      "entity_id": "EVENT_0592"
-    },
-    {
       "standard_name": "伦敦女王杯草地赛",
       "entity_type": "EVENT",
       "description": "在英国伦敦举行的草地网球赛事，属于ATP巡回赛。",
@@ -40583,7 +40550,8 @@
       "entity_type": "EVENT",
       "description": "2026年（文中语境）在英国伦敦举行的世界乒乓球团体锦标赛，林诗栋作为绝对主力与王楚钦、梁靖崑一起卫冕男团冠军。",
       "aliases": [
-        "伦敦世乒赛"
+        "伦敦世乒赛",
+        "伦敦世界乒乓球锦标赛"
       ],
       "sources": [
         "kb_ppq"
@@ -43856,17 +43824,6 @@
       "entity_id": "EVENT_0792"
     },
     {
-      "standard_name": "爱知-名古屋亚运会",
-      "entity_type": "EVENT",
-      "description": "2026年将在日本爱知县和名古屋市举行的亚洲运动会，2026年全国游泳冠军赛是其游泳项目的选拔赛。",
-      "aliases": [],
-      "sources": [
-        "kb_ppq",
-        "kb_swimming"
-      ],
-      "entity_id": "EVENT_0793"
-    },
-    {
       "standard_name": "特鲁尔·莫雷加德",
       "entity_type": "PER",
       "description": "瑞典男子乒乓球运动员，世界排名第二，本次2026美国大满贯的强劲对手之一。",
@@ -45374,16 +45331,6 @@
         "kb_ppq"
       ],
       "entity_id": "ORG_1008"
-    },
-    {
-      "standard_name": "静安中安弘队",
-      "entity_type": "ORG",
-      "description": "上海市静安区的一支乒乓球队伍，在市级循环赛中与奉贤经发队交锋。",
-      "aliases": [],
-      "sources": [
-        "kb_ppq"
-      ],
-      "entity_id": "ORG_1009"
     },
     {
       "standard_name": "静安区",
@@ -50009,18 +49956,6 @@
         "kb_swimming"
       ],
       "entity_id": "ORG_1120"
-    },
-    {
-      "standard_name": "游泳冠军赛",
-      "entity_type": "EVENT",
-      "description": "国内游泳赛事，张展硕在此获得男子200米自由泳冠军",
-      "aliases": [
-        "冠军赛"
-      ],
-      "sources": [
-        "kb_swimming"
-      ],
-      "entity_id": "EVENT_0927"
     },
     {
       "standard_name": "湖北体彩",
