@@ -35,11 +35,7 @@ router = APIRouter()
 
 @router.get("/health", response_model=HealthResponse, tags=["系统"])
 async def health_check():
-    """
-    健康检查接口
-
-    返回服务状态和知识库加载情况。
-    """
+    """服务健康检查。返回服务状态、版本号和知识库加载情况。"""
     return HealthResponse(
         status="ok",
         version="0.1.0",
@@ -50,11 +46,7 @@ async def health_check():
 
 @router.get("/kb/stats", response_model=KBStatsResponse, tags=["知识库"])
 async def get_kb_stats():
-    """
-    获取知识库统计信息
-
-    返回实体总数、别名总数、各类型实体数量等统计信息。
-    """
+    """知识库统计。查看当前知识库的实体数、别名数、各类型分布。"""
     stats = knowledge_base.get_statistics()
     return KBStatsResponse(**stats)
 
@@ -62,14 +54,16 @@ async def get_kb_stats():
 @router.post("/link", response_model=LinkResponse, tags=["实体链接"])
 async def link_entity(request: LinkRequest):
     """
-    单条实体链接
+    实体链接（核心接口）
 
     将文本中的实体指称链接到知识库中的标准实体。
+    支持消歧、别名标准化、NIL检测。
 
-    - **text**: 完整文本
-    - **mention**: 指称信息（文本、位置、类型）
-
-    返回链接结果，包括链接到的实体、置信度、追溯ID等。
+    测试示例:
+    ```
+    {"text": "2024年世界羽联世界羽毛球锦标赛在哥本哈根举行，中国羽毛球队在世锦赛上表现出色。",
+     "mention": {"text": "世锦赛", "start_pos": 44, "end_pos": 47, "entity_type": "EVENT"}}
+    ```
     """
     if not knowledge_base.loaded:
         raise HTTPException(status_code=503, detail="知识库未加载")
@@ -137,11 +131,7 @@ async def link_entity(request: LinkRequest):
 
 @router.post("/batch_link", response_model=BatchLinkResponse, tags=["实体链接"])
 async def batch_link(request: BatchLinkRequest):
-    """
-    批量实体链接
-
-    批量处理多个实体链接请求。
-    """
+    """批量实体链接。一次处理多条链接请求，推荐用于同一篇文章的多个mention。"""
     if not knowledge_base.loaded:
         raise HTTPException(status_code=503, detail="知识库未加载")
 
@@ -179,15 +169,7 @@ async def batch_link(request: BatchLinkRequest):
 
 @router.get("/trace/{trace_id}", response_model=TraceResponse, tags=["追溯"])
 async def get_trace(trace_id: str):
-    """
-    查询追溯日志
-
-    根据追溯ID查询实体链接的详细处理过程。
-
-    - **trace_id**: 追溯ID
-
-    返回追溯日志，包括每一步的输入、输出和决策依据。
-    """
+    """查询追溯日志。查看实体链接的完整处理过程，包括每一步的输入、输出和决策依据。"""
     trace = trace_logger.get_trace(trace_id)
     if trace is None:
         # 尝试从文件加载
@@ -210,22 +192,14 @@ async def get_trace(trace_id: str):
 
 @router.get("/traces", tags=["追溯"])
 async def list_traces(limit: int = 100):
-    """
-    列出最近的追溯日志
-
-    - **limit**: 返回数量限制
-    """
+    """列出最近的追溯日志。- limit: 返回数量上限"""
     traces = trace_logger.list_traces(limit)
     return {"traces": traces, "total": len(traces)}
 
 
 @router.post("/trace/{trace_id}/replay", tags=["追溯"])
 async def replay_trace(trace_id: str):
-    """
-    追溯回放
-
-    用原始输入重新执行实体链接，验证结果是否可复现。
-    """
+    """追溯回放。用原始输入重新执行一次链接，对比结果是否一致，用于审计验证。"""
     trace = trace_logger.get_trace(trace_id)
     if trace is None:
         trace = trace_logger.load_trace(trace_id)
@@ -263,11 +237,7 @@ async def replay_trace(trace_id: str):
 
 @router.post("/trace/{trace_id}/rollback", tags=["追溯"])
 async def rollback_trace(trace_id: str):
-    """
-    追溯回滚
-
-    返回实体链接前的原始状态。
-    """
+    """追溯回滚。返回链接前的原始mention状态，用于回退变更。"""
     trace = trace_logger.get_trace(trace_id)
     if trace is None:
         trace = trace_logger.load_trace(trace_id)
@@ -287,15 +257,7 @@ async def rollback_trace(trace_id: str):
 
 @router.post("/nil_check", response_model=NILResponse, tags=["NIL检测"])
 async def nil_check(request: NILRequest):
-    """
-    NIL检测（独立接口）
-
-    判断指称文本在知识库中是否存在对应实体。
-    被归一、清洗等环节按需调用。
-
-    - **text**: 指称文本
-    - **entity_type**: 实体类型（可选）
-    """
+    """NIL检测。判断指称文本在知识库中是否存在对应实体（不执行完整链接流程）。"""
     knowledge_base.search_by_alias(request.text)
     candidates = knowledge_base.search_by_alias(request.text)
 
@@ -319,14 +281,7 @@ async def nil_check(request: NILRequest):
 
 @router.post("/coref", response_model=CorefResponse, tags=["共指消解"])
 async def coref_resolve(request: CorefRequest):
-    """
-    共指消解（独立接口）
-
-    找出文本中的代词/指代词，并回链到前序实体提及。
-    被归一、清洗等环节按需启用。
-
-    - **text**: 完整文本
-    """
+    """共指消解。找出文本中的代词(她/他/它)和指代词(本次赛事/该队)，回链到前序实体。"""
     text = request.text
     mentions = []
 
