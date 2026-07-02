@@ -13,6 +13,8 @@ from .schemas import (
     BatchLinkRequest, BatchLinkResponse,
     KBStatsResponse, TraceResponse, HealthResponse,
     EntityResponse,
+    NILRequest, NILResponse,
+    CorefRequest, CorefResponse, CorefResult,
 )
 from ..core.knowledge_base import knowledge_base
 from ..core.bm25_index import bm25_index
@@ -20,6 +22,7 @@ from ..core.disambiguator import disambiguator
 from ..core.llm_disambiguator import llm_disambiguator
 from ..core.trace_logger import trace_logger
 from ..core.nil_detector import nil_detector
+from ..core.coref_resolver import is_coreference_mention, resolve_coreference
 from ..config import config
 from ..models.mention import Mention
 from ..models.entity import Candidate
@@ -207,6 +210,82 @@ async def list_traces(limit: int = 100):
     """
     traces = trace_logger.list_traces(limit)
     return {"traces": traces, "total": len(traces)}
+
+
+@router.post("/nil_check", response_model=NILResponse, tags=["NIL检测"])
+async def nil_check(request: NILRequest):
+    """
+    NIL检测（独立接口）
+
+    判断指称文本在知识库中是否存在对应实体。
+    被归一、清洗等环节按需调用。
+
+    - **text**: 指称文本
+    - **entity_type**: 实体类型（可选）
+    """
+    knowledge_base.search_by_alias(request.text)
+    candidates = knowledge_base.search_by_alias(request.text)
+
+    if not candidates:
+        name_entity = knowledge_base.get_entity_by_name(request.text)
+        if name_entity:
+            candidates = [name_entity]
+
+    nil_result = nil_detector.detect(
+        mention_text=request.text,
+        mention_type=request.entity_type or "",
+        candidates=[] if not candidates else [Candidate(entity=c, score=0.95) for c in candidates],
+    )
+
+    return NILResponse(
+        is_nil=nil_result.is_nil,
+        confidence=nil_result.confidence,
+        reason=nil_result.reason,
+    )
+
+
+@router.post("/coref", response_model=CorefResponse, tags=["共指消解"])
+async def coref_resolve(request: CorefRequest):
+    """
+    共指消解（独立接口）
+
+    找出文本中的代词/指代词，并回链到前序实体提及。
+    被归一、清洗等环节按需启用。
+
+    - **text**: 完整文本
+    """
+    text = request.text
+    mentions = []
+
+    # 第一步：找出所有指代词
+    for i, ch in enumerate(text):
+        for size in range(1, 5):
+            chunk = text[i:i + size]
+            etype = is_coreference_mention(chunk)
+            if etype:
+                mentions.append({
+                    "text": chunk, "start": i, "end": i + size,
+                    "entity_type": etype, "entity_id": None,
+                })
+
+    if not mentions:
+        return CorefResponse(results=[])
+
+    # 第二步：回链
+    import copy
+    all_mentions = sorted(mentions, key=lambda m: m["start"])
+    results = []
+    for idx, m in enumerate(all_mentions):
+        target = resolve_coreference(idx, all_mentions)
+        results.append(CorefResult(
+            index=m["start"],
+            mention=m["text"],
+            entity_type=m["entity_type"],
+            coref_target=target["text"] if target else None,
+            entity_id=target.get("entity_id") if target else None,
+        ))
+
+    return CorefResponse(results=results)
 
 
 # ============ 辅助函数 ============

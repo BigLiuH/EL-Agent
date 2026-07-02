@@ -108,3 +108,35 @@ class HealthResponse(BaseModel):
     version: str = Field("0.1.0", description="版本号")
     kb_loaded: bool = Field(False, description="知识库是否已加载")
     kb_entity_count: int = Field(0, description="知识库实体数")
+
+
+class NILRequest(BaseModel):
+    """NIL检测请求"""
+    text: str = Field(..., description="指称文本")
+    entity_type: Optional[str] = Field(None, description="实体类型")
+
+
+class NILResponse(BaseModel):
+    """NIL检测响应"""
+    is_nil: bool = Field(False, description="是否为NIL")
+    confidence: float = Field(0.0, description="置信度")
+    reason: str = Field("", description="判定理由")
+
+
+class CorefRequest(BaseModel):
+    """共指消解请求"""
+    text: str = Field(..., description="完整文本")
+
+
+class CorefResult(BaseModel):
+    """共指消解结果项"""
+    index: int = Field(..., description="在文章中的位置")
+    mention: str = Field(..., description="指代词文本")
+    entity_type: str = Field("", description="实体类型")
+    coref_target: Optional[str] = Field(None, description="回链目标实体名")
+    entity_id: Optional[str] = Field(None, description="回链目标实体ID")
+
+
+class CorefResponse(BaseModel):
+    """共指消解响应"""
+    results: List[CorefResult] = Field(default_factory=list, description="消解结果")
